@@ -1,0 +1,14 @@
+[remap]
+
+importer="image"
+type="Image"
+uid="uid://meqmwcper5qk"
+path="res://.godot/imported/tileSet1.png-083d0e280b8cbf56c1f8fe9e2a2f0f9d.image"
+
+[deps]
+
+source_file="res://assets/assestsUsed/uglyWorld/Tiles/tileSet1.png"
+dest_files=["res://.godot/imported/tileSet1.png-083d0e280b8cbf56c1f8fe9e2a2f0f9d.image"]
+
+[params]
+
