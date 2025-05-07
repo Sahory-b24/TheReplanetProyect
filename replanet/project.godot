@@ -11,6 +11,7 @@ config_version=5
 [application]
 
 config/name="RePlanet"
+run/main_scene="uid://bgyvt6v3pnb"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
 
@@ -23,3 +24,14 @@ window/size/window_height_override=720
 window/stretch/mode="viewport"
 window/stretch/aspect="keep_height"
 window/stretch/scale_mode="integer"
+
+[layer_names]
+
+2d_physics/layer_1="Player"
+2d_physics/layer_2="Ground"
+2d_physics/layer_3="Decoration"
+2d_physics/layer_4="Pick"
+
+[rendering]
+
+textures/canvas_textures/default_texture_filter=0

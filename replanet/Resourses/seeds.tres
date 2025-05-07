@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="InventoryItem" load_steps=4 format=3 uid="uid://ygqjglgd62c3"]
+
+[ext_resource type="Script" uid="uid://bb07o2m75uyt7" path="res://scripts/Inventory_item.gd" id="1_b5v8t"]
+[ext_resource type="Shape2D" uid="uid://dhy48o7n0eh1g" path="res://Resourses/seed1/seed1_collision_shape.tres" id="1_gxxcu"]
+[ext_resource type="Texture2D" uid="uid://s4xexvej3f2v" path="res://art/seeds/semilla1.png" id="3_thp72"]
+
+[resource]
+script = ExtResource("1_b5v8t")
+slot_type = "NotEquipable"
+ground_collision_shape = ExtResource("1_gxxcu")
+name = "seed1"
+texture = ExtResource("3_thp72")
+max_stacks = 5

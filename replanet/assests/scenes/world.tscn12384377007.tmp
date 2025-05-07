@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://bgyvt6v3pnb"]
+
+[ext_resource type="PackedScene" uid="uid://by540pluwhd6g" path="res://assests/scenes/player.tscn" id="1_rwgxs"]
+[ext_resource type="PackedScene" uid="uid://bbkg686cvr036" path="res://assests/scenes/pick_up_item.tscn" id="2_4wyf3"]
+[ext_resource type="PackedScene" uid="uid://bdcpew3xkg8fd" path="res://assests/scenes/test_scene_tile_map.tscn" id="3_b3arm"]
+
+[node name="Replanet" type="Node2D"]
+
+[node name="TestSceneTileMap" parent="." instance=ExtResource("3_b3arm")]
+
+[node name="player" parent="." instance=ExtResource("1_rwgxs")]
+position = Vector2(323, 104)
+collision_mask = 14
+
+[node name="PickUpItem" parent="." instance=ExtResource("2_4wyf3")]
+position = Vector2(194, 241)
+
+[node name="PickUpItem2" parent="." instance=ExtResource("2_4wyf3")]
+position = Vector2(207, 255)
+
+[node name="PickUpItem3" parent="." instance=ExtResource("2_4wyf3")]
+position = Vector2(222, 242)
