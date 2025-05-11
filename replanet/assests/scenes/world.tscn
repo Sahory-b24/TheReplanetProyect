@@ -9,4 +9,3 @@
 
 [node name="player" parent="." instance=ExtResource("1_rwgxs")]
 position = Vector2(323, 104)
-collision_mask = 14

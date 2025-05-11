@@ -1,0 +1,57 @@
+[gd_scene load_steps=5 format=3 uid="uid://7s7ulds8fr7q"]
+
+[ext_resource type="Script" path="res://mainMenu/credits.gd" id="1_8gxob"]
+[ext_resource type="Texture2D" uid="uid://kt1qv88qur0e" path="res://mainMenu/Menu/credits.png" id="2_whxom"]
+[ext_resource type="Texture2D" uid="uid://byim6hlifbw6m" path="res://mainMenu/regresar_normal.tres" id="3_hc27a"]
+[ext_resource type="Texture2D" uid="uid://cbuqbkoc7cmgy" path="res://mainMenu/regresar_press.tres" id="4_8juat"]
+
+[node name="Credits" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_8gxob")
+
+[node name="Credits" type="Sprite2D" parent="."]
+position = Vector2(324, 181)
+texture = ExtResource("2_whxom")
+
+[node name="CreditsText" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 155.0
+offset_top = 125.0
+offset_right = 475.0
+offset_bottom = 295.0
+bbcode_enabled = true
+text = "[center][b]🎮 Re:Planet[/b][/center]
+[center]Desarrollado por InGenius[/center]
+
+[b]👤 Equipo:[/b]
+- Gerente de proyecto: Isis Pacheco
+- Directora de Pruebas: Valerie Angulo
+- Directora de diseño: Sahory Blanco
+- Directora de documentación: Danna Galavís
+-Directora de UI: Laura Villalobos
+
+[b]🛠️ Herramientas:[/b]
+- Motor: Godot 4.2
+- Pixel art: pixel studio
+[center]¡Gracias por jugar![/center]
+"
+
+[node name="TextureButton" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 18.0
+offset_top = 301.0
+offset_right = 34.0
+offset_bottom = 317.0
+scale = Vector2(3, 3)
+texture_normal = ExtResource("3_hc27a")
+texture_pressed = ExtResource("4_8juat")
+texture_hover = ExtResource("4_8juat")
+
+[node name="Tween" type="Node" parent="."]
+
+[connection signal="pressed" from="TextureButton" to="." method="_on_tregresar_button_pressed"]
