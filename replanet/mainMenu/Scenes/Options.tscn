@@ -225,6 +225,7 @@ texture_pressed = ExtResource("12_hk8dk")
 texture_hover = ExtResource("12_hk8dk")
 
 [node name="Label" type="Label" parent="buttom_english"]
+layout_mode = 0
 offset_left = 4.0
 offset_top = -1.0
 offset_right = 45.0
@@ -236,6 +237,7 @@ text = "English
 "
 
 [node name="Label2" type="Label" parent="."]
+layout_mode = 0
 offset_left = 183.0
 offset_top = 182.0
 offset_right = 265.0
@@ -246,6 +248,7 @@ theme_override_font_sizes/font_size = 21
 text = "Idiomas"
 
 [node name="Label3" type="Label" parent="."]
+layout_mode = 0
 offset_left = 182.0
 offset_top = 250.0
 offset_right = 264.0
@@ -256,6 +259,7 @@ theme_override_font_sizes/font_size = 21
 text = "Accesibilidad"
 
 [node name="Label4" type="Label" parent="."]
+layout_mode = 0
 offset_left = 233.0
 offset_top = 277.0
 offset_right = 341.0
