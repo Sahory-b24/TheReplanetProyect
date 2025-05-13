@@ -1,4 +1,4 @@
-[gd_resource type="TileSet" load_steps=31 format=3 uid="uid://dfmh40v3anori"]
+[gd_resource type="TileSet" load_steps=33 format=3 uid="uid://dfmh40v3anori"]
 
 [ext_resource type="Texture2D" uid="uid://bn6td4javnjfn" path="res://assests/game/assestsUsed/uglyWorld/Tiles/water.png" id="1_bpmon"]
 [ext_resource type="Texture2D" uid="uid://bgkt74xn78u6f" path="res://assests/TileSets/pineTree.png" id="2_2q1b1"]
@@ -15,6 +15,7 @@
 [ext_resource type="Texture2D" uid="uid://b8p05yjw835w4" path="res://assests/game/assestsUsed/uglyWorld/Deco/road.png" id="9_dvb2g"]
 [ext_resource type="Texture2D" uid="uid://bwhptqgh4ys21" path="res://assests/game/assestsUsed/uglyWorld/Deco/minerals.png" id="9_w84wx"]
 [ext_resource type="Texture2D" uid="uid://o4tcf0xk5dm" path="res://assests/game/assestsUsed/uglyWorld/Deco/rocks.png" id="10_8tl7t"]
+[ext_resource type="Texture2D" uid="uid://3jtonw2w6mk4" path="res://assests/game/assestsUsed/uglyWorld/Deco/clouds.png" id="16_gbmkf"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_we4lt"]
 texture = ExtResource("1_bpmon")
@@ -165,6 +166,7 @@ texture = ExtResource("9_w84wx")
 2:14/0 = 0
 0:14/0 = 0
 0:13/0 = 0
+1:13/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2q1b1"]
 texture = ExtResource("2_we4lt")
@@ -497,6 +499,27 @@ texture = ExtResource("10_8tl7t")
 7:6/0 = 0
 7:5/0 = 0
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_w84wx"]
+texture = ExtResource("16_gbmkf")
+0:0/0 = 0
+1:0/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+2:0/0 = 0
+0:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+6:1/0 = 0
+7:1/0 = 0
+8:1/0 = 0
+8:0/0 = 0
+7:0/0 = 0
+3:0/0 = 0
+
 [resource]
 physics_layer_0/collision_layer = 2
 sources/0 = SubResource("TileSetAtlasSource_we4lt")
@@ -514,3 +537,4 @@ sources/13 = SubResource("TileSetAtlasSource_bkswl")
 sources/14 = SubResource("TileSetAtlasSource_cnquu")
 sources/15 = SubResource("TileSetAtlasSource_mjq8u")
 sources/16 = SubResource("TileSetAtlasSource_mog5r")
+sources/8 = SubResource("TileSetAtlasSource_w84wx")

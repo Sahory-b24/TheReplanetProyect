@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cvydxrxrifaqj"
-path="res://.godot/imported/propsWater_stone.png-e92c0cd3a4a1e24cbfcfe17e3a8b8da8.ctex"
+path="res://.godot/imported/propsWater_stone.png-907d4e23bd83df972dd31ae25690400d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assests/game/assestsUsed/uglyWorld/Deco/propsWater_stone.png"
-dest_files=["res://.godot/imported/propsWater_stone.png-e92c0cd3a4a1e24cbfcfe17e3a8b8da8.ctex"]
+source_file="res://mainMenu/Assets/Icons/propsWater_stone.png"
+dest_files=["res://.godot/imported/propsWater_stone.png-907d4e23bd83df972dd31ae25690400d.ctex"]
 
 [params]
 
