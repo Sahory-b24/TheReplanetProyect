@@ -1,2 +1,12 @@
+CheckButton
+Label
+TextureButton
+VBoxContainer
+TextureRect
+Control
+HBoxContainer
+HScrollBar
+Sprite2D
+Panel
 Camera2D
 Area2D

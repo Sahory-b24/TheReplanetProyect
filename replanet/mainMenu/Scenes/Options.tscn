@@ -1,0 +1,277 @@
+[gd_scene load_steps=21 format=3 uid="uid://m5555x0a4a4p"]
+
+[ext_resource type="Script" path="res://mainMenu/Scripts/options.gd" id="1_1hr7k"]
+[ext_resource type="Texture2D" uid="uid://dqyif424ce1ab" path="res://mainMenu/Assets/Images/options.png" id="1_6hwxp"]
+[ext_resource type="Texture2D" uid="uid://c5xltjtfp3m6y" path="res://mainMenu/Assets/Icons/UI Settings Buttons.png" id="2_2lkrs"]
+[ext_resource type="FontFile" uid="uid://biasfq1fvbi0t" path="res://assests/Fonts/Silver.ttf" id="2_uy0kt"]
+[ext_resource type="FontFile" uid="uid://cyng0aemdnieu" path="res://assests/Fonts/pixelFont-7-8x14-sproutLands.ttf" id="3_xwtl1"]
+[ext_resource type="Texture2D" uid="uid://byim6hlifbw6m" path="res://mainMenu/Assets/Buttoms/regresar_normal.tres" id="4_qi256"]
+[ext_resource type="Texture2D" uid="uid://cbuqbkoc7cmgy" path="res://mainMenu/Assets/Buttoms/regresar_press.tres" id="5_a7g6g"]
+[ext_resource type="Texture2D" uid="uid://dkdwymhfbdxju" path="res://mainMenu/Assets/Icons/Sprite sheet for Basic Pack.png" id="6_4c26c"]
+[ext_resource type="Texture2D" uid="uid://coc6s7alo3f5s" path="res://mainMenu/Assets/Icons/audio-off-icon.png" id="6_503ks"]
+[ext_resource type="Texture2D" uid="uid://c7fbi771wadk3" path="res://mainMenu/Assets/Icons/audio-on-icon.png" id="8_f6l0i"]
+[ext_resource type="Texture2D" uid="uid://s423y6mwv0uc" path="res://mainMenu/Assets/Icons/audioOff.png" id="9_c3xqk"]
+[ext_resource type="Texture2D" uid="uid://cfdn3hxy3d8rl" path="res://mainMenu/Assets/Icons/audioON.png" id="10_umsyl"]
+[ext_resource type="Texture2D" uid="uid://cdpxi0a00j4ak" path="res://mainMenu/Assets/Buttoms/boton_normal.tres" id="11_lovin"]
+[ext_resource type="Texture2D" uid="uid://cpwrqewpvsnjl" path="res://mainMenu/Assets/Buttoms/boton_presionado.tres" id="12_hk8dk"]
+[ext_resource type="Texture2D" uid="uid://ojluld7n4a28" path="res://mainMenu/Assets/Buttoms/dalto_icon_ckecked.tres" id="14_pvupt"]
+[ext_resource type="Texture2D" uid="uid://b6ob7qbr0mdti" path="res://mainMenu/Assets/Buttoms/dalto_icon.tres" id="15_ls6w8"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_vapui"]
+texture = ExtResource("1_6hwxp")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_p05r6"]
+texture = ExtResource("6_4c26c")
+texture_margin_left = 3.0
+texture_margin_top = 2.0
+texture_margin_right = 3.0
+texture_margin_bottom = 1.0
+region_rect = Rect2(340.967, 5.96697, 38.1391, 4.16063)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_fuie2"]
+texture = ExtResource("6_4c26c")
+expand_margin_left = 3.0
+expand_margin_top = 9.0
+expand_margin_right = 4.0
+expand_margin_bottom = 9.0
+region_rect = Rect2(340.91, 68.9791, 7.17902, 17.9318)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_pxn40"]
+texture = ExtResource("6_4c26c")
+expand_margin_left = 3.0
+expand_margin_top = 9.0
+expand_margin_right = 4.0
+expand_margin_bottom = 9.0
+region_rect = Rect2(372.941, 69.1779, 7.08966, 17.7772)
+
+[node name="Options" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_1hr7k")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 0
+offset_left = -3.0
+offset_top = -2.0
+offset_right = 639.0
+offset_bottom = 359.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_vapui")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(304, 51)
+scale = Vector2(2.83951, 3.20925)
+texture = ExtResource("2_2lkrs")
+region_enabled = true
+region_rect = Rect2(-3, 2, 81, 17)
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 182.0
+offset_top = 92.0
+offset_right = 240.0
+offset_bottom = 111.0
+theme_override_colors/font_color = Color(0.95593, 0.975983, 0.907316, 1)
+theme_override_fonts/font = ExtResource("3_xwtl1")
+theme_override_font_sizes/font_size = 21
+text = "Audio"
+
+[node name="buttom_back" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 602.0
+offset_top = 324.0
+offset_right = 623.0
+offset_bottom = 342.0
+scale = Vector2(2, 2)
+texture_normal = ExtResource("4_qi256")
+texture_pressed = ExtResource("5_a7g6g")
+texture_hover = ExtResource("5_a7g6g")
+
+[node name="Sound_bar" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 248.0
+offset_top = 101.0
+offset_right = 487.0
+offset_bottom = 161.0
+
+[node name="Control" type="Control" parent="Sound_bar"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Sound_bar"]
+layout_mode = 2
+
+[node name="volumeBar" type="HBoxContainer" parent="Sound_bar/VBoxContainer"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Sound_bar/VBoxContainer/volumeBar"]
+layout_mode = 2
+theme_override_constants/separation = -13
+
+[node name="Control" type="Control" parent="Sound_bar/VBoxContainer/volumeBar/VBoxContainer"]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="Sound_bar/VBoxContainer/volumeBar/VBoxContainer"]
+custom_minimum_size = Vector2(25, 25)
+layout_mode = 2
+texture = ExtResource("6_503ks")
+
+[node name="HScrollBar" type="HScrollBar" parent="Sound_bar/VBoxContainer/volumeBar"]
+custom_minimum_size = Vector2(150, 10)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_styles/scroll = SubResource("StyleBoxTexture_p05r6")
+theme_override_styles/scroll_focus = SubResource("StyleBoxTexture_p05r6")
+theme_override_styles/grabber = SubResource("StyleBoxTexture_fuie2")
+theme_override_styles/grabber_highlight = SubResource("StyleBoxTexture_pxn40")
+theme_override_styles/grabber_pressed = SubResource("StyleBoxTexture_pxn40")
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="Sound_bar/VBoxContainer/volumeBar"]
+layout_mode = 2
+theme_override_constants/separation = -13
+
+[node name="Control" type="Control" parent="Sound_bar/VBoxContainer/volumeBar/VBoxContainer2"]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="Sound_bar/VBoxContainer/volumeBar/VBoxContainer2"]
+custom_minimum_size = Vector2(25, 25)
+layout_mode = 2
+texture = ExtResource("8_f6l0i")
+
+[node name="music_bar" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 249.0
+offset_top = 135.0
+offset_right = 464.0
+offset_bottom = 163.0
+
+[node name="Control" type="Control" parent="music_bar"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="music_bar"]
+layout_mode = 2
+
+[node name="volumeBar" type="HBoxContainer" parent="music_bar/VBoxContainer"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="music_bar/VBoxContainer/volumeBar"]
+layout_mode = 2
+theme_override_constants/separation = -13
+
+[node name="Control" type="Control" parent="music_bar/VBoxContainer/volumeBar/VBoxContainer"]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="music_bar/VBoxContainer/volumeBar/VBoxContainer"]
+custom_minimum_size = Vector2(25, 25)
+layout_mode = 2
+texture = ExtResource("9_c3xqk")
+metadata/_edit_group_ = true
+
+[node name="HScrollBar" type="HScrollBar" parent="music_bar/VBoxContainer/volumeBar"]
+custom_minimum_size = Vector2(150, 10)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_styles/scroll = SubResource("StyleBoxTexture_p05r6")
+theme_override_styles/scroll_focus = SubResource("StyleBoxTexture_p05r6")
+theme_override_styles/grabber = SubResource("StyleBoxTexture_fuie2")
+theme_override_styles/grabber_highlight = SubResource("StyleBoxTexture_pxn40")
+theme_override_styles/grabber_pressed = SubResource("StyleBoxTexture_pxn40")
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="music_bar/VBoxContainer/volumeBar"]
+layout_mode = 2
+theme_override_constants/separation = -13
+
+[node name="Control" type="Control" parent="music_bar/VBoxContainer/volumeBar/VBoxContainer2"]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="music_bar/VBoxContainer/volumeBar/VBoxContainer2"]
+custom_minimum_size = Vector2(25, 25)
+layout_mode = 2
+texture = ExtResource("10_umsyl")
+
+[node name="buttom_español" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 208.0
+offset_top = 204.0
+offset_right = 258.0
+offset_bottom = 222.0
+scale = Vector2(2, 2)
+texture_normal = ExtResource("11_lovin")
+texture_pressed = ExtResource("12_hk8dk")
+texture_hover = ExtResource("12_hk8dk")
+
+[node name="Label" type="Label" parent="buttom_español"]
+layout_mode = 0
+offset_left = 4.0
+offset_top = -1.0
+offset_right = 45.0
+offset_bottom = 20.0
+theme_override_colors/font_color = Color(0.956863, 0.976471, 0.905882, 1)
+theme_override_fonts/font = ExtResource("2_uy0kt")
+theme_override_font_sizes/font_size = 19
+text = "Español"
+
+[node name="buttom_english" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 331.0
+offset_top = 203.0
+offset_right = 381.0
+offset_bottom = 221.0
+scale = Vector2(2, 2)
+texture_normal = ExtResource("11_lovin")
+texture_pressed = ExtResource("12_hk8dk")
+texture_hover = ExtResource("12_hk8dk")
+
+[node name="Label" type="Label" parent="buttom_english"]
+offset_left = 4.0
+offset_top = -1.0
+offset_right = 45.0
+offset_bottom = 20.0
+theme_override_colors/font_color = Color(0.956863, 0.976471, 0.905882, 1)
+theme_override_fonts/font = ExtResource("2_uy0kt")
+theme_override_font_sizes/font_size = 19
+text = "English
+"
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 183.0
+offset_top = 182.0
+offset_right = 265.0
+offset_bottom = 201.0
+theme_override_colors/font_color = Color(0.95593, 0.975983, 0.907316, 1)
+theme_override_fonts/font = ExtResource("3_xwtl1")
+theme_override_font_sizes/font_size = 21
+text = "Idiomas"
+
+[node name="Label3" type="Label" parent="."]
+offset_left = 182.0
+offset_top = 250.0
+offset_right = 264.0
+offset_bottom = 269.0
+theme_override_colors/font_color = Color(0.95593, 0.975983, 0.907316, 1)
+theme_override_fonts/font = ExtResource("3_xwtl1")
+theme_override_font_sizes/font_size = 21
+text = "Accesibilidad"
+
+[node name="Label4" type="Label" parent="."]
+offset_left = 233.0
+offset_top = 277.0
+offset_right = 341.0
+offset_bottom = 302.0
+theme_override_colors/font_color = Color(0.95593, 0.975983, 0.907316, 1)
+theme_override_fonts/font = ExtResource("2_uy0kt")
+theme_override_font_sizes/font_size = 22
+text = "Filtro daltonicos: "
+
+[node name="CheckButton" type="CheckButton" parent="."]
+layout_mode = 0
+offset_left = 349.0
+offset_top = 272.0
+offset_right = 391.0
+offset_bottom = 301.0
+theme_override_icons/checked = ExtResource("14_pvupt")
+theme_override_icons/unchecked = ExtResource("15_ls6w8")
+
+[connection signal="pressed" from="buttom_back" to="." method="_on_buttom_back_pressed"]

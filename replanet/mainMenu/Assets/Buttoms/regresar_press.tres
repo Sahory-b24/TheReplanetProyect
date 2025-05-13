@@ -1,6 +1,6 @@
 [gd_resource type="AtlasTexture" load_steps=2 format=3 uid="uid://cbuqbkoc7cmgy"]
 
-[ext_resource type="Texture2D" uid="uid://d0j82h8a85gnp" path="res://mainMenu/Assets/Buttoms/button.png" id="1_i4cc1"]
+[ext_resource type="Texture2D" uid="uid://d0j82h8a85gnp" path="res://mainMenu/Assets/Icons/button.png" id="1_i4cc1"]
 
 
 [resource]
