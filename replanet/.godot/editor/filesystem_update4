@@ -7,3 +7,9 @@ res://test_scene_tile_map.tscn
 res://mainMenu/Scenes/main_menu.tscn
 res://mainMenu/Scenes/instructions.tscn
 res://mainMenu/Scenes/credits.tscn
+res://mainMenu/Scenes/Options.tscn
+res://mainMenu/Assets/Buttoms/credits_press.tres
+res://mainMenu/Assets/Buttoms/credits_normal.tres
+res://mainMenu/Assets/Buttoms/dalto_icon_ckecked.tres
+res://mainMenu/Assets/Buttoms/dalto_icon.tres
+res://mainMenu/Scripts/options.gd

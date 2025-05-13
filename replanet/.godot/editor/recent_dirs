@@ -1,6 +1,7 @@
-res://mainMenu/mainMenu
-res://mainMenu/mainMenu/Menu
-res://assests/scenes
+res://mainMenu/Scripts
+res://mainMenu/Scenes
+res://mainMenu/Assets/Icons
+res://mainMenu/Assets/Buttoms
 res://scripts
 res://assests
 res://

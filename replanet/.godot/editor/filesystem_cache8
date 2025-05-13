@@ -1,12 +1,17 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1747086639
+::res://::1747089114
 icon.svg::CompressedTexture2D::3837001563638024018::1747082603::1747082745::1::::<><>::
-test_scene_tile_map.tscn::PackedScene::5562262223831720552::1747086342::0::1::::<><>::uid://dfmh40v3anori::::res://assests/TileSets/game_tile_set.tres
-::res://assests/::1747082922
+test_scene_tile_map.tscn::PackedScene::5562262223831720552::1747086664::0::1::::<><>::uid://dfmh40v3anori::::res://assests/TileSets/game_tile_set.tres
+::res://assests/::1747089090
 ::res://assests/chararters/::1747082745
 Idle.png::CompressedTexture2D::6823838267332412352::1747082603::1747082745::1::::<><>::
 Run.png::CompressedTexture2D::623740623610133070::1747082603::1747082745::1::::<><>::
 Walk.png::CompressedTexture2D::427135414372338559::1747082603::1747082745::1::::<><>::
+::res://assests/Fonts/::1747095105
+Pixeled.ttf::FontFile::4515997355425493367::1747093971::1747093971::1::::<><>::
+pixelFont-7-8x14-sproutLands.ttf::FontFile::6484619479034949716::1747088451::1747094078::1::::<><>::
+Silver.ttf::FontFile::2949034148430487677::1747089101::1747089640::1::::<><>::
+ToyBox.otf::FontFile::8670970216570528432::1747095105::1747095105::1::::<><>::
 ::res://assests/game/::1747082603
 ::res://assests/game/assestsUsed/::1747082603
 ::res://assests/game/assestsUsed/uglyWorld/::1747082603
@@ -43,29 +48,41 @@ woodMoss.png::CompressedTexture2D::1920257162572789689::1747082603::1747082744::
 ::res://assests/seeds/::1747082744
 semilla1.png::CompressedTexture2D::1324671015034386671::1747082603::1747082744::1::::<><>::
 Spring Crops.png::CompressedTexture2D::7563839801591180623::1747082603::1747082744::1::::<><>::
-::res://assests/TileSets/::1747086034
-game_tile_set.tres::TileSet::7535456956088155562::1747086034::0::1::::<><>::uid://bn6td4javnjfn::::res://assests/game/assestsUsed/uglyWorld/Tiles/water.png<>uid://bgkt74xn78u6f::::res://assests/TileSets/pineTree.png<>uid://bomt3tpk1cokn::::res://assests/game/assestsUsed/uglyWorld/Tiles/tileSet1.png<>uid://clyf0pcxbjis::::res://assests/game/assestsUsed/uglyWorld/Deco/summerCrops.png<>uid://dtkdy7gevne6b::::res://assests/game/assestsUsed/uglyWorld/Deco/wood.png<>uid://b65kjm7lw7wop::::res://assests/game/assestsUsed/uglyWorld/Deco/path.png<>uid://ktiqjse2ijbk::::res://assests/game/assestsUsed/uglyWorld/Deco/house.png<>uid://qkm21c50fxkh::::res://assests/game/assestsUsed/uglyWorld/Deco/propsWater.png<>uid://b0vh3vryraidi::::res://assests/game/assestsUsed/uglyWorld/Deco/altar.png<>uid://cfn1bkkgyd3cl::::res://assests/game/assestsUsed/uglyWorld/Tiles/tileSet3.png<>uid://cnco2y60romv7::::res://assests/game/assestsUsed/uglyWorld/Deco/fence.png<>uid://dpt27w32bbjh1::::res://assests/game/assestsUsed/uglyWorld/Deco/evil_tree.png<>uid://b8p05yjw835w4::::res://assests/game/assestsUsed/uglyWorld/Deco/road.png<>uid://bwhptqgh4ys21::::res://assests/game/assestsUsed/uglyWorld/Deco/minerals.png<>uid://o4tcf0xk5dm::::res://assests/game/assestsUsed/uglyWorld/Deco/rocks.png
+::res://assests/TileSets/::1747086657
+game_tile_set.tres::TileSet::7535456956088155562::1747086657::0::1::::<><>::uid://bn6td4javnjfn::::res://assests/game/assestsUsed/uglyWorld/Tiles/water.png<>uid://bgkt74xn78u6f::::res://assests/TileSets/pineTree.png<>uid://bomt3tpk1cokn::::res://assests/game/assestsUsed/uglyWorld/Tiles/tileSet1.png<>uid://clyf0pcxbjis::::res://assests/game/assestsUsed/uglyWorld/Deco/summerCrops.png<>uid://dtkdy7gevne6b::::res://assests/game/assestsUsed/uglyWorld/Deco/wood.png<>uid://b65kjm7lw7wop::::res://assests/game/assestsUsed/uglyWorld/Deco/path.png<>uid://ktiqjse2ijbk::::res://assests/game/assestsUsed/uglyWorld/Deco/house.png<>uid://qkm21c50fxkh::::res://assests/game/assestsUsed/uglyWorld/Deco/propsWater.png<>uid://b0vh3vryraidi::::res://assests/game/assestsUsed/uglyWorld/Deco/altar.png<>uid://cfn1bkkgyd3cl::::res://assests/game/assestsUsed/uglyWorld/Tiles/tileSet3.png<>uid://cnco2y60romv7::::res://assests/game/assestsUsed/uglyWorld/Deco/fence.png<>uid://dpt27w32bbjh1::::res://assests/game/assestsUsed/uglyWorld/Deco/evil_tree.png<>uid://b8p05yjw835w4::::res://assests/game/assestsUsed/uglyWorld/Deco/road.png<>uid://bwhptqgh4ys21::::res://assests/game/assestsUsed/uglyWorld/Deco/minerals.png<>uid://o4tcf0xk5dm::::res://assests/game/assestsUsed/uglyWorld/Deco/rocks.png
 pineTree.png::CompressedTexture2D::2829409850671812827::1747082603::1747082744::1::::<><>::
 ::res://mainMenu/::1747085625
-::res://mainMenu/Assets/::1747085243
-::res://mainMenu/Assets/Buttoms/::1747085618
-boton_normal.tres::AtlasTexture::5015785656049498614::1747085618::0::1::::<><>::uid://d0j82h8a85gnp::::res://mainMenu/Assets/Buttoms/button.png
-boton_presionado.tres::AtlasTexture::5872151338914926129::1747085618::0::1::::<><>::uid://d0j82h8a85gnp::::res://mainMenu/Assets/Buttoms/button.png
-button.png::CompressedTexture2D::8934614837700658593::1747082603::1747085618::1::::<><>::
-exit_normal.tres::AtlasTexture::7353325441314055398::1747085618::0::1::::<><>::uid://d0j82h8a85gnp::::res://mainMenu/Assets/Buttoms/button.png
-exit_press.tres::AtlasTexture::4997992120267003793::1747085618::0::1::::<><>::uid://d0j82h8a85gnp::::res://mainMenu/Assets/Buttoms/button.png
-regresar_normal.tres::AtlasTexture::4088252301589136282::1747085618::0::1::::<><>::uid://d0j82h8a85gnp::::res://mainMenu/Assets/Buttoms/button.png
-regresar_press.tres::AtlasTexture::4885291570778087908::1747085618::0::1::::<><>::uid://d0j82h8a85gnp::::res://mainMenu/Assets/Buttoms/button.png
-::res://mainMenu/Assets/Icons/::1747085243
-::res://mainMenu/Assets/Images/::1747085501
+::res://mainMenu/Assets/::1747088604
+::res://mainMenu/Assets/Buttoms/::1747102208
+boton_normal.tres::AtlasTexture::5015785656049498614::1747088477::0::1::::<><>::uid://d0j82h8a85gnp::::res://mainMenu/Assets/Icons/button.png
+boton_presionado.tres::AtlasTexture::5872151338914926129::1747088477::0::1::::<><>::uid://d0j82h8a85gnp::::res://mainMenu/Assets/Icons/button.png
+credits_normal.tres::AtlasTexture::8462815390098782476::1747090155::0::1::::<><>::uid://d0j82h8a85gnp::::res://mainMenu/Assets/Icons/button.png
+credits_press.tres::AtlasTexture::5235622585996652442::1747091208::0::1::::<><>::uid://d0j82h8a85gnp::::res://mainMenu/Assets/Icons/button.png
+dalto_icon_ckecked.tres::AtlasTexture::1001927397381231919::1747102182::0::1::::<><>::uid://dkdwymhfbdxju::::res://mainMenu/Assets/Icons/Sprite sheet for Basic Pack.png
+exit_normal.tres::AtlasTexture::7353325441314055398::1747088477::0::1::::<><>::uid://d0j82h8a85gnp::::res://mainMenu/Assets/Icons/button.png
+exit_press.tres::AtlasTexture::4997992120267003793::1747088477::0::1::::<><>::uid://d0j82h8a85gnp::::res://mainMenu/Assets/Icons/button.png
+regresar_normal.tres::AtlasTexture::4088252301589136282::1747088477::0::1::::<><>::uid://d0j82h8a85gnp::::res://mainMenu/Assets/Icons/button.png
+regresar_press.tres::AtlasTexture::4885291570778087908::1747088477::0::1::::<><>::uid://d0j82h8a85gnp::::res://mainMenu/Assets/Icons/button.png
+dalto_icon.tres::AtlasTexture::4591294830151358058::1747102221::0::1::::<><>::uid://dkdwymhfbdxju::::res://mainMenu/Assets/Icons/Sprite sheet for Basic Pack.png
+::res://mainMenu/Assets/Icons/::1747099896
+audio-off-icon.png::CompressedTexture2D::5761529986159633858::1747097508::1747097508::1::::<><>::
+audio-on-icon.png::CompressedTexture2D::7029282987309213084::1747097501::1747097502::1::::<><>::
+audioOff.png::CompressedTexture2D::1324956810411167830::1747099847::1747099848::1::::<><>::
+audioON.png::CompressedTexture2D::5130818446295821289::1747099896::1747099896::1::::<><>::
+button.png::CompressedTexture2D::8934614837700658593::1747082603::1747088477::1::::<><>::
+Sprite sheet for Basic Pack.png::CompressedTexture2D::7868722894938876970::1747096011::1747096011::1::::<><>::
+UI Settings Buttons.png::CompressedTexture2D::6926689684184945430::1747093307::1747093307::1::::<><>::
+::res://mainMenu/Assets/Images/::1747087741
 2.png::CompressedTexture2D::2298351127935840504::1747082603::1747085325::1::::<><>::
 credits.png::CompressedTexture2D::742719983712321690::1747082603::1747085324::1::::<><>::
 instructions.png::CompressedTexture2D::1526229162423154880::1747082603::1747085501::1::::<><>::
+options.png::CompressedTexture2D::8332324846504272777::1747087740::1747087741::1::::<><>::
 PantallaInicio (1).png::CompressedTexture2D::3587854485184455719::1747082603::1747085324::1::::<><>::
-::res://mainMenu/Scenes/::1747086420
-credits.tscn::PackedScene::7272424400788242171::1747086342::0::1::::<><>::uid://kt1qv88qur0e::::res://mainMenu/Assets/Images/credits.png<>uid://byim6hlifbw6m::::res://mainMenu/Assets/Buttoms/regresar_normal.tres<>uid://cbuqbkoc7cmgy::::res://mainMenu/Assets/Buttoms/regresar_press.tres
-instructions.tscn::PackedScene::5361189782832301433::1747086420::0::1::::<><>::res://mainMenu/Scripts/instructions.gd<>uid://v0k1hv8ab6r1::::res://mainMenu/Assets/Images/instructions.png<>uid://byim6hlifbw6m::::res://mainMenu/Assets/Buttoms/regresar_normal.tres<>uid://cbuqbkoc7cmgy::::res://mainMenu/Assets/Buttoms/regresar_press.tres
-main_menu.tscn::PackedScene::3660070696319752981::1747086342::0::1::::<><>::uid://brd8o6xqs7ysd::::res://mainMenu/Assets/Images/PantallaInicio (1).png<>uid://cdpxi0a00j4ak::::res://mainMenu/Assets/Buttoms/boton_normal.tres<>uid://cpwrqewpvsnjl::::res://mainMenu/Assets/Buttoms/boton_presionado.tres<>uid://dc1agwhf1lnry::::res://mainMenu/Assets/Buttoms/exit_normal.tres<>uid://cdhcg2g85o4qn::::res://mainMenu/Assets/Buttoms/exit_press.tres
+::res://mainMenu/Scenes/::1747102182
+credits.tscn::PackedScene::7272424400788242171::1747086665::0::1::::<><>::uid://kt1qv88qur0e::::res://mainMenu/Assets/Images/credits.png<>uid://byim6hlifbw6m::::res://mainMenu/Assets/Buttoms/regresar_normal.tres<>uid://cbuqbkoc7cmgy::::res://mainMenu/Assets/Buttoms/regresar_press.tres
+instructions.tscn::PackedScene::5361189782832301433::1747102182::0::1::::<><>::res://mainMenu/Scripts/instructions.gd<>uid://v0k1hv8ab6r1::::res://mainMenu/Assets/Images/instructions.png<>uid://byim6hlifbw6m::::res://mainMenu/Assets/Buttoms/regresar_normal.tres<>uid://cbuqbkoc7cmgy::::res://mainMenu/Assets/Buttoms/regresar_press.tres
+main_menu.tscn::PackedScene::3660070696319752981::1747102182::0::1::::<><>::uid://brd8o6xqs7ysd::::res://mainMenu/Assets/Images/PantallaInicio (1).png<>uid://cdpxi0a00j4ak::::res://mainMenu/Assets/Buttoms/boton_normal.tres<>uid://cpwrqewpvsnjl::::res://mainMenu/Assets/Buttoms/boton_presionado.tres<>uid://biasfq1fvbi0t::::res://assests/Fonts/Silver.ttf<>uid://dc1agwhf1lnry::::res://mainMenu/Assets/Buttoms/exit_normal.tres<>uid://dstplk85gevm7::::res://mainMenu/Assets/Buttoms/credits_normal.tres<>uid://cdhcg2g85o4qn::::res://mainMenu/Assets/Buttoms/exit_press.tres<>uid://cguf66syebgus::::res://mainMenu/Assets/Buttoms/credits_press.tres
+Options.tscn::PackedScene::906074152246354993::1747102182::0::1::::<><>::uid://dqyif424ce1ab::::res://mainMenu/Assets/Images/options.png<>uid://c5xltjtfp3m6y::::res://mainMenu/Assets/Icons/UI Settings Buttons.png<>uid://biasfq1fvbi0t::::res://assests/Fonts/Silver.ttf<>uid://cyng0aemdnieu::::res://assests/Fonts/pixelFont-7-8x14-sproutLands.ttf<>uid://byim6hlifbw6m::::res://mainMenu/Assets/Buttoms/regresar_normal.tres<>uid://cbuqbkoc7cmgy::::res://mainMenu/Assets/Buttoms/regresar_press.tres<>uid://dkdwymhfbdxju::::res://mainMenu/Assets/Icons/Sprite sheet for Basic Pack.png<>uid://coc6s7alo3f5s::::res://mainMenu/Assets/Icons/audio-off-icon.png<>uid://c7fbi771wadk3::::res://mainMenu/Assets/Icons/audio-on-icon.png<>uid://s423y6mwv0uc::::res://mainMenu/Assets/Icons/audioOff.png<>uid://cfdn3hxy3d8rl::::res://mainMenu/Assets/Icons/audioON.png<>uid://cdpxi0a00j4ak::::res://mainMenu/Assets/Buttoms/boton_normal.tres<>uid://cpwrqewpvsnjl::::res://mainMenu/Assets/Buttoms/boton_presionado.tres<>uid://ojluld7n4a28::::res://mainMenu/Assets/Buttoms/dalto_icon_ckecked.tres<>uid://i0xdat3qkpva::::res://mainMenu/Assets/Buttoms/dalto_icon.tres
 ::res://mainMenu/Scripts/::1747085883
 buttoms.gd::GDScript::-1::1747085882::0::1::::<>Control<>::
 credits.gd::GDScript::-1::1747085882::0::1::::<>Control<>::
@@ -76,11 +93,11 @@ seeds.tres::Resource/InventoryItem::1697906390277364084::1747082603::0::1::::<><
 player_collision_shape.tres::RectangleShape2D::1107236089789014414::1747082603::0::1::::<><>::
 ::res://Resourses/seed1/::1747082603
 seed1_collision_shape.tres::RectangleShape2D::7701949532016931942::1747082603::0::1::::<><>::
-::res://scenes/::1747086342
-pick_up_item.tscn::PackedScene::2477674747718505363::1747086342::0::1::::<><>::res://scripts/pick_up_item.gd<>uid://s4xexvej3f2v::::res://assests/seeds/semilla1.png
-player.tscn::PackedScene::4134690507047009672::1747086341::0::1::::<><>::res://scripts/player.gd<>uid://c4hrvb5qp8yv5::::res://assests/chararters/Idle.png<>uid://gc54fxx3cwjf::::res://assests/chararters/Walk.png
-test_scene_tile_map.tscn::PackedScene::2602035068009313377::1747086342::0::1::::<><>::uid://dfmh40v3anori::::res://assests/TileSets/game_tile_set.tres
-world.tscn::PackedScene::2472672543692487::1747086342::0::1::::<><>::uid://by540pluwhd6g::::res://scenes/player.tscn<>uid://bdcpew3xkg8fd::::res://scenes/test_scene_tile_map.tscn
+::res://scenes/::1747086664
+pick_up_item.tscn::PackedScene::2477674747718505363::1747086664::0::1::::<><>::res://scripts/pick_up_item.gd<>uid://s4xexvej3f2v::::res://assests/seeds/semilla1.png
+player.tscn::PackedScene::4134690507047009672::1747086664::0::1::::<><>::res://scripts/player.gd<>uid://c4hrvb5qp8yv5::::res://assests/chararters/Idle.png<>uid://gc54fxx3cwjf::::res://assests/chararters/Walk.png
+test_scene_tile_map.tscn::PackedScene::2602035068009313377::1747086664::0::1::::<><>::uid://dfmh40v3anori::::res://assests/TileSets/game_tile_set.tres
+world.tscn::PackedScene::2472672543692487::1747086664::0::1::::<><>::uid://by540pluwhd6g::::res://scenes/player.tscn<>uid://bdcpew3xkg8fd::::res://scenes/test_scene_tile_map.tscn
 ::res://scripts/::1747082603
 Inventory_item.gd::GDScript::-1::1747082603::0::1::::InventoryItem<>Resource<>::
 pick_up_item.gd::GDScript::-1::1747082603::0::1::::PickUpItem<>Area2D<>::
