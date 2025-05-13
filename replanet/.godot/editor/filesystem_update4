@@ -5,3 +5,4 @@ res://scenes/level_1.tscn
 res://mainMenu/Scenes/Options.tscn
 res://mainMenu/Scenes/instructions.tscn
 res://mainMenu/Scenes/main_menu.tscn
+res://test_scene_tile_map.tscn
