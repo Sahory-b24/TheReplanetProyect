@@ -1,9 +1,12 @@
-[gd_scene load_steps=5 format=3 uid="uid://cinaaonc4cap2"]
+[gd_scene load_steps=8 format=3 uid="uid://cinaaonc4cap2"]
 
 [ext_resource type="Script" uid="uid://b3th5oc5mbnf4" path="res://mainMenu/Scripts/instructions.gd" id="1_mv638"]
 [ext_resource type="Texture2D" uid="uid://v0k1hv8ab6r1" path="res://mainMenu/Assets/Images/instructions.png" id="2_p3m0r"]
 [ext_resource type="Texture2D" uid="uid://byim6hlifbw6m" path="res://mainMenu/Assets/Buttoms/regresar_normal.tres" id="3_0xljk"]
 [ext_resource type="Texture2D" uid="uid://cbuqbkoc7cmgy" path="res://mainMenu/Assets/Buttoms/regresar_press.tres" id="4_t12lc"]
+[ext_resource type="Texture2D" uid="uid://5rs8jmdnumd7" path="res://mainMenu/Assets/Buttoms/Mute.tres" id="5_8eipw"]
+[ext_resource type="Texture2D" uid="uid://fcbom5dwpmgc" path="res://mainMenu/Assets/Buttoms/unMute.tres" id="6_vst7x"]
+[ext_resource type="Script" uid="uid://ditfvc7qwilfq" path="res://mainMenu/Scripts/MuteButton.gd" id="7_sawph"]
 
 [node name="Instructions" type="Node2D"]
 script = ExtResource("1_mv638")
@@ -21,5 +24,15 @@ scale = Vector2(3, 3)
 texture_normal = ExtResource("3_0xljk")
 texture_pressed = ExtResource("4_t12lc")
 texture_hover = ExtResource("4_t12lc")
+
+[node name="MuteButton" type="TextureButton" parent="."]
+offset_left = 587.0
+offset_top = 8.0
+offset_right = 600.0
+offset_bottom = 17.0
+scale = Vector2(3, 3)
+texture_normal = ExtResource("5_8eipw")
+texture_pressed = ExtResource("6_vst7x")
+script = ExtResource("7_sawph")
 
 [connection signal="pressed" from="TextureButton" to="." method="_on_regresar_button_pressed"]
