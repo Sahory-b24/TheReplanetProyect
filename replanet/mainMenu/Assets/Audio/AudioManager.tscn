@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://deqc3xbu8o3jj"]
+
+[ext_resource type="Script" uid="uid://ccqjnpvxlkwy" path="res://mainMenu/Assets/Audio/audio_manager.gd" id="1_54i5w"]
+[ext_resource type="AudioStream" uid="uid://b078peexhxw1q" path="res://mainMenu/Assets/Audio/On the Farm.wav" id="1_sgjmf"]
+
+[node name="AudioManager" type="Node2D"]
+script = ExtResource("1_54i5w")
+
+[node name="Music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("1_sgjmf")
+autoplay = true
+bus = &"music"
+
+[node name="SFXPlayer" type="AudioStreamPlayer" parent="."]
+bus = &"sfx"
