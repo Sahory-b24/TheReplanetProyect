@@ -1,3 +1,4 @@
+Container
 TextureButton
 AnimationPlayer
 ColorRect
@@ -11,4 +12,3 @@ VBoxContainer
 TextureRect
 Control
 HBoxContainer
-HScrollBar
