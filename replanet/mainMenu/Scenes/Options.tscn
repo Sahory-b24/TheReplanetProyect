@@ -1,9 +1,10 @@
-[gd_scene load_steps=25 format=3 uid="uid://m5555x0a4a4p"]
+[gd_scene load_steps=29 format=3 uid="uid://m5555x0a4a4p"]
 
 [ext_resource type="Script" uid="uid://cd5rgwlaafwar" path="res://mainMenu/Scripts/options.gd" id="1_1hr7k"]
-[ext_resource type="Texture2D" uid="uid://dqyif424ce1ab" path="res://mainMenu/Assets/Images/options.png" id="1_6hwxp"]
 [ext_resource type="Texture2D" uid="uid://c5xltjtfp3m6y" path="res://mainMenu/Assets/Icons/UI Settings Buttons.png" id="2_2lkrs"]
+[ext_resource type="Texture2D" uid="uid://b2ftwa60xj37" path="res://mainMenu/Assets/Images/fondo.png" id="2_hi5nx"]
 [ext_resource type="FontFile" uid="uid://biasfq1fvbi0t" path="res://assests/Fonts/Silver.ttf" id="2_uy0kt"]
+[ext_resource type="Texture2D" uid="uid://dqqnrgy3yai5l" path="res://mainMenu/Assets/Images/marco pequeño.png" id="3_e2iw7"]
 [ext_resource type="FontFile" uid="uid://cyng0aemdnieu" path="res://assests/Fonts/pixelFont-7-8x14-sproutLands.ttf" id="3_xwtl1"]
 [ext_resource type="Texture2D" uid="uid://byim6hlifbw6m" path="res://mainMenu/Assets/Buttoms/regresar_normal.tres" id="4_qi256"]
 [ext_resource type="Texture2D" uid="uid://cbuqbkoc7cmgy" path="res://mainMenu/Assets/Buttoms/regresar_press.tres" id="5_a7g6g"]
@@ -18,12 +19,19 @@
 [ext_resource type="Texture2D" uid="uid://cpwrqewpvsnjl" path="res://mainMenu/Assets/Buttoms/boton_presionado.tres" id="12_hk8dk"]
 [ext_resource type="Texture2D" uid="uid://ojluld7n4a28" path="res://mainMenu/Assets/Buttoms/dalto_icon_ckecked.tres" id="14_pvupt"]
 [ext_resource type="Texture2D" uid="uid://b6ob7qbr0mdti" path="res://mainMenu/Assets/Buttoms/dalto_icon.tres" id="15_ls6w8"]
+[ext_resource type="FontFile" uid="uid://b5b1l3hfn2lof" path="res://assests/Fonts/ShareTech-Regular.ttf" id="17_f8ysp"]
 [ext_resource type="Texture2D" uid="uid://5rs8jmdnumd7" path="res://mainMenu/Assets/Buttoms/Mute.tres" id="19_uogns"]
 [ext_resource type="Texture2D" uid="uid://fcbom5dwpmgc" path="res://mainMenu/Assets/Buttoms/unMute.tres" id="20_iuyon"]
 [ext_resource type="Script" uid="uid://ditfvc7qwilfq" path="res://mainMenu/Scripts/MuteButton.gd" id="21_hi5nx"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_vapui"]
-texture = ExtResource("1_6hwxp")
+texture = ExtResource("2_hi5nx")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_yvfpj"]
+texture = ExtResource("3_e2iw7")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wqgh3"]
+bg_color = Color(0.196078, 0.168627, 0.14902, 1)
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_p05r6"]
 texture = ExtResource("6_4c26c")
@@ -49,15 +57,45 @@ script = ExtResource("1_1hr7k")
 
 [node name="Panel" type="Panel" parent="."]
 layout_mode = 0
-offset_left = -3.0
-offset_top = -2.0
-offset_right = 639.0
-offset_bottom = 359.0
+offset_left = 3.0
+offset_right = 645.0
+offset_bottom = 361.0
 theme_override_styles/panel = SubResource("StyleBoxTexture_vapui")
 
+[node name="Panel" type="Panel" parent="Panel"]
+layout_mode = 0
+offset_left = 90.0
+offset_top = -19.0
+offset_right = 558.0
+offset_bottom = 428.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_yvfpj")
+
+[node name="Panel2" type="Panel" parent="Panel"]
+layout_mode = 0
+offset_left = 170.0
+offset_top = 89.0
+offset_right = 476.0
+offset_bottom = 171.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_wqgh3")
+
+[node name="Panel2" type="Panel" parent="Panel/Panel2"]
+layout_mode = 0
+offset_top = 87.0
+offset_right = 305.0
+offset_bottom = 151.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_wqgh3")
+
+[node name="Panel2" type="Panel" parent="Panel/Panel2/Panel2"]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 69.0
+offset_right = 307.0
+offset_bottom = 133.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_wqgh3")
+
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(304, 51)
-scale = Vector2(2.83951, 3.20925)
+position = Vector2(315, 49)
+scale = Vector2(2.83951, 2.95757)
 texture = ExtResource("2_2lkrs")
 region_enabled = true
 region_rect = Rect2(-3, 2, 81, 17)
@@ -198,13 +236,13 @@ texture_hover = ExtResource("12_hk8dk")
 
 [node name="Label" type="Label" parent="buttom_español"]
 layout_mode = 0
-offset_left = 4.0
+offset_left = 4.5
 offset_top = -1.0
-offset_right = 45.0
+offset_right = 45.5
 offset_bottom = 20.0
 theme_override_colors/font_color = Color(0.956863, 0.976471, 0.905882, 1)
-theme_override_fonts/font = ExtResource("2_uy0kt")
-theme_override_font_sizes/font_size = 19
+theme_override_fonts/font = ExtResource("17_f8ysp")
+theme_override_font_sizes/font_size = 12
 text = "Español"
 
 [node name="buttom_english" type="TextureButton" parent="."]
@@ -220,22 +258,22 @@ texture_hover = ExtResource("12_hk8dk")
 
 [node name="Label" type="Label" parent="buttom_english"]
 layout_mode = 0
-offset_left = 4.0
+offset_left = 5.0
 offset_top = -1.0
-offset_right = 45.0
-offset_bottom = 20.0
+offset_right = 46.0
+offset_bottom = 29.0
 theme_override_colors/font_color = Color(0.956863, 0.976471, 0.905882, 1)
-theme_override_fonts/font = ExtResource("2_uy0kt")
-theme_override_font_sizes/font_size = 19
+theme_override_fonts/font = ExtResource("17_f8ysp")
+theme_override_font_sizes/font_size = 12
 text = "English
 "
 
 [node name="Label2" type="Label" parent="."]
 layout_mode = 0
-offset_left = 183.0
-offset_top = 182.0
-offset_right = 265.0
-offset_bottom = 201.0
+offset_left = 184.0
+offset_top = 180.0
+offset_right = 266.0
+offset_bottom = 199.0
 theme_override_colors/font_color = Color(0.95593, 0.975983, 0.907316, 1)
 theme_override_fonts/font = ExtResource("3_xwtl1")
 theme_override_font_sizes/font_size = 21
@@ -243,10 +281,10 @@ text = "Idiomas"
 
 [node name="Label3" type="Label" parent="."]
 layout_mode = 0
-offset_left = 182.0
-offset_top = 250.0
-offset_right = 264.0
-offset_bottom = 269.0
+offset_left = 183.0
+offset_top = 252.0
+offset_right = 335.0
+offset_bottom = 271.0
 theme_override_colors/font_color = Color(0.95593, 0.975983, 0.907316, 1)
 theme_override_fonts/font = ExtResource("3_xwtl1")
 theme_override_font_sizes/font_size = 21

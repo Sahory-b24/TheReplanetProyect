@@ -1,4 +1,8 @@
+Panel
 TextureButton
+Label
+VBoxContainer
+TextureRect
 AnimationPlayer
 ColorRect
 CanvasLayer
@@ -6,9 +10,5 @@ HSlider
 AudioStreamPlayer
 TileMapLayer
 CheckButton
-Label
-VBoxContainer
-TextureRect
 Control
 HBoxContainer
-HScrollBar
