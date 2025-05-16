@@ -23,7 +23,7 @@ func _ready() -> void:
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	pass
 
 
@@ -47,7 +47,7 @@ func _on_start_button_4_pressed() -> void:
 	print(\"Start sirve\")
 	AudioManager.SFXPlayer.stream = preload(\"res://mainMenu/Assets/Audio/tf2-button-click-hover.mp3\")
 	AudioManager.SFXPlayer.play()
-	SceneTransitions.change_scene_to_file(\"res://scenes/world.tscn\")
+	SceneTransitions.change_scene_to_file(\"res://scenes/Custimization.tscn\")
 	pass # Replace with function body.
 
 
