@@ -1,5 +1,6 @@
 extends Node2D
 
+<<<<<<< HEAD
 # Lista de imágenes
 var slides = [
 	preload("res://mainMenu/Assets/Images/slide1.png"),
@@ -34,11 +35,24 @@ func show_slide():
 	$atrasButton.disabled = current_slide == 0
 	$siguienteButton.disabled = current_slide == slides.size() - 1
 
+=======
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	pass
+
+>>>>>>> ce29b5c1b698c860ab16d809b10ab9dc9605ab01
 
 func _on_regresar_button_pressed() -> void:
 	AudioManager.SFXPlayer.stream = preload("res://mainMenu/Assets/Audio/tf2-button-click-hover.mp3")
 	AudioManager.SFXPlayer.play()
 	SceneTransitions.change_scene_to_file("res://mainMenu/Scenes/main_menu.tscn")
+<<<<<<< HEAD
 
 
 func _on_atras_button_pressed() -> void:
@@ -55,3 +69,6 @@ func _on_siguiente_button_pressed() -> void:
 		show_slide()
 	AudioManager.SFXPlayer.stream = preload("res://mainMenu/Assets/Audio/tf2-button-click-hover.mp3")
 	AudioManager.SFXPlayer.play()
+=======
+	pass # Replace with function body.
+>>>>>>> ce29b5c1b698c860ab16d809b10ab9dc9605ab01

@@ -19,16 +19,27 @@ config/icon="res://icon.svg"
 
 AudioManager="*res://mainMenu/Assets/Audio/AudioManager.tscn"
 SceneTransitions="*res://mainMenu/Scenes/SceneTransitions.tscn"
+<<<<<<< HEAD
+=======
+Global="*res://scripts/Global.gd"
+>>>>>>> ce29b5c1b698c860ab16d809b10ab9dc9605ab01
 
 [display]
 
 window/size/viewport_width=640
 window/size/viewport_height=360
+<<<<<<< HEAD
 window/size/mode=4
 window/size/initial_position=Vector2i(1280, 720)
 window/size/window_width_override=1280
 window/size/window_height_override=720
 window/stretch/mode="canvas_items"
+=======
+window/size/window_width_override=1280
+window/size/window_height_override=720
+window/stretch/mode="viewport"
+window/stretch/aspect="keep_height"
+>>>>>>> ce29b5c1b698c860ab16d809b10ab9dc9605ab01
 window/stretch/scale_mode="integer"
 
 [layer_names]

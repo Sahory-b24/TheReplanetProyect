@@ -1,10 +1,18 @@
+<<<<<<< HEAD
+=======
+res://assests/Sprite/walk/hair
+res://scripts
+>>>>>>> ce29b5c1b698c860ab16d809b10ab9dc9605ab01
 res://mainMenu/Scripts
 res://mainMenu/Scenes
 res://mainMenu/Assets/Audio
 res://scenes
 res://mainMenu/Assets/Icons
 res://mainMenu/Assets/Buttoms
+<<<<<<< HEAD
 res://scripts
+=======
+>>>>>>> ce29b5c1b698c860ab16d809b10ab9dc9605ab01
 res://assests
 res://
 res://Resourses/Player
