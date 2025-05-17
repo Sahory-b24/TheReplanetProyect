@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://cdjplu56l2jqh"]
+[gd_scene load_steps=12 format=3 uid="uid://cdjplu56l2jqh"]
 
 [ext_resource type="Texture2D" uid="uid://b2ftwa60xj37" path="res://mainMenu/Assets/Images/fondo.png" id="1_tv7ec"]
 [ext_resource type="Script" uid="uid://b13tdlov7o1u" path="res://mainMenu/Scenes/lore_book.gd" id="1_wv48v"]
@@ -7,8 +7,6 @@
 [ext_resource type="Script" uid="uid://ditfvc7qwilfq" path="res://mainMenu/Scripts/MuteButton.gd" id="4_dnews"]
 [ext_resource type="Texture2D" uid="uid://byim6hlifbw6m" path="res://mainMenu/Assets/Buttoms/regresar_normal.tres" id="5_i2si5"]
 [ext_resource type="Texture2D" uid="uid://cbuqbkoc7cmgy" path="res://mainMenu/Assets/Buttoms/regresar_press.tres" id="6_syylf"]
-[ext_resource type="Texture2D" uid="uid://sg0dgivivfml" path="res://mainMenu/Assets/Buttoms/siguiente_normal.tres" id="7_i1bg0"]
-[ext_resource type="Texture2D" uid="uid://c0t2h4efkhys" path="res://mainMenu/Assets/Buttoms/siguiente_press.tres" id="8_2r77l"]
 [ext_resource type="Texture2D" uid="uid://dphppnhi3rvd5" path="res://mainMenu/Assets/Buttoms/atras_normal.tres" id="9_bhhnu"]
 [ext_resource type="Texture2D" uid="uid://mbnx3brlqiva" path="res://mainMenu/Assets/Buttoms/atras_pressl.tres" id="10_seg0w"]
 
@@ -56,16 +54,15 @@ texture_normal = ExtResource("5_i2si5")
 texture_pressed = ExtResource("6_syylf")
 texture_hover = ExtResource("6_syylf")
 
-[node name="siguienteButton" type="TextureButton" parent="Panel"]
-layout_mode = 0
-offset_left = 536.0
-offset_top = 320.0
-offset_right = 555.0
-offset_bottom = 340.0
+[node name="siguienteButton" type="TextureButton" parent="."]
+offset_left = 504.0
+offset_top = 208.0
+offset_right = 521.0
+offset_bottom = 227.0
 scale = Vector2(2, 2)
-texture_normal = ExtResource("7_i1bg0")
-texture_pressed = ExtResource("8_2r77l")
-texture_hover = ExtResource("8_2r77l")
+texture_normal = ExtResource("9_bhhnu")
+texture_pressed = ExtResource("10_seg0w")
+texture_hover = ExtResource("10_seg0w")
 
 [node name="atrasButton" type="TextureButton" parent="."]
 offset_left = 72.0
