@@ -1009,22 +1009,13 @@ shape = SubResource("RectangleShape2D_tx1dd")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 z_as_relative = false
->>>>>>> ce29b5c1b698c860ab16d809b10ab9dc9605ab01
+
 zoom = Vector2(2, 2)
 limit_left = -640
 limit_top = -360
 limit_right = 640
 limit_bottom = 360
-<<<<<<< HEAD
 
-[node name="Area2D" type="Area2D" parent="."]
-collision_mask = 8
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(25, -15)
-
-[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
-=======
 drag_horizontal_enabled = true
 drag_vertical_enabled = true
 editor_draw_screen = false
