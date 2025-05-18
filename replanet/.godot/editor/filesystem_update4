@@ -1,6 +1,3 @@
-res://mainMenu/Scripts/instructions.gd
-res://scripts/player.gd
-res://scenes/world.gd
+res://mainMenu/Scenes/instructions.tscn
 res://mainMenu/Scenes/scene_transitions.gd
 res://mainMenu/Scripts/MuteButton.gd
-res://mainMenu/Scenes/instructions.tscn
