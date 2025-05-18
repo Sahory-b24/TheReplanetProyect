@@ -1,7 +1,7 @@
 [gd_scene load_steps=24 format=3 uid="uid://blu2fgshcdiag"]
 
 [ext_resource type="Texture2D" uid="uid://bc1f8ln6nys32" path="res://assests/Sprite/walk/char1_walk.png" id="1_f1ek2"]
-[ext_resource type="Script" uid="uid://bfyt4rra1yymv" path="res://scripts/Player.gd" id="1_tx1dd"]
+[ext_resource type="Script" uid="uid://bfyt4rra1yymv" path="res://scripts/player.gd" id="1_tx1dd"]
 [ext_resource type="Texture2D" uid="uid://b02c3eaix5lg1" path="res://assests/Sprite/walk/hair/extra_longBrown_walk.png" id="3_d2wvv"]
 [ext_resource type="Texture2D" uid="uid://p6c70cqnuxry" path="res://assests/Sprite/walk/clothes/basicWhite_walk.png" id="3_gymyn"]
 [ext_resource type="Texture2D" uid="uid://dl5a8b1fn5pgd" path="res://assests/Sprite/walk/clothes/pantsWhite_walk.png" id="4_pu2lt"]
@@ -1009,13 +1009,11 @@ shape = SubResource("RectangleShape2D_tx1dd")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 z_as_relative = false
-
 zoom = Vector2(2, 2)
 limit_left = -640
 limit_top = -360
 limit_right = 640
 limit_bottom = 360
-
 drag_horizontal_enabled = true
 drag_vertical_enabled = true
 editor_draw_screen = false
@@ -1027,11 +1025,10 @@ texture = ExtResource("1_f1ek2")
 hframes = 8
 vframes = 4
 
-[node name="hair" type="Sprite2D" parent="Character"]
-texture = ExtResource("3_d2wvv")
+[node name="eyes" type="Sprite2D" parent="Character"]
+texture = ExtResource("6_7dp3o")
 hframes = 8
 vframes = 4
-frame = 9
 
 [node name="shirts" type="Sprite2D" parent="Character"]
 texture = ExtResource("3_gymyn")
@@ -1043,13 +1040,14 @@ texture = ExtResource("4_pu2lt")
 hframes = 8
 vframes = 4
 
-[node name="shoes" type="Sprite2D" parent="Character"]
-texture = ExtResource("5_ukyrk")
+[node name="hair" type="Sprite2D" parent="Character"]
+texture = ExtResource("3_d2wvv")
 hframes = 8
 vframes = 4
+frame = 9
 
-[node name="eyes" type="Sprite2D" parent="Character"]
-texture = ExtResource("6_7dp3o")
+[node name="shoes" type="Sprite2D" parent="Character"]
+texture = ExtResource("5_ukyrk")
 hframes = 8
 vframes = 4
 
@@ -1074,4 +1072,3 @@ vframes = 4
 libraries = {
 &"": SubResource("AnimationLibrary_ukyrk")
 }
-
