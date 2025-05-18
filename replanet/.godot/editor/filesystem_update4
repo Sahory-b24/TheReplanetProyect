@@ -1,7 +1,9 @@
-res://mainMenu/Scenes/instructions.tscn
+res://scenes/Custimization.tscn
 res://mainMenu/Scenes/scene_transitions.gd
 res://mainMenu/Scripts/MuteButton.gd
-res://scenes/player.tscn
-res://scenes/Custimization.tscn
-res://mainMenu/Scenes/credits.tscn
 res://mainMenu/Scenes/main_menu.tscn
+res://mainMenu/Scenes/LoreBook.tscn
+res://mainMenu/Scenes/Options.tscn
+res://mainMenu/Scenes/SceneTransitions.tscn
+res://mainMenu/Scenes/credits.tscn
+res://mainMenu/Scripts/options.gd
