@@ -1,3 +1,4 @@
 res://mainMenu/Scenes/instructions.tscn
 res://mainMenu/Scenes/scene_transitions.gd
 res://mainMenu/Scripts/MuteButton.gd
+res://scenes/player.tscn
