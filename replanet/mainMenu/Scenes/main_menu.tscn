@@ -31,33 +31,45 @@ func _on_instructions_button_pressed() -> void:
 	AudioManager.SFXPlayer.play()
 	SceneTransitions.change_scene_to_file(\"res://mainMenu/Scenes/instructions.tscn\")
 
-func _on_credits_button_pressed() -> void:
-	print(\"credits sirve\")
+
+func _on_guide_buttom_pressed() -> void:
 	AudioManager.SFXPlayer.stream = preload(\"res://mainMenu/Assets/Audio/tf2-button-click-hover.mp3\")
 	AudioManager.SFXPlayer.play()
-	SceneTransitions.change_scene_to_file(\"res://mainMenu/Scenes/credits.tscn\")
+	SceneTransitions.change_scene_to_file(\"res://mainMenu/Scenes/instructions.tscn\")
 
-func _on_start_button_4_pressed() -> void:
+
+func _on_start_buttom_pressed() -> void:
 	print(\"Start sirve\")
 	AudioManager.SFXPlayer.stream = preload(\"res://mainMenu/Assets/Audio/tf2-button-click-hover.mp3\")
 	AudioManager.SFXPlayer.play()
 	SceneTransitions.change_scene_to_file(\"res://scenes/Custimization.tscn\")
+	
 
-func _on_options_button_3_pressed() -> void:
+
+func _on_lore_buttom_pressed() -> void:
+	AudioManager.SFXPlayer.stream = preload(\"res://mainMenu/Assets/Audio/tf2-button-click-hover.mp3\")
+	AudioManager.SFXPlayer.play()
+	SceneTransitions.change_scene_to_file(\"res://mainMenu/Scenes/LoreBook.tscn\")
+
+
+func _on_exit_buttom_pressed() -> void:
+	AudioManager.SFXPlayer.stream = preload(\"res://mainMenu/Assets/Audio/tf2-button-click-hover.mp3\")
+	AudioManager.SFXPlayer.play()
+	get_tree().quit()
+
+
+func _on_options_buttom_pressed() -> void:
 	print(\"Options sirve\")
 	AudioManager.SFXPlayer.stream = preload(\"res://mainMenu/Assets/Audio/tf2-button-click-hover.mp3\")
 	AudioManager.SFXPlayer.play()
 	SceneTransitions.change_scene_to_file(\"res://mainMenu/Scenes/Options.tscn\")
 
-func _on_exit_button_5_pressed() -> void:
-	AudioManager.SFXPlayer.stream = preload(\"res://mainMenu/Assets/Audio/tf2-button-click-hover.mp3\")
-	AudioManager.SFXPlayer.play()
-	get_tree().quit()
 
-func _on_lore_button_pressed() -> void:
+func _on_buttom_credits_pressed() -> void:
+	print(\"credits sirve\")
 	AudioManager.SFXPlayer.stream = preload(\"res://mainMenu/Assets/Audio/tf2-button-click-hover.mp3\")
 	AudioManager.SFXPlayer.play()
-	SceneTransitions.change_scene_to_file(\"res://mainMenu/Scenes/LoreBook.tscn\")
+	SceneTransitions.change_scene_to_file(\"res://mainMenu/Scenes/credits.tscn\")
 "
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_gkalm"]
@@ -89,10 +101,10 @@ theme_override_styles/panel = SubResource("StyleBoxTexture_gkalm")
 
 [node name="guide_buttom" type="TextureButton" parent="."]
 layout_mode = 0
-offset_left = -262.0
-offset_top = -3.0
-offset_right = -214.0
-offset_bottom = 13.0
+offset_left = -263.0
+offset_top = -5.0
+offset_right = -212.0
+offset_bottom = 11.0
 scale = Vector2(3, 3)
 texture_normal = ExtResource("2_xa1eq")
 texture_pressed = ExtResource("3_7nuiw")
@@ -101,20 +113,20 @@ texture_hover = ExtResource("3_7nuiw")
 [node name="Label" type="Label" parent="guide_buttom"]
 layout_direction = 1
 layout_mode = 1
-offset_left = 5.33333
-offset_top = -4.33333
-offset_right = 42.3333
-offset_bottom = 20.6667
+offset_left = 13.3333
+offset_top = 1.66667
+offset_right = 34.3333
+offset_bottom = 15.6667
 theme_override_fonts/font = ExtResource("4_xmk74")
-theme_override_font_sizes/font_size = 12
+theme_override_font_sizes/font_size = 10
 text = "Guía"
 
 [node name="buttom_credits" type="TextureButton" parent="."]
 layout_mode = 0
 offset_left = 297.0
-offset_top = 52.0
-offset_right = 313.0
-offset_bottom = 68.0
+offset_top = 51.0
+offset_right = 318.0
+offset_bottom = 72.0
 scale = Vector2(1.5, 1.5)
 texture_normal = ExtResource("5_hoqc0")
 texture_pressed = ExtResource("6_w68wj")
@@ -134,21 +146,21 @@ texture_hover = ExtResource("3_7nuiw")
 [node name="Label" type="Label" parent="options_buttom"]
 layout_direction = 1
 layout_mode = 0
-offset_left = 4.66667
+offset_left = 4.0
 offset_top = -3.33333
-offset_right = 45.6666
+offset_right = 44.9999
 offset_bottom = 17.6667
 theme_override_fonts/font = ExtResource("4_xmk74")
-theme_override_font_sizes/font_size = 11
+theme_override_font_sizes/font_size = 10
 text = "Opciones"
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Start_buttom" type="TextureButton" parent="."]
 layout_mode = 0
-offset_left = -61.0
+offset_left = -55.0
 offset_top = -5.0
-offset_right = -13.0
+offset_right = -7.0
 offset_bottom = 11.0
 scale = Vector2(3, 3)
 texture_normal = ExtResource("2_xa1eq")
@@ -158,22 +170,22 @@ texture_hover = ExtResource("3_7nuiw")
 [node name="Label" type="Label" parent="Start_buttom"]
 layout_direction = 1
 layout_mode = 0
-offset_left = 3.0
-offset_top = -2.0
-offset_right = 37.0
-offset_bottom = 18.0
+offset_left = 8.0
+offset_top = 1.66667
+offset_right = 42.0
+offset_bottom = 14.6667
 theme_override_fonts/font = ExtResource("4_xmk74")
-theme_override_font_sizes/font_size = 11
+theme_override_font_sizes/font_size = 10
 text = "Iniciar"
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Exit_buttom" type="TextureButton" parent="."]
 layout_mode = 0
-offset_left = -243.0
-offset_top = 40.0
-offset_right = -227.0
-offset_bottom = 56.0
+offset_left = -303.0
+offset_top = -269.0
+offset_right = -287.0
+offset_bottom = -253.0
 scale = Vector2(1.5, 1.5)
 texture_normal = ExtResource("4_m55i0")
 texture_pressed = ExtResource("5_ijvgf")
@@ -181,10 +193,10 @@ texture_hover = ExtResource("5_ijvgf")
 
 [node name="Lore_buttom" type="TextureButton" parent="."]
 layout_mode = 0
-offset_left = 126.0
-offset_top = 38.0
-offset_right = 160.0
-offset_bottom = 60.0
+offset_left = 297.0
+offset_top = 19.0
+offset_right = 313.0
+offset_bottom = 35.0
 scale = Vector2(1.5, 1.5)
 texture_normal = ExtResource("9_blv54")
 texture_pressed = ExtResource("10_wvipr")
@@ -192,11 +204,11 @@ texture_hover = ExtResource("10_wvipr")
 
 [node name="Mute_buttom" type="TextureButton" parent="."]
 layout_mode = 0
-offset_left = 276.0
-offset_top = 10.0
-offset_right = 300.0
-offset_bottom = 34.0
-scale = Vector2(1.5, 1.5)
+offset_left = 281.0
+offset_top = -269.0
+offset_right = 297.0
+offset_bottom = -258.0
+scale = Vector2(2.5, 2.5)
 texture_normal = ExtResource("9_ud78h")
 texture_pressed = ExtResource("9_v1kdw")
 texture_hover = ExtResource("9_v1kdw")
@@ -204,3 +216,10 @@ script = ExtResource("11_kvdg3")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 volume_db = -10.0
+
+[connection signal="pressed" from="guide_buttom" to="." method="_on_guide_buttom_pressed"]
+[connection signal="pressed" from="buttom_credits" to="." method="_on_buttom_credits_pressed"]
+[connection signal="pressed" from="options_buttom" to="." method="_on_options_buttom_pressed"]
+[connection signal="pressed" from="Start_buttom" to="." method="_on_start_buttom_pressed"]
+[connection signal="pressed" from="Exit_buttom" to="." method="_on_exit_buttom_pressed"]
+[connection signal="pressed" from="Lore_buttom" to="." method="_on_lore_buttom_pressed"]
