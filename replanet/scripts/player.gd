@@ -1,83 +1,5 @@
 extends CharacterBody2D
 
-<<<<<<< HEAD
-const speed = 100
-var current_dir = "none"
-
-func _ready():
-	$AnimatedSprite2D.play("front_idle")
-
-func _physics_process(delta):
-	player_movement(delta)
-
-func player_movement(delta):
-	if Input.is_action_pressed("ui_right"):
-		current_dir = "right"
-		play_anim(1)
-		velocity.x = speed
-		velocity.y = 0
-	elif Input.is_action_pressed("ui_left"):
-		current_dir = "left"
-		play_anim(1)
-		velocity.x = -speed
-		velocity.y = 0
-	elif Input.is_action_pressed("ui_down"):
-		current_dir = "down"
-		play_anim(1)
-		velocity.y = speed
-		velocity.x = 0
-	elif Input.is_action_pressed("ui_up"):
-		current_dir = "up"
-		play_anim(1)
-		velocity.y = -speed
-		velocity.x = 0
-	else:
-		play_anim(0)
-		velocity.x = 0
-		velocity.y = 0
-	
-	move_and_slide()
-	
-	# Limitar al borde de la pantalla
-	var screen_size = get_viewport_rect().size
-	position.x = clamp(position.x, 0, screen_size.x)
-	position.y = clamp(position.y, 0, screen_size.y)
-	
-func play_anim(movement):
-	var dir = current_dir
-	var anim = $AnimatedSprite2D
-	
-	if dir == "right":
-		anim.flip_h = false
-		if movement == 1:
-			anim.play("side_walk")
-		elif movement == 0:
-			anim.play("side_idle")
-	if dir == "left":
-		anim.flip_h = true
-		if movement == 1:
-			anim.play("side_walk")
-		elif movement == 0:
-			anim.play("side_idle")
-			
-	if dir == "down":
-		anim.flip_h = false
-		if movement == 1:
-			anim.play("front_walk")
-		elif movement == 0:
-			anim.play("front_idle")
-	if dir == "up":
-		anim.flip_h = false
-		if movement == 1:
-			anim.play("back_walk")
-		elif movement == 0:
-			anim.play("back_idle")
-	
-
-func _on_area_2d_area_entered(area: Area2D) -> void:
-	if area is PickUpItem:
-		area.queue_free()
-=======
 @onready var body = $Character/Body
 @onready var hair = $Character/hair
 @onready var shirts = $Character/shirts
@@ -157,8 +79,6 @@ func randomize_all():
 	Global.selected_hair_color = Global.hair_color_options.pick_random()
 	Global.selected_acc_color = Global.color_options.pick_random()
 
-
-
 func initialize_player():
 	if Global.selected_shirt == "":
 		Global.selected_shirt = "1"
@@ -193,4 +113,3 @@ func initialize_player():
 	# Player name
 	#name_label.text = Global.player_name
 	print(Global.player_name)
->>>>>>> ce29b5c1b698c860ab16d809b10ab9dc9605ab01

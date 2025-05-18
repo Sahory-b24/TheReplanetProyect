@@ -1,22 +1,13 @@
-<<<<<<< HEAD
-[gd_scene load_steps=17 format=3 uid="uid://cinaaonc4cap2"]
+[gd_scene load_steps=17 format=3 uid="uid://cs41vf1lqm2dc"]
 
 [ext_resource type="Script" uid="uid://b3th5oc5mbnf4" path="res://mainMenu/Scripts/instructions.gd" id="1_mv638"]
 [ext_resource type="Texture2D" uid="uid://b2ftwa60xj37" path="res://mainMenu/Assets/Images/fondo.png" id="2_2vggv"]
 [ext_resource type="Texture2D" uid="uid://byim6hlifbw6m" path="res://mainMenu/Assets/Buttoms/regresar_normal.tres" id="3_0xljk"]
 [ext_resource type="Texture2D" uid="uid://bjw2tkaj58hn1" path="res://mainMenu/Assets/Images/marco grande.png" id="3_652v3"]
-=======
-[gd_scene load_steps=8 format=3 uid="uid://cinaaonc4cap2"]
-
-[ext_resource type="Script" uid="uid://b3th5oc5mbnf4" path="res://mainMenu/Scripts/instructions.gd" id="1_mv638"]
-[ext_resource type="Texture2D" uid="uid://v0k1hv8ab6r1" path="res://mainMenu/Assets/Images/instructions.png" id="2_p3m0r"]
-[ext_resource type="Texture2D" uid="uid://byim6hlifbw6m" path="res://mainMenu/Assets/Buttoms/regresar_normal.tres" id="3_0xljk"]
->>>>>>> ce29b5c1b698c860ab16d809b10ab9dc9605ab01
 [ext_resource type="Texture2D" uid="uid://cbuqbkoc7cmgy" path="res://mainMenu/Assets/Buttoms/regresar_press.tres" id="4_t12lc"]
 [ext_resource type="Texture2D" uid="uid://5rs8jmdnumd7" path="res://mainMenu/Assets/Buttoms/Mute.tres" id="5_8eipw"]
 [ext_resource type="Texture2D" uid="uid://fcbom5dwpmgc" path="res://mainMenu/Assets/Buttoms/unMute.tres" id="6_vst7x"]
 [ext_resource type="Script" uid="uid://ditfvc7qwilfq" path="res://mainMenu/Scripts/MuteButton.gd" id="7_sawph"]
-<<<<<<< HEAD
 [ext_resource type="FontFile" uid="uid://b5b1l3hfn2lof" path="res://assests/Fonts/ShareTech-Regular.ttf" id="9_mvewa"]
 [ext_resource type="Texture2D" uid="uid://sg0dgivivfml" path="res://mainMenu/Assets/Buttoms/siguiente_normal.tres" id="10_wxitn"]
 [ext_resource type="Texture2D" uid="uid://dphppnhi3rvd5" path="res://mainMenu/Assets/Buttoms/atras_normal.tres" id="12_edqru"]
@@ -31,13 +22,10 @@ texture = ExtResource("3_652v3")
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6lnaf"]
 bg_color = Color(0.384314, 0.32549, 0.286275, 1)
-=======
->>>>>>> ce29b5c1b698c860ab16d809b10ab9dc9605ab01
 
 [node name="Instructions" type="Node2D"]
 script = ExtResource("1_mv638")
 
-<<<<<<< HEAD
 [node name="Panel" type="Panel" parent="."]
 offset_right = 640.0
 offset_bottom = 360.0
@@ -49,33 +37,11 @@ offset_left = 590.0
 offset_top = 5.0
 offset_right = 603.0
 offset_bottom = 14.0
-=======
-[node name="Instructions2" type="Sprite2D" parent="."]
-position = Vector2(317, 173)
-texture = ExtResource("2_p3m0r")
-
-[node name="TextureButton" type="TextureButton" parent="."]
-offset_left = 185.0
-offset_top = 269.0
-offset_right = 201.0
-offset_bottom = 286.0
-scale = Vector2(3, 3)
-texture_normal = ExtResource("3_0xljk")
-texture_pressed = ExtResource("4_t12lc")
-texture_hover = ExtResource("4_t12lc")
-
-[node name="MuteButton" type="TextureButton" parent="."]
-offset_left = 587.0
-offset_top = 8.0
-offset_right = 600.0
-offset_bottom = 17.0
->>>>>>> ce29b5c1b698c860ab16d809b10ab9dc9605ab01
 scale = Vector2(3, 3)
 texture_normal = ExtResource("5_8eipw")
 texture_pressed = ExtResource("6_vst7x")
 script = ExtResource("7_sawph")
 
-<<<<<<< HEAD
 [node name="Panel2" type="Panel" parent="."]
 offset_left = 104.0
 offset_top = -11.0
@@ -155,6 +121,3 @@ theme_override_font_sizes/font_size = 20
 [connection signal="pressed" from="TextureButton" to="." method="_on_regresar_button_pressed"]
 [connection signal="pressed" from="atrasButton" to="." method="_on_atras_button_pressed"]
 [connection signal="pressed" from="siguienteButton" to="." method="_on_siguiente_button_pressed"]
-=======
-[connection signal="pressed" from="TextureButton" to="." method="_on_regresar_button_pressed"]
->>>>>>> ce29b5c1b698c860ab16d809b10ab9dc9605ab01
