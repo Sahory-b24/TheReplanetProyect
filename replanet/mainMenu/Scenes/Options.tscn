@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=3 uid="uid://chajpjk2xhdcx"]
+[gd_scene load_steps=27 format=3 uid="uid://m5555x0a4a4p"]
 
 [ext_resource type="Texture2D" uid="uid://b2ftwa60xj37" path="res://mainMenu/Assets/Images/fondo.png" id="1_ovmd5"]
 [ext_resource type="Script" uid="uid://cd5rgwlaafwar" path="res://mainMenu/Scripts/options.gd" id="2_iuyon"]
@@ -16,8 +16,8 @@
 [ext_resource type="Texture2D" uid="uid://ojluld7n4a28" path="res://mainMenu/Assets/Buttoms/dalto_icon_ckecked.tres" id="13_uogns"]
 [ext_resource type="Texture2D" uid="uid://b6ob7qbr0mdti" path="res://mainMenu/Assets/Buttoms/dalto_icon.tres" id="14_iuyon"]
 [ext_resource type="Texture2D" uid="uid://coc6s7alo3f5s" path="res://mainMenu/Assets/Icons/audio-off-icon.png" id="15_hi5nx"]
-[ext_resource type="Texture2D" uid="uid://n3848ov8nr58" path="res://mainMenu/Assets/Buttoms/grabber.tres" id="16_e2iw7"]
-[ext_resource type="Texture2D" uid="uid://dmbet8unns1p7" path="res://mainMenu/Assets/Buttoms/grabberPressed.tres" id="17_f8ysp"]
+[ext_resource type="Texture2D" uid="uid://c8c2ft46ql8g6" path="res://mainMenu/Assets/Buttoms/grabber.tres" id="16_e2iw7"]
+[ext_resource type="Texture2D" uid="uid://dvl1yl7cfo5lk" path="res://mainMenu/Assets/Buttoms/grabberPressed.tres" id="17_f8ysp"]
 [ext_resource type="Texture2D" uid="uid://dkdwymhfbdxju" path="res://mainMenu/Assets/Icons/Sprite sheet for Basic Pack.png" id="18_yvfpj"]
 [ext_resource type="Texture2D" uid="uid://c7fbi771wadk3" path="res://mainMenu/Assets/Icons/audio-on-icon.png" id="19_wqgh3"]
 [ext_resource type="Texture2D" uid="uid://s423y6mwv0uc" path="res://mainMenu/Assets/Icons/audioOff.png" id="20_joxnd"]
