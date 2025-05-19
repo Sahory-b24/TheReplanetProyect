@@ -209,9 +209,8 @@ offset_top = -269.0
 offset_right = 297.0
 offset_bottom = -258.0
 scale = Vector2(2.5, 2.5)
-texture_normal = ExtResource("9_ud78h")
-texture_pressed = ExtResource("9_v1kdw")
-texture_hover = ExtResource("9_v1kdw")
+texture_normal = ExtResource("9_v1kdw")
+texture_pressed = ExtResource("9_ud78h")
 script = ExtResource("11_kvdg3")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
@@ -223,3 +222,4 @@ volume_db = -10.0
 [connection signal="pressed" from="Start_buttom" to="." method="_on_start_buttom_pressed"]
 [connection signal="pressed" from="Exit_buttom" to="." method="_on_exit_buttom_pressed"]
 [connection signal="pressed" from="Lore_buttom" to="." method="_on_lore_buttom_pressed"]
+[connection signal="pressed" from="Mute_buttom" to="Mute_buttom" method="_on_pressed"]
