@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://cs41vf1lqm2dc"]
+[gd_scene load_steps=17 format=3 uid="uid://cinaaonc4cap2"]
 
 [ext_resource type="Script" uid="uid://b3th5oc5mbnf4" path="res://mainMenu/Scripts/instructions.gd" id="1_mv638"]
 [ext_resource type="Texture2D" uid="uid://b2ftwa60xj37" path="res://mainMenu/Assets/Images/fondo.png" id="2_2vggv"]
@@ -9,10 +9,10 @@
 [ext_resource type="Texture2D" uid="uid://fcbom5dwpmgc" path="res://mainMenu/Assets/Buttoms/unMute.tres" id="6_vst7x"]
 [ext_resource type="Script" uid="uid://ditfvc7qwilfq" path="res://mainMenu/Scripts/MuteButton.gd" id="7_sawph"]
 [ext_resource type="FontFile" uid="uid://b5b1l3hfn2lof" path="res://assests/Fonts/ShareTech-Regular.ttf" id="9_mvewa"]
-[ext_resource type="Texture2D" uid="uid://sg0dgivivfml" path="res://mainMenu/Assets/Buttoms/siguiente_normal.tres" id="10_wxitn"]
-[ext_resource type="Texture2D" uid="uid://dphppnhi3rvd5" path="res://mainMenu/Assets/Buttoms/atras_normal.tres" id="12_edqru"]
-[ext_resource type="Texture2D" uid="uid://c0t2h4efkhys" path="res://mainMenu/Assets/Buttoms/siguiente_press.tres" id="13_2vggv"]
-[ext_resource type="Texture2D" uid="uid://mbnx3brlqiva" path="res://mainMenu/Assets/Buttoms/atras_pressl.tres" id="13_a8ukq"]
+[ext_resource type="Texture2D" path="res://mainMenu/Assets/Buttoms/siguiente_normal.tres" id="10_wxitn"]
+[ext_resource type="Texture2D" path="res://mainMenu/Assets/Buttoms/atras_normal.tres" id="12_edqru"]
+[ext_resource type="Texture2D" path="res://mainMenu/Assets/Buttoms/siguiente_press.tres" id="13_2vggv"]
+[ext_resource type="Texture2D" path="res://mainMenu/Assets/Buttoms/atras_pressl.tres" id="13_a8ukq"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_6hm32"]
 texture = ExtResource("2_2vggv")
