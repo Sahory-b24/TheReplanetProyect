@@ -1,4 +1,4 @@
-[gd_resource type="TileSet" load_steps=33 format=3 uid="uid://dfmh40v3anori"]
+[gd_resource type="TileSet" load_steps=35 format=3 uid="uid://dfmh40v3anori"]
 
 [ext_resource type="Texture2D" uid="uid://bn6td4javnjfn" path="res://assests/game/assestsUsed/uglyWorld/Tiles/water.png" id="1_bpmon"]
 [ext_resource type="Texture2D" uid="uid://bgkt74xn78u6f" path="res://assests/TileSets/pineTree.png" id="2_2q1b1"]
@@ -16,6 +16,7 @@
 [ext_resource type="Texture2D" uid="uid://bwhptqgh4ys21" path="res://assests/game/assestsUsed/uglyWorld/Deco/minerals.png" id="9_w84wx"]
 [ext_resource type="Texture2D" uid="uid://o4tcf0xk5dm" path="res://assests/game/assestsUsed/uglyWorld/Deco/rocks.png" id="10_8tl7t"]
 [ext_resource type="Texture2D" uid="uid://3jtonw2w6mk4" path="res://assests/game/assestsUsed/uglyWorld/Deco/clouds.png" id="16_gbmkf"]
+[ext_resource type="Texture2D" uid="uid://vw1xytenomg5" path="res://assests/game/assestsUsed/uglyWorld/Deco/Wood Boat.png" id="17_i3n26"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_we4lt"]
 texture = ExtResource("1_bpmon")
@@ -561,6 +562,16 @@ texture = ExtResource("16_gbmkf")
 7:0/0 = 0
 3:0/0 = 0
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_pmhix"]
+texture = ExtResource("17_i3n26")
+0:0/size_in_atlas = Vector2i(11, 7)
+0:0/animation_columns = 4
+0:0/animation_frame_0/duration = 0.2
+0:0/animation_frame_1/duration = 0.2
+0:0/animation_frame_2/duration = 0.2
+0:0/animation_frame_3/duration = 0.2
+0:0/0 = 0
+
 [resource]
 physics_layer_0/collision_layer = 2
 sources/0 = SubResource("TileSetAtlasSource_we4lt")
@@ -579,3 +590,4 @@ sources/14 = SubResource("TileSetAtlasSource_cnquu")
 sources/15 = SubResource("TileSetAtlasSource_mjq8u")
 sources/16 = SubResource("TileSetAtlasSource_mog5r")
 sources/8 = SubResource("TileSetAtlasSource_w84wx")
+sources/9 = SubResource("TileSetAtlasSource_pmhix")
