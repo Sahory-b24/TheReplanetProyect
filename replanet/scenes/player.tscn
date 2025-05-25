@@ -1062,7 +1062,6 @@ hframes = 8
 vframes = 4
 
 [node name="acc" type="Sprite2D" parent="Character"]
-visible = false
 material = SubResource("ShaderMaterial_tx1dd")
 texture = ExtResource("11_3v2ag")
 hframes = 8
