@@ -7,7 +7,7 @@ extends CharacterBody2D
 @onready var shoes = $Character/shoes
 @onready var eyes = $Character/eyes
 @onready var accessory = $Character/acc
-@onready var name_label = $Character/Name
+#@onready var name_label = $Character/Name
 
 @onready var animation_player = $AnimationPlayer
 
@@ -112,4 +112,4 @@ func initialize_player():
 
 	# Player name
 	#name_label.text = Global.player_name
-	print(Global.player_name)
+	#print(Global.player_name)

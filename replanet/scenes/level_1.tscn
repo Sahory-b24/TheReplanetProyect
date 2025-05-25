@@ -1,6 +1,7 @@
-[gd_scene load_steps=6 format=4 uid="uid://yrerogrgy4wj"]
+[gd_scene load_steps=7 format=4 uid="uid://yrerogrgy4wj"]
 
 [ext_resource type="TileSet" uid="uid://dfmh40v3anori" path="res://assests/TileSets/game_tile_set.tres" id="1_014kd"]
+[ext_resource type="PackedScene" uid="uid://blu2fgshcdiag" path="res://scenes/player.tscn" id="2_bswci"]
 
 [sub_resource type="Animation" id="Animation_bswci"]
 length = 0.001
@@ -106,3 +107,5 @@ libraries = {
 &"": SubResource("AnimationLibrary_rus8k")
 }
 autoplay = "movee"
+
+[node name="Player" parent="." instance=ExtResource("2_bswci")]

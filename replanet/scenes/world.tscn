@@ -1,11 +1,41 @@
-[gd_scene load_steps=3 format=3 uid="uid://bgyvt6v3pnb"]
+[gd_scene load_steps=4 format=3 uid="uid://bgyvt6v3pnb"]
 
+[ext_resource type="Script" uid="uid://boxa67ncdxc6l" path="res://scenes/world.gd" id="1_4wyf3"]
 [ext_resource type="PackedScene" uid="uid://blu2fgshcdiag" path="res://scenes/player.tscn" id="1_rwgxs"]
 [ext_resource type="PackedScene" uid="uid://bdcpew3xkg8fd" path="res://scenes/test_scene_tile_map.tscn" id="3_b3arm"]
 
 [node name="Replanet" type="Node2D"]
+script = ExtResource("1_4wyf3")
 
 [node name="TestSceneTileMap" parent="." instance=ExtResource("3_b3arm")]
 
 [node name="player" parent="." instance=ExtResource("1_rwgxs")]
 position = Vector2(323, 104)
+
+[node name="Nivel1" type="Button" parent="."]
+offset_left = 411.0
+offset_top = 248.0
+offset_right = 456.0
+offset_bottom = 270.0
+theme_override_font_sizes/font_size = 10
+text = "NIVEL 1"
+
+[node name="Nivel2" type="Button" parent="."]
+offset_left = 490.0
+offset_top = 157.0
+offset_right = 535.0
+offset_bottom = 179.0
+theme_override_font_sizes/font_size = 10
+text = "NIVEL 2"
+
+[node name="Nivel3" type="Button" parent="."]
+offset_left = 185.0
+offset_top = 110.0
+offset_right = 230.0
+offset_bottom = 132.0
+theme_override_font_sizes/font_size = 10
+text = "NIVEL 3"
+
+[connection signal="pressed" from="Nivel1" to="." method="_on_nivel_1_pressed"]
+[connection signal="pressed" from="Nivel2" to="." method="_on_nivel_2_pressed"]
+[connection signal="pressed" from="Nivel3" to="." method="_on_nivel_3_pressed"]
