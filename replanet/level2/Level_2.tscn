@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=4 uid="uid://d23n6klxmq0qf"]
+[gd_scene load_steps=11 format=4 uid="uid://d23n6klxmq0qf"]
 
 [ext_resource type="TileSet" uid="uid://dfmh40v3anori" path="res://assests/TileSets/game_tile_set.tres" id="1_pc1s3"]
 [ext_resource type="PackedScene" uid="uid://dvdq6uqdbou6r" path="res://level2/boat.tscn" id="2_fdsdd"]
@@ -8,6 +8,8 @@
 [ext_resource type="PackedScene" uid="uid://fyhxwe2xetoh" path="res://level2/trash_lata.tscn" id="6_c47fr"]
 [ext_resource type="PackedScene" uid="uid://dyfjdm46pm8r1" path="res://level2/trash_bottle.tscn" id="7_fdsdd"]
 [ext_resource type="PackedScene" uid="uid://cqi0w1jtkbp3c" path="res://level2/trash_wood.tscn" id="8_0wmqq"]
+[ext_resource type="Script" uid="uid://7rtn673fijwu" path="res://level2/Score_Level2.gd" id="9_4iwia"]
+[ext_resource type="Script" uid="uid://xbugsfsxswe8" path="res://level2/scoreManager.gd" id="10_hkghg"]
 
 [node name="Level2" type="Node2D"]
 
@@ -32,3 +34,13 @@ script = ExtResource("4_4iwia")
 trash_scenes = Array[PackedScene]([ExtResource("5_hkghg"), ExtResource("6_c47fr"), ExtResource("7_fdsdd"), ExtResource("8_0wmqq")])
 
 [node name="Timer" type="Timer" parent="trashSpawner"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="ScoreLabel" type="Label" parent="CanvasLayer"]
+offset_right = 40.0
+offset_bottom = 23.0
+script = ExtResource("9_4iwia")
+
+[node name="ScoreManager" type="Node2D" parent="CanvasLayer"]
+script = ExtResource("10_hkghg")
