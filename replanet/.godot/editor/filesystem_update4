@@ -27,3 +27,6 @@ res://level2/trash_wood.tscn
 res://level2/trash_collision_shape.tres
 res://level2/trash.gd
 res://level2/recolector.gd
+res://level2/scoreManager.gd
+res://level2/Score_Leve2.gd
+res://level2/Score_Level2.gd

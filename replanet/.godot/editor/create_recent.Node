@@ -1,3 +1,6 @@
+Node2D
+Label
+CanvasLayer
 CollisionShape2D
 Area2D
 AnimatedSprite2D
@@ -9,6 +12,4 @@ Control
 VBoxContainer
 HBoxContainer
 CheckButton
-Label
 TextureButton
-Panel
