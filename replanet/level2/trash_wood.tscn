@@ -1,0 +1,53 @@
+[gd_scene load_steps=9 format=3 uid="uid://cqi0w1jtkbp3c"]
+
+[ext_resource type="Texture2D" uid="uid://bqqb7gl7u4tp3" path="res://level2/wood.png" id="1_iroey"]
+[ext_resource type="Script" uid="uid://b3p4643jh2j6b" path="res://level2/trash.gd" id="1_l53yj"]
+[ext_resource type="Shape2D" uid="uid://cv11uy3cktd42" path="res://level2/trash_collision_shape.tres" id="3_bq6id"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l53yj"]
+atlas = ExtResource("1_iroey")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bq6id"]
+atlas = ExtResource("1_iroey")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8b4ns"]
+atlas = ExtResource("1_iroey")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xksya"]
+atlas = ExtResource("1_iroey")
+region = Rect2(48, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_wu7fc"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l53yj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bq6id")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8b4ns")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xksya")
+}],
+"loop": true,
+"name": &"float",
+"speed": 5.0
+}]
+
+[node name="TrashWood" type="Area2D"]
+script = ExtResource("1_l53yj")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_wu7fc")
+animation = &"float"
+frame_progress = 0.236868
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -1.5)
+shape = ExtResource("3_bq6id")

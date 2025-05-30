@@ -10,6 +10,7 @@ extends CharacterBody2D
 #@onready var name_label = $Character/Name
 
 @onready var animation_player = $AnimationPlayer
+@export var movimiento_activado := true
 
 var last_direction = Vector2.ZERO
 const speed = 100
@@ -17,7 +18,12 @@ const speed = 100
 func _ready():
 	initialize_player()
 
-func _physics_process(_delta):
+func _physics_process(delta):
+	if movimiento_activado:
+		player_movement(delta)
+
+func player_movement(_delta):
+	
 	var direction = Vector2.ZERO
 	direction.x = Input.get_axis("ui_left", "ui_right")
 	direction.y = Input.get_axis("ui_up", "ui_down")
