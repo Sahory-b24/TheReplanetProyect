@@ -41,12 +41,14 @@ animations = [{
 }]
 
 [node name="TrashWood" type="Area2D"]
+collision_layer = 32
+collision_mask = 16
 script = ExtResource("1_l53yj")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_wu7fc")
 animation = &"float"
-frame_progress = 0.236868
+frame_progress = 0.584226
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -1.5)

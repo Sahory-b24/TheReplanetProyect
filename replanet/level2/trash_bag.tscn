@@ -41,6 +41,8 @@ animations = [{
 }]
 
 [node name="TrashBag" type="Area2D"]
+collision_layer = 48
+collision_mask = 48
 script = ExtResource("1_eoi41")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
