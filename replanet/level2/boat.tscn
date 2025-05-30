@@ -1,8 +1,10 @@
-[gd_scene load_steps=9 format=3 uid="uid://dvdq6uqdbou6r"]
+[gd_scene load_steps=10 format=3 uid="uid://dvdq6uqdbou6r"]
 
 [ext_resource type="Texture2D" uid="uid://pxvn2bpqpbrt" path="res://level2/Wood Boat.png" id="1_0063d"]
 [ext_resource type="Script" uid="uid://bjukr014il3g1" path="res://level2/boat.gd" id="1_qyrje"]
 [ext_resource type="Shape2D" uid="uid://dx3l8ojfq6h82" path="res://level2/boat_collisionShape.tres" id="3_lw6pk"]
+
+[sub_resource type="GDScript" id="GDScript_wgyym"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_qyrje"]
 atlas = ExtResource("1_0063d")
@@ -42,17 +44,24 @@ animations = [{
 
 [node name="Boat" type="CharacterBody2D"]
 collision_layer = 16
-collision_mask = 2
+collision_mask = 16
 script = ExtResource("1_qyrje")
 
 [node name="Recolector" type="Area2D" parent="."]
+collision_layer = 48
+collision_mask = 48
+script = SubResource("GDScript_wgyym")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Recolector"]
 position = Vector2(4.75, 6.5)
 shape = ExtResource("3_lw6pk")
 
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(5, 7)
+shape = ExtResource("3_lw6pk")
+
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(0, 1)
+position = Vector2(2, 2)
 sprite_frames = SubResource("SpriteFrames_bt8vh")
 animation = &"boat"
 frame = 3

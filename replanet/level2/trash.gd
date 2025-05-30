@@ -11,6 +11,6 @@ func _physics_process(delta):
 
 	
 func _on_area_entered(area):
-	if area.name == "Boat" or area.is_in_group("recolector"):
+
 		queue_free()
 		print("♻️ ¡Basura recolectada!")

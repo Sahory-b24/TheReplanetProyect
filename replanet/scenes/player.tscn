@@ -1070,3 +1070,4 @@ vframes = 4
 libraries = {
 &"": SubResource("AnimationLibrary_ukyrk")
 }
+autoplay = "RESET"
