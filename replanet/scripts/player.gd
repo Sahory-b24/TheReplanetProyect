@@ -8,6 +8,8 @@ extends CharacterBody2D
 @onready var eyes = $Character/eyes
 @onready var accessory = $Character/acc
 #@onready var name_label = $Character/Name
+@export_enum("RPG", "PLATAFORMA") var modo_juego := "RPG"
+
 
 @onready var animation_player = $AnimationPlayer
 @export var movimiento_activado := true
@@ -19,10 +21,15 @@ func _ready():
 	initialize_player()
 
 func _physics_process(delta):
-	if movimiento_activado:
-		player_movement(delta)
+	if not movimiento_activado:
+		return
+	match modo_juego:
+		"RPG":
+			player_movement_rpg(delta)
+		"PLATAFORMA":
+			player_movement_plataforma(delta)
 
-func player_movement(_delta):
+func player_movement_rpg(_delta):
 	
 	var direction = Vector2.ZERO
 	direction.x = Input.get_axis("ui_left", "ui_right")
@@ -58,6 +65,29 @@ func player_movement(_delta):
 		animation_player.play(anim_to_play)
 
 	move_and_slide()
+
+var gravity = 500
+var jump_force = -200
+
+func player_movement_plataforma(delta):
+	print("¿Estoy en el piso?: ", is_on_floor())
+
+	var direction = Vector2.ZERO
+	direction.x = Input.get_axis("ui_left", "ui_right")
+	
+	velocity.x = direction.x * speed
+	
+	# Aplica gravedad
+	if not is_on_floor():
+		velocity.y += gravity * delta
+	else:
+		# Salto
+		if Input.is_action_just_pressed("ui_accept"): # normalmente es barra espaciadora
+			velocity.y = jump_force
+
+	
+	move_and_slide()
+
 
 func apply_recolor_shader(sprite: Sprite2D, texture: Texture2D, color: Color):
 	sprite.texture = texture

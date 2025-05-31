@@ -1,5 +1,7 @@
 extends Node
 
+var modo_juego: String = ""
+
 #Collection Body Options (Opciones de Skin Color) 
 var body_options ={
 	"1" = preload("res://assests/Sprite/walk/char1_walk.png"),
