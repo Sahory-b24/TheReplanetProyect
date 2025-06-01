@@ -29,3 +29,11 @@ func _on_sfx_slider_value_changed(value: float) -> void:
 	var db = linear_to_db(value)
 	AudioServer.set_bus_volume_db(AudioServer.get_bus_index("sfx"), linear_to_db(value))
 	pass # Replace with function body.
+
+
+func _on_check_button_pressed() -> void:
+	var pressed = $CheckButton.button_pressed
+	if pressed:
+		Overlay.set_mode(1)  # Activar filtro
+	else:
+		Overlay.set_mode(0)  # Desactivar filtro

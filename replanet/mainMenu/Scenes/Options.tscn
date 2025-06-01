@@ -195,6 +195,7 @@ offset_top = 258.0
 offset_right = 377.0
 offset_bottom = 287.0
 scale = Vector2(1.5, 1.5)
+focus_mode = 1
 theme_override_icons/checked = ExtResource("13_uogns")
 theme_override_icons/unchecked = ExtResource("14_iuyon")
 
@@ -305,5 +306,6 @@ layout_mode = 2
 texture = ExtResource("21_gx21r")
 
 [connection signal="pressed" from="buttom_back" to="." method="_on_buttom_back_pressed"]
+[connection signal="pressed" from="CheckButton" to="." method="_on_check_button_pressed"]
 [connection signal="value_changed" from="Sound_bar/Control/VBoxContainer/VolumeBar/sfxSlider" to="." method="_on_sfx_slider_value_changed"]
 [connection signal="value_changed" from="muisc_bar/Control/VBoxContainer/VolumeBar/musicSlider" to="." method="_on_music_slider_value_changed"]

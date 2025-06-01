@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://cqw1locv8wwj1"]
+
+[ext_resource type="Script" uid="uid://dt4db5gdbqw06" path="res://mainMenu/Scripts/overlay.gd" id="1_qsjjx"]
+[ext_resource type="Shader" uid="uid://d0g0h0brssj7y" path="res://Shader/colorblind_shader.tres" id="2_ngsnn"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_42nn7"]
+shader = ExtResource("2_ngsnn")
+shader_parameter/mode = 0
+
+[node name="Overlay" type="CanvasLayer"]
+script = ExtResource("1_qsjjx")
+
+[node name="ColorBlindFilter" type="ColorRect" parent="."]
+visible = false
+material = SubResource("ShaderMaterial_42nn7")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2

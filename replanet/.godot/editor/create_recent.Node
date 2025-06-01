@@ -1,6 +1,8 @@
+OptionButton
+ColorRect
+CanvasLayer
 Node2D
 Label
-CanvasLayer
 CollisionShape2D
 Area2D
 AnimatedSprite2D
@@ -11,5 +13,3 @@ TextureRect
 Control
 VBoxContainer
 HBoxContainer
-CheckButton
-TextureButton

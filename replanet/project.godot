@@ -20,6 +20,7 @@ config/icon="res://icon.svg"
 AudioManager="*res://mainMenu/Assets/Audio/AudioManager.tscn"
 SceneTransitions="*res://mainMenu/Scenes/SceneTransitions.tscn"
 Global="*res://scripts/Global.gd"
+Overlay="*res://mainMenu/Scenes/overlay.tscn"
 
 [display]
 

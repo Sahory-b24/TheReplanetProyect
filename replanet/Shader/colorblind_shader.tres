@@ -1,0 +1,24 @@
+[gd_resource type="Shader" format=3 uid="uid://d0g0h0brssj7y"]
+
+[resource]
+code = "shader_type canvas_item;
+
+uniform sampler2D SCREEN_TEXTURE : hint_screen_texture, filter_linear_mipmap;
+uniform int mode = 0;
+
+void fragment() {
+    vec4 px = texture(SCREEN_TEXTURE, SCREEN_UV);
+    vec3 color = px.rgb;
+
+    if (mode == 1) {
+        // Simulación de Protanomaly (Red-Weak)
+        float r = 0.817 * color.r + 0.183 * color.g;
+        float g = 0.333 * color.r + 0.667 * color.g;
+        float b = color.b;
+        color = vec3(r, g, b);
+    }
+
+    COLOR = vec4(color, 1.0);
+}
+
+"
