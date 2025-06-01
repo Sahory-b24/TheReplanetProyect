@@ -336,7 +336,7 @@ layout_mode = 0
 offset_left = 11.0
 offset_top = 271.0
 offset_right = 342.0
-offset_bottom = 312.0
+offset_bottom = 271.0
 color = Color(1, 1, 1, 0)
 
 [node name="Label" type="Label" parent="Customization_screen/Panel/acc"]
@@ -391,10 +391,10 @@ theme_override_styles/normal = SubResource("StyleBoxTexture_05da3")
 
 [node name="Shoes" type="ColorRect" parent="Customization_screen/Panel"]
 layout_mode = 0
-offset_left = 61.1111
-offset_top = 304.444
-offset_right = 305.111
-offset_bottom = 342.444
+offset_left = 61.0
+offset_top = 304.0
+offset_right = 305.0
+offset_bottom = 304.0
 color = Color(1, 1, 1, 0)
 
 [node name="Label" type="Label" parent="Customization_screen/Panel/Shoes"]
@@ -427,7 +427,7 @@ layout_mode = 0
 offset_left = 11.0
 offset_top = 186.0
 offset_right = 335.0
-offset_bottom = 229.0
+offset_bottom = 186.0
 color = Color(1, 1, 1, 0)
 
 [node name="Label" type="Label" parent="Customization_screen/Panel/Pants"]
@@ -485,7 +485,7 @@ layout_mode = 0
 offset_left = 12.0
 offset_top = 142.0
 offset_right = 335.0
-offset_bottom = 182.0
+offset_bottom = 142.0
 color = Color(1, 1, 1, 0)
 
 [node name="Label" type="Label" parent="Customization_screen/Panel/Shirt"]
@@ -543,7 +543,7 @@ layout_mode = 0
 offset_left = 12.0
 offset_top = 100.0
 offset_right = 336.0
-offset_bottom = 132.0
+offset_bottom = 102.0
 color = Color(1, 1, 1, 0)
 
 [node name="Label" type="Label" parent="Customization_screen/Panel/Hair"]
@@ -601,7 +601,7 @@ layout_mode = 0
 offset_left = 180.0
 offset_top = 55.0
 offset_right = 336.0
-offset_bottom = 95.0
+offset_bottom = 78.0
 color = Color(1, 1, 1, 0)
 
 [node name="Label" type="Label" parent="Customization_screen/Panel/Eye"]
