@@ -1,7 +1,7 @@
-[gd_scene load_steps=14 format=3 uid="uid://cdjplu56l2jqh"]
+[gd_scene load_steps=14 format=3 uid="uid://wk1j1y4fra04"]
 
 [ext_resource type="Texture2D" uid="uid://b2ftwa60xj37" path="res://mainMenu/Assets/Images/fondo.png" id="1_tv7ec"]
-[ext_resource type="Script" uid="uid://b13tdlov7o1u" path="res://mainMenu/Scripts/lore_book.gd" id="1_wv48v"]
+[ext_resource type="Script" path="res://mainMenu/Scripts/lore_book.gd" id="1_wv48v"]
 [ext_resource type="Texture2D" uid="uid://5rs8jmdnumd7" path="res://mainMenu/Assets/Buttoms/Mute.tres" id="2_wv48v"]
 [ext_resource type="Texture2D" uid="uid://fcbom5dwpmgc" path="res://mainMenu/Assets/Buttoms/unMute.tres" id="3_b8qrb"]
 [ext_resource type="Script" uid="uid://ditfvc7qwilfq" path="res://mainMenu/Scripts/MuteButton.gd" id="4_dnews"]
@@ -76,4 +76,27 @@ texture_normal = ExtResource("9_bhhnu")
 texture_pressed = ExtResource("10_seg0w")
 texture_hover = ExtResource("10_seg0w")
 
+[node name="SlideImage" type="TextureRect" parent="."]
+offset_left = 64.0
+offset_top = 32.0
+offset_right = 576.0
+offset_bottom = 320.0
+expand_mode = 1
+
+[node name="Label1" type="Label" parent="."]
+offset_left = 296.0
+offset_top = 40.0
+offset_right = 576.0
+offset_bottom = 72.0
+autowrap_mode = 2
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 384.0
+offset_top = 72.0
+offset_right = 568.0
+offset_bottom = 95.0
+autowrap_mode = 2
+
 [connection signal="pressed" from="Panel/buttom_back" to="." method="_on_buttom_back_pressed"]
+[connection signal="pressed" from="siguienteButton" to="." method="_on_siguiente_button_pressed"]
+[connection signal="pressed" from="atrasButton" to="." method="_on_atras_button_pressed"]

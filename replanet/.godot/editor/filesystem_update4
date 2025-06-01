@@ -24,7 +24,20 @@ res://level2/trash_bag.tscn
 res://scenes/test_scene_tile_map.tscn
 res://level2/trash_bottle.tscn
 res://level2/trash_wood.tscn
+<<<<<<< Updated upstream
 res://scenes/overlay.tscn
 res://scripts/overlay.gd
 res://mainMenu/Scenes/overlay.tscn
 res://mainMenu/Scripts/overlay.gd
+=======
+res://mainMenu/Scripts/lore_book.gd
+res://mainMenu/Scenes/LoreBook.tscn
+res://scenes/Custimization.tscn
+res://level2/trash.gd
+res://mainMenu/Assets/Buttoms/botonCusNormal.tres
+res://scenes/world.gd
+res://scripts/Global.gd
+res://scripts/player.gd
+res://mainMenu/Assets/Buttoms/botonCusPress.tres
+res://scripts/custimization.gd
+>>>>>>> Stashed changes

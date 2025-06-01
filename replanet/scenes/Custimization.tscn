@@ -1,8 +1,9 @@
-[gd_scene load_steps=19 format=3 uid="uid://p2s4dehlffsl"]
+[gd_scene load_steps=73 format=3 uid="uid://p2s4dehlffsl"]
 
-[ext_resource type="Texture2D" uid="uid://b3cmixd5fyqbe" path="res://scenes/Arco antiguo en un paisaje vibrante.png" id="1_43xoa"]
 [ext_resource type="Script" uid="uid://brksl3b13j8jo" path="res://scripts/custimization.gd" id="1_yh3wp"]
+[ext_resource type="Texture2D" uid="uid://b2ftwa60xj37" path="res://mainMenu/Assets/Images/fondo.png" id="2_i5chb"]
 [ext_resource type="Texture2D" uid="uid://bc1f8ln6nys32" path="res://assests/Sprite/walk/char1_walk.png" id="2_yi4t6"]
+[ext_resource type="Texture2D" uid="uid://ubu0eksh415f" path="res://mainMenu/Assets/Images/33.png" id="3_h54ft"]
 [ext_resource type="Script" uid="uid://btvqyuxpt674j" path="res://scripts/body.gd" id="3_o2oxm"]
 [ext_resource type="Texture2D" uid="uid://p6c70cqnuxry" path="res://assests/Sprite/walk/clothes/basicWhite_walk.png" id="4_gnu3x"]
 [ext_resource type="Texture2D" uid="uid://dl5a8b1fn5pgd" path="res://assests/Sprite/walk/clothes/pantsWhite_walk.png" id="5_32v34"]
@@ -17,7 +18,145 @@
 [ext_resource type="Script" uid="uid://bbqdkbscfjycf" path="res://scripts/shoes.gd" id="11_5ivkg"]
 [ext_resource type="Script" uid="uid://oglw0gyfjeku" path="res://scripts/eyes.gd" id="13_gxoqe"]
 [ext_resource type="Texture2D" uid="uid://djstnvrory0m7" path="res://assests/Sprite/walk/acc/glasses1_walk.png" id="18_77idj"]
+[ext_resource type="FontFile" uid="uid://b5b1l3hfn2lof" path="res://assests/Fonts/ShareTech-Regular.ttf" id="19_obwa0"]
 [ext_resource type="Script" uid="uid://bpjfsygb4lw68" path="res://scripts/acc.gd" id="19_yctve"]
+[ext_resource type="Texture2D" uid="uid://cdpxi0a00j4ak" path="res://mainMenu/Assets/Buttoms/boton_normal.tres" id="20_h54ft"]
+[ext_resource type="Texture2D" uid="uid://cpwrqewpvsnjl" path="res://mainMenu/Assets/Buttoms/boton_presionado.tres" id="21_l8ss4"]
+[ext_resource type="Texture2D" uid="uid://dxi1iovtugofk" path="res://mainMenu/Assets/Buttoms/botonCusPress.tres" id="22_4350g"]
+[ext_resource type="Texture2D" uid="uid://chb7wwxgulmux" path="res://mainMenu/Assets/Buttoms/botonCusNormal.tres" id="23_p8cql"]
+[ext_resource type="Texture2D" uid="uid://5rs8jmdnumd7" path="res://mainMenu/Assets/Buttoms/Mute.tres" id="25_lycuy"]
+[ext_resource type="Texture2D" uid="uid://fcbom5dwpmgc" path="res://mainMenu/Assets/Buttoms/unMute.tres" id="26_y12hg"]
+[ext_resource type="Script" uid="uid://ditfvc7qwilfq" path="res://mainMenu/Scripts/MuteButton.gd" id="27_wwsjx"]
+[ext_resource type="Texture2D" uid="uid://byim6hlifbw6m" path="res://mainMenu/Assets/Buttoms/regresar_normal.tres" id="28_8ddhh"]
+[ext_resource type="Texture2D" uid="uid://cbuqbkoc7cmgy" path="res://mainMenu/Assets/Buttoms/regresar_press.tres" id="29_8t8au"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_p8cql"]
+texture = ExtResource("3_h54ft")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_3c30o"]
+texture = ExtResource("21_l8ss4")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_dbtkl"]
+texture = ExtResource("21_l8ss4")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_s11nc"]
+texture = ExtResource("20_h54ft")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_gu78h"]
+texture = ExtResource("3_h54ft")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_46am2"]
+bg_color = Color(1, 1, 1, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_4350g"]
+texture = ExtResource("22_4350g")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_46am2"]
+texture = ExtResource("22_4350g")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_l8ss4"]
+texture = ExtResource("23_p8cql")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_c0508"]
+texture = ExtResource("22_4350g")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_66c5t"]
+texture = ExtResource("22_4350g")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_y8aia"]
+texture = ExtResource("23_p8cql")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_i7c3n"]
+texture = ExtResource("22_4350g")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_n1rln"]
+texture = ExtResource("22_4350g")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_05da3"]
+texture = ExtResource("23_p8cql")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_w7hon"]
+texture = ExtResource("22_4350g")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_8ncd8"]
+texture = ExtResource("22_4350g")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_asgf6"]
+texture = ExtResource("23_p8cql")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_e1pjv"]
+texture = ExtResource("22_4350g")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_aknrl"]
+texture = ExtResource("22_4350g")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_y12hg"]
+texture = ExtResource("23_p8cql")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_b8o2t"]
+texture = ExtResource("22_4350g")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_o6fri"]
+texture = ExtResource("22_4350g")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_dyk5l"]
+texture = ExtResource("23_p8cql")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ygn76"]
+texture = ExtResource("22_4350g")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_t3rij"]
+texture = ExtResource("22_4350g")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_wwsjx"]
+texture = ExtResource("22_4350g")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_6tkfs"]
+texture = ExtResource("22_4350g")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_keu8b"]
+texture = ExtResource("22_4350g")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_42wk7"]
+texture = ExtResource("23_p8cql")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_8ddhh"]
+texture = ExtResource("22_4350g")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_8t8au"]
+texture = ExtResource("22_4350g")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_lycuy"]
+texture = ExtResource("23_p8cql")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_1q5md"]
+texture = ExtResource("22_4350g")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_04tn4"]
+texture = ExtResource("22_4350g")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_dhnat"]
+texture = ExtResource("23_p8cql")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_0kmmr"]
+texture = ExtResource("22_4350g")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_3ty7f"]
+texture = ExtResource("22_4350g")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_yfifs"]
+texture = ExtResource("23_p8cql")
+
+[sub_resource type="SystemFont" id="SystemFont_obwa0"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_7nhpp"]
+texture = ExtResource("21_l8ss4")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_vqij8"]
+texture = ExtResource("21_l8ss4")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_7n7fw"]
+texture = ExtResource("20_h54ft")
 
 [node name="Customization" type="Node2D"]
 script = ExtResource("1_yh3wp")
@@ -25,15 +164,16 @@ script = ExtResource("1_yh3wp")
 [node name="TextureRect" type="TextureRect" parent="."]
 offset_right = 640.0
 offset_bottom = 360.0
-texture = ExtResource("1_43xoa")
+texture = ExtResource("2_i5chb")
 expand_mode = 1
 
-[node name="ColorRect" type="ColorRect" parent="."]
-offset_left = 52.0
-offset_top = 83.0
-offset_right = 238.0
-offset_bottom = 300.0
-color = Color(0.854369, 0.916909, 0.977849, 1)
+[node name="Panel" type="Panel" parent="."]
+offset_left = -4.0
+offset_top = 56.0
+offset_right = 207.0
+offset_bottom = 277.0
+scale = Vector2(1.3, 1.3)
+theme_override_styles/panel = SubResource("StyleBoxTexture_p8cql")
 
 [node name="Character" type="Node2D" parent="."]
 position = Vector2(240, 324)
@@ -44,7 +184,7 @@ position = Vector2(0, 7)
 script = ExtResource("3_o2oxm")
 
 [node name="Sprite2D" type="Sprite2D" parent="Character/Body"]
-position = Vector2(-11.5, -28.125)
+position = Vector2(-13, -28.5)
 texture = ExtResource("2_yi4t6")
 hframes = 8
 vframes = 4
@@ -53,7 +193,7 @@ vframes = 4
 script = ExtResource("7_axgr5")
 
 [node name="Sprite2D" type="Sprite2D" parent="Character/Shirts"]
-position = Vector2(-11.5, -21.125)
+position = Vector2(-13, -21.5)
 texture = ExtResource("4_gnu3x")
 hframes = 8
 vframes = 4
@@ -62,7 +202,7 @@ vframes = 4
 script = ExtResource("5_wqa5x")
 
 [node name="Sprite2D" type="Sprite2D" parent="Character/Hair"]
-position = Vector2(-11.5, -21.125)
+position = Vector2(-13, -22.5)
 texture = ExtResource("8_qc0m0")
 hframes = 8
 vframes = 4
@@ -71,7 +211,7 @@ vframes = 4
 script = ExtResource("9_pqlyx")
 
 [node name="Sprite2D" type="Sprite2D" parent="Character/Pants"]
-position = Vector2(-11.5, -21.125)
+position = Vector2(-13, -21.5)
 texture = ExtResource("5_32v34")
 hframes = 8
 vframes = 4
@@ -80,7 +220,7 @@ vframes = 4
 script = ExtResource("11_5ivkg")
 
 [node name="Sprite2D" type="Sprite2D" parent="Character/Shoes"]
-position = Vector2(-11.5, -21.125)
+position = Vector2(-13, -21.5)
 texture = ExtResource("6_ula43")
 hframes = 8
 vframes = 4
@@ -89,7 +229,7 @@ vframes = 4
 script = ExtResource("13_gxoqe")
 
 [node name="Sprite2D" type="Sprite2D" parent="Character/eyes"]
-position = Vector2(-11.5, -21.125)
+position = Vector2(-13, -21.5)
 texture = ExtResource("7_hjq6v")
 hframes = 8
 vframes = 4
@@ -97,7 +237,7 @@ vframes = 4
 [node name="Blush" type="Node2D" parent="Character"]
 
 [node name="Sprite2D" type="Sprite2D" parent="Character/Blush"]
-position = Vector2(-11.5, -21.125)
+position = Vector2(-13, -21.5)
 texture = ExtResource("8_xj4am")
 hframes = 8
 vframes = 4
@@ -105,7 +245,7 @@ vframes = 4
 [node name="Lips" type="Node2D" parent="Character"]
 
 [node name="Sprite2D" type="Sprite2D" parent="Character/Lips"]
-position = Vector2(-11.5, -21.125)
+position = Vector2(-13, -21.5)
 texture = ExtResource("9_jki43")
 hframes = 8
 vframes = 4
@@ -115,54 +255,50 @@ position = Vector2(-1.875, -15.25)
 script = ExtResource("19_yctve")
 
 [node name="Sprite2D" type="Sprite2D" parent="Character/acc"]
-position = Vector2(-9.625, -5.875)
+position = Vector2(-11.125, -6.25)
 texture = ExtResource("18_77idj")
 hframes = 8
 vframes = 4
 
 [node name="Customization_screen" type="CanvasLayer" parent="."]
 
-[node name="ColorRect" type="ColorRect" parent="Customization_screen"]
-anchors_preset = 1
-anchor_left = 1.0
-anchor_right = 1.0
-offset_left = -363.0
-offset_top = 6.0
-offset_right = -11.0
-offset_bottom = 350.0
-grow_horizontal = 0
-color = Color(0.854902, 0.917647, 0.976471, 1)
+[node name="SaveButtom" type="Button" parent="Customization_screen"]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -235.0
+offset_top = -55.0
+offset_right = -131.0
+offset_bottom = -15.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/icon_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("19_obwa0")
+theme_override_font_sizes/font_size = 26
+theme_override_styles/hover = SubResource("StyleBoxTexture_3c30o")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_dbtkl")
+theme_override_styles/normal = SubResource("StyleBoxTexture_s11nc")
+text = "Guardar"
 
-[node name="Name" type="ColorRect" parent="Customization_screen/ColorRect"]
-layout_mode = 0
-offset_left = 13.0
-offset_top = 1.0
-offset_right = 316.0
-offset_bottom = 51.0
-color = Color(1, 1, 1, 0)
+[node name="Panel2" type="Panel" parent="Customization_screen"]
+offset_left = 196.0
+offset_top = -12.0
+offset_right = 649.0
+offset_bottom = 415.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_gu78h")
 
-[node name="Label" type="Label" parent="Customization_screen/ColorRect/Name"]
-custom_minimum_size = Vector2(144, 42)
-layout_direction = 1
-layout_mode = 0
-offset_left = 11.0
-offset_top = 10.0
-offset_right = 155.0
-offset_bottom = 52.0
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 20
-text = "Nombre "
+[node name="Panel" type="Panel" parent="Customization_screen"]
+offset_left = 265.0
+offset_top = 23.0
+offset_right = 612.0
+offset_bottom = 369.0
+scale = Vector2(0.9, 0.9)
+theme_override_styles/panel = SubResource("StyleBoxFlat_46am2")
 
-[node name="TextEdit" type="TextEdit" parent="Customization_screen/ColorRect/Name"]
-layout_mode = 1
-offset_left = 96.0
-offset_top = 5.0
-offset_right = 331.0
-offset_bottom = 45.0
-theme_override_font_sizes/font_size = 20
-placeholder_text = "Nombre"
-
-[node name="Body" type="ColorRect" parent="Customization_screen/ColorRect"]
+[node name="Body" type="ColorRect" parent="Customization_screen/Panel"]
 layout_mode = 0
 offset_left = 15.0
 offset_top = 55.0
@@ -170,228 +306,32 @@ offset_right = 170.0
 offset_bottom = 97.0
 color = Color(1, 1, 1, 0)
 
-[node name="Label" type="Label" parent="Customization_screen/ColorRect/Body"]
+[node name="Label" type="Label" parent="Customization_screen/Panel/Body"]
 layout_mode = 1
-offset_right = 115.0
-offset_bottom = 35.0
+offset_left = 2.77778
+offset_top = 2.77778
+offset_right = 117.778
+offset_bottom = 37.7778
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 20
-text = "SkinColor"
+text = "Tono de Piel"
 
-[node name="OptionsButtom" type="Button" parent="Customization_screen/ColorRect/Body"]
+[node name="OptionsButtom" type="Button" parent="Customization_screen/Panel/Body"]
 layout_mode = 1
 anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
-offset_left = -48.0
-offset_right = -1.0
-offset_bottom = 36.0
+offset_left = -25.5555
+offset_top = -0.555559
+offset_right = 10.4445
+offset_bottom = 36.4444
 grow_horizontal = 0
 theme_override_font_sizes/font_size = 20
-text = "▶"
+theme_override_styles/hover = SubResource("StyleBoxTexture_4350g")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_46am2")
+theme_override_styles/normal = SubResource("StyleBoxTexture_l8ss4")
 
-[node name="Eye" type="ColorRect" parent="Customization_screen/ColorRect"]
-layout_mode = 0
-offset_left = 180.0
-offset_top = 55.0
-offset_right = 336.0
-offset_bottom = 95.0
-color = Color(1, 1, 1, 0)
-
-[node name="Label" type="Label" parent="Customization_screen/ColorRect/Eye"]
-layout_mode = 1
-offset_left = 53.0
-offset_right = 107.0
-offset_bottom = 35.0
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 20
-text = "Eyes"
-
-[node name="OptionsButtom" type="Button" parent="Customization_screen/ColorRect/Eye"]
-layout_mode = 1
-anchors_preset = 1
-anchor_left = 1.0
-anchor_right = 1.0
-offset_left = -47.0
-offset_bottom = 36.0
-grow_horizontal = 0
-theme_override_font_sizes/font_size = 20
-text = "▶"
-
-[node name="Hair" type="ColorRect" parent="Customization_screen/ColorRect"]
-layout_mode = 0
-offset_left = 12.0
-offset_top = 100.0
-offset_right = 336.0
-offset_bottom = 132.0
-color = Color(1, 1, 1, 0)
-
-[node name="Label" type="Label" parent="Customization_screen/ColorRect/Hair"]
-layout_mode = 1
-offset_right = 82.0
-offset_bottom = 42.0
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 20
-text = "Cabello"
-
-[node name="Label2" type="Label" parent="Customization_screen/ColorRect/Hair"]
-layout_mode = 0
-offset_left = 216.0
-offset_top = 3.0
-offset_right = 299.0
-offset_bottom = 45.0
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 20
-text = "Color "
-
-[node name="OptionsButtom" type="Button" parent="Customization_screen/ColorRect/Hair"]
-layout_mode = 1
-anchors_preset = 1
-anchor_left = 1.0
-anchor_right = 1.0
-offset_left = -214.0
-offset_right = -167.0
-offset_bottom = 36.0
-grow_horizontal = 0
-theme_override_font_sizes/font_size = 20
-text = "▶"
-
-[node name="ColorsButtom" type="Button" parent="Customization_screen/ColorRect/Hair"]
-layout_mode = 1
-anchors_preset = 1
-anchor_left = 1.0
-anchor_right = 1.0
-offset_left = -47.0
-offset_bottom = 36.0
-grow_horizontal = 0
-theme_override_font_sizes/font_size = 20
-text = "▶"
-
-[node name="Shirt" type="ColorRect" parent="Customization_screen/ColorRect"]
-layout_mode = 0
-offset_left = 12.0
-offset_top = 142.0
-offset_right = 335.0
-offset_bottom = 182.0
-color = Color(1, 1, 1, 0)
-
-[node name="Label" type="Label" parent="Customization_screen/ColorRect/Shirt"]
-layout_mode = 1
-offset_right = 90.0
-offset_bottom = 34.0
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 20
-text = "Camisas"
-
-[node name="Label2" type="Label" parent="Customization_screen/ColorRect/Shirt"]
-layout_mode = 0
-offset_left = 215.0
-offset_right = 272.0
-offset_bottom = 31.0
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 20
-text = "Color "
-
-[node name="OptionsButtom" type="Button" parent="Customization_screen/ColorRect/Shirt"]
-layout_mode = 1
-anchors_preset = 1
-anchor_left = 1.0
-anchor_right = 1.0
-offset_left = -213.0
-offset_right = -166.0
-offset_bottom = 36.0
-grow_horizontal = 0
-theme_override_font_sizes/font_size = 20
-text = "▶"
-
-[node name="ColorsButtom" type="Button" parent="Customization_screen/ColorRect/Shirt"]
-layout_mode = 1
-anchors_preset = 1
-anchor_left = 1.0
-anchor_right = 1.0
-offset_left = -47.0
-offset_bottom = 36.0
-grow_horizontal = 0
-theme_override_font_sizes/font_size = 20
-text = "▶"
-
-[node name="Pants" type="ColorRect" parent="Customization_screen/ColorRect"]
-layout_mode = 0
-offset_left = 11.0
-offset_top = 186.0
-offset_right = 335.0
-offset_bottom = 229.0
-color = Color(1, 1, 1, 0)
-
-[node name="Label" type="Label" parent="Customization_screen/ColorRect/Pants"]
-layout_mode = 1
-offset_right = 108.0
-offset_bottom = 42.0
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 20
-text = "Pantalón"
-
-[node name="Label2" type="Label" parent="Customization_screen/ColorRect/Pants"]
-layout_mode = 0
-offset_left = 216.0
-offset_top = 3.0
-offset_right = 278.0
-offset_bottom = 32.0
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 20
-text = "Color "
-
-[node name="OptionsButtom" type="Button" parent="Customization_screen/ColorRect/Pants"]
-layout_mode = 1
-anchors_preset = 1
-anchor_left = 1.0
-anchor_right = 1.0
-offset_left = -213.0
-offset_right = -166.0
-offset_bottom = 36.0
-grow_horizontal = 0
-theme_override_font_sizes/font_size = 20
-text = "▶"
-
-[node name="ColorsButtom" type="Button" parent="Customization_screen/ColorRect/Pants"]
-layout_mode = 1
-anchors_preset = 1
-anchor_left = 1.0
-anchor_right = 1.0
-offset_left = -47.0
-offset_bottom = 36.0
-grow_horizontal = 0
-theme_override_font_sizes/font_size = 20
-text = "▶"
-
-[node name="Shoes" type="ColorRect" parent="Customization_screen/ColorRect"]
-layout_mode = 0
-offset_left = 58.0
-offset_top = 229.0
-offset_right = 302.0
-offset_bottom = 267.0
-color = Color(1, 1, 1, 0)
-
-[node name="Label" type="Label" parent="Customization_screen/ColorRect/Shoes"]
-layout_mode = 1
-offset_right = 144.0
-offset_bottom = 42.0
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 20
-text = "Color de Zapatos"
-
-[node name="ColorsButtom" type="Button" parent="Customization_screen/ColorRect/Shoes"]
-layout_mode = 1
-anchors_preset = 1
-anchor_left = 1.0
-anchor_right = 1.0
-offset_left = -47.0
-offset_bottom = 36.0
-grow_horizontal = 0
-theme_override_font_sizes/font_size = 20
-text = "▶"
-
-[node name="acc" type="ColorRect" parent="Customization_screen/ColorRect"]
+[node name="acc" type="ColorRect" parent="Customization_screen/Panel"]
 layout_mode = 0
 offset_left = 11.0
 offset_top = 271.0
@@ -399,92 +339,375 @@ offset_right = 342.0
 offset_bottom = 312.0
 color = Color(1, 1, 1, 0)
 
-[node name="Label" type="Label" parent="Customization_screen/ColorRect/acc"]
+[node name="Label" type="Label" parent="Customization_screen/Panel/acc"]
 layout_mode = 1
-offset_right = 144.0
-offset_bottom = 42.0
+offset_left = 6.77778
+offset_top = -64.3333
+offset_right = 150.778
+offset_bottom = -22.3333
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 20
-text = "Accsesorios"
+text = "Accesorios"
 
-[node name="Label2" type="Label" parent="Customization_screen/ColorRect/acc"]
+[node name="Label2" type="Label" parent="Customization_screen/Panel/acc"]
 layout_mode = 0
-offset_left = 223.0
-offset_top = 4.0
-offset_right = 281.0
-offset_bottom = 34.0
+offset_left = 214.556
+offset_top = -63.2222
+offset_right = 272.556
+offset_bottom = -33.2222
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 20
 text = "Color "
 
-[node name="OptionsButtom" type="Button" parent="Customization_screen/ColorRect/acc"]
+[node name="OptionsButtom" type="Button" parent="Customization_screen/Panel/acc"]
 layout_mode = 1
 anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
-offset_left = -214.0
-offset_right = -167.0
-offset_bottom = 36.0
+offset_left = -207.556
+offset_top = -65.4444
+offset_right = -173.556
+offset_bottom = -29.4444
 grow_horizontal = 0
 theme_override_font_sizes/font_size = 20
-text = "▶"
+theme_override_styles/hover = SubResource("StyleBoxTexture_c0508")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_66c5t")
+theme_override_styles/normal = SubResource("StyleBoxTexture_y8aia")
 
-[node name="ColorsButtom" type="Button" parent="Customization_screen/ColorRect/acc"]
+[node name="ColorsButtom" type="Button" parent="Customization_screen/Panel/acc"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -52.0
+offset_top = -64.0
+offset_right = -16.0
+offset_bottom = -29.0
+grow_horizontal = 0
+theme_override_font_sizes/font_size = 20
+theme_override_styles/hover = SubResource("StyleBoxTexture_i7c3n")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_n1rln")
+theme_override_styles/normal = SubResource("StyleBoxTexture_05da3")
+
+[node name="Shoes" type="ColorRect" parent="Customization_screen/Panel"]
+layout_mode = 0
+offset_left = 61.1111
+offset_top = 304.444
+offset_right = 305.111
+offset_bottom = 342.444
+color = Color(1, 1, 1, 0)
+
+[node name="Label" type="Label" parent="Customization_screen/Panel/Shoes"]
+layout_mode = 1
+offset_left = -44.4444
+offset_top = -58.8889
+offset_right = 118.556
+offset_bottom = -16.8889
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 20
+text = "Color de Zapatos"
+
+[node name="ColorsButtom" type="Button" parent="Customization_screen/Panel/Shoes"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -117.0
+offset_top = -61.0
+offset_right = -81.0
+offset_bottom = -25.0
+grow_horizontal = 0
+theme_override_font_sizes/font_size = 20
+theme_override_styles/hover = SubResource("StyleBoxTexture_w7hon")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_8ncd8")
+theme_override_styles/normal = SubResource("StyleBoxTexture_asgf6")
+
+[node name="Pants" type="ColorRect" parent="Customization_screen/Panel"]
+layout_mode = 0
+offset_left = 11.0
+offset_top = 186.0
+offset_right = 335.0
+offset_bottom = 229.0
+color = Color(1, 1, 1, 0)
+
+[node name="Label" type="Label" parent="Customization_screen/Panel/Pants"]
+layout_mode = 1
+offset_left = 4.55556
+offset_top = -19.3333
+offset_right = 112.556
+offset_bottom = 22.6667
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 20
+text = "Pantalón"
+
+[node name="Label2" type="Label" parent="Customization_screen/Panel/Pants"]
+layout_mode = 0
+offset_left = 215.667
+offset_top = -18.2222
+offset_right = 277.667
+offset_bottom = 10.7778
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 20
+text = "Color "
+
+[node name="OptionsButtom" type="Button" parent="Customization_screen/Panel/Pants"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -228.333
+offset_top = -21.5555
+offset_right = -192.333
+offset_bottom = 14.4445
+grow_horizontal = 0
+theme_override_font_sizes/font_size = 20
+theme_override_styles/hover = SubResource("StyleBoxTexture_e1pjv")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_aknrl")
+theme_override_styles/normal = SubResource("StyleBoxTexture_y12hg")
+
+[node name="ColorsButtom" type="Button" parent="Customization_screen/Panel/Pants"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -45.0
+offset_top = -20.0
+offset_right = -9.0
+offset_bottom = 16.0
+grow_horizontal = 0
+theme_override_font_sizes/font_size = 20
+theme_override_styles/hover = SubResource("StyleBoxTexture_b8o2t")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_o6fri")
+theme_override_styles/normal = SubResource("StyleBoxTexture_dyk5l")
+
+[node name="Shirt" type="ColorRect" parent="Customization_screen/Panel"]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 142.0
+offset_right = 335.0
+offset_bottom = 182.0
+color = Color(1, 1, 1, 0)
+
+[node name="Label" type="Label" parent="Customization_screen/Panel/Shirt"]
+layout_mode = 1
+offset_left = 3.55557
+offset_top = -10.8889
+offset_right = 93.5556
+offset_bottom = 23.1111
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 20
+text = "Camisas"
+
+[node name="Label2" type="Label" parent="Customization_screen/Panel/Shirt"]
+layout_mode = 0
+offset_left = 213.556
+offset_top = -13.1111
+offset_right = 270.556
+offset_bottom = 17.8889
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 20
+text = "Color "
+
+[node name="OptionsButtom" type="Button" parent="Customization_screen/Panel/Shirt"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -231.667
+offset_top = -13.1111
+offset_right = -195.667
+offset_bottom = 22.8889
+grow_horizontal = 0
+theme_override_font_sizes/font_size = 20
+theme_override_styles/hover = SubResource("StyleBoxTexture_ygn76")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_t3rij")
+theme_override_styles/normal = SubResource("StyleBoxTexture_wwsjx")
+
+[node name="ColorsButtom" type="Button" parent="Customization_screen/Panel/Shirt"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -46.0
+offset_top = -15.0
+offset_right = -9.0
+offset_bottom = 23.0
+grow_horizontal = 0
+theme_override_font_sizes/font_size = 20
+theme_override_styles/hover = SubResource("StyleBoxTexture_6tkfs")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_keu8b")
+theme_override_styles/normal = SubResource("StyleBoxTexture_42wk7")
+
+[node name="Hair" type="ColorRect" parent="Customization_screen/Panel"]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 100.0
+offset_right = 336.0
+offset_bottom = 132.0
+color = Color(1, 1, 1, 0)
+
+[node name="Label" type="Label" parent="Customization_screen/Panel/Hair"]
+layout_mode = 1
+offset_left = 4.66668
+offset_top = -4.44444
+offset_right = 86.6667
+offset_bottom = 37.5556
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 20
+text = "Cabello"
+
+[node name="Label2" type="Label" parent="Customization_screen/Panel/Hair"]
+layout_mode = 0
+offset_left = 216.889
+offset_top = -4.44444
+offset_right = 299.889
+offset_bottom = 37.5556
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 20
+text = "Color "
+
+[node name="OptionsButtom" type="Button" parent="Customization_screen/Panel/Hair"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -236.0
+offset_top = -7.77778
+offset_right = -200.0
+offset_bottom = 28.2222
+grow_horizontal = 0
+theme_override_font_sizes/font_size = 20
+theme_override_styles/hover = SubResource("StyleBoxTexture_8ddhh")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_8t8au")
+theme_override_styles/normal = SubResource("StyleBoxTexture_lycuy")
+
+[node name="ColorsButtom" type="Button" parent="Customization_screen/Panel/Hair"]
 layout_mode = 1
 anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
 offset_left = -47.0
-offset_bottom = 36.0
+offset_top = -10.0
+offset_right = -10.0
+offset_bottom = 26.0
 grow_horizontal = 0
 theme_override_font_sizes/font_size = 20
-text = "▶"
+theme_override_styles/hover = SubResource("StyleBoxTexture_1q5md")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_04tn4")
+theme_override_styles/normal = SubResource("StyleBoxTexture_dhnat")
 
-[node name="SaveButtom" type="Button" parent="Customization_screen/ColorRect"]
+[node name="Eye" type="ColorRect" parent="Customization_screen/Panel"]
+layout_mode = 0
+offset_left = 180.0
+offset_top = 55.0
+offset_right = 336.0
+offset_bottom = 95.0
+color = Color(1, 1, 1, 0)
+
+[node name="Label" type="Label" parent="Customization_screen/Panel/Eye"]
 layout_mode = 1
-anchors_preset = 7
-anchor_left = 0.5
-anchor_top = 1.0
-anchor_right = 0.5
-anchor_bottom = 1.0
-offset_left = -364.0
-offset_top = -46.0
-offset_right = -247.0
-offset_bottom = -10.0
-grow_horizontal = 2
-grow_vertical = 0
-theme_override_colors/icon_pressed_color = Color(0, 0, 0, 1)
-theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+offset_left = 53.0
+offset_right = 107.0
+offset_bottom = 35.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 20
-text = "Guardar"
+text = "Ojos"
 
-[node name="RandomButton" type="Button" parent="Customization_screen/ColorRect"]
+[node name="OptionsButtom" type="Button" parent="Customization_screen/Panel/Eye"]
 layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -47.1111
+offset_top = -1.66667
+offset_right = -10.1111
+offset_bottom = 36.3333
+grow_horizontal = 0
+theme_override_font_sizes/font_size = 20
+theme_override_styles/hover = SubResource("StyleBoxTexture_0kmmr")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_3ty7f")
+theme_override_styles/normal = SubResource("StyleBoxTexture_yfifs")
+
+[node name="Name" type="ColorRect" parent="Customization_screen/Panel"]
+layout_mode = 0
+offset_left = 13.0
+offset_top = 1.0
+offset_right = 316.0
+offset_bottom = 51.0
+color = Color(1, 1, 1, 0)
+
+[node name="Label" type="Label" parent="Customization_screen/Panel/Name"]
+custom_minimum_size = Vector2(144, 42)
+layout_direction = 1
+layout_mode = 0
+offset_left = -6.33334
+offset_top = 5.66667
+offset_right = 137.667
+offset_bottom = 47.6667
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = SubResource("SystemFont_obwa0")
+theme_override_font_sizes/font_size = 23
+text = "Nombre:"
+
+[node name="TextEdit" type="TextEdit" parent="Customization_screen/Panel/Name"]
+layout_mode = 1
+offset_left = 96.0
+offset_top = 5.0
+offset_right = 331.0
+offset_bottom = 45.0
+theme_override_font_sizes/font_size = 20
+
+[node name="RandomButton" type="Button" parent="Customization_screen"]
 anchors_preset = 7
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -52.0
-offset_top = -32.0
-offset_right = 90.0
-offset_bottom = -2.0
+offset_left = 47.0
+offset_top = -77.0
+offset_right = 165.0
+offset_bottom = -37.0
 grow_horizontal = 2
 grow_vertical = 0
-theme_override_font_sizes/font_size = 15
+theme_override_fonts/font = ExtResource("19_obwa0")
+theme_override_font_sizes/font_size = 21
+theme_override_styles/hover = SubResource("StyleBoxTexture_7nhpp")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_vqij8")
+theme_override_styles/normal = SubResource("StyleBoxTexture_7n7fw")
 text = "Random"
 
-[connection signal="text_changed" from="Customization_screen/ColorRect/Name/TextEdit" to="." method="_on_text_edit_text_changed"]
-[connection signal="pressed" from="Customization_screen/ColorRect/Body/OptionsButtom" to="Character/Body" method="_on_options_buttom_pressed"]
-[connection signal="pressed" from="Customization_screen/ColorRect/Eye/OptionsButtom" to="Character/eyes" method="_on_options_buttom_pressed"]
-[connection signal="pressed" from="Customization_screen/ColorRect/Hair/OptionsButtom" to="Character/Hair" method="_on_options_buttom_pressed"]
-[connection signal="pressed" from="Customization_screen/ColorRect/Hair/ColorsButtom" to="Character/Hair" method="_on_colors_buttom_pressed"]
-[connection signal="pressed" from="Customization_screen/ColorRect/Shirt/OptionsButtom" to="Character/Shirts" method="_on_options_buttom_pressed"]
-[connection signal="pressed" from="Customization_screen/ColorRect/Shirt/ColorsButtom" to="Character/Shirts" method="_on_colors_buttom_pressed"]
-[connection signal="pressed" from="Customization_screen/ColorRect/Pants/OptionsButtom" to="Character/Pants" method="_on_options_buttom_pressed"]
-[connection signal="pressed" from="Customization_screen/ColorRect/Pants/ColorsButtom" to="Character/Pants" method="_on_colors_buttom_pressed"]
-[connection signal="pressed" from="Customization_screen/ColorRect/Shoes/ColorsButtom" to="Character/Shoes" method="_on_colors_buttom_pressed"]
-[connection signal="pressed" from="Customization_screen/ColorRect/acc/OptionsButtom" to="Character/acc" method="_on_options_buttom_pressed"]
-[connection signal="pressed" from="Customization_screen/ColorRect/acc/ColorsButtom" to="Character/acc" method="_on_colors_buttom_pressed"]
-[connection signal="pressed" from="Customization_screen/ColorRect/SaveButtom" to="." method="_on_save_buttom_pressed"]
-[connection signal="pressed" from="Customization_screen/ColorRect/RandomButton" to="." method="_on_random_button_pressed"]
+[node name="MuteButton" type="TextureButton" parent="Customization_screen/RandomButton"]
+offset_left = 236.0
+offset_top = -276.0
+offset_right = 249.0
+offset_bottom = -267.0
+scale = Vector2(2.5, 2.5)
+texture_normal = ExtResource("25_lycuy")
+texture_pressed = ExtResource("26_y12hg")
+script = ExtResource("27_wwsjx")
+
+[node name="buttom_back" type="TextureButton" parent="Customization_screen/RandomButton"]
+offset_left = 236.0
+offset_top = 37.0
+offset_right = 257.0
+offset_bottom = 55.0
+scale = Vector2(2, 2)
+texture_normal = ExtResource("28_8ddhh")
+texture_pressed = ExtResource("29_8t8au")
+texture_hover = ExtResource("29_8t8au")
+
+[connection signal="pressed" from="Customization_screen/SaveButtom" to="." method="_on_save_buttom_pressed"]
+[connection signal="pressed" from="Customization_screen/Panel/Body/OptionsButtom" to="Character/Body" method="_on_options_buttom_pressed"]
+[connection signal="pressed" from="Customization_screen/Panel/acc/OptionsButtom" to="Character/acc" method="_on_options_buttom_pressed"]
+[connection signal="pressed" from="Customization_screen/Panel/acc/ColorsButtom" to="Character/acc" method="_on_colors_buttom_pressed"]
+[connection signal="pressed" from="Customization_screen/Panel/Shoes/ColorsButtom" to="Character/Shoes" method="_on_colors_buttom_pressed"]
+[connection signal="pressed" from="Customization_screen/Panel/Pants/OptionsButtom" to="Character/Pants" method="_on_options_buttom_pressed"]
+[connection signal="pressed" from="Customization_screen/Panel/Pants/ColorsButtom" to="Character/Pants" method="_on_colors_buttom_pressed"]
+[connection signal="pressed" from="Customization_screen/Panel/Shirt/OptionsButtom" to="Character/Shirts" method="_on_options_buttom_pressed"]
+[connection signal="pressed" from="Customization_screen/Panel/Shirt/ColorsButtom" to="Character/Shirts" method="_on_colors_buttom_pressed"]
+[connection signal="pressed" from="Customization_screen/Panel/Hair/OptionsButtom" to="Character/Hair" method="_on_options_buttom_pressed"]
+[connection signal="pressed" from="Customization_screen/Panel/Hair/ColorsButtom" to="Character/Hair" method="_on_colors_buttom_pressed"]
+[connection signal="pressed" from="Customization_screen/Panel/Eye/OptionsButtom" to="Character/eyes" method="_on_options_buttom_pressed"]
+[connection signal="text_changed" from="Customization_screen/Panel/Name/TextEdit" to="." method="_on_text_edit_text_changed"]
+[connection signal="pressed" from="Customization_screen/RandomButton" to="." method="_on_random_button_pressed"]
+[connection signal="pressed" from="Customization_screen/RandomButton/buttom_back" to="." method="_on_buttom_back_pressed"]

@@ -1,6 +1,9 @@
 res://scenes
+<<<<<<< Updated upstream
 res://Shader
 res://
+=======
+>>>>>>> Stashed changes
 res://level2
 res://mainMenu/Scripts
 res://mainMenu/Scenes
