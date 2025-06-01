@@ -1,12 +1,9 @@
-<<<<<<< Updated upstream
+Label
 OptionButton
 ColorRect
 CanvasLayer
-=======
 Panel
->>>>>>> Stashed changes
 Node2D
-Label
 CollisionShape2D
 Area2D
 AnimatedSprite2D
@@ -15,5 +12,3 @@ TileMapLayer
 HSlider
 TextureRect
 Control
-VBoxContainer
-HBoxContainer

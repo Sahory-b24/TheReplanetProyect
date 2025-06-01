@@ -37,3 +37,9 @@ func _on_check_button_pressed() -> void:
 		Overlay.set_mode(1)  # Activar filtro
 	else:
 		Overlay.set_mode(0)  # Desactivar filtro
+
+
+
+
+func _on_option_button_item_selected(index: int) -> void:
+	Overlay.set_mode(index)

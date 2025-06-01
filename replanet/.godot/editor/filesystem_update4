@@ -1,15 +1,12 @@
-res://overlay.tscn
+res://mainMenu/Scenes/Options.tscn
 res://mainMenu/Scenes/scene_transitions.gd
+res://Shader/colorblind_shader.tres
 res://mainMenu/Scripts/MuteButton.gd
 res://assests/TileSets/game_tile_set.tres
 res://mainMenu/Assets/Buttoms/dalto_icon_ckecked.tres
 res://mainMenu/Assets/Buttoms/dalto_icon.tres
 res://mainMenu/Assets/Buttoms/grabber.tres
 res://mainMenu/Assets/Buttoms/grabberPressed.tres
-res://Shader/colorblind_shader.tres
-res://overlay.gd
-res://mainMenu/Scripts/options.gd
-res://mainMenu/Scenes/Options.tscn
 res://mainMenu/Scenes/instructions.tscn
 res://mainMenu/Scenes/main_menu.tscn
 res://scenes/level_1.tscn
@@ -22,22 +19,7 @@ res://level2/trash_lata.tscn
 res://level2/boat.tscn
 res://level2/trash_bag.tscn
 res://scenes/test_scene_tile_map.tscn
-res://level2/trash_bottle.tscn
-res://level2/trash_wood.tscn
-<<<<<<< Updated upstream
-res://scenes/overlay.tscn
-res://scripts/overlay.gd
 res://mainMenu/Scenes/overlay.tscn
-res://mainMenu/Scripts/overlay.gd
-=======
-res://mainMenu/Scripts/lore_book.gd
-res://mainMenu/Scenes/LoreBook.tscn
+res://mainMenu/Scripts/options.gd
+res://mainMenu/Assets/Buttoms/atras_pressl.tres
 res://scenes/Custimization.tscn
-res://level2/trash.gd
-res://mainMenu/Assets/Buttoms/botonCusNormal.tres
-res://scenes/world.gd
-res://scripts/Global.gd
-res://scripts/player.gd
-res://mainMenu/Assets/Buttoms/botonCusPress.tres
-res://scripts/custimization.gd
->>>>>>> Stashed changes

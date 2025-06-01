@@ -677,6 +677,7 @@ theme_override_styles/normal = SubResource("StyleBoxTexture_7n7fw")
 text = "Random"
 
 [node name="MuteButton" type="TextureButton" parent="Customization_screen/RandomButton"]
+layout_mode = 0
 offset_left = 236.0
 offset_top = -276.0
 offset_right = 249.0
@@ -687,6 +688,7 @@ texture_pressed = ExtResource("26_y12hg")
 script = ExtResource("27_wwsjx")
 
 [node name="buttom_back" type="TextureButton" parent="Customization_screen/RandomButton"]
+layout_mode = 0
 offset_left = 236.0
 offset_top = 37.0
 offset_right = 257.0
