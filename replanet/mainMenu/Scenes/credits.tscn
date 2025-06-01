@@ -1,6 +1,6 @@
 [gd_scene load_steps=8 format=3 uid="uid://dbu21dctpna3l"]
 
-[ext_resource type="Texture2D" uid="uid://kt1qv88qur0e" path="res://mainMenu/Assets/Images/credits.png" id="1_h4e06"]
+[ext_resource type="Texture2D" uid="uid://c8ywncaoi1x4e" path="res://mainMenu/Assets/Images/sisii.png" id="1_4r0ov"]
 [ext_resource type="Texture2D" uid="uid://byim6hlifbw6m" path="res://mainMenu/Assets/Buttoms/regresar_normal.tres" id="2_fkurp"]
 [ext_resource type="Texture2D" uid="uid://cbuqbkoc7cmgy" path="res://mainMenu/Assets/Buttoms/regresar_press.tres" id="3_n5uwg"]
 [ext_resource type="Texture2D" uid="uid://5rs8jmdnumd7" path="res://mainMenu/Assets/Buttoms/Mute.tres" id="4_4r0ov"]
@@ -42,31 +42,34 @@ grow_vertical = 2
 script = SubResource("GDScript_g7pxl")
 
 [node name="Credits" type="Sprite2D" parent="."]
-position = Vector2(324, 181)
-texture = ExtResource("1_h4e06")
+position = Vector2(318.5, 180)
+scale = Vector2(0.333854, 0.344444)
+texture = ExtResource("1_4r0ov")
 
 [node name="CreditsText" type="RichTextLabel" parent="."]
 layout_mode = 0
-offset_left = 155.0
-offset_top = 125.0
-offset_right = 475.0
-offset_bottom = 295.0
+offset_left = 149.0
+offset_top = 61.0
+offset_right = 504.0
+offset_bottom = 257.0
 bbcode_enabled = true
-text = "[center][b]🎮 Re:Planet[/b][/center]
-[center]Desarrollado por InGenius[/center]
+text = "[center]Desarrollado por el equipo InGenius[/center]  
 
-[b]👤 Equipo:[/b]
-- Gerente de proyecto: Isis Pacheco
-- Directora de Pruebas: Valerie Angulo
-- Directora de diseño: Sahory Blanco
-- Directora de documentación: Danna Galavís
--Directora de UI: Laura Villalobos
+[b] Equipo de Desarrollo:[/b]  
+Isis Pacheco — Gerente de Proyecto  
+ Valerie Angulo — Directora de Pruebas  
+Sahory Blanco — Directora de Diseño  
+Danna Galavís — Directora de Documentación  
+Laura Villalobos — Directora de UI  
 
-[b]🛠️ Herramientas:[/b]
-- Motor: Godot 4.2
-- Pixel art: pixel studio
-[center]¡Gracias por jugar![/center]
+[b]📄 Recursos y Licencias:[/b]  
+- [Farm RPG Asset Pack](https://emanuelledev.itch.io/farm-rpg) de EmanuelleDev — Licencia comercial adquirida  
+- [Cozy People - Pixel Art Character Pack](https://shubibubi.itch.io/cozy-people) de shubibubi — Licencia comercial adquirida  
+
+[center]💚 ¡Gracias por jugar y ser parte del cambio! 💚[/center]
+
 "
+tab_size = 6
 
 [node name="TextureButton" type="TextureButton" parent="."]
 layout_mode = 0

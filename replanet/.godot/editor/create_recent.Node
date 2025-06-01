@@ -1,3 +1,4 @@
+TextureRect
 Label
 OptionButton
 ColorRect
@@ -10,5 +11,4 @@ AnimatedSprite2D
 Button
 TileMapLayer
 HSlider
-TextureRect
 Control
