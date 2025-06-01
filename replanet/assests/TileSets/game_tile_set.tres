@@ -1,4 +1,4 @@
-[gd_resource type="TileSet" load_steps=35 format=3 uid="uid://dfmh40v3anori"]
+[gd_resource type="TileSet" load_steps=39 format=3 uid="uid://dfmh40v3anori"]
 
 [ext_resource type="Texture2D" uid="uid://bn6td4javnjfn" path="res://assests/game/assestsUsed/uglyWorld/Tiles/water.png" id="1_bpmon"]
 [ext_resource type="Texture2D" uid="uid://bgkt74xn78u6f" path="res://assests/TileSets/pineTree.png" id="2_2q1b1"]
@@ -15,6 +15,8 @@
 [ext_resource type="Texture2D" uid="uid://b8p05yjw835w4" path="res://assests/game/assestsUsed/uglyWorld/Deco/road.png" id="9_dvb2g"]
 [ext_resource type="Texture2D" uid="uid://bwhptqgh4ys21" path="res://assests/game/assestsUsed/uglyWorld/Deco/minerals.png" id="9_w84wx"]
 [ext_resource type="Texture2D" uid="uid://o4tcf0xk5dm" path="res://assests/game/assestsUsed/uglyWorld/Deco/rocks.png" id="10_8tl7t"]
+[ext_resource type="Texture2D" uid="uid://cmq1o2h1igqgv" path="res://level2/spritesheet_16x16_5frames.png" id="10_bkswl"]
+[ext_resource type="Texture2D" uid="uid://byxvaoi8ud2y0" path="res://level2/props water 2.png" id="11_cnquu"]
 [ext_resource type="Texture2D" uid="uid://3jtonw2w6mk4" path="res://assests/game/assestsUsed/uglyWorld/Deco/clouds.png" id="16_gbmkf"]
 [ext_resource type="Texture2D" uid="uid://vw1xytenomg5" path="res://assests/game/assestsUsed/uglyWorld/Deco/Wood Boat.png" id="17_i3n26"]
 
@@ -168,6 +170,75 @@ texture = ExtResource("9_w84wx")
 0:14/0 = 0
 0:13/0 = 0
 1:13/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3vwau"]
+texture = ExtResource("10_bkswl")
+0:0/animation_columns = 5
+0:0/animation_frame_0/duration = 0.5
+0:0/animation_frame_1/duration = 0.5
+0:0/animation_frame_2/duration = 0.5
+0:0/animation_frame_3/duration = 0.5
+0:0/animation_frame_4/duration = 0.5
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_i8ji7"]
+texture = ExtResource("11_cnquu")
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+6:2/0 = 0
+7:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+4:3/0 = 0
+5:3/0 = 0
+6:3/0 = 0
+7:3/0 = 0
+0:4/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+4:4/0 = 0
+5:4/0 = 0
+6:4/0 = 0
+7:4/0 = 0
+0:5/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+3:5/0 = 0
+4:5/0 = 0
+5:5/0 = 0
+6:5/0 = 0
+7:5/0 = 0
+0:6/0 = 0
+1:6/0 = 0
+2:6/0 = 0
+3:6/0 = 0
+4:6/0 = 0
+5:6/0 = 0
+6:6/0 = 0
+7:6/0 = 0
+0:7/0 = 0
+1:7/0 = 0
+2:7/0 = 0
+3:7/0 = 0
+4:7/0 = 0
+5:7/0 = 0
+6:7/0 = 0
+7:7/0 = 0
+0:0/size_in_atlas = Vector2i(2, 2)
+0:0/animation_columns = 4
+0:0/animation_frame_0/duration = 0.2
+0:0/animation_frame_1/duration = 0.2
+0:0/animation_frame_2/duration = 0.2
+0:0/animation_frame_3/duration = 0.2
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-5.71429, -12.5714, 1.14286, -12.5714, 5.71429, -5.71429, 12.5714, -1.14286, 12.5714, 1.14286, 8, 5.71429, -3.42857, 3.42857, -10.2857, 1.14286, -10.2857, -8)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2q1b1"]
 texture = ExtResource("2_we4lt")
@@ -603,8 +674,8 @@ texture = ExtResource("17_i3n26")
 0:0/0/physics_layer_0/polygon_2/points = PackedVector2Array(33.1429, -14.8571, 78.8571, 10.2857, 74.2857, -3.42857)
 
 [resource]
-physics_layer_0/collision_layer = 2
-physics_layer_0/collision_mask = 17
+physics_layer_0/collision_layer = 6
+physics_layer_0/collision_mask = 16
 sources/0 = SubResource("TileSetAtlasSource_we4lt")
 sources/2 = SubResource("TileSetAtlasSource_2q1b1")
 sources/1 = SubResource("TileSetAtlasSource_v2ypl")
@@ -622,3 +693,5 @@ sources/15 = SubResource("TileSetAtlasSource_mjq8u")
 sources/16 = SubResource("TileSetAtlasSource_mog5r")
 sources/8 = SubResource("TileSetAtlasSource_w84wx")
 sources/9 = SubResource("TileSetAtlasSource_pmhix")
+sources/17 = SubResource("TileSetAtlasSource_3vwau")
+sources/18 = SubResource("TileSetAtlasSource_i8ji7")

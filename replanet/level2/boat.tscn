@@ -1,7 +1,7 @@
 [gd_scene load_steps=10 format=3 uid="uid://dvdq6uqdbou6r"]
 
 [ext_resource type="Texture2D" uid="uid://pxvn2bpqpbrt" path="res://level2/Wood Boat.png" id="1_0063d"]
-[ext_resource type="Script" uid="uid://bjukr014il3g1" path="res://level2/boat.gd" id="1_qyrje"]
+[ext_resource type="Script" path="res://level2/boat.gd" id="1_qyrje"]
 [ext_resource type="Shape2D" uid="uid://dx3l8ojfq6h82" path="res://level2/boat_collisionShape.tres" id="3_lw6pk"]
 
 [sub_resource type="GDScript" id="GDScript_wgyym"]
@@ -43,8 +43,8 @@ animations = [{
 }]
 
 [node name="Boat" type="CharacterBody2D"]
-collision_layer = 16
-collision_mask = 16
+collision_layer = 22
+collision_mask = 22
 script = ExtResource("1_qyrje")
 
 [node name="Recolector" type="Area2D" parent="."]

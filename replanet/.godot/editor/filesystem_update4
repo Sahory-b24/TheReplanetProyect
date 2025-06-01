@@ -1,6 +1,3 @@
-res://mainMenu/Assets/Buttoms/atras_pressl.tres
-res://mainMenu/Scripts/options.gd
-res://scripts/custimization.gd
 res://mainMenu/Scenes/instructions.tscn
 res://mainMenu/Scenes/scene_transitions.gd
 res://mainMenu/Scripts/MuteButton.gd
@@ -24,6 +21,10 @@ res://level2/trash_bag.tscn
 res://scenes/test_scene_tile_map.tscn
 res://level2/trash_bottle.tscn
 res://level2/trash_wood.tscn
-res://mainMenu/Assets/Buttoms/botonCusNormal.tres
-res://scripts/player.gd
-res://scripts/Global.gd
+res://level2/boat.gd
+res://level2/boat_collisionShape.tres
+res://level2/scoreManager.gd
+res://level2/Score_Level2.gd
+res://level2/trash.gd
+res://level2/trash_collision_shape.tres
+res://level2/trash_spawner.gd
