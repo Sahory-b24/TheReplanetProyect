@@ -1,6 +1,6 @@
 extends Node
 
-var modo_juego: String = ""
+var modo_juego: String = "RPG"
 
 #Collection Body Options (Opciones de Skin Color) 
 var body_options ={

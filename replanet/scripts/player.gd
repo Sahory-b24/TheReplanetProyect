@@ -18,6 +18,7 @@ var last_direction = Vector2.ZERO
 const speed = 100
 
 func _ready():
+	modo_juego = Global.modo_juego
 	initialize_player()
 
 func _physics_process(delta):
@@ -84,7 +85,10 @@ func player_movement_plataforma(delta):
 		# Salto
 		if Input.is_action_just_pressed("ui_accept"): # normalmente es barra espaciadora
 			velocity.y = jump_force
-
+			
+	var anim_to_play = ""
+	if abs(direction.x) > abs(direction.y):
+		anim_to_play = "walk_right" if direction.x < 0 else "walk_left"
 	
 	move_and_slide()
 
