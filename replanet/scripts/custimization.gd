@@ -18,8 +18,8 @@ func _on_random_button_pressed() -> void:
 		"Shirts",
 		"Pants",
 		"Shoes",
-		"Acc",
-		"Eyes",
+		"acc",
+		"eyes",
 	]
 
 	var character = $".".get_node("Character")

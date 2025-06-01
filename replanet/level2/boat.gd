@@ -17,3 +17,4 @@ func _process(delta):
 	var mouse_y = get_viewport().get_mouse_position().y
 	var target_y = clamp(mouse_y, min_y, max_y) 
 	position.y = lerp(position.y, target_y, follow_speed * delta)
+	
