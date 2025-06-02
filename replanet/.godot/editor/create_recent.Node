@@ -1,6 +1,7 @@
+Label
+Label3D
 Camera2D
 TextureRect
-Label
 OptionButton
 ColorRect
 CanvasLayer
@@ -11,5 +12,3 @@ Area2D
 AnimatedSprite2D
 Button
 TileMapLayer
-HSlider
-Control

@@ -1,5 +1,8 @@
 res://mainMenu/Scenes/main_menu.tscn
 res://mainMenu/Scenes/scene_transitions.gd
 res://mainMenu/Scripts/MuteButton.gd
-res://level3/Scripts/minijuego_cables.gd
 res://level3/Scenes/miniJuego.tscn
+res://mainMenu/Scenes/LoreBook.tscn
+res://mainMenu/Scripts/lore_book.gd
+res://mainMenu/Scenes/instructions.tscn
+res://mainMenu/Assets/Buttoms/atras_press.tres

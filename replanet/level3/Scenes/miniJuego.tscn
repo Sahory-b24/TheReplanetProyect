@@ -51,24 +51,24 @@ theme_override_styles/panel = SubResource("StyleBoxTexture_p348u")
 
 [node name="TiempoLabel" type="Label" parent="MinijuegoCables"]
 layout_mode = 0
-offset_left = 16.0
+offset_left = 64.0
 offset_top = 8.0
-offset_right = 80.0
+offset_right = 128.0
 offset_bottom = 32.0
 
 [node name="PuntajeLabel" type="Label" parent="MinijuegoCables"]
 layout_mode = 0
-offset_left = 16.0
-offset_top = 40.0
-offset_right = 56.0
-offset_bottom = 63.0
+offset_left = 64.0
+offset_top = 39.0
+offset_right = 104.0
+offset_bottom = 62.0
 
 [node name="ConexionesLabel" type="Label" parent="MinijuegoCables"]
 layout_mode = 0
-offset_left = 312.0
-offset_top = 48.0
-offset_right = 392.0
-offset_bottom = 80.0
+offset_left = 384.0
+offset_top = 32.0
+offset_right = 464.0
+offset_bottom = 64.0
 
 [node name="ConectoresIzquierda" type="VBoxContainer" parent="MinijuegoCables"]
 custom_minimum_size = Vector2(64, 0)

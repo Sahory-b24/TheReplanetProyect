@@ -10,9 +10,9 @@
 [ext_resource type="Script" uid="uid://ditfvc7qwilfq" path="res://mainMenu/Scripts/MuteButton.gd" id="7_sawph"]
 [ext_resource type="FontFile" uid="uid://b5b1l3hfn2lof" path="res://assests/Fonts/ShareTech-Regular.ttf" id="9_mvewa"]
 [ext_resource type="Texture2D" uid="uid://sg0dgivivfml" path="res://mainMenu/Assets/Buttoms/siguiente_normal.tres" id="10_wxitn"]
+[ext_resource type="Texture2D" uid="uid://b5xvnix341lsx" path="res://mainMenu/Assets/Buttoms/atras_press.tres" id="11_2vggv"]
 [ext_resource type="Texture2D" uid="uid://dphppnhi3rvd5" path="res://mainMenu/Assets/Buttoms/atras_normal.tres" id="12_edqru"]
 [ext_resource type="Texture2D" uid="uid://c0t2h4efkhys" path="res://mainMenu/Assets/Buttoms/siguiente_press.tres" id="13_2vggv"]
-[ext_resource type="Texture2D" uid="uid://mbnx3brlqiva" path="res://mainMenu/Assets/Buttoms/atras_pressl.tres" id="13_a8ukq"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_6hm32"]
 texture = ExtResource("2_2vggv")
@@ -82,8 +82,8 @@ offset_right = 166.0
 offset_bottom = 299.0
 scale = Vector2(2, 2)
 texture_normal = ExtResource("12_edqru")
-texture_pressed = ExtResource("13_a8ukq")
-texture_hover = ExtResource("13_a8ukq")
+texture_pressed = ExtResource("11_2vggv")
+texture_hover = ExtResource("11_2vggv")
 
 [node name="siguienteButton" type="TextureButton" parent="."]
 offset_left = 455.0
