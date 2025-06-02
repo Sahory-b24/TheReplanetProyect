@@ -1,0 +1,38 @@
+[gd_scene load_steps=6 format=3 uid="uid://j6pokcbceix1"]
+
+[ext_resource type="Script" uid="uid://dbxnll3vtadux" path="res://level3/Scenes/lever.gd" id="1_0ralg"]
+[ext_resource type="Texture2D" uid="uid://btt1ftvfgr04o" path="res://level3/Assets/textures/Lever_off.tres" id="2_eo25a"]
+[ext_resource type="Texture2D" uid="uid://db6bj1cci70vp" path="res://level3/Assets/textures/Lever_on.tres" id="3_luej3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_n74ms"]
+size = Vector2(8, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0ralg"]
+size = Vector2(6, 10)
+
+[node name="Lever" type="Node2D"]
+script = ExtResource("1_0ralg")
+off_texture = ExtResource("2_eo25a")
+on_texture = ExtResource("3_luej3")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-1.25, -6.25)
+scale = Vector2(0.772727, 0.621212)
+texture = ExtResource("2_eo25a")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-1, -6)
+shape = SubResource("RectangleShape2D_n74ms")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2(-1, -2)
+collision_layer = 65
+collision_mask = 65
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+shape = SubResource("RectangleShape2D_0ralg")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]

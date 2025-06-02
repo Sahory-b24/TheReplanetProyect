@@ -1,3 +1,8 @@
+CollisionShape2D
+StaticBody2D
+Area2D
+Sprite2D
+Node2D
 TextureRect
 Button
 Label
@@ -7,8 +12,3 @@ Label3D
 Camera2D
 OptionButton
 ColorRect
-CanvasLayer
-Node2D
-CollisionShape2D
-Area2D
-AnimatedSprite2D

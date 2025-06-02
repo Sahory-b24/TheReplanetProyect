@@ -10,7 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://sg0dgivivfml" path="res://mainMenu/Assets/Buttoms/siguiente_normal.tres" id="8_wv48v"]
 [ext_resource type="Texture2D" uid="uid://c0t2h4efkhys" path="res://mainMenu/Assets/Buttoms/siguiente_press.tres" id="9_b8qrb"]
 [ext_resource type="Texture2D" uid="uid://dphppnhi3rvd5" path="res://mainMenu/Assets/Buttoms/atras_normal.tres" id="9_bhhnu"]
-[ext_resource type="Texture2D" uid="uid://b5xvnix341lsx" path="res://mainMenu/Assets/Buttoms/atras_press.tres" id="11_dnews"]
+[ext_resource type="Texture2D" uid="uid://br7x0b60nw3vy" path="res://mainMenu/Assets/Buttoms/atras_press.tres" id="11_dnews"]
 [ext_resource type="Texture2D" uid="uid://7u7yytp1ompw" path="res://mainMenu/Assets/Images/lore2.png" id="12_dnews"]
 [ext_resource type="FontFile" uid="uid://b5b1l3hfn2lof" path="res://assests/Fonts/ShareTech-Regular.ttf" id="13_i2si5"]
 
