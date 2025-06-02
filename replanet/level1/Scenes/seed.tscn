@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://2olsg8orii87"]
+
+[ext_resource type="Script" uid="uid://e30q0twkbq7f" path="res://level1/Scripts/seed_2d.gd" id="1_6mtvd"]
+[ext_resource type="Texture2D" uid="uid://clyf0pcxbjis" path="res://assests/game/assestsUsed/uglyWorld/Deco/summerCrops.png" id="1_m0bgt"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_6mtvd"]
+radius = 6.0
+
+[node name="Seed" type="Node2D"]
+
+[node name="Seed2D" type="Area2D" parent="."]
+script = ExtResource("1_6mtvd")
+
+[node name="Sprite2D" type="Sprite2D" parent="Seed2D"]
+texture = ExtResource("1_m0bgt")
+region_enabled = true
+region_rect = Rect2(1.97844, 116.134, 13.2389, 11.7457)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Seed2D"]
+shape = SubResource("CircleShape2D_6mtvd")
+
+[connection signal="body_entered" from="Seed2D" to="Seed2D" method="_on_body_entered"]
