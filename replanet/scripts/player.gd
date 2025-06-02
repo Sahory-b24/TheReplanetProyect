@@ -18,6 +18,8 @@ var last_direction = Vector2.ZERO
 const speed = 100
 
 func _ready():
+	if has_node("Camera2D2"):
+		$Camera2D2.make_current()
 	modo_juego = Global.modo_juego
 	initialize_player()
 
