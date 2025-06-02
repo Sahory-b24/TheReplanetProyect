@@ -1,6 +1,6 @@
 [gd_scene load_steps=9 format=3 uid="uid://cgxfwjxlf8arr"]
 
-[ext_resource type="Script" path="res://level2/trash.gd" id="1_eoi41"]
+[ext_resource type="Script" uid="uid://b3p4643jh2j6b" path="res://level2/trash.gd" id="1_eoi41"]
 [ext_resource type="Texture2D" uid="uid://bs3eqaij53gfk" path="res://level2/trash_bag.png" id="2_uhlpk"]
 [ext_resource type="Shape2D" uid="uid://cv11uy3cktd42" path="res://level2/trash_collision_shape.tres" id="3_qh6va"]
 

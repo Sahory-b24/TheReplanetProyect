@@ -70,3 +70,9 @@ frame_progress = 1.0
 [node name="Camera2D" type="Camera2D" parent="."]
 offset = Vector2(100, 0)
 zoom = Vector2(1.5, 1.5)
+
+[node name="DamageCooldown" type="Timer" parent="."]
+wait_time = 3.5
+one_shot = true
+
+[connection signal="timeout" from="DamageCooldown" to="." method="_on_damage_cooldown_timeout"]
