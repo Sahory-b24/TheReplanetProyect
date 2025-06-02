@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://byxvaoi8ud2y0"
-path="res://.godot/imported/props water 2.png-8528161065aaa7e35fe7b366573c33e3.ctex"
+uid="uid://bq6oov4xnfvei"
+path="res://.godot/imported/basura assets.png-cdb5e4a04b2dc8b6a863304992623c2d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://level2/props water 2.png"
-dest_files=["res://.godot/imported/props water 2.png-8528161065aaa7e35fe7b366573c33e3.ctex"]
+source_file="res://level2/Assests/basura assets.png"
+dest_files=["res://.godot/imported/basura assets.png-cdb5e4a04b2dc8b6a863304992623c2d.ctex"]
 
 [params]
 

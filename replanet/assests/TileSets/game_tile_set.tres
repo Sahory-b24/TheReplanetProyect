@@ -15,8 +15,8 @@
 [ext_resource type="Texture2D" uid="uid://b8p05yjw835w4" path="res://assests/game/assestsUsed/uglyWorld/Deco/road.png" id="9_dvb2g"]
 [ext_resource type="Texture2D" uid="uid://bwhptqgh4ys21" path="res://assests/game/assestsUsed/uglyWorld/Deco/minerals.png" id="9_w84wx"]
 [ext_resource type="Texture2D" uid="uid://o4tcf0xk5dm" path="res://assests/game/assestsUsed/uglyWorld/Deco/rocks.png" id="10_8tl7t"]
-[ext_resource type="Texture2D" uid="uid://cmq1o2h1igqgv" path="res://level2/spritesheet_16x16_5frames.png" id="10_bkswl"]
-[ext_resource type="Texture2D" uid="uid://byxvaoi8ud2y0" path="res://level2/props water 2.png" id="11_cnquu"]
+[ext_resource type="Texture2D" uid="uid://cmq1o2h1igqgv" path="res://level2/Assests/spritesheet_16x16_5frames.png" id="10_bkswl"]
+[ext_resource type="Texture2D" uid="uid://byxvaoi8ud2y0" path="res://level2/Assests/props water 2.png" id="11_cnquu"]
 [ext_resource type="Texture2D" uid="uid://3jtonw2w6mk4" path="res://assests/game/assestsUsed/uglyWorld/Deco/clouds.png" id="16_gbmkf"]
 [ext_resource type="Texture2D" uid="uid://vw1xytenomg5" path="res://assests/game/assestsUsed/uglyWorld/Deco/Wood Boat.png" id="17_i3n26"]
 

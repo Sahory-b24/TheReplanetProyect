@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dxe27pk0c6rd1"
-path="res://.godot/imported/Exterior Beach.png-117ad689c864e1980e74349ba81d270e.ctex"
+uid="uid://bqqb7gl7u4tp3"
+path="res://.godot/imported/wood.png-59ac44d372b902195dc95f049321f706.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://level2/Exterior Beach.png"
-dest_files=["res://.godot/imported/Exterior Beach.png-117ad689c864e1980e74349ba81d270e.ctex"]
+source_file="res://level2/Assests/wood.png"
+dest_files=["res://.godot/imported/wood.png-59ac44d372b902195dc95f049321f706.ctex"]
 
 [params]
 

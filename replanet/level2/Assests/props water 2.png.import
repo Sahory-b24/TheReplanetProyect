@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://pxvn2bpqpbrt"
-path="res://.godot/imported/Wood Boat.png-3bd795bc29be76e4972e6ab8345aface.ctex"
+uid="uid://byxvaoi8ud2y0"
+path="res://.godot/imported/props water 2.png-4ba15faaead20a6128744e63e8c2222a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://level2/Wood Boat.png"
-dest_files=["res://.godot/imported/Wood Boat.png-3bd795bc29be76e4972e6ab8345aface.ctex"]
+source_file="res://level2/Assests/props water 2.png"
+dest_files=["res://.godot/imported/props water 2.png-4ba15faaead20a6128744e63e8c2222a.ctex"]
 
 [params]
 

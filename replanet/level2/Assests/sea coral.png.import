@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bt1ovbhg3b6to"
-path="res://.godot/imported/animacion trash 1.png-ec2390c4be5d17b857a03d506c6e1288.ctex"
+uid="uid://br252wjx285ic"
+path="res://.godot/imported/sea coral.png-cac689bcc9177c2b5d3eb3efa27561c1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://level2/animacion trash 1.png"
-dest_files=["res://.godot/imported/animacion trash 1.png-ec2390c4be5d17b857a03d506c6e1288.ctex"]
+source_file="res://level2/Assests/sea coral.png"
+dest_files=["res://.godot/imported/sea coral.png-cac689bcc9177c2b5d3eb3efa27561c1.ctex"]
 
 [params]
 

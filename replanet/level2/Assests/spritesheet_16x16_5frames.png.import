@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bqqb7gl7u4tp3"
-path="res://.godot/imported/wood.png-1bdd2bde475415ebf1e92a23382cf36a.ctex"
+uid="uid://cmq1o2h1igqgv"
+path="res://.godot/imported/spritesheet_16x16_5frames.png-d5e4a113b4c5a4f5938a12ce425dac80.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://level2/wood.png"
-dest_files=["res://.godot/imported/wood.png-1bdd2bde475415ebf1e92a23382cf36a.ctex"]
+source_file="res://level2/Assests/spritesheet_16x16_5frames.png"
+dest_files=["res://.godot/imported/spritesheet_16x16_5frames.png-d5e4a113b4c5a4f5938a12ce425dac80.ctex"]
 
 [params]
 

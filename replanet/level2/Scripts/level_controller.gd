@@ -22,8 +22,8 @@ func _end_level(success: bool) -> void:
 	if success:
 		print("🎉 Nivel completado con éxito")
 		GuardarPuntaje.guardar_puntaje(nombre, score_manager.score)
-		get_tree().change_scene_to_file("res://level2/Puntajes.tscn")
+		get_tree().change_scene_to_file("res://level2/Scenes/Puntajes.tscn")
 	else:
 		print("💀 Fin del nivel (límite del mapa alcanzado)")
-		get_tree().change_scene_to_file("res://level2/YouLost.tscn")
+		get_tree().change_scene_to_file("res://level2/Scenes/YouLost.tscn")
 	  # Ajusta la ruta

@@ -15,3 +15,7 @@ res://scenes/player_level2.tscn
 res://scenes/test_scene_tile_map.tscn
 res://scenes/world.tscn
 res://scenes/level_1.tscn
+res://level2/Scenes/Puntajes.tscn
+res://level2/Scripts/level_controller.gd
+res://level2/Scenes/Level_2.tscn
+res://scenes/world.gd
