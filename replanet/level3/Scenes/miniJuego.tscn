@@ -1,0 +1,130 @@
+[gd_scene load_steps=7 format=3 uid="uid://c2ixtkul8kitx"]
+
+[ext_resource type="Script" uid="uid://csoepfhmct6hc" path="res://level3/Scripts/minijuego_cables.gd" id="1_kxfgs"]
+[ext_resource type="Texture2D" uid="uid://lu5iks6beehd" path="res://level3/Assets/Images/AssetsSheet.png" id="2_p348u"]
+[ext_resource type="Texture2D" uid="uid://daiv3rthhjj5i" path="res://level3/Assets/Images/FondoCables.png" id="2_putgk"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_cs1ai"]
+texture = ExtResource("2_putgk")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_p348u"]
+texture = ExtResource("2_p348u")
+region_rect = Rect2(240.372, 149.624, 121.696, 71.6646)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_p348u"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.603922, 0.678431, 0.694118, 1)
+corner_radius_top_left = 1
+corner_radius_top_right = 1
+corner_radius_bottom_right = 1
+corner_radius_bottom_left = 1
+shadow_size = 4
+
+[node name="MiniJuego" type="Node2D"]
+
+[node name="MinijuegoCables" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_kxfgs")
+
+[node name="Panel3" type="Panel" parent="MinijuegoCables"]
+layout_mode = 0
+offset_right = 641.0
+offset_bottom = 358.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_cs1ai")
+
+[node name="Panel" type="Panel" parent="MinijuegoCables"]
+layout_mode = 0
+offset_left = 56.0
+offset_top = 76.0
+offset_right = 587.0
+offset_bottom = 345.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_p348u")
+
+[node name="Timer" type="Timer" parent="MinijuegoCables"]
+
+[node name="TiempoLabel" type="Label" parent="MinijuegoCables"]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 8.0
+offset_right = 80.0
+offset_bottom = 32.0
+
+[node name="PuntajeLabel" type="Label" parent="MinijuegoCables"]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 40.0
+offset_right = 56.0
+offset_bottom = 63.0
+
+[node name="ConexionesLabel" type="Label" parent="MinijuegoCables"]
+layout_mode = 0
+offset_left = 312.0
+offset_top = 48.0
+offset_right = 392.0
+offset_bottom = 80.0
+
+[node name="ConectoresIzquierda" type="VBoxContainer" parent="MinijuegoCables"]
+custom_minimum_size = Vector2(64, 0)
+layout_mode = 2
+offset_left = 160.0
+offset_top = 112.0
+offset_right = 250.0
+offset_bottom = 284.0
+size_flags_horizontal = 0
+
+[node name="ConectoresDerecha" type="VBoxContainer" parent="MinijuegoCables"]
+custom_minimum_size = Vector2(64, 0)
+layout_mode = 2
+offset_left = 384.0
+offset_top = 112.0
+offset_right = 474.0
+offset_bottom = 284.0
+size_flags_horizontal = 4
+size_flags_vertical = 8
+
+[node name="LineDrawer" type="Node2D" parent="MinijuegoCables"]
+
+[node name="Panel2" type="Panel" parent="MinijuegoCables"]
+layout_mode = 0
+offset_left = 476.0
+offset_top = 39.0
+offset_right = 502.0
+offset_bottom = 63.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_p348u")
+
+[node name="indicadorColor" type="ColorRect" parent="MinijuegoCables/Panel2"]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 2.0
+offset_right = 24.0
+offset_bottom = 22.0
+
+[node name="PanelFin" type="Panel" parent="MinijuegoCables"]
+layout_mode = 0
+offset_left = 192.0
+offset_top = 144.0
+offset_right = 464.0
+offset_bottom = 288.0
+
+[node name="MensajeLabel" type="Label" parent="MinijuegoCables/PanelFin"]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 40.0
+offset_right = 240.0
+offset_bottom = 112.0
+autowrap_mode = 3
+
+[node name="BotonSalir" type="Button" parent="MinijuegoCables/PanelFin"]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+
+[connection signal="timeout" from="MinijuegoCables/Timer" to="MinijuegoCables" method="_on_Timer_timeout"]
+[connection signal="pressed" from="MinijuegoCables/PanelFin/BotonSalir" to="MinijuegoCables" method="_on_boton_salir_pressed"]
