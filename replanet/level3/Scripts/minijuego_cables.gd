@@ -226,10 +226,13 @@ func finalizar_minijuego():
 	emit_signal("minijuego_completado", puntos)
 
 
-func _on_BotonSalir_pressed():
-	queue_free()
 
 func _process(delta):
 	if timer.is_stopped():
 		return
 	label_tiempo.text = "Tiempo: " + str(round(timer.time_left)) + "s"
+
+
+func _on_boton_salir_pressed() -> void:
+	SceneTransitions.change_scene_to_file("res://level3/Scenes/level_3")
+	pass # Replace with function body.

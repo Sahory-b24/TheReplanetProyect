@@ -20,14 +20,17 @@ func _process(_delta):
 func toggle_lever():
 	is_on = not is_on
 	$Sprite2D.texture = on_texture if is_on else off_texture
+	SceneTransitions.change_scene_to_file("res://level3/Scenes/miniJuego.tscn")
 	print("Palanca activada:", is_on)
 
 func _on_area_2d_body_entered(body: Node2D) -> void:
 	if body.name == "Player":
 		is_player_near = true
 		print("El jugador está cerca de la palanca")
+		$Panel.visible = true # Muestra el panel con el mensaje
 
 func _on_area_2d_body_exited(body: Node2D) -> void:
 	if body.name == "Player":
 		is_player_near = false
 		print("El jugador se alejó de la palanca")
+		$Panel.visible = false  # Muestra el panel con el mensaje

@@ -1,25 +1,14 @@
-<<<<<<< Updated upstream
+TextureButton
+Label
+Panel
 CollisionShape2D
 StaticBody2D
 Area2D
 Sprite2D
 Node2D
-=======
 AnimationPlayer
->>>>>>> Stashed changes
 TextureRect
 Button
-Label
-Panel
-TextureButton
 Label3D
 Camera2D
 OptionButton
-ColorRect
-<<<<<<< Updated upstream
-=======
-CanvasLayer
-Node2D
-CollisionShape2D
-Area2D
->>>>>>> Stashed changes
