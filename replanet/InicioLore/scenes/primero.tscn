@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://bnl5b4fvvx8st"]
+
+[ext_resource type="Texture2D" uid="uid://dknc4t70uxbx0" path="res://InicioLore/Images/RePlanetfondo.png" id="1_8b7pj"]
+[ext_resource type="Script" uid="uid://ciuc23iso24os" path="res://InicioLore/scenes/primero.gd" id="1_ib7yb"]
+[ext_resource type="Texture2D" uid="uid://c8ck4orduyrnd" path="res://InicioLore/Images/RePlanet.png" id="2_4yx6k"]
+
+[node name="Primero" type="Node2D"]
+texture_filter = 1
+script = ExtResource("1_ib7yb")
+
+[node name="RePlanet" type="TextureRect" parent="."]
+offset_right = 640.0
+offset_bottom = 360.0
+texture = ExtResource("2_4yx6k")
+
+[node name="isla" type="TextureRect" parent="."]
+offset_right = 640.0
+offset_bottom = 360.0
+texture = ExtResource("1_8b7pj")

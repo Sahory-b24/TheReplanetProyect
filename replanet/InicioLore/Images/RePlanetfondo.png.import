@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bgfqgt0br06dj"
-path="res://.godot/imported/lore3.png-acbab214d13c77ef394c28b9647d6bcb.ctex"
+uid="uid://dknc4t70uxbx0"
+path="res://.godot/imported/RePlanetfondo.png-f27a7fb42bc2d7cdde06206aed1cfaf8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://InicioLore/Images/lore3.png"
-dest_files=["res://.godot/imported/lore3.png-acbab214d13c77ef394c28b9647d6bcb.ctex"]
+source_file="res://InicioLore/Images/RePlanetfondo.png"
+dest_files=["res://.godot/imported/RePlanetfondo.png-f27a7fb42bc2d7cdde06206aed1cfaf8.ctex"]
 
 [params]
 

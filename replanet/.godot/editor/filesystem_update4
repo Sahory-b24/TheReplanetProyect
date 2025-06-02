@@ -21,5 +21,12 @@ res://scenes/level_1.tscn
 res://level2/Scenes/Puntajes.tscn
 res://level2/Scenes/Level_2.tscn
 res://level2/Scenes/boat.tscn
+<<<<<<< Updated upstream
 res://level3/Assets/textures/Lever_on.tres
 res://scripts/player.gd
+=======
+res://InicioLore/scenes/inicio_lore.gd
+res://InicioLore/scenes/primero.tscn
+res://InicioLore/scenes/primero.gd
+res://scripts/custimization.gd
+>>>>>>> Stashed changes

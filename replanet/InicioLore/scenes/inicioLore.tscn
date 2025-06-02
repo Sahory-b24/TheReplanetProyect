@@ -1,13 +1,12 @@
-[gd_scene load_steps=8 format=3 uid="uid://dmmkugbofoisq"]
+[gd_scene load_steps=7 format=3 uid="uid://dmmkugbofoisq"]
 
-[ext_resource type="Texture2D" uid="uid://ci1y3ard70s3t" path="res://InicioLore/Images/fondoLore.png" id="1_t0wsm"]
 [ext_resource type="Script" uid="uid://f7qkwg10h8r0" path="res://InicioLore/scenes/inicio_lore.gd" id="1_yag3a"]
 [ext_resource type="FontFile" uid="uid://b5b1l3hfn2lof" path="res://assests/Fonts/ShareTech-Regular.ttf" id="4_evm4i"]
 [ext_resource type="Texture2D" uid="uid://sg0dgivivfml" path="res://mainMenu/Assets/Buttoms/siguiente_normal.tres" id="5_j0hoh"]
 [ext_resource type="Texture2D" uid="uid://c0t2h4efkhys" path="res://mainMenu/Assets/Buttoms/siguiente_press.tres" id="6_3biey"]
 
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_gxd5h"]
-texture = ExtResource("1_t0wsm")
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gxd5h"]
+bg_color = Color(0, 0, 0, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fdaou"]
 bg_color = Color(0.5, 0.5, 0.5, 0.5)
@@ -22,7 +21,7 @@ script = ExtResource("1_yag3a")
 [node name="Panel" type="Panel" parent="."]
 offset_right = 640.0
 offset_bottom = 360.0
-theme_override_styles/panel = SubResource("StyleBoxTexture_gxd5h")
+theme_override_styles/panel = SubResource("StyleBoxFlat_gxd5h")
 
 [node name="SlideImage" type="TextureRect" parent="."]
 offset_left = 24.0

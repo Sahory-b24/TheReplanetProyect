@@ -8,7 +8,7 @@ func _on_text_edit_text_changed() -> void:
 
 func _on_save_buttom_pressed() -> void:
 	Global.player_name = player_name
-	get_tree().change_scene_to_file("res://InicioLore/scenes/inicioLore.tscn")
+	get_tree().change_scene_to_file("res://InicioLore/scenes/primero.tscn")
 
 
 func _on_random_button_pressed() -> void:

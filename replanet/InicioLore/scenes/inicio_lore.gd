@@ -10,9 +10,9 @@ var slides = [
 	preload("res://mainMenu/Assets/Images/lore7.png"),
 ]
 
-var current_slide = 1
+var current_slide = 1  # Comenzar desde lore2
 var all_labels = []
-var slide_labels = {}
+var slide_labels = []
 
 func _ready() -> void:
 	all_labels = [$Label1, $Label2, $Label3, $Label4, $Label5, $Label6, $Label7, $Label8, $Label9, $Label10, $Label11, $Label12]
@@ -26,19 +26,35 @@ func _ready() -> void:
 		6: [$Label11, $Label12],
 	}
 
-	show_slide()
+	# Asegúrate de que el SlideImage tenga modulate = Color(1, 1, 1, 1)
+	show_slide(true)
 
-func show_slide() -> void:
-	$SlideImage.texture = slides[current_slide]
-
+func show_slide(skip_fade := false) -> void:
+	# Ocultar todos los labels
 	for label in all_labels:
-		if label:
-			label.visible = false
+		label.visible = false
 
-	if slide_labels.has(current_slide):
-		for label in slide_labels[current_slide]:
-			if label:
+	if skip_fade:
+		$SlideImage.texture = slides[current_slide]
+		if slide_labels.has(current_slide):
+			for label in slide_labels[current_slide]:
 				label.visible = true
+	else:
+		var tween = get_tree().create_tween()
+		tween.tween_property($SlideImage, "modulate:a", 0.0, 0.4).set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_IN_OUT)
+		await tween.finished
+
+		$SlideImage.texture = slides[current_slide]
+
+		if slide_labels.has(current_slide):
+			for label in slide_labels[current_slide]:
+				label.visible = true
+
+		# En Godot 4: await create_timer().timeout
+		await get_tree().create_timer(0.1).timeout
+
+		var tween2 = get_tree().create_tween()
+		tween2.tween_property($SlideImage, "modulate:a", 1.0, 0.6).set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_IN_OUT)
 
 func _on_siguiente_button_pressed() -> void:
 	AudioManager.SFXPlayer.stream = preload("res://mainMenu/Assets/Audio/tf2-button-click-hover.mp3")
@@ -46,14 +62,12 @@ func _on_siguiente_button_pressed() -> void:
 
 	if current_slide < slides.size() - 1:
 		current_slide += 1
-		show_slide()
+		await show_slide()
 	else:
-		# Ya está en la última slide, ahora cambiamos de escena
+		# Ya está en la última diapositiva, ir a escena del mundo
 		SceneTransitions.change_scene_to_file("res://scenes/world.tscn")
-
 
 func _on_button_pressed() -> void:
 	AudioManager.SFXPlayer.stream = preload("res://mainMenu/Assets/Audio/tf2-button-click-hover.mp3")
 	AudioManager.SFXPlayer.play()
-	SceneTransitions.change_scene_to_file("res://scenes/world.tscn.tscn")
-	pass # Replace with function body.
+	SceneTransitions.change_scene_to_file("res://scenes/world.tscn")
