@@ -5,7 +5,7 @@ extends Node2D
 
 func _on_nivel_1_pressed() -> void:
 	Global.modo_juego = "PLATAFORMA"
-	get_tree().change_scene_to_file("res://scenes/level_1.tscn")
+	get_tree().change_scene_to_file("res://level1/Scenes/level_1.tscn")
 	
 func _on_nivel_2_pressed() -> void:
 	Global.modo_juego = "RPG"
