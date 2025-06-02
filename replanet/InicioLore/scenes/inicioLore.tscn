@@ -1,0 +1,205 @@
+[gd_scene load_steps=8 format=3 uid="uid://dmmkugbofoisq"]
+
+[ext_resource type="Texture2D" uid="uid://ci1y3ard70s3t" path="res://InicioLore/Images/fondoLore.png" id="1_t0wsm"]
+[ext_resource type="Script" uid="uid://f7qkwg10h8r0" path="res://InicioLore/scenes/inicio_lore.gd" id="1_yag3a"]
+[ext_resource type="FontFile" uid="uid://b5b1l3hfn2lof" path="res://assests/Fonts/ShareTech-Regular.ttf" id="4_evm4i"]
+[ext_resource type="Texture2D" uid="uid://sg0dgivivfml" path="res://mainMenu/Assets/Buttoms/siguiente_normal.tres" id="5_j0hoh"]
+[ext_resource type="Texture2D" uid="uid://c0t2h4efkhys" path="res://mainMenu/Assets/Buttoms/siguiente_press.tres" id="6_3biey"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_gxd5h"]
+texture = ExtResource("1_t0wsm")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fdaou"]
+bg_color = Color(0.5, 0.5, 0.5, 0.5)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[node name="InicioLore" type="Node2D"]
+script = ExtResource("1_yag3a")
+
+[node name="Panel" type="Panel" parent="."]
+offset_right = 640.0
+offset_bottom = 360.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_gxd5h")
+
+[node name="SlideImage" type="TextureRect" parent="."]
+offset_left = 24.0
+offset_top = 16.0
+offset_right = 616.0
+offset_bottom = 352.0
+expand_mode = 1
+
+[node name="Label1" type="Label" parent="."]
+visible = false
+offset_left = 264.0
+offset_top = 32.0
+offset_right = 616.0
+offset_bottom = 119.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_evm4i")
+theme_override_font_sizes/font_size = 16
+text = "La lluvia cae como ácido. El aire es veneno. Los recuerdos de la naturaleza viven solo en archivos digitales. Esto no es un futuro distópico… es el presente."
+autowrap_mode = 2
+
+[node name="Label2" type="Label" parent="."]
+visible = false
+offset_left = 400.0
+offset_top = 96.0
+offset_right = 608.0
+offset_bottom = 128.0
+theme_override_colors/font_color = Color(0.654282, 0.112745, 0, 1)
+theme_override_fonts/font = ExtResource("4_evm4i")
+theme_override_font_sizes/font_size = 25
+text = "El colapso ya ocurrió"
+autowrap_mode = 2
+
+[node name="Label3" type="Label" parent="."]
+visible = false
+offset_left = 264.0
+offset_top = 32.0
+offset_right = 616.0
+offset_bottom = 119.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_evm4i")
+theme_override_font_sizes/font_size = 16
+text = "Clausurada en 2045 tras un accidente ecológico, Isla Maravia fue borrada de los mapas. Nadie entra. Nadie sale. Nadie pregunta."
+autowrap_mode = 2
+
+[node name="Label4" type="Label" parent="."]
+visible = false
+offset_left = 342.0
+offset_top = 102.0
+offset_right = 614.0
+offset_bottom = 134.0
+theme_override_colors/font_color = Color(0.654282, 0.112745, 0, 1)
+theme_override_fonts/font = ExtResource("4_evm4i")
+theme_override_font_sizes/font_size = 25
+text = "La isla que nadie menciona"
+autowrap_mode = 2
+
+[node name="Label5" type="Label" parent="."]
+visible = false
+offset_left = 261.0
+offset_top = 28.0
+offset_right = 613.0
+offset_bottom = 115.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_evm4i")
+theme_override_font_sizes/font_size = 17
+text = "En secreto, un grupo activó un experimento ilegal: un portal cuántico hacia el pasado. No para observar… sino para cambiarlo todo.
+"
+autowrap_mode = 2
+
+[node name="Label6" type="Label" parent="."]
+visible = false
+offset_left = 399.0
+offset_top = 100.0
+offset_right = 671.0
+offset_bottom = 132.0
+theme_override_colors/font_color = Color(0.654282, 0.112745, 0, 1)
+theme_override_fonts/font = ExtResource("4_evm4i")
+theme_override_font_sizes/font_size = 25
+text = "Una misión prohibida"
+autowrap_mode = 2
+
+[node name="Label7" type="Label" parent="."]
+visible = false
+offset_left = 261.0
+offset_top = 31.0
+offset_right = 613.0
+offset_bottom = 118.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_evm4i")
+theme_override_font_sizes/font_size = 16
+text = "Antes de la caída, el mundo aún respiraba. Bosques, animales, ríos. Algunos ecosistemas clave podrían haberse salvado… si alguien hubiera actuado a tiempo.
+"
+autowrap_mode = 2
+
+[node name="Label8" type="Label" parent="."]
+visible = false
+offset_left = 373.0
+offset_top = 98.0
+offset_right = 645.0
+offset_bottom = 130.0
+theme_override_colors/font_color = Color(0.654282, 0.112745, 0, 1)
+theme_override_fonts/font = ExtResource("4_evm4i")
+theme_override_font_sizes/font_size = 25
+text = "Lo que estaba en juego"
+autowrap_mode = 2
+
+[node name="Label9" type="Label" parent="."]
+visible = false
+offset_left = 263.0
+offset_top = 31.0
+offset_right = 615.0
+offset_bottom = 118.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_evm4i")
+theme_override_font_sizes/font_size = 17
+text = "No llegaste para reparar el presente… llegaste para evitar que ocurra el fin. Cada decisión cuenta. Cada viaje tiene consecuencias.
+"
+autowrap_mode = 2
+
+[node name="Label10" type="Label" parent="."]
+visible = false
+offset_left = 339.0
+offset_top = 99.0
+offset_right = 611.0
+offset_bottom = 131.0
+theme_override_colors/font_color = Color(0.654282, 0.112745, 0, 1)
+theme_override_fonts/font = ExtResource("4_evm4i")
+theme_override_font_sizes/font_size = 25
+text = "Tú eres la última esperanza"
+autowrap_mode = 2
+
+[node name="Label11" type="Label" parent="."]
+visible = false
+offset_left = 267.0
+offset_top = 33.0
+offset_right = 619.0
+offset_bottom = 120.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_evm4i")
+theme_override_font_sizes/font_size = 18
+text = "El pasado no está escrito en piedra. El tiempo se abre… y solo tú puedes cambiar el destino del planeta."
+autowrap_mode = 2
+
+[node name="Label12" type="Label" parent="."]
+visible = false
+offset_left = 351.0
+offset_top = 92.0
+offset_right = 623.0
+offset_bottom = 124.0
+theme_override_colors/font_color = Color(0.654282, 0.112745, 0, 1)
+theme_override_fonts/font = ExtResource("4_evm4i")
+theme_override_font_sizes/font_size = 25
+text = "Re:Planet comienza ahora"
+autowrap_mode = 2
+
+[node name="Button" type="Button" parent="."]
+texture_filter = 1
+texture_repeat = 2
+offset_left = 33.0
+offset_top = 303.0
+offset_right = 103.0
+offset_bottom = 334.0
+theme_override_colors/font_disabled_color = Color(0.490981, 0.475276, 0.459271, 1)
+theme_override_fonts/font = ExtResource("4_evm4i")
+theme_override_font_sizes/font_size = 13
+theme_override_styles/normal = SubResource("StyleBoxFlat_fdaou")
+text = "Omitir Lore"
+
+[node name="siguienteButton" type="TextureButton" parent="."]
+offset_left = 576.0
+offset_top = 312.0
+offset_right = 595.0
+offset_bottom = 332.0
+scale = Vector2(2, 2)
+texture_normal = ExtResource("5_j0hoh")
+texture_pressed = ExtResource("6_3biey")
+texture_hover = ExtResource("6_3biey")
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="siguienteButton" to="." method="_on_siguiente_button_pressed"]
