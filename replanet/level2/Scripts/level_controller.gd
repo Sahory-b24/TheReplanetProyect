@@ -1,6 +1,6 @@
 extends Node2D
 
-@export var goal_score: int = 250
+@export var goal_score: int = 1300
 @export var level_end_x: float = 4245.0  # Ajusta al ancho de tu mapa
 @onready var boat = $"../Boat"
 @onready var score_manager = $"../CanvasLayer/ScoreManager"

@@ -19,3 +19,5 @@ res://level2/Scenes/Puntajes.tscn
 res://level2/Scripts/level_controller.gd
 res://level2/Scenes/Level_2.tscn
 res://scenes/world.gd
+res://level2/Scripts/boat.gd
+res://level2/Scripts/trash.gd

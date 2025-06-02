@@ -29,7 +29,7 @@ func _physics_process(delta):
 		# Restar puntos si ScoreManager está presente
 		var score_manager = get_tree().current_scene.get_node("CanvasLayer/ScoreManager")
 		if score_manager:
-			score_manager.add_points(-5)  # ❌ Resta 5 puntos
+			score_manager.add_points(-30)  # ❌ Resta 30 puntos
 			
 		switch = false
 		cooldown_timer.start()
