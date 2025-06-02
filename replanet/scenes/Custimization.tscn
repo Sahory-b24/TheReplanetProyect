@@ -11,9 +11,9 @@
 [ext_resource type="Texture2D" uid="uid://ct1qm6i5lhyww" path="res://assests/Sprite/walk/clothes/shoes1_walk.png" id="6_ula43"]
 [ext_resource type="Script" uid="uid://d17lj620pkeyh" path="res://scripts/shirts.gd" id="7_axgr5"]
 [ext_resource type="Texture2D" uid="uid://dig8lfp26jikf" path="res://assests/Sprite/walk/eyes/eyesBrown_walk.png" id="7_hjq6v"]
-[ext_resource type="Texture2D" uid="uid://csjcp00gb2fdx" path="res://assests/Sprite/walk/hair/spacebunsBrown_walk.png" id="8_qc0m0"]
 [ext_resource type="Texture2D" uid="uid://cinsvncxl1cev" path="res://assests/Sprite/walk/eyes/blush1_walk.png" id="8_xj4am"]
 [ext_resource type="Texture2D" uid="uid://bi8d6pqtuoclp" path="res://assests/Sprite/walk/eyes/lipstick1_walk.png" id="9_jki43"]
+[ext_resource type="Texture2D" uid="uid://b02c3eaix5lg1" path="res://assests/Sprite/walk/hair/extra_longBrown_walk.png" id="9_l8ss4"]
 [ext_resource type="Script" uid="uid://bprokn1vy6tda" path="res://scripts/pants.gd" id="9_pqlyx"]
 [ext_resource type="Script" uid="uid://bbqdkbscfjycf" path="res://scripts/shoes.gd" id="11_5ivkg"]
 [ext_resource type="Script" uid="uid://oglw0gyfjeku" path="res://scripts/eyes.gd" id="13_gxoqe"]
@@ -201,8 +201,8 @@ vframes = 4
 script = ExtResource("5_wqa5x")
 
 [node name="Sprite2D" type="Sprite2D" parent="Character/Hair"]
-position = Vector2(-13, -22.5)
-texture = ExtResource("8_qc0m0")
+position = Vector2(-13, -21.5)
+texture = ExtResource("9_l8ss4")
 hframes = 8
 vframes = 4
 

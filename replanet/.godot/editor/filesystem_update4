@@ -3,7 +3,6 @@ res://mainMenu/Scenes/scene_transitions.gd
 res://mainMenu/Scripts/MuteButton.gd
 res://mainMenu/Assets/Buttoms/atras_press.tres
 res://assests/TileSets/game_tile_set.tres
-res://scenes/world.gd
 res://level3/Scenes/miniJuego.tscn
 res://mainMenu/Scenes/LoreBook.tscn
 res://mainMenu/Scenes/instructions.tscn
