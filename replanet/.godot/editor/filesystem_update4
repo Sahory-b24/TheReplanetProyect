@@ -9,3 +9,5 @@ res://level1/Scenes/bonus_seed.tscn
 res://Dialogos/balloon.tscn
 res://level3/Scenes/level_3.tscn
 res://level3/Scripts/hud.gd
+res://scenes/NPC.tscn
+res://addons/dialogue_manager/dialogue_label.tscn
