@@ -2,11 +2,11 @@ extends CanvasLayer
 
 @onready var puntaje_label = $PuntajeLabel
 @onready var puntaje_rect = $PuntajeRect
-@onready var panel_final = $PanelFinal
-@onready var mensaje_label = $PanelFinal/Panel/MensajeLabel
-@onready var puntaje_final_label = $PanelFinal/Panel/PuntajeFinal
-@onready var reintentar_button = $PanelFinal/Panel/ReintentarButtom
-@onready var volver_button = $PanelFinal/Panel/VolverAlMundo
+@onready var panel_final = $Panel2
+@onready var mensaje_label = $Panel2/PanelFinal/Panel/MensajeLabel
+@onready var puntaje_final_label = $Panel2/PanelFinal/Panel/PuntajeFinal
+@onready var reintentar_button = $Panel2/PanelFinal/Panel/ReintentarButtom
+@onready var volver_button = $Panel2/PanelFinal/Panel/VolverAlMundo
 
 # Iconos de palancas
 @onready var stars = [

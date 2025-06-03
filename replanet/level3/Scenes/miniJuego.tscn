@@ -6,7 +6,6 @@
 [ext_resource type="Texture2D" uid="uid://byim6hlifbw6m" path="res://mainMenu/Assets/Buttoms/regresar_normal.tres" id="4_dwbhn"]
 [ext_resource type="Texture2D" uid="uid://cbuqbkoc7cmgy" path="res://mainMenu/Assets/Buttoms/regresar_press.tres" id="5_dx70w"]
 
-
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_cs1ai"]
 texture = ExtResource("2_putgk")
 

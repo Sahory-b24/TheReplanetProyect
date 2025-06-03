@@ -15,3 +15,5 @@ res://level2/Scenes/boat.tscn
 res://level2/Scenes/pantallaPuntaje-Isis.tscn
 res://level2/Scenes/Puntajes.tscn
 res://scenes/NPC.tscn
+res://level3/Scripts/hud.gd
+res://level3/Scenes/miniJuego.tscn
