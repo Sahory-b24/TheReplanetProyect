@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://boxa67ncdxc6l" path="res://scenes/world.gd" id="1_4wyf3"]
 [ext_resource type="PackedScene" uid="uid://blu2fgshcdiag" path="res://scenes/player.tscn" id="1_rwgxs"]
 [ext_resource type="PackedScene" uid="uid://bdcpew3xkg8fd" path="res://scenes/test_scene_tile_map.tscn" id="3_b3arm"]
-[ext_resource type="PackedScene" path="res://scenes/NPC.tscn" id="4_71j4m"]
+[ext_resource type="PackedScene" uid="uid://b70j5r8ot4srf" path="res://scenes/NPC.tscn" id="4_71j4m"]
 [ext_resource type="Texture2D" uid="uid://dowokafdx0pqe" path="res://assests/Sprite/Elira_Mision1.png" id="5_qfnet"]
 [ext_resource type="Resource" uid="uid://cystkk0b6hths" path="res://Dialogos/dialogue_level1.dialogue" id="5_w7kh3"]
 [ext_resource type="Texture2D" uid="uid://7yac1bvmbfm3" path="res://assests/Sprite/Silas_Mision2.png" id="7_4mrxx"]

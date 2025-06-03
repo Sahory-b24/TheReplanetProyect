@@ -20,25 +20,46 @@ lines = {
 &"character": "Silas",
 &"id": "1",
 &"next_id": "2",
-&"text": "“Este río necesita ayuda, y no queda mucho tiempo. Si decides actuar, cada acción cuenta. ¿Estás listo para marcar la diferencia?",
+&"text": "Yo era pescador cuando el río aún vivía. Ahora solo cuido lo que queda.",
 &"type": "dialogue"
 },
 "2": {
 &"character": "Silas",
 &"id": "2",
 &"next_id": "3",
-&"text": "Presione \"Nivel 2\" para empezar con la misión.",
+&"text": "El agua ya no trae peces… pero hoy te trajo a ti. Si escuchaste el río, estás listo.",
 &"type": "dialogue"
 },
 "3": {
+&"character": "Silas",
 &"id": "3",
+&"next_id": "4",
+&"text": "Guía el bote con el mouse, recoge la basura y evita las rocas. Cada choque te hace perder puntos. Avanza con cuidado.",
+&"type": "dialogue"
+},
+"4": {
+&"character": "Silas",
+&"id": "4",
+&"next_id": "5",
+&"text": "Mueve el mouse arriba/abajo. Cada basura vale 50 pts. Cada golpe, -30. Llega a 1300 antes que el tiempo.",
+&"type": "dialogue"
+},
+"5": {
+&"character": "Silas",
+&"id": "5",
+&"next_id": "6",
+&"text": "Presione \"Nivel 2\" para empezar con la misión.",
+&"type": "dialogue"
+},
+"6": {
+&"id": "6",
 &"is_snippet": false,
 &"next_id": "end",
 &"next_id_after": "",
 &"type": "goto"
 },
-"4": {
-&"id": "4",
+"7": {
+&"id": "7",
 &"is_snippet": false,
 &"next_id": "end",
 &"next_id_after": "",
@@ -46,7 +67,10 @@ lines = {
 }
 }
 raw_text = "~ start
-Silas: “Este río necesita ayuda, y no queda mucho tiempo. Si decides actuar, cada acción cuenta. ¿Estás listo para marcar la diferencia?
+Silas: Yo era pescador cuando el río aún vivía. Ahora solo cuido lo que queda.
+Silas: El agua ya no trae peces… pero hoy te trajo a ti. Si escuchaste el río, estás listo.
+Silas: Guía el bote con el mouse, recoge la basura y evita las rocas. Cada choque te hace perder puntos. Avanza con cuidado.
+Silas: Mueve el mouse arriba/abajo. Cada basura vale 50 pts. Cada golpe, -30. Llega a 1300 antes que el tiempo.
 Silas: Presione \"Nivel 2\" para empezar con la misión.
 => END"
 metadata/dialogue_manager_version = "3.6.2"
