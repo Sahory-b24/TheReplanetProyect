@@ -13,7 +13,8 @@ func mostrar_panel_final(puntaje: int):
 	puntaje_final_label.text = "Puntaje: %d" % puntaje
 
 	if puntaje >= 1300:
-		mensaje_label.text = "Excelente, hiciste un buen trabajo limpiando el río."
+		mensaje_label.text = "Excelente, hiciste un buen trabajo limpiando el río. 
+Te ganaste una estrella."
 	else:
 		mensaje_label.text = "No alcanzaste el puntaje necesario."
 
