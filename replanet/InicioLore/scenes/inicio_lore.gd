@@ -25,7 +25,7 @@ func _ready() -> void:
 		5: [$Label9, $Label10],
 		6: [$Label11, $Label12],
 	}
-	AudioManager.play_music("res://mainMenue/Audio/On the Farm.waw")
+	AudioManager.play_music("res://mainMenu/Assets/Audio/On the Farm.wav")
 	# Asegúrate de que el SlideImage tenga modulate = Color(1, 1, 1, 1)
 	show_slide(true)
 

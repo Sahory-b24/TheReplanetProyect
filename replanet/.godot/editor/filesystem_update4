@@ -1,5 +1,4 @@
 res://mainMenu/Scenes/main_menu.tscn
 res://mainMenu/Scenes/scene_transitions.gd
-res://level1/Scripts/spikeColission.gd
-res://level3/Scenes/lever.gd
 res://mainMenu/Scripts/MuteButton.gd
+res://InicioLore/scenes/inicio_lore.gd
