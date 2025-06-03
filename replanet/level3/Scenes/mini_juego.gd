@@ -19,21 +19,22 @@ var lado_origen: String = ""
 
 var texturas_por_color_y_lado
 var texturas_linea_por_color 
-@onready var timer = $Timer
-@onready var label_tiempo = $TiempoLabel
-@onready var label_puntaje = $PuntajeLabel
-@onready var panel_fin = $PanelFin
-@onready var contenedor_entradas = $ConectoresIzquierda
-@onready var contenedor_salidas = $ConectoresDerecha
-@onready var label_progreso = $ConexionesLabel
-@onready var line_drawer = $LineDrawer
-@onready var indicador_color = $Panel2/indicadorColor
+@onready var timer = $MinijuegoCables/Timer
+@onready var label_tiempo = $MinijuegoCables/TiempoLabel
+@onready var label_puntaje = $MinijuegoCables/PuntajeLabel
+@onready var panel_fin = $MinijuegoCables/PanelFin
+@onready var contenedor_entradas = $MinijuegoCables/ConectoresIzquierda
+@onready var contenedor_salidas = $MinijuegoCables/ConectoresDerecha
+@onready var label_progreso = $MinijuegoCables/ConexionesLabel
+@onready var line_drawer = $MinijuegoCables/LineDrawer
+@onready var indicador_color = $MinijuegoCables/Panel2/indicadorColor
 
 var errores_previos: Dictionary = {}
 var conexiones_realizadas: Dictionary = {}
 
 
 func _ready():
+	lever_id = GameState.current_lever_id
 	texturas_por_color_y_lado = {
 		"Rojo": {
 		"izquierda": preload("res://level3/Assets/textures/redWire_left.tres"),
@@ -65,6 +66,7 @@ func _ready():
 	panel_fin.visible = false
 	label_progreso.text = "0 / " + str(cantidad_cables)
 	indicador_color.color = Color(0, 0, 0, 0)
+	
 
 
 func generar_conectores(cantidad):
@@ -221,9 +223,14 @@ func finalizar_minijuego():
 	else:
 		mensaje = "Faltó precisión o rapidez. Intenta de nuevo."
 
-	$PanelFin/MensajeLabel.text = mensaje
+	$MinijuegoCables/PanelFin/MensajeLabel.text = mensaje
 	panel_fin.visible = true
-	
+	# ACTUALIZA LOS VALORES EN GameState AQUÍ
+	GameState.palancas_activadas[lever_id] = true
+	GameState.puntaje_palancas[lever_id] = puntos
+	GameState.puntaje_total = 0
+	for p in GameState.puntaje_palancas:
+		GameState.puntaje_total += p
 	emit_signal("minijuego_completado", lever_id, puntos)
 
 
@@ -235,5 +242,6 @@ func _process(delta):
 
 
 func _on_boton_salir_pressed() -> void:
-	SceneTransitions.change_scene_to_file("res://level3/Scenes/level_3")
+	SceneTransitions.change_scene_to_file("res://level3/Scenes/level_3.tscn")
+
 	pass # Replace with function body.

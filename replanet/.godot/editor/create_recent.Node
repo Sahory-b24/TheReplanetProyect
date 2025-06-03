@@ -1,5 +1,7 @@
-TextureButton
 Label
+CanvasLayer
+Control
+TextureButton
 Panel
 CollisionShape2D
 StaticBody2D
@@ -10,5 +12,3 @@ AnimationPlayer
 TextureRect
 Button
 Label3D
-Camera2D
-OptionButton

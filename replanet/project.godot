@@ -22,6 +22,7 @@ SceneTransitions="*res://mainMenu/Scenes/SceneTransitions.tscn"
 Global="*res://scripts/Global.gd"
 Overlay="*res://mainMenu/Scenes/overlay.tscn"
 GuardarPuntaje="*res://level2/Scripts/GuardarPuntaje.gd"
+GameState="*res://level3/Scripts/GameState.gd"
 
 [display]
 

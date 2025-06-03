@@ -1,16 +1,19 @@
-res://scripts
-res://scenes
-res://assests/game/assestsUsed/uglyWorld/Deco
+res://level3/Scripts
+res://level3/Assets/textures
+res://assests/Sprite/walk/hair
+res://level2
+res://InicioLore/scenes
 res://mainMenu/Assets/Images
 res://mainMenu/Assets/Buttoms
+res://scenes
 <<<<<<< Updated upstream
 res://Shader
 res://
 =======
 >>>>>>> Stashed changes
-res://level2
 res://mainMenu/Scripts
 res://mainMenu/Scenes
 res://mainMenu/Assets/Icons
+res://scripts
 res://assests
 res://Resourses/Player

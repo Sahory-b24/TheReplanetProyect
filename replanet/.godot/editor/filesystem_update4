@@ -33,3 +33,8 @@ res://mainMenu/Assets/Buttoms/grabberPressed.tres
 res://mainMenu/Scenes/Options.tscn
 res://scenes/level_3.tscn
 res://level3/Scripts/minijuego_cables.gd
+res://level3/Scripts/GameState.gd
+res://level3/Scenes/mini_juego.gd
+res://level3/Scenes/hud.gd
+res://level3/Scenes/level_3.gd
+res://mainMenu/Assets/Audio/AudioManager.tscn

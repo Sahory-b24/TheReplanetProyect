@@ -1,6 +1,6 @@
 [gd_scene load_steps=9 format=3 uid="uid://c2ixtkul8kitx"]
 
-[ext_resource type="Script" uid="uid://csoepfhmct6hc" path="res://level3/Scripts/minijuego_cables.gd" id="1_kxfgs"]
+[ext_resource type="Script" uid="uid://c0bepwaka7rxm" path="res://level3/Scenes/mini_juego.gd" id="1_dwbhn"]
 [ext_resource type="Texture2D" uid="uid://lu5iks6beehd" path="res://level3/Assets/Images/AssetsSheet.png" id="2_p348u"]
 [ext_resource type="Texture2D" uid="uid://daiv3rthhjj5i" path="res://level3/Assets/Images/FondoCables.png" id="2_putgk"]
 [ext_resource type="Texture2D" uid="uid://byim6hlifbw6m" path="res://mainMenu/Assets/Buttoms/regresar_normal.tres" id="4_dwbhn"]
@@ -26,14 +26,16 @@ corner_radius_bottom_right = 1
 corner_radius_bottom_left = 1
 shadow_size = 4
 
-[node name="MiniJuego" type="Node2D"]
+[node name="MiniJuego" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_dwbhn")
 
 [node name="MinijuegoCables" type="Control" parent="."]
 layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
-script = ExtResource("1_kxfgs")
 
 [node name="Panel3" type="Panel" parent="MinijuegoCables"]
 layout_mode = 0
@@ -136,4 +138,4 @@ texture_pressed = ExtResource("5_dx70w")
 texture_hover = ExtResource("5_dx70w")
 
 [connection signal="timeout" from="MinijuegoCables/Timer" to="MinijuegoCables" method="_on_Timer_timeout"]
-[connection signal="pressed" from="MinijuegoCables/PanelFin/BotonSalir" to="MinijuegoCables" method="_on_boton_salir_pressed"]
+[connection signal="pressed" from="MinijuegoCables/PanelFin/BotonSalir" to="." method="_on_boton_salir_pressed"]
