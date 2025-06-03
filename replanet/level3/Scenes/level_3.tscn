@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=4 uid="uid://dcecxr07mygo4"]
+[gd_scene load_steps=17 format=4 uid="uid://dcecxr07mygo4"]
 
 [ext_resource type="TileSet" uid="uid://dfmh40v3anori" path="res://assests/TileSets/game_tile_set.tres" id="1_70nk6"]
 [ext_resource type="Script" uid="uid://dlocske8b5yvc" path="res://level3/Scripts/level_3.gd" id="1_17213"]
@@ -8,6 +8,8 @@
 [ext_resource type="Script" uid="uid://m2qjsfae63yy" path="res://level3/Scripts/hud.gd" id="5_ebxra"]
 [ext_resource type="Texture2D" uid="uid://bjw2tkaj58hn1" path="res://mainMenu/Assets/Images/marco grande.png" id="6_sfejh"]
 [ext_resource type="FontFile" uid="uid://b5b1l3hfn2lof" path="res://assests/Fonts/ShareTech-Regular.ttf" id="7_3xk8u"]
+[ext_resource type="Texture2D" uid="uid://fxk1wegs7hev" path="res://level3/Assets/textures/EnergyEmpty.tres" id="7_fjtup"]
+[ext_resource type="Texture2D" uid="uid://ds1gh6et8rjkn" path="res://level3/Assets/textures/EnergyFull.tres" id="7_qrdbp"]
 [ext_resource type="Texture2D" uid="uid://dtumj8ofwbccj" path="res://level3/Assets/textures/VolverAlMundoNormal.tres" id="8_h0s8i"]
 [ext_resource type="Texture2D" uid="uid://cj7bw4ip54pgn" path="res://level3/Assets/textures/VolverAlMundoPressed.tres" id="9_13g3x"]
 [ext_resource type="Texture2D" uid="uid://viffnije2f2t" path="res://level3/Assets/textures/ReintentarNormal.tres" id="10_fjtup"]
@@ -71,14 +73,39 @@ lever_id = 2
 [node name="HUD" type="CanvasLayer" parent="."]
 script = ExtResource("5_ebxra")
 
-[node name="PuntajeLabel" type="Label" parent="HUD"]
-offset_right = 40.0
-offset_bottom = 23.0
+[node name="PuntajeRect" type="TextureRect" parent="HUD"]
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 32.0
+offset_bottom = 48.0
+texture = ExtResource("7_qrdbp")
 
-[node name="PalancasLabel" type="Label" parent="HUD"]
+[node name="PuntajeLabel" type="Label" parent="HUD"]
+offset_left = 32.0
 offset_top = 16.0
-offset_right = 40.0
-offset_bottom = 39.0
+offset_right = 72.0
+offset_bottom = 50.375
+theme_override_fonts/font = ExtResource("7_3xk8u")
+theme_override_font_sizes/font_size = 30
+
+[node name="PalancasContainer" type="HBoxContainer" parent="HUD"]
+offset_left = 552.0
+offset_top = 8.0
+offset_right = 592.0
+offset_bottom = 28.0
+scale = Vector2(2, 2)
+
+[node name="Energy1" type="TextureRect" parent="HUD/PalancasContainer"]
+layout_mode = 2
+texture = ExtResource("7_fjtup")
+
+[node name="Energy2" type="TextureRect" parent="HUD/PalancasContainer"]
+layout_mode = 2
+texture = ExtResource("7_fjtup")
+
+[node name="Energy3" type="TextureRect" parent="HUD/PalancasContainer"]
+layout_mode = 2
+texture = ExtResource("7_fjtup")
 
 [node name="PanelFinal" type="Panel" parent="HUD"]
 visible = false

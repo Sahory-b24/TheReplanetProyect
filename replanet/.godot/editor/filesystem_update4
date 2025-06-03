@@ -6,3 +6,7 @@ res://mainMenu/Scenes/main_menu.tscn
 res://scenes/player.tscn
 res://level1/Scenes/level_1.tscn
 res://scenes/level_3.tscn
+res://level3/Assets/textures/EnergyEmpty.tres
+res://level3/Assets/textures/EnergyFull.tres
+res://level3/Scripts/hud.gd
+res://level3/Scenes/Lever.tscn
