@@ -1,0 +1,11 @@
+res://level1/Scenes/level_1.tscn
+res://mainMenu/Scenes/scene_transitions.gd
+res://level1/Scripts/spikeColission.gd
+res://level3/Scenes/lever.gd
+res://mainMenu/Scripts/MuteButton.gd
+res://assests/TileSets/game_tile_set.tres
+res://level1/Scenes/seed.tscn
+res://level1/Scenes/bonus_seed.tscn
+res://Dialogos/balloon.tscn
+res://level3/Scenes/level_3.tscn
+res://level3/Scripts/hud.gd

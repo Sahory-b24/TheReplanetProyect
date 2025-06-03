@@ -42,7 +42,7 @@ func mostrar_resultado_finalPanel():
 	puntaje_final_label.text = "Puntos Totales: %d / 1000" % GameState.puntaje_total
 	if GameState.puntaje_total >= 1000:
 		mensaje_label.text = "¡Has conseguido la estrella!\n¡Atmósfera purificada!"
-		reintentar_button.visible = false
+		reintentar_button.visible = true
 		volver_button.visible = true
 	else:
 		mensaje_label.text = "¡Restauraste el sistema, pero sin suficiente eficiencia para recuperar la estrella!"
