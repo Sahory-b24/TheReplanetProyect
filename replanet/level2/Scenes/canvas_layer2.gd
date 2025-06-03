@@ -1,0 +1,25 @@
+extends CanvasLayer
+
+@onready var puntaje_label = $PuntajeLabel
+@onready var panel_final = $Panel
+@onready var mensaje_label = $Panel/Panel2/mensaje_label
+@onready var puntaje_final_label  = $Panel/Panel2/PuntajeFinal
+
+func _ready():
+	panel_final.visible = false
+
+func mostrar_panel_final(puntaje: int):
+	panel_final.visible = true
+	puntaje_final_label.text = "Puntaje: %d" % puntaje
+
+	if puntaje >= 1300:
+		mensaje_label.text = "Excelente, hiciste un buen trabajo limpiando el río."
+	else:
+		mensaje_label.text = "No alcanzaste el puntaje necesario."
+
+	# Guardar puntaje
+	GuardarPuntaje.guardar_puntaje(Global.player_name, puntaje)
+
+
+func _on_atras_mundo_pressed() -> void:
+	SceneTransitions.change_scene_to_file("res://scenes/world.tscn")

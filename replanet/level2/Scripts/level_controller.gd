@@ -22,6 +22,3 @@ func _end_level(success: bool) -> void:
 	if success:
 		GuardarPuntaje.guardar_puntaje(nombre, score_manager.score)
 		get_tree().change_scene_to_file("res://level2/Scenes/Puntajes.tscn")
-	else:
-		get_tree().change_scene_to_file("res://level2/Scenes/YouLost.tscn")
-	  # Ajusta la ruta
