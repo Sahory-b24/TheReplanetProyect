@@ -20,25 +20,39 @@ lines = {
 &"character": "Meliu",
 &"id": "1",
 &"next_id": "2",
-&"text": "El aire que respiramos depende de esta fábrica. Tómate tu tiempo, pero no pierdas el foco. Cada palanca que actives es un paso hacia un futuro mejor.",
+&"text": "Me llamo Meliu. Cuando todo colapsó, sobreviví con energía solar y aire sellado. Esta fábrica fue mi mayor error… pero puede ser mi redención.",
 &"type": "dialogue"
 },
 "2": {
 &"character": "Meliu",
 &"id": "2",
 &"next_id": "3",
-&"text": "Presione \"Nivel 3\" para empezar con la misión.",
+&"text": "No puedo hacerlo sola. EstásBusca tres palancas ocultas y conecta los cables según los colores. Todo está oscuro, y cada error cuesta energía. Observa bien y restaura el aire.  aquí para demostrar que aún podemos construir futuro. Si prestas atención, no solo encenderás turbinas… encenderás esperanza.",
 &"type": "dialogue"
 },
 "3": {
+&"character": "Meliu",
 &"id": "3",
+&"next_id": "4",
+&"text": "Busca tres palancas ocultas y conecta los cables según los colores. Todo está oscuro, y cada error cuesta energía. Observa bien y restaura el aire.",
+&"type": "dialogue"
+},
+"4": {
+&"character": "Meliu",
+&"id": "4",
+&"next_id": "5",
+&"text": "Presione \"Nivel 3\" para empezar con la misión.",
+&"type": "dialogue"
+},
+"5": {
+&"id": "5",
 &"is_snippet": false,
 &"next_id": "end",
 &"next_id_after": "",
 &"type": "goto"
 },
-"4": {
-&"id": "4",
+"6": {
+&"id": "6",
 &"is_snippet": false,
 &"next_id": "end",
 &"next_id_after": "",
@@ -46,7 +60,9 @@ lines = {
 }
 }
 raw_text = "~ start
-Meliu: El aire que respiramos depende de esta fábrica. Tómate tu tiempo, pero no pierdas el foco. Cada palanca que actives es un paso hacia un futuro mejor.
+Meliu: Me llamo Meliu. Cuando todo colapsó, sobreviví con energía solar y aire sellado. Esta fábrica fue mi mayor error… pero puede ser mi redención.
+Meliu: No puedo hacerlo sola. EstásBusca tres palancas ocultas y conecta los cables según los colores. Todo está oscuro, y cada error cuesta energía. Observa bien y restaura el aire.  aquí para demostrar que aún podemos construir futuro. Si prestas atención, no solo encenderás turbinas… encenderás esperanza.
+Meliu: Busca tres palancas ocultas y conecta los cables según los colores. Todo está oscuro, y cada error cuesta energía. Observa bien y restaura el aire.
 Meliu: Presione \"Nivel 3\" para empezar con la misión.
 => END"
 metadata/dialogue_manager_version = "3.6.2"

@@ -1,9 +1,9 @@
-TextureRect
+Label
 Panel
 Sprite2D
 Area2D
-Label
 Sprite2D
+TextureRect
 CanvasLayer
 HBoxContainer
 WorldEnvironment

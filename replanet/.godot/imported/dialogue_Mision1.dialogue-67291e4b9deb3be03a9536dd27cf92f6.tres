@@ -5,64 +5,22 @@
 [resource]
 script = ExtResource("1_gm8v6")
 using_states = PackedStringArray()
-titles = {
-"start": "1"
-}
-character_names = PackedStringArray("Elira")
-first_title = "0"
+titles = {}
+character_names = PackedStringArray()
+first_title = ""
 lines = {
 "0": {
 &"id": "0",
 &"next_id": "1",
-&"type": "title"
+&"type": ""
 },
 "1": {
-&"character": "Elira",
 &"id": "1",
-&"next_id": "2",
-&"text": "Me llamo Elira. Fui la última botánica que pisó este suelo antes del colapso. Cuando las nubes comenzaron a llover ácido, no escapé. Este jardín era mi hogar… y mi promesa. Planté aquí las últimas semillas puras que encontré en el mundo. Mientras todo se marchitaba, yo sembraba. Mientras todos huían, yo me quedé.",
-&"type": "dialogue"
-},
-"2": {
-&"character": "Elira",
-&"id": "2",
-&"next_id": "3",
-&"text": "Mi cuerpo se desvaneció con el tiempo, pero mi esencia permanece entre las raíces. He esperado mucho. A veces creí que nadie volvería. Pero hoy, la tierra me susurra que tú has llegado. Tal vez no entiendas aún quién eres, pero si has sentido el llamado, es porque llevas en ti algo que vale la pena despertar.",
-&"type": "dialogue"
-},
-"3": {
-&"character": "Elira",
-&"id": "3",
-&"next_id": "4",
-&"text": "Debes recolectar todas las semillas que puedas antes de que el tiempo se agote. Cada una es una chispa de vida. La flor sagrada que cuida este jardín necesita nutrirse para despertar.",
-&"type": "dialogue"
-},
-"4": {
-&"character": "Elira",
-&"id": "4",
-&"next_id": "5",
-&"text": "en cuidado. Los hongos contaminados siguen activos. Si los tocas, perderás semillas valiosas. Observa bien tu camino… y confía en la luz.",
-&"type": "dialogue"
-},
-"5": {
-&"id": "5",
-&"is_snippet": false,
-&"next_id": "end",
-&"next_id_after": "",
-&"type": "goto"
-},
-"6": {
-&"id": "6",
 &"is_snippet": false,
 &"next_id": "end",
 &"next_id_after": "",
 &"type": "goto"
 }
 }
-raw_text = "~ start
-Elira: Me llamo Elira. Fui la última botánica que pisó este suelo antes del colapso. Cuando las nubes comenzaron a llover ácido, no escapé. Este jardín era mi hogar… y mi promesa. Planté aquí las últimas semillas puras que encontré en el mundo. Mientras todo se marchitaba, yo sembraba. Mientras todos huían, yo me quedé.
-Elira: Mi cuerpo se desvaneció con el tiempo, pero mi esencia permanece entre las raíces. He esperado mucho. A veces creí que nadie volvería. Pero hoy, la tierra me susurra que tú has llegado. Tal vez no entiendas aún quién eres, pero si has sentido el llamado, es porque llevas en ti algo que vale la pena despertar.
-Elira: Debes recolectar todas las semillas que puedas antes de que el tiempo se agote. Cada una es una chispa de vida. La flor sagrada que cuida este jardín necesita nutrirse para despertar.
-Elira: en cuidado. Los hongos contaminados siguen activos. Si los tocas, perderás semillas valiosas. Observa bien tu camino… y confía en la luz.
-=> END"
+raw_text = ""
 metadata/dialogue_manager_version = "3.6.2"

@@ -5,64 +5,22 @@
 [resource]
 script = ExtResource("1_7hrdr")
 using_states = PackedStringArray()
-titles = {
-"start": "1"
-}
-character_names = PackedStringArray("Silas")
-first_title = "0"
+titles = {}
+character_names = PackedStringArray()
+first_title = ""
 lines = {
 "0": {
 &"id": "0",
 &"next_id": "1",
-&"type": "title"
+&"type": ""
 },
 "1": {
-&"character": "Silas",
 &"id": "1",
-&"next_id": "2",
-&"text": "Solía lanzar mis redes en este río cuando aún era cristalino. Los peces nadaban sin miedo, y yo aprendí a leer el agua como quien lee el cielo. Me llamaban Silas, el pescador. Pero cuando las fábricas derramaron su veneno en estas corrientes, dejé de pescar… y empecé a cuidar. No de peces. Del recuerdo.",
-&"type": "dialogue"
-},
-"2": {
-&"character": "Silas",
-&"id": "2",
-&"next_id": "3",
-&"text": "Ahora solo quedan sombras flotando. Basura, aceite, olvido. Pero sigo aquí, porque alguien tiene que resistir. Hoy, por primera vez en años, el agua me trajo algo distinto… a ti. No sé quién eres, pero si escuchaste el llamado del río, entonces aún queda esperanza. Si estás dispuesto a ensuciar tus manos para limpiarlo… te guiaré.",
-&"type": "dialogue"
-},
-"3": {
-&"character": "Silas",
-&"id": "3",
-&"next_id": "4",
-&"text": "Navega con cuidado y recoge toda la basura que puedas. Mueve el bote con el mouse y acércate a los objetos contaminantes. Cada pedazo que retires devuelve un poco de vida al río.",
-&"type": "dialogue"
-},
-"4": {
-&"character": "Silas",
-&"id": "4",
-&"next_id": "5",
-&"text": "Solo necesitas mover el mouse de arriba a abajo para dirigir el bote. Recoge toda la basura que flota: cada pieza vale 50 puntos. Pero ten cuidado con las rocas… cada choque te hará perder 30. Tu meta es alcanzar 1300 puntos antes de que el tiempo se acabe",
-&"type": "dialogue"
-},
-"5": {
-&"id": "5",
-&"is_snippet": false,
-&"next_id": "end",
-&"next_id_after": "",
-&"type": "goto"
-},
-"6": {
-&"id": "6",
 &"is_snippet": false,
 &"next_id": "end",
 &"next_id_after": "",
 &"type": "goto"
 }
 }
-raw_text = "~ start
-Silas: Solía lanzar mis redes en este río cuando aún era cristalino. Los peces nadaban sin miedo, y yo aprendí a leer el agua como quien lee el cielo. Me llamaban Silas, el pescador. Pero cuando las fábricas derramaron su veneno en estas corrientes, dejé de pescar… y empecé a cuidar. No de peces. Del recuerdo.
-Silas: Ahora solo quedan sombras flotando. Basura, aceite, olvido. Pero sigo aquí, porque alguien tiene que resistir. Hoy, por primera vez en años, el agua me trajo algo distinto… a ti. No sé quién eres, pero si escuchaste el llamado del río, entonces aún queda esperanza. Si estás dispuesto a ensuciar tus manos para limpiarlo… te guiaré.
-Silas: Navega con cuidado y recoge toda la basura que puedas. Mueve el bote con el mouse y acércate a los objetos contaminantes. Cada pedazo que retires devuelve un poco de vida al río.
-Silas: Solo necesitas mover el mouse de arriba a abajo para dirigir el bote. Recoge toda la basura que flota: cada pieza vale 50 puntos. Pero ten cuidado con las rocas… cada choque te hará perder 30. Tu meta es alcanzar 1300 puntos antes de que el tiempo se acabe
-=> END"
+raw_text = ""
 metadata/dialogue_manager_version = "3.6.2"
