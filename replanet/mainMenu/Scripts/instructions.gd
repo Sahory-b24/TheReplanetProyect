@@ -8,7 +8,7 @@ var slides = [
 
 # Lista de textos por diapositiva
 var slide_texts = [
-	["Moverse", "Saltar"],
+	["Saltar", "Moverse"],
 	["Inventario", "Recolectar"],
 ]
 

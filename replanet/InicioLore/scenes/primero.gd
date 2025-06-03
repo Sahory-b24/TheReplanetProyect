@@ -1,27 +1,26 @@
 extends Node2D
 
-@onready var RePlanet: TextureRect = $RePlanet  # tu TextureRect para el logo/nombre
-@onready var isla: TextureRect = $isla             # tu TextureRect para la isla
+@onready var RePlanet: TextureRect = $RePlanet
+@onready var isla: TextureRect = $isla
 
 func _ready() -> void:
-	# Estado inicial: solo el nombre visible
+	# Cambiar la música global usando AudioManager
+	AudioManager.play_music("res://InicioLore/audio/lluvia-fuerte-182660.mp3")
+
+	# Iniciar secuencia visual
 	RePlanet.modulate.a = 1.0
 	isla.modulate.a = 0.0
-
-	# Empieza la secuencia
 	mostrar_nombre_y_cambiar()
 
 func mostrar_nombre_y_cambiar() -> void:
-	# Espera 2 segundos con el nombre visible
-	await get_tree().create_timer(2.0).timeout
-	# Fade out del nombre, fade in de la isla
+	await get_tree().create_timer(1.2).timeout
 	await hacer_fade(isla, 0.0, 1.0, 1.0)
-	# Espera 2 segundos con la isla visible
-	await get_tree().create_timer(2.0).timeout
-	# Opcional: fade out de la isla
+	await get_tree().create_timer(1.2).timeout
 	await hacer_fade(isla, 1.0, 0.0, 1.0)
 
-	# Cambia a la escena del lore
+	# Al cambiar de escena, detener la música global
+	AudioManager.MusicPlayer.stop()
+
 	get_tree().change_scene_to_file("res://InicioLore/scenes/inicioLore.tscn")
 
 func hacer_fade(node: CanvasItem, from_a: float, to_a: float, duration: float) -> void:

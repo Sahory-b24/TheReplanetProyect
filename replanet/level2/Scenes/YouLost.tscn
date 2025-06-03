@@ -1,4 +1,4 @@
-[gd_scene load_steps=0 format=3 uid="uid://cefd0kfdysro0"]
+[gd_scene format=3 uid="uid://cefd0kfdysro0"]
 
 [node name="YouLost" type="Node2D"]
 

@@ -1,6 +1,6 @@
 [gd_scene load_steps=9 format=3 uid="uid://c2ixtkul8kitx"]
 
-[ext_resource type="Script" uid="uid://c0bepwaka7rxm" path="res://level3/Scenes/mini_juego.gd" id="1_dwbhn"]
+[ext_resource type="Script" path="res://level3/Scenes/mini_juego.gd" id="1_dwbhn"]
 [ext_resource type="Texture2D" uid="uid://lu5iks6beehd" path="res://level3/Assets/Images/AssetsSheet.png" id="2_p348u"]
 [ext_resource type="Texture2D" uid="uid://daiv3rthhjj5i" path="res://level3/Assets/Images/FondoCables.png" id="2_putgk"]
 [ext_resource type="Texture2D" uid="uid://byim6hlifbw6m" path="res://mainMenu/Assets/Buttoms/regresar_normal.tres" id="4_dwbhn"]
@@ -128,6 +128,7 @@ vertical_alignment = 1
 autowrap_mode = 3
 
 [node name="BotonSalir" type="TextureButton" parent="MinijuegoCables/PanelFin"]
+layout_mode = 0
 offset_left = 475.0
 offset_top = 200.0
 offset_right = 491.0
