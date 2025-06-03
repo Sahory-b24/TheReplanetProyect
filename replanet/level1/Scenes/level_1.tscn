@@ -1,8 +1,10 @@
-[gd_scene load_steps=8 format=4 uid="uid://yrerogrgy4wj"]
+[gd_scene load_steps=11 format=4 uid="uid://yrerogrgy4wj"]
 
 [ext_resource type="TileSet" uid="uid://dfmh40v3anori" path="res://assests/TileSets/game_tile_set.tres" id="1_w01pr"]
 [ext_resource type="PackedScene" uid="uid://blu2fgshcdiag" path="res://scenes/player.tscn" id="2_4xgtr"]
 [ext_resource type="PackedScene" uid="uid://2olsg8orii87" path="res://level1/Scenes/seed.tscn" id="3_py8qn"]
+[ext_resource type="PackedScene" uid="uid://b73m5eu7npbam" path="res://level1/Scenes/bonus_seed.tscn" id="4_4xgtr"]
+[ext_resource type="Script" uid="uid://bdxlqdsksvh8b" path="res://level1/Scenes/spikeColission.gd" id="4_py8qn"]
 
 [sub_resource type="Animation" id="Animation_bswci"]
 length = 0.001
@@ -61,6 +63,9 @@ _data = {
 &"move": SubResource("Animation_014kd"),
 &"movee": SubResource("Animation_rus8k")
 }
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_py8qn"]
+size = Vector2(3953, 13)
 
 [node name="Level1" type="Node2D"]
 
@@ -122,5 +127,89 @@ libraries = {
 }
 autoplay = "movee"
 
+[node name="Seed2" parent="." instance=ExtResource("3_py8qn")]
+position = Vector2(154, 164)
+
 [node name="Seed" parent="." instance=ExtResource("3_py8qn")]
-position = Vector2(201, 147)
+position = Vector2(212, 140)
+
+[node name="Area2D" type="Area2D" parent="."]
+script = ExtResource("4_py8qn")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(2120.5, 311.5)
+shape = SubResource("RectangleShape2D_py8qn")
+
+[node name="Seed3" parent="." instance=ExtResource("3_py8qn")]
+position = Vector2(167, 164)
+
+[node name="Seed4" parent="." instance=ExtResource("3_py8qn")]
+position = Vector2(348, 173)
+
+[node name="Seed5" parent="." instance=ExtResource("3_py8qn")]
+position = Vector2(3139, 124)
+
+[node name="Seed6" parent="." instance=ExtResource("3_py8qn")]
+position = Vector2(3299, 124)
+
+[node name="bonusSeed" parent="." instance=ExtResource("4_4xgtr")]
+position = Vector2(3219, 124)
+
+[node name="Seed7" parent="." instance=ExtResource("3_py8qn")]
+position = Vector2(779, 188)
+
+[node name="Seed8" parent="." instance=ExtResource("3_py8qn")]
+position = Vector2(676, 172)
+
+[node name="Seed9" parent="." instance=ExtResource("3_py8qn")]
+position = Vector2(900, 176)
+
+[node name="bonusSeed2" parent="." instance=ExtResource("4_4xgtr")]
+position = Vector2(506, 184)
+
+[node name="Seed10" parent="." instance=ExtResource("3_py8qn")]
+position = Vector2(1051, 188)
+
+[node name="Seed11" parent="." instance=ExtResource("3_py8qn")]
+position = Vector2(1277, 203)
+
+[node name="Seed12" parent="." instance=ExtResource("3_py8qn")]
+position = Vector2(1437, 219)
+
+[node name="bonusSeed3" parent="." instance=ExtResource("4_4xgtr")]
+position = Vector2(1808, 128)
+
+[node name="Seed13" parent="." instance=ExtResource("3_py8qn")]
+position = Vector2(1748, 146)
+
+[node name="Seed14" parent="." instance=ExtResource("3_py8qn")]
+position = Vector2(1987, 159)
+
+[node name="bonusSeed4" parent="." instance=ExtResource("4_4xgtr")]
+position = Vector2(2099, 204)
+
+[node name="Seed15" parent="." instance=ExtResource("3_py8qn")]
+position = Vector2(2172, 204)
+
+[node name="Seed16" parent="." instance=ExtResource("3_py8qn")]
+position = Vector2(2443, 141)
+
+[node name="bonusSeed5" parent="." instance=ExtResource("4_4xgtr")]
+position = Vector2(2795, 185)
+
+[node name="Seed17" parent="." instance=ExtResource("3_py8qn")]
+position = Vector2(2404, 140)
+
+[node name="Seed18" parent="." instance=ExtResource("3_py8qn")]
+position = Vector2(2692, 140)
+
+[node name="bonusSeed6" parent="." instance=ExtResource("4_4xgtr")]
+position = Vector2(3604, 185)
+
+[node name="Seed19" parent="." instance=ExtResource("3_py8qn")]
+position = Vector2(3788, 154)
+
+[node name="Seed20" parent="." instance=ExtResource("3_py8qn")]
+position = Vector2(4028, 155)
+
+[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
