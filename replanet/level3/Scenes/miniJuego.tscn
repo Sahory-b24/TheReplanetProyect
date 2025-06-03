@@ -1,10 +1,11 @@
 [gd_scene load_steps=9 format=3 uid="uid://c2ixtkul8kitx"]
 
-[ext_resource type="Script" uid="uid://c0bepwaka7rxm" path="res://level3/Scenes/mini_juego.gd" id="1_dwbhn"]
+[ext_resource type="Script" uid="uid://c0bepwaka7rxm" path="res://level3/Scripts/mini_juego.gd" id="1_dwbhn"]
 [ext_resource type="Texture2D" uid="uid://lu5iks6beehd" path="res://level3/Assets/Images/AssetsSheet.png" id="2_p348u"]
 [ext_resource type="Texture2D" uid="uid://daiv3rthhjj5i" path="res://level3/Assets/Images/FondoCables.png" id="2_putgk"]
 [ext_resource type="Texture2D" uid="uid://byim6hlifbw6m" path="res://mainMenu/Assets/Buttoms/regresar_normal.tres" id="4_dwbhn"]
 [ext_resource type="Texture2D" uid="uid://cbuqbkoc7cmgy" path="res://mainMenu/Assets/Buttoms/regresar_press.tres" id="5_dx70w"]
+
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_cs1ai"]
 texture = ExtResource("2_putgk")

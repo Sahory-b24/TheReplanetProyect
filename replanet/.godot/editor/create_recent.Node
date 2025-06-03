@@ -1,10 +1,10 @@
+TextureButton
 CollisionShape2D
 StaticBody2D
 Area2D
 Label
 CanvasLayer
 Control
-TextureButton
 Panel
 Sprite2D
 Node2D

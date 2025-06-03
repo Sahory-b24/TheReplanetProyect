@@ -7,7 +7,7 @@ extends CharacterBody2D
 @onready var shoes = $Character/shoes
 @onready var eyes = $Character/eyes
 @onready var accessory = $Character/acc
-@onready var name_label = $Character/Name
+#@onready var name_label = $Character/Name
 @export_enum("RPG", "PLATAFORMA") var modo_juego := "RPG"
 
 
@@ -152,6 +152,6 @@ func initialize_player():
 	# Accessory con shader de recolor
 	apply_recolor_shader(accessory, Global.acc_options[Global.selected_acc], Global.selected_acc_color)
 	
-	name_label.text = Global.player_name
+	#name_label.text = Global.player_name
 	print(Global.player_name)
 	# Player name

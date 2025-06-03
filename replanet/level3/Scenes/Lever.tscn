@@ -1,9 +1,10 @@
 [gd_scene load_steps=7 format=3 uid="uid://j6pokcbceix1"]
 
-[ext_resource type="Script" uid="uid://dbxnll3vtadux" path="res://level3/Scenes/lever.gd" id="1_0ralg"]
+[ext_resource type="Script" uid="uid://dbxnll3vtadux" path="res://level3/Scripts/lever.gd" id="1_0ralg"]
 [ext_resource type="Texture2D" uid="uid://btt1ftvfgr04o" path="res://level3/Assets/textures/Lever_off.tres" id="2_eo25a"]
 [ext_resource type="Texture2D" uid="uid://db6bj1cci70vp" path="res://level3/Assets/textures/Lever_on.tres" id="3_luej3"]
 [ext_resource type="FontFile" uid="uid://b5b1l3hfn2lof" path="res://assests/Fonts/ShareTech-Regular.ttf" id="4_eo25a"]
+
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_n74ms"]
 size = Vector2(8, 20)
