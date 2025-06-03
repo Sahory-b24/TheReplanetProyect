@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://cyohrudiuubiu"]
+
+[ext_resource type="Script" uid="uid://d28jxqi5vtfal" path="res://level1/Scripts/mushroom_2d.gd" id="1_i0sbv"]
+[ext_resource type="Texture2D" uid="uid://bomt3tpk1cokn" path="res://assests/game/assestsUsed/uglyWorld/Tiles/tileSet1.png" id="1_xorvc"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_i0sbv"]
+size = Vector2(12, 12)
+
+[node name="Mushroom" type="Node2D"]
+
+[node name="Mushroom2D" type="Area2D" parent="."]
+script = ExtResource("1_i0sbv")
+
+[node name="Sprite2D" type="Sprite2D" parent="Mushroom2D"]
+position = Vector2(-1, 1)
+texture = ExtResource("1_xorvc")
+region_enabled = true
+region_rect = Rect2(96.7324, 34.9171, 14.5522, 13.2017)
+
+[node name="collisionMushroom" type="CollisionShape2D" parent="Mushroom2D"]
+position = Vector2(-1, 1)
+shape = SubResource("RectangleShape2D_i0sbv")
+
+[connection signal="body_entered" from="Mushroom2D" to="Mushroom2D" method="_on_body_entered"]

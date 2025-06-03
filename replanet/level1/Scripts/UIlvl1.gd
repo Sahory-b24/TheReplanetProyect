@@ -15,6 +15,10 @@ func _ready():
 			var area = child.get_node("bonusSeed2D") # para la semilla bonus
 			if area and area.has_signal("seedCollected"):
 				area.connect("seedCollected", Callable(self, "handleSeedCollected"))
+		elif child.name.begins_with("Mushroom"):
+			var area = child.get_node("Mushroom2D")
+			if area and area.has_signal("mushroomTouched"):
+				area.connect("mushroomTouched", Callable(self, "handleSeedCollected"))
 	$seedsCollected.text = str(seeds)
 
 func handleSeedCollected(seed_name):
@@ -22,7 +26,9 @@ func handleSeedCollected(seed_name):
 	if seed_name.begins_with("bonusSeed"):
 		seeds+= 200
 		#print("HOLA")
-	else:
+	elif seed_name.begins_with("Seed"):
 		seeds+=100
 		#print(seeds)
+	elif seed_name.begins_with("Mushroom"):
+		seeds-=150
 	$seedsCollected.text = str(seeds)
