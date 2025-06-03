@@ -24,8 +24,6 @@ func _physics_process(delta):
 
 	var collision = move_and_collide(movement)
 	if collision and switch:
-		# Aquí podrías hacer algo si quieres reaccionar al choque
-		print("🚧 Barco chocó con algo")
 		# Restar puntos si ScoreManager está presente
 		var score_manager = get_tree().current_scene.get_node("CanvasLayer/ScoreManager")
 		if score_manager:

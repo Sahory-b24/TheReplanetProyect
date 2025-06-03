@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://bundx4xxcj8pa"]
+[gd_scene load_steps=10 format=3 uid="uid://cdkso7o2l0n51"]
 
 [ext_resource type="Texture2D" uid="uid://pxvn2bpqpbrt" path="res://level2/Assests/Wood Boat.png" id="1_0063d"]
 [ext_resource type="Script" uid="uid://bjukr014il3g1" path="res://level2/Scripts/boat.gd" id="1_qyrje"]

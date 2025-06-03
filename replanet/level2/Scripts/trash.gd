@@ -13,4 +13,3 @@ func _physics_process(delta):
 func _on_area_entered(area):
 		get_tree().current_scene.get_node("CanvasLayer/ScoreManager").add_points(50)
 		queue_free()
-		print("♻️ ¡Basura recolectada!")
