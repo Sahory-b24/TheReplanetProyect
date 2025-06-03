@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://ced74xxb5rikf"]
+
+[ext_resource type="Script" uid="uid://c53ph30qhpdhu" path="res://scripts/pick_up_item.gd" id="1_cm21a"]
+[ext_resource type="Texture2D" uid="uid://s4xexvej3f2v" path="res://assests/seeds/semilla1.png" id="2_mb2vr"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_xg5tt"]
+radius = 5.09902
+
+[node name="PickUpItem" type="Area2D"]
+collision_layer = 8
+script = ExtResource("1_cm21a")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_mb2vr")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -1)
+shape = SubResource("CircleShape2D_xg5tt")

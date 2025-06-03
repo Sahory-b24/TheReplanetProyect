@@ -1,11 +1,11 @@
 CollisionShape2D
+StaticBody2D
 Area2D
 Label
 CanvasLayer
 Control
 TextureButton
 Panel
-StaticBody2D
 Sprite2D
 Node2D
 AnimationPlayer

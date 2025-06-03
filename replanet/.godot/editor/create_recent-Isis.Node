@@ -1,0 +1,14 @@
+CollisionShape2D
+Area2D
+Label
+CanvasLayer
+Control
+TextureButton
+Panel
+StaticBody2D
+Sprite2D
+Node2D
+AnimationPlayer
+TextureRect
+Button
+Label3D

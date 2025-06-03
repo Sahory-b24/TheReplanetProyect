@@ -1,0 +1,225 @@
+[gd_scene load_steps=16 format=3 uid="uid://dxytgfp2w7g"]
+
+[ext_resource type="Texture2D" uid="uid://ddmp13k4gu6ly" path="res://mainMenu/Assets/Images/inicio (1).png" id="1_kvdg3"]
+[ext_resource type="Texture2D" uid="uid://cdpxi0a00j4ak" path="res://mainMenu/Assets/Buttoms/boton_normal.tres" id="2_xa1eq"]
+[ext_resource type="Texture2D" uid="uid://cpwrqewpvsnjl" path="res://mainMenu/Assets/Buttoms/boton_presionado.tres" id="3_7nuiw"]
+[ext_resource type="Texture2D" uid="uid://dc1agwhf1lnry" path="res://mainMenu/Assets/Buttoms/exit_normal.tres" id="4_m55i0"]
+[ext_resource type="FontFile" uid="uid://b5b1l3hfn2lof" path="res://assests/Fonts/ShareTech-Regular.ttf" id="4_xmk74"]
+[ext_resource type="Texture2D" uid="uid://dstplk85gevm7" path="res://mainMenu/Assets/Buttoms/credits_normal.tres" id="5_hoqc0"]
+[ext_resource type="Texture2D" uid="uid://cdhcg2g85o4qn" path="res://mainMenu/Assets/Buttoms/exit_press.tres" id="5_ijvgf"]
+[ext_resource type="Texture2D" uid="uid://cguf66syebgus" path="res://mainMenu/Assets/Buttoms/credits_press.tres" id="6_w68wj"]
+[ext_resource type="Texture2D" uid="uid://g1yxbkst6x2n" path="res://mainMenu/Assets/Buttoms/lore__normal.tres" id="9_blv54"]
+[ext_resource type="Texture2D" uid="uid://fcbom5dwpmgc" path="res://mainMenu/Assets/Buttoms/unMute.tres" id="9_ud78h"]
+[ext_resource type="Texture2D" uid="uid://5rs8jmdnumd7" path="res://mainMenu/Assets/Buttoms/Mute.tres" id="9_v1kdw"]
+[ext_resource type="Texture2D" uid="uid://dg1gy0qfc8r2o" path="res://mainMenu/Assets/Buttoms/lore_press.tres" id="10_wvipr"]
+[ext_resource type="Script" uid="uid://ditfvc7qwilfq" path="res://mainMenu/Scripts/MuteButton.gd" id="11_kvdg3"]
+
+[sub_resource type="GDScript" id="GDScript_ha25l"]
+script/source = "extends Control
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	pass # Replace with function body.
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	pass
+
+func _on_instructions_button_pressed() -> void:
+	print(\"Instructions sirve\")
+	AudioManager.SFXPlayer.stream = preload(\"res://mainMenu/Assets/Audio/tf2-button-click-hover.mp3\")
+	AudioManager.SFXPlayer.play()
+	SceneTransitions.change_scene_to_file(\"res://mainMenu/Scenes/instructions.tscn\")
+
+
+func _on_guide_buttom_pressed() -> void:
+	AudioManager.SFXPlayer.stream = preload(\"res://mainMenu/Assets/Audio/tf2-button-click-hover.mp3\")
+	AudioManager.SFXPlayer.play()
+	SceneTransitions.change_scene_to_file(\"res://mainMenu/Scenes/instructions.tscn\")
+
+
+func _on_start_buttom_pressed() -> void:
+	print(\"Start sirve\")
+	AudioManager.SFXPlayer.stream = preload(\"res://mainMenu/Assets/Audio/tf2-button-click-hover.mp3\")
+	AudioManager.SFXPlayer.play()
+	SceneTransitions.change_scene_to_file(\"res://scenes/Custimization.tscn\")
+	
+
+
+func _on_lore_buttom_pressed() -> void:
+	AudioManager.SFXPlayer.stream = preload(\"res://mainMenu/Assets/Audio/tf2-button-click-hover.mp3\")
+	AudioManager.SFXPlayer.play()
+	SceneTransitions.change_scene_to_file(\"res://mainMenu/Scenes/LoreBook.tscn\")
+
+
+func _on_exit_buttom_pressed() -> void:
+	AudioManager.SFXPlayer.stream = preload(\"res://mainMenu/Assets/Audio/tf2-button-click-hover.mp3\")
+	AudioManager.SFXPlayer.play()
+	get_tree().quit()
+
+
+func _on_options_buttom_pressed() -> void:
+	print(\"Options sirve\")
+	AudioManager.SFXPlayer.stream = preload(\"res://mainMenu/Assets/Audio/tf2-button-click-hover.mp3\")
+	AudioManager.SFXPlayer.play()
+	SceneTransitions.change_scene_to_file(\"res://mainMenu/Scenes/Options.tscn\")
+
+
+func _on_buttom_credits_pressed() -> void:
+	print(\"credits sirve\")
+	AudioManager.SFXPlayer.stream = preload(\"res://mainMenu/Assets/Audio/tf2-button-click-hover.mp3\")
+	AudioManager.SFXPlayer.play()
+	SceneTransitions.change_scene_to_file(\"res://mainMenu/Scenes/credits.tscn\")
+"
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_gkalm"]
+texture = ExtResource("1_kvdg3")
+
+[node name="mainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -9.0
+offset_top = 97.0
+offset_right = -9.0
+offset_bottom = 97.0
+grow_horizontal = 2
+grow_vertical = 2
+script = SubResource("GDScript_ha25l")
+
+[node name="Panel" type="Panel" parent="."]
+texture_filter = 1
+layout_mode = 0
+offset_left = -310.0
+offset_top = -276.0
+offset_right = 331.0
+offset_bottom = 84.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_gkalm")
+
+[node name="guide_buttom" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = -263.0
+offset_top = -5.0
+offset_right = -212.0
+offset_bottom = 11.0
+scale = Vector2(3, 3)
+texture_normal = ExtResource("2_xa1eq")
+texture_pressed = ExtResource("3_7nuiw")
+texture_hover = ExtResource("3_7nuiw")
+
+[node name="Label" type="Label" parent="guide_buttom"]
+layout_direction = 1
+layout_mode = 1
+offset_left = 13.3333
+offset_top = 1.66667
+offset_right = 34.3333
+offset_bottom = 15.6667
+theme_override_fonts/font = ExtResource("4_xmk74")
+theme_override_font_sizes/font_size = 10
+text = "Guía"
+
+[node name="buttom_credits" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 297.0
+offset_top = 51.0
+offset_right = 318.0
+offset_bottom = 72.0
+scale = Vector2(1.5, 1.5)
+texture_normal = ExtResource("5_hoqc0")
+texture_pressed = ExtResource("6_w68wj")
+texture_hover = ExtResource("6_w68wj")
+
+[node name="options_buttom" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 133.0
+offset_top = -3.0
+offset_right = 181.0
+offset_bottom = 13.0
+scale = Vector2(3, 3)
+texture_normal = ExtResource("2_xa1eq")
+texture_pressed = ExtResource("3_7nuiw")
+texture_hover = ExtResource("3_7nuiw")
+
+[node name="Label" type="Label" parent="options_buttom"]
+layout_direction = 1
+layout_mode = 0
+offset_left = 4.0
+offset_top = -3.33333
+offset_right = 44.9999
+offset_bottom = 17.6667
+theme_override_fonts/font = ExtResource("4_xmk74")
+theme_override_font_sizes/font_size = 10
+text = "Opciones"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Start_buttom" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = -55.0
+offset_top = -5.0
+offset_right = -7.0
+offset_bottom = 11.0
+scale = Vector2(3, 3)
+texture_normal = ExtResource("2_xa1eq")
+texture_pressed = ExtResource("3_7nuiw")
+texture_hover = ExtResource("3_7nuiw")
+
+[node name="Label" type="Label" parent="Start_buttom"]
+layout_direction = 1
+layout_mode = 0
+offset_left = 8.0
+offset_top = 1.66667
+offset_right = 42.0
+offset_bottom = 14.6667
+theme_override_fonts/font = ExtResource("4_xmk74")
+theme_override_font_sizes/font_size = 10
+text = "Iniciar"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Exit_buttom" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = -303.0
+offset_top = -269.0
+offset_right = -287.0
+offset_bottom = -253.0
+scale = Vector2(1.5, 1.5)
+texture_normal = ExtResource("4_m55i0")
+texture_pressed = ExtResource("5_ijvgf")
+texture_hover = ExtResource("5_ijvgf")
+
+[node name="Lore_buttom" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 297.0
+offset_top = 19.0
+offset_right = 313.0
+offset_bottom = 35.0
+scale = Vector2(1.5, 1.5)
+texture_normal = ExtResource("9_blv54")
+texture_pressed = ExtResource("10_wvipr")
+texture_hover = ExtResource("10_wvipr")
+
+[node name="Mute_buttom" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 281.0
+offset_top = -269.0
+offset_right = 297.0
+offset_bottom = -258.0
+scale = Vector2(2.5, 2.5)
+texture_normal = ExtResource("9_v1kdw")
+texture_pressed = ExtResource("9_ud78h")
+script = ExtResource("11_kvdg3")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+volume_db = -10.0
+
+[connection signal="pressed" from="guide_buttom" to="." method="_on_guide_buttom_pressed"]
+[connection signal="pressed" from="buttom_credits" to="." method="_on_buttom_credits_pressed"]
+[connection signal="pressed" from="options_buttom" to="." method="_on_options_buttom_pressed"]
+[connection signal="pressed" from="Start_buttom" to="." method="_on_start_buttom_pressed"]
+[connection signal="pressed" from="Exit_buttom" to="." method="_on_exit_buttom_pressed"]
+[connection signal="pressed" from="Lore_buttom" to="." method="_on_lore_buttom_pressed"]
+[connection signal="pressed" from="Mute_buttom" to="Mute_buttom" method="_on_pressed"]
