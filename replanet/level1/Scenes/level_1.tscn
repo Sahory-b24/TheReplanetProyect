@@ -1,10 +1,12 @@
-[gd_scene load_steps=11 format=4 uid="uid://yrerogrgy4wj"]
+[gd_scene load_steps=13 format=4 uid="uid://yrerogrgy4wj"]
 
 [ext_resource type="TileSet" uid="uid://dfmh40v3anori" path="res://assests/TileSets/game_tile_set.tres" id="1_w01pr"]
 [ext_resource type="PackedScene" uid="uid://blu2fgshcdiag" path="res://scenes/player.tscn" id="2_4xgtr"]
 [ext_resource type="PackedScene" uid="uid://2olsg8orii87" path="res://level1/Scenes/seed.tscn" id="3_py8qn"]
 [ext_resource type="PackedScene" uid="uid://b73m5eu7npbam" path="res://level1/Scenes/bonus_seed.tscn" id="4_4xgtr"]
 [ext_resource type="Script" uid="uid://bdxlqdsksvh8b" path="res://level1/Scenes/spikeColission.gd" id="4_py8qn"]
+[ext_resource type="Texture2D" uid="uid://clyf0pcxbjis" path="res://assests/game/assestsUsed/uglyWorld/Deco/summerCrops.png" id="6_gsh2e"]
+[ext_resource type="Script" uid="uid://b2hjq1nh1rh82" path="res://level1/Scripts/UIlvl1.gd" id="6_jmvnx"]
 
 [sub_resource type="Animation" id="Animation_bswci"]
 length = 0.001
@@ -211,5 +213,28 @@ position = Vector2(3788, 154)
 
 [node name="Seed20" parent="." instance=ExtResource("3_py8qn")]
 position = Vector2(4028, 155)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+script = ExtResource("6_jmvnx")
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer"]
+position = Vector2(40, 22)
+scale = Vector2(2, 1.9)
+texture = ExtResource("6_gsh2e")
+region_enabled = true
+region_rect = Rect2(0, 110.544, 20, 20.9558)
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+offset_left = 16.0
+offset_top = 12.0
+offset_right = 59.0
+offset_bottom = 38.0
+text = "X"
+
+[node name="seedsCollected" type="Label" parent="CanvasLayer"]
+offset_left = 51.0
+offset_top = 12.0
+offset_right = 123.0
+offset_bottom = 35.0
 
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]

@@ -73,7 +73,7 @@ var gravity = 500
 var jump_force = -200
 
 func player_movement_plataforma(delta):
-	print("¿Estoy en el piso?: ", is_on_floor())
+	# print("¿Estoy en el piso?: ", is_on_floor())
 
 	var direction = Vector2.ZERO
 	direction.x = Input.get_axis("ui_left", "ui_right")

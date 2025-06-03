@@ -1,7 +1,13 @@
+<<<<<<< Updated upstream
 Panel
 Sprite2D
 Area2D
+=======
+Label
+Sprite2D
+>>>>>>> Stashed changes
 TextureRect
+CanvasLayer
 HBoxContainer
 WorldEnvironment
 PointLight2D
@@ -9,6 +15,12 @@ Camera2D
 TextureButton
 CollisionShape2D
 StaticBody2D
+<<<<<<< Updated upstream
 Label
 CanvasLayer
 Control
+=======
+Area2D
+Control
+Panel
+>>>>>>> Stashed changes
