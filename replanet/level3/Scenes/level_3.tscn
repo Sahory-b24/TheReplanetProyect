@@ -1,10 +1,10 @@
 [gd_scene load_steps=6 format=4 uid="uid://dcecxr07mygo4"]
 
 [ext_resource type="TileSet" uid="uid://dfmh40v3anori" path="res://assests/TileSets/game_tile_set.tres" id="1_70nk6"]
-[ext_resource type="Script" uid="uid://dlocske8b5yvc" path="res://level3/Scenes/level_3.gd" id="1_17213"]
+[ext_resource type="Script" path="res://level3/Scenes/level_3.gd" id="1_17213"]
 [ext_resource type="PackedScene" uid="uid://blu2fgshcdiag" path="res://scenes/player.tscn" id="2_h23n6"]
 [ext_resource type="PackedScene" uid="uid://j6pokcbceix1" path="res://level3/Scenes/Lever.tscn" id="3_kn1bk"]
-[ext_resource type="Script" uid="uid://m2qjsfae63yy" path="res://level3/Scenes/hud.gd" id="5_ebxra"]
+[ext_resource type="Script" path="res://level3/Scenes/hud.gd" id="5_ebxra"]
 
 [node name="level_3" type="Node2D"]
 script = ExtResource("1_17213")

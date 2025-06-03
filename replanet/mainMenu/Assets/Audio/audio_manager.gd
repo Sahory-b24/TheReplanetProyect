@@ -1,7 +1,7 @@
 extends Node2D
 
 @onready var SFXPlayer = $SFXPlayer
-@onready var MusicPlayer = $MusicPlayer
+@onready var MusicPlayer = $Music
 var music_muted := false
 
 func play_music(path: String) -> void:
