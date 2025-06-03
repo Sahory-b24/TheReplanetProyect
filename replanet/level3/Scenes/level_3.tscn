@@ -36,9 +36,13 @@ tile_map_data = PackedByteArray("AAAJAAAAAwASAAYAAAAJAAEAAwAHAAYAAAAJAAIAAwAHAAY
 tile_set = ExtResource("1_70nk6")
 
 [node name="Player" parent="." instance=ExtResource("2_h23n6")]
-position = Vector2(33, 28)
+position = Vector2(176, 24)
 collision_layer = 65
 collision_mask = 71
+
+[node name="Camera2D2" type="Camera2D" parent="Player"]
+position = Vector2(0, 2)
+zoom = Vector2(4, 4)
 
 [node name="Lever" parent="." instance=ExtResource("3_kn1bk")]
 position = Vector2(132, 37)
@@ -59,9 +63,9 @@ offset_right = 40.0
 offset_bottom = 23.0
 
 [node name="PalancasLabel" type="Label" parent="HUD"]
-offset_top = 32.0
+offset_top = 16.0
 offset_right = 40.0
-offset_bottom = 55.0
+offset_bottom = 39.0
 
 [node name="PanelFinal" type="Panel" parent="HUD"]
 visible = false
