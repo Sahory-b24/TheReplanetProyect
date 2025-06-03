@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dsdkyg2gpm18q"
-path="res://.godot/imported/Extras.png-d7c3f72b1633adb0efb14180e6ae67e7.ctex"
+uid="uid://yibqrjpilghl"
+path="res://.godot/imported/seeds de q amarilla.png-3a8a2eb62fdd624769f941066e6f5947.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://level3/Assets/Images/Extras.png"
-dest_files=["res://.godot/imported/Extras.png-d7c3f72b1633adb0efb14180e6ae67e7.ctex"]
+source_file="res://assests/seeds/seeds de q amarilla.png"
+dest_files=["res://.godot/imported/seeds de q amarilla.png-3a8a2eb62fdd624769f941066e6f5947.ctex"]
 
 [params]
 

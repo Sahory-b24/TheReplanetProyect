@@ -1,0 +1,181 @@
+[gd_scene load_steps=20 format=3 uid="uid://c0hw8ugkcki30"]
+
+[ext_resource type="Script" uid="uid://c7rgbfiua4f5u" path="res://mainMenu/Scripts/instructions_level_2.gd" id="1_iokkb"]
+[ext_resource type="Texture2D" uid="uid://b2ftwa60xj37" path="res://mainMenu/Assets/Images/fondo.png" id="2_eq5hg"]
+[ext_resource type="Texture2D" uid="uid://5rs8jmdnumd7" path="res://mainMenu/Assets/Buttoms/Mute.tres" id="3_igkhr"]
+[ext_resource type="Texture2D" uid="uid://fcbom5dwpmgc" path="res://mainMenu/Assets/Buttoms/unMute.tres" id="4_iokkb"]
+[ext_resource type="Script" uid="uid://ditfvc7qwilfq" path="res://mainMenu/Scripts/MuteButton.gd" id="5_3gc1k"]
+[ext_resource type="Texture2D" uid="uid://bjw2tkaj58hn1" path="res://mainMenu/Assets/Images/marco grande.png" id="6_yqbi4"]
+[ext_resource type="Texture2D" uid="uid://byim6hlifbw6m" path="res://mainMenu/Assets/Buttoms/regresar_normal.tres" id="7_0y3ov"]
+[ext_resource type="Texture2D" uid="uid://cbuqbkoc7cmgy" path="res://mainMenu/Assets/Buttoms/regresar_press.tres" id="8_wbwhl"]
+[ext_resource type="FontFile" uid="uid://b5b1l3hfn2lof" path="res://assests/Fonts/ShareTech-Regular.ttf" id="9_kb5e3"]
+[ext_resource type="Texture2D" uid="uid://cx5nwywm1tukh" path="res://mainMenu/Assets/Images/Level2_mecanica.png" id="10_3gc1k"]
+[ext_resource type="Texture2D" uid="uid://7yac1bvmbfm3" path="res://assests/Sprite/Silas_Mision2.png" id="10_sev2f"]
+[ext_resource type="Texture2D" uid="uid://do0yfph2h2o64" path="res://mainMenu/Assets/Images/basura 1.png" id="11_q7op3"]
+[ext_resource type="Texture2D" uid="uid://dmdjpqbcqqy77" path="res://mainMenu/Assets/Images/basura 2.png" id="12_eq5hg"]
+[ext_resource type="Texture2D" uid="uid://bnwbbkovq1rx5" path="res://mainMenu/Assets/Images/basura 3.png" id="14_yqbi4"]
+[ext_resource type="Texture2D" uid="uid://bdshjwca14pa4" path="res://mainMenu/Assets/Images/wood.png" id="15_0y3ov"]
+[ext_resource type="Texture2D" uid="uid://cnne5msch5i70" path="res://mainMenu/Assets/Images/props water 2.png" id="16_wbwhl"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_6hm32"]
+texture = ExtResource("2_eq5hg")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_1qdcx"]
+texture = ExtResource("6_yqbi4")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6lnaf"]
+bg_color = Color(0.384314, 0.32549, 0.286275, 1)
+
+[node name="InstructionsLevel2" type="Node2D"]
+script = ExtResource("1_iokkb")
+
+[node name="Panel" type="Panel" parent="."]
+offset_right = 640.0
+offset_bottom = 360.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_6hm32")
+
+[node name="MuteButton" type="TextureButton" parent="Panel"]
+layout_mode = 0
+offset_left = 590.0
+offset_top = 5.0
+offset_right = 603.0
+offset_bottom = 14.0
+scale = Vector2(3, 3)
+texture_normal = ExtResource("3_igkhr")
+texture_pressed = ExtResource("4_iokkb")
+script = ExtResource("5_3gc1k")
+
+[node name="Panel2" type="Panel" parent="."]
+offset_left = 104.0
+offset_top = -11.0
+offset_right = 533.0
+offset_bottom = 405.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_1qdcx")
+
+[node name="Panel3" type="Panel" parent="."]
+offset_left = 145.0
+offset_top = 93.0
+offset_right = 493.0
+offset_bottom = 278.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_6lnaf")
+
+[node name="backLevel_button" type="TextureButton" parent="."]
+offset_left = 600.0
+offset_top = 318.0
+offset_right = 616.0
+offset_bottom = 335.0
+scale = Vector2(2, 2)
+texture_normal = ExtResource("7_0y3ov")
+texture_pressed = ExtResource("8_wbwhl")
+texture_hover = ExtResource("8_wbwhl")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 253.0
+offset_top = 43.0
+offset_right = 400.0
+offset_bottom = 85.0
+theme_override_fonts/font = ExtResource("9_kb5e3")
+theme_override_font_sizes/font_size = 33
+text = "¡RECUERDA!"
+
+[node name="SlideImage" type="TextureRect" parent="."]
+offset_left = 145.0
+offset_top = 93.0
+offset_right = 494.0
+offset_bottom = 277.0
+expand_mode = 1
+
+[node name="buttonsMov" type="TextureRect" parent="SlideImage"]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 11.0
+offset_right = 91.0
+offset_bottom = 78.0
+texture = ExtResource("10_3gc1k")
+expand_mode = 1
+
+[node name="Silas" type="TextureRect" parent="SlideImage"]
+layout_mode = 0
+offset_left = 239.0
+offset_top = 79.0
+offset_right = 397.0
+offset_bottom = 248.0
+texture = ExtResource("10_sev2f")
+
+[node name="trash1" type="TextureRect" parent="SlideImage"]
+layout_mode = 0
+offset_left = 202.0
+offset_top = 11.0
+offset_right = 236.0
+offset_bottom = 41.0
+texture = ExtResource("11_q7op3")
+expand_mode = 1
+
+[node name="trash2" type="TextureRect" parent="SlideImage"]
+layout_mode = 0
+offset_left = 231.0
+offset_top = 44.0
+offset_right = 266.0
+offset_bottom = 77.0
+texture = ExtResource("12_eq5hg")
+expand_mode = 1
+
+[node name="trash4" type="TextureRect" parent="SlideImage"]
+layout_mode = 0
+offset_left = 192.0
+offset_top = 41.0
+offset_right = 227.0
+offset_bottom = 74.0
+texture = ExtResource("14_yqbi4")
+expand_mode = 1
+
+[node name="trash3" type="TextureRect" parent="SlideImage"]
+layout_mode = 0
+offset_left = 242.0
+offset_top = 18.0
+offset_right = 267.0
+offset_bottom = 41.0
+texture = ExtResource("15_0y3ov")
+expand_mode = 1
+
+[node name="roca" type="TextureRect" parent="SlideImage"]
+layout_mode = 0
+offset_left = 99.0
+offset_top = 105.0
+offset_right = 155.0
+offset_bottom = 153.0
+texture = ExtResource("16_wbwhl")
+expand_mode = 1
+
+[node name="Label1" type="Label" parent="."]
+offset_left = 228.0
+offset_top = 114.0
+offset_right = 297.0
+offset_bottom = 164.0
+theme_override_fonts/font = ExtResource("9_kb5e3")
+theme_override_font_sizes/font_size = 12
+text = "MOVIMIENTO 
+DEL 
+PERSONAJE"
+
+[node name="Label3" type="Label" parent="."]
+offset_left = 308.0
+offset_top = 210.0
+offset_right = 395.0
+offset_bottom = 247.375
+theme_override_fonts/font = ExtResource("9_kb5e3")
+theme_override_font_sizes/font_size = 15
+text = "TEN CUIDADO 
+CON LAS ROCAS"
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 419.0
+offset_top = 123.0
+offset_right = 488.0
+offset_bottom = 160.375
+theme_override_fonts/font = ExtResource("9_kb5e3")
+theme_override_font_sizes/font_size = 15
+text = "¡RECOLECTA
+LA BASURA!"
+
+[connection signal="pressed" from="backLevel_button" to="." method="_on_back_level_button_pressed"]
