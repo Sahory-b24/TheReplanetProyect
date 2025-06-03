@@ -10,3 +10,8 @@ res://scenes/level_3.tscn
 res://level3/Scenes/Lever.tscn
 res://scenes/npc.gd
 res://scenes/world.tscn
+res://level2/Scenes/npc1.gd
+res://level2/Scenes/boat.tscn
+res://level2/Scenes/pantallaPuntaje-Isis.tscn
+res://level2/Scenes/Puntajes.tscn
+res://scenes/NPC.tscn

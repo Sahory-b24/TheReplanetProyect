@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=4 uid="uid://dcecxr07mygo4"]
+[gd_scene load_steps=20 format=4 uid="uid://dcecxr07mygo4"]
 
 [ext_resource type="TileSet" uid="uid://dfmh40v3anori" path="res://assests/TileSets/game_tile_set.tres" id="1_70nk6"]
 [ext_resource type="Script" uid="uid://dlocske8b5yvc" path="res://level3/Scripts/level_3.gd" id="1_17213"]
@@ -14,6 +14,9 @@
 [ext_resource type="Texture2D" uid="uid://cj7bw4ip54pgn" path="res://level3/Assets/textures/VolverAlMundoPressed.tres" id="9_13g3x"]
 [ext_resource type="Texture2D" uid="uid://viffnije2f2t" path="res://level3/Assets/textures/ReintentarNormal.tres" id="10_fjtup"]
 [ext_resource type="Texture2D" uid="uid://cdrb77lehsrc8" path="res://level3/Assets/textures/ReintentarPressed.tres" id="11_qrdbp"]
+[ext_resource type="PackedScene" uid="uid://b70j5r8ot4srf" path="res://scenes/NPC.tscn" id="15_833yd"]
+[ext_resource type="Texture2D" uid="uid://bw6q7yeusluef" path="res://assests/Sprite/Meliu_Mision3.png" id="16_u8fce"]
+[ext_resource type="Resource" uid="uid://bwd57i34n6sic" path="res://dialogue_Mision3.dialogue" id="16_ycfts"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_80v1p"]
 texture = ExtResource("6_sfejh")
@@ -183,6 +186,11 @@ texture_hover = ExtResource("11_qrdbp")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_13g3x")
+
+[node name="Npc" parent="." instance=ExtResource("15_833yd")]
+position = Vector2(40, 24)
+dialogo_path = ExtResource("16_ycfts")
+sprite = ExtResource("16_u8fce")
 
 [connection signal="pressed" from="HUD/PanelFinal/Panel/VolverAlMundo" to="HUD" method="_on_volver_al_mundo_pressed"]
 [connection signal="pressed" from="HUD/PanelFinal/Panel/ReintentarButtom" to="HUD" method="_on_reintentar_buttom_pressed"]

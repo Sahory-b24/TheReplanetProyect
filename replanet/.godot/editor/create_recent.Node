@@ -1,3 +1,5 @@
+Sprite2D
+Area2D
 TextureRect
 HBoxContainer
 WorldEnvironment
@@ -6,9 +8,7 @@ Camera2D
 TextureButton
 CollisionShape2D
 StaticBody2D
-Area2D
 Label
 CanvasLayer
 Control
 Panel
-Sprite2D

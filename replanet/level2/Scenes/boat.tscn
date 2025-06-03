@@ -1,8 +1,11 @@
-[gd_scene load_steps=10 format=3 uid="uid://dvdq6uqdbou6r"]
+[gd_scene load_steps=13 format=3 uid="uid://dvdq6uqdbou6r"]
 
 [ext_resource type="Texture2D" uid="uid://pxvn2bpqpbrt" path="res://level2/Assests/Wood Boat.png" id="1_0063d"]
 [ext_resource type="Script" uid="uid://bjukr014il3g1" path="res://level2/Scripts/boat.gd" id="1_qyrje"]
 [ext_resource type="Shape2D" uid="uid://dx3l8ojfq6h82" path="res://level2/Resourses/boat_collisionShape.tres" id="3_lw6pk"]
+[ext_resource type="PackedScene" uid="uid://b70j5r8ot4srf" path="res://scenes/NPC.tscn" id="4_1daja"]
+[ext_resource type="Resource" uid="uid://brxubv4woskw2" path="res://dialogue_Mision2.dialogue" id="5_36exf"]
+[ext_resource type="Texture2D" uid="uid://7yac1bvmbfm3" path="res://assests/Sprite/Silas_Mision2.png" id="6_ea2bc"]
 
 [sub_resource type="GDScript" id="GDScript_wgyym"]
 
@@ -74,5 +77,10 @@ zoom = Vector2(1.5, 1.5)
 [node name="DamageCooldown" type="Timer" parent="."]
 wait_time = 3.5
 one_shot = true
+
+[node name="Npc2" parent="." instance=ExtResource("4_1daja")]
+position = Vector2(-216, -40)
+dialogo_path = ExtResource("5_36exf")
+sprite = ExtResource("6_ea2bc")
 
 [connection signal="timeout" from="DamageCooldown" to="." method="_on_damage_cooldown_timeout"]
