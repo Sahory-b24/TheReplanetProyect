@@ -1,9 +1,10 @@
-[gd_scene load_steps=13 format=4 uid="uid://dcecxr07mygo4"]
+[gd_scene load_steps=15 format=4 uid="uid://dcecxr07mygo4"]
 
 [ext_resource type="TileSet" uid="uid://dfmh40v3anori" path="res://assests/TileSets/game_tile_set.tres" id="1_70nk6"]
 [ext_resource type="Script" uid="uid://dlocske8b5yvc" path="res://level3/Scripts/level_3.gd" id="1_17213"]
 [ext_resource type="PackedScene" uid="uid://blu2fgshcdiag" path="res://scenes/player.tscn" id="2_h23n6"]
 [ext_resource type="PackedScene" uid="uid://j6pokcbceix1" path="res://level3/Scenes/Lever.tscn" id="3_kn1bk"]
+[ext_resource type="Texture2D" uid="uid://c8mxtt8sbfhd5" path="res://level3/Assets/Images/20250603_0100_Glowing White Orb_simple_compose_01jwt602rme1g8cyajrzk17vt9.png" id="4_13g3x"]
 [ext_resource type="Script" uid="uid://m2qjsfae63yy" path="res://level3/Scripts/hud.gd" id="5_ebxra"]
 [ext_resource type="Texture2D" uid="uid://bjw2tkaj58hn1" path="res://mainMenu/Assets/Images/marco grande.png" id="6_sfejh"]
 [ext_resource type="FontFile" uid="uid://b5b1l3hfn2lof" path="res://assests/Fonts/ShareTech-Regular.ttf" id="7_3xk8u"]
@@ -14,6 +15,10 @@
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_80v1p"]
 texture = ExtResource("6_sfejh")
+
+[sub_resource type="Environment" id="Environment_13g3x"]
+ambient_light_source = 2
+ambient_light_energy = 0.0
 
 [node name="level_3" type="Node2D"]
 script = ExtResource("1_17213")
@@ -42,7 +47,15 @@ collision_mask = 71
 
 [node name="Camera2D2" type="Camera2D" parent="Player"]
 position = Vector2(0, 2)
-zoom = Vector2(4, 4)
+zoom = Vector2(5, 5)
+
+[node name="PointLight2D" type="PointLight2D" parent="Player"]
+position = Vector2(-9.53674e-07, 8)
+scale = Vector2(0.113281, 0.0859375)
+energy = 0.39
+range_z_min = -15
+range_z_max = 15
+texture = ExtResource("4_13g3x")
 
 [node name="Lever" parent="." instance=ExtResource("3_kn1bk")]
 position = Vector2(132, 37)
@@ -140,6 +153,9 @@ scale = Vector2(2, 2)
 texture_normal = ExtResource("10_fjtup")
 texture_pressed = ExtResource("11_qrdbp")
 texture_hover = ExtResource("11_qrdbp")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_13g3x")
 
 [connection signal="pressed" from="HUD/PanelFinal/Panel/VolverAlMundo" to="HUD" method="_on_volver_al_mundo_pressed"]
 [connection signal="pressed" from="HUD/PanelFinal/Panel/ReintentarButtom" to="HUD" method="_on_reintentar_buttom_pressed"]

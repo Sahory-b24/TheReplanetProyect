@@ -1,3 +1,5 @@
+WorldEnvironment
+PointLight2D
 Camera2D
 TextureButton
 CollisionShape2D
@@ -11,5 +13,3 @@ Sprite2D
 Node2D
 AnimationPlayer
 TextureRect
-Button
-Label3D
