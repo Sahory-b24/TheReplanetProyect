@@ -1,12 +1,11 @@
 extends Area2D
-
 class_name NPC
 
 @export var nombre: String = "NPC"
-@export var dialogo_path: Resource  # Cargar el .dialogue aquí
-@export var sprite: Texture2D       # Sprite diferente por cada NPC
+@export var dialogo_path: Resource  # Asigna diferente .dialogue en cada NPC
+@export var sprite: Texture2D       # Asigna sprite diferente en cada NPC
 
-var jugador_cerca = false
+static var npc_activo = null        # Este será el único NPC que responde
 
 @onready var sprite_node := $Sprite2D
 
@@ -17,15 +16,15 @@ func _ready():
 	connect("body_exited", Callable(self, "_on_body_exited"))
 
 func _on_body_entered(body):
-	print("body_entered: ", body.name, " - tipo: ", body)
-	jugador_cerca = true
+	if body.name == "Player":  
+		NPC.npc_activo = self  # Este NPC se vuelve el activo
 
 func _on_body_exited(body):
-	print("body_exited: ", body.name, " - tipo: ", body)
-	jugador_cerca = false
+	if body.name == "Player" and NPC.npc_activo == self:
+		NPC.npc_activo = null
 
 func _process(_delta):
-	if jugador_cerca and Input.is_action_just_pressed("ui_accept"):
+	if NPC.npc_activo == self and Input.is_action_just_pressed("ui_accept"):
 		mostrar_dialogo()
 
 func mostrar_dialogo():

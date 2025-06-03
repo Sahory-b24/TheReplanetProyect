@@ -1,11 +1,4 @@
 ~ start
-Nathan: [[Hi|Hello|Howdy]], this is some dialogue.
-Nathan: Here are some choices.
-- First one
-	Nathan: You picked the first one.
-- Second one
-	Nathan: You picked the second one.
-- Start again => start
-- End the conversation => END
-Nathan: For more information see the online documentation.
+Meliu: El aire que respiramos depende de esta fábrica. Tómate tu tiempo, pero no pierdas el foco. Cada palanca que actives es un paso hacia un futuro mejor.
+Meliu: Presione "Nivel 3" para empezar con la misión.
 => END
