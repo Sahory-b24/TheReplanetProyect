@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=4 uid="uid://bxk6qr5cnn8n1"]
+[gd_scene load_steps=22 format=4 uid="uid://bxk6qr5cnn8n1"]
 
 [ext_resource type="TileSet" uid="uid://dfmh40v3anori" path="res://assests/TileSets/game_tile_set.tres" id="1_pc1s3"]
 [ext_resource type="PackedScene" uid="uid://dvdq6uqdbou6r" path="res://level2/Scenes/boat.tscn" id="2_fdsdd"]
@@ -13,9 +13,11 @@
 [ext_resource type="Texture2D" uid="uid://cjpasu3533c8x" path="res://level2/Assests/trashh.png" id="9_q8wf8"]
 [ext_resource type="FontFile" uid="uid://b5b1l3hfn2lof" path="res://assests/Fonts/ShareTech-Regular.ttf" id="10_ft8iy"]
 [ext_resource type="Script" uid="uid://xbugsfsxswe8" path="res://level2/Scripts/scoreManager.gd" id="10_hkghg"]
+[ext_resource type="Texture2D" uid="uid://g1yxbkst6x2n" path="res://mainMenu/Assets/Buttoms/lore__normal.tres" id="11_p4h5y"]
+[ext_resource type="Texture2D" uid="uid://dphppnhi3rvd5" path="res://mainMenu/Assets/Buttoms/atras_normal.tres" id="13_n4yf6"]
 [ext_resource type="Texture2D" uid="uid://bjw2tkaj58hn1" path="res://mainMenu/Assets/Images/marco grande.png" id="14_41oqn"]
+[ext_resource type="Texture2D" uid="uid://br7x0b60nw3vy" path="res://mainMenu/Assets/Buttoms/atras_press.tres" id="14_cxuvp"]
 [ext_resource type="Texture2D" uid="uid://dg1gy0qfc8r2o" path="res://mainMenu/Assets/Buttoms/lore_press.tres" id="14_p4h5y"]
-[ext_resource type="Texture2D" uid="uid://byim6hlifbw6m" path="res://mainMenu/Assets/Buttoms/regresar_normal.tres" id="15_p4h5y"]
 [ext_resource type="Texture2D" uid="uid://cbuqbkoc7cmgy" path="res://mainMenu/Assets/Buttoms/regresar_press.tres" id="16_n4yf6"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_q8wf8"]
@@ -52,11 +54,6 @@ trash_scenes = Array[PackedScene]([ExtResource("5_hkghg"), ExtResource("6_c47fr"
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 script = ExtResource("9_6p5uc")
 
-[node name="mecanica2Button" type="TextureButton" parent="CanvasLayer"]
-offset_right = 40.0
-offset_bottom = 40.0
-texture_pressed = ExtResource("14_p4h5y")
-
 [node name="basura" type="TextureRect" parent="CanvasLayer"]
 offset_left = 2.0
 offset_top = -6.0
@@ -65,6 +62,26 @@ offset_bottom = 606.0
 scale = Vector2(0.09, 0.09)
 texture = ExtResource("9_q8wf8")
 expand_mode = 1
+
+[node name="mecanica2Button" type="TextureButton" parent="CanvasLayer"]
+offset_left = 592.0
+offset_top = 312.0
+offset_right = 608.0
+offset_bottom = 328.0
+scale = Vector2(2, 2)
+texture_normal = ExtResource("11_p4h5y")
+texture_pressed = ExtResource("14_p4h5y")
+texture_hover = ExtResource("14_p4h5y")
+
+[node name="atrasMundo" type="TextureButton" parent="CanvasLayer"]
+offset_left = 592.0
+offset_top = 8.0
+offset_right = 610.0
+offset_bottom = 26.0
+scale = Vector2(2, 2)
+texture_normal = ExtResource("13_n4yf6")
+texture_pressed = ExtResource("14_cxuvp")
+texture_hover = ExtResource("16_n4yf6")
 
 [node name="ScoreLabel" type="Label" parent="CanvasLayer"]
 offset_left = 38.0
@@ -135,15 +152,4 @@ offset_bottom = 72.0
 theme_override_fonts/font = ExtResource("10_ft8iy")
 theme_override_font_sizes/font_size = 27
 
-[node name="atrasMundo" type="TextureButton" parent="CanvasLayer/Panel"]
-layout_mode = 0
-offset_left = 450.0
-offset_top = 262.0
-offset_right = 468.0
-offset_bottom = 280.0
-scale = Vector2(2, 2)
-texture_normal = ExtResource("15_p4h5y")
-texture_pressed = ExtResource("16_n4yf6")
-texture_hover = ExtResource("16_n4yf6")
-
-[connection signal="pressed" from="CanvasLayer/Panel/atrasMundo" to="CanvasLayer" method="_on_atras_mundo_pressed"]
+[connection signal="pressed" from="CanvasLayer/atrasMundo" to="CanvasLayer" method="_on_atras_mundo_pressed"]

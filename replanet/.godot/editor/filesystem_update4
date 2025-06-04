@@ -1,19 +1,9 @@
-<<<<<<< Updated upstream
-res://mainMenu/Scripts/options.gd
-res://mainMenu/Scenes/Options.tscn
-res://mainMenu/Scenes/scene_transitions.gd
-res://mainMenu/Scripts/MuteButton.gd
-res://mainMenu/Assets/Buttoms/atras_press.tres
-res://mainMenu/Assets/Buttoms/dalto_icon_ckecked.tres
-res://mainMenu/Assets/Buttoms/dalto_icon.tres
-res://mainMenu/Assets/Buttoms/grabber.tres
-res://mainMenu/Assets/Buttoms/grabberPressed.tres
-res://mainMenu/Scenes/main_menu.tscn
-res://mainMenu/Scenes/instructions.tscn
-=======
 res://mainMenu/Scenes/main_menu.tscn
 res://mainMenu/Scenes/scene_transitions.gd
 res://mainMenu/Scripts/MuteButton.gd
 res://scripts/custimization.gd
 res://scenes/Custimization.tscn
->>>>>>> Stashed changes
+res://mainMenu/Scripts/options.gd
+res://level2/Scenes/Level_2.tscn
+res://assests/TileSets/game_tile_set.tres
+res://mainMenu/Assets/Buttoms/atras_press.tres
