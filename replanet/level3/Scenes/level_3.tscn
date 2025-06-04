@@ -1,7 +1,7 @@
 [gd_scene load_steps=20 format=4 uid="uid://dcecxr07mygo4"]
 
 [ext_resource type="TileSet" uid="uid://dfmh40v3anori" path="res://assests/TileSets/game_tile_set.tres" id="1_70nk6"]
-[ext_resource type="Script" uid="uid://dlocske8b5yvc" path="res://level3/Scripts/level_3.gd" id="1_17213"]
+[ext_resource type="Script" path="res://level3/Scripts/level_3.gd" id="1_17213"]
 [ext_resource type="PackedScene" uid="uid://blu2fgshcdiag" path="res://scenes/player.tscn" id="2_h23n6"]
 [ext_resource type="PackedScene" uid="uid://j6pokcbceix1" path="res://level3/Scenes/Lever.tscn" id="3_kn1bk"]
 [ext_resource type="Texture2D" uid="uid://c8mxtt8sbfhd5" path="res://level3/Assets/Images/20250603_0100_Glowing White Orb_simple_compose_01jwt602rme1g8cyajrzk17vt9.png" id="4_13g3x"]
@@ -13,7 +13,7 @@
 [ext_resource type="Texture2D" uid="uid://ds1gh6et8rjkn" path="res://level3/Assets/textures/EnergyFull.tres" id="7_qrdbp"]
 [ext_resource type="Texture2D" uid="uid://dg1gy0qfc8r2o" path="res://mainMenu/Assets/Buttoms/lore_press.tres" id="8_u8fce"]
 [ext_resource type="Texture2D" uid="uid://du4qjausgwvea" path="res://level3/Assets/textures/ReintentarNormal.tres" id="10_fjtup"]
-[ext_resource type="Texture2D" uid="uid://cdrb77lehsrc8" path="res://level3/Assets/textures/ReintentarPressed.tres" id="11_qrdbp"]
+[ext_resource type="Texture2D" path="res://level3/Assets/textures/ReintentarPressed.tres" id="11_qrdbp"]
 [ext_resource type="Texture2D" uid="uid://dphppnhi3rvd5" path="res://mainMenu/Assets/Buttoms/atras_normal.tres" id="17_t8xpv"]
 [ext_resource type="Texture2D" uid="uid://br7x0b60nw3vy" path="res://mainMenu/Assets/Buttoms/atras_press.tres" id="18_sbqc0"]
 
