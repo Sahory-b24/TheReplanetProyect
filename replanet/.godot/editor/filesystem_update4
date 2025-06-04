@@ -3,7 +3,3 @@ res://mainMenu/Scenes/scene_transitions.gd
 res://mainMenu/Scripts/MuteButton.gd
 res://scripts/custimization.gd
 res://scenes/Custimization.tscn
-res://mainMenu/Scripts/options.gd
-res://level2/Scenes/Level_2.tscn
-res://assests/TileSets/game_tile_set.tres
-res://mainMenu/Assets/Buttoms/atras_press.tres

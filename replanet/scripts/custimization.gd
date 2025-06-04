@@ -11,7 +11,7 @@ func _on_text_edit_text_changed() -> void:
 
 func _on_save_buttom_pressed() -> void:
 	if player_name == "":
-		mensaje.text = "⚠️ Ingresá un nombre antes de continuar"
+		mensaje.text = "⚠️ INGRESE NOMBRE"
 		mensaje.visible = true
 		return  # No continúa si no hay nombre
 
