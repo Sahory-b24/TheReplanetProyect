@@ -1000,6 +1000,7 @@ _data = {
 }
 
 [node name="Player" type="CharacterBody2D"]
+y_sort_enabled = true
 collision_mask = 134
 script = ExtResource("1_tx1dd")
 
