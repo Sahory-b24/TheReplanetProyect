@@ -1,4 +1,4 @@
-[gd_resource type="TileSet" load_steps=73 format=3 uid="uid://dfmh40v3anori"]
+[gd_resource type="TileSet" load_steps=75 format=3 uid="uid://dfmh40v3anori"]
 
 [ext_resource type="Texture2D" uid="uid://bn6td4javnjfn" path="res://assests/game/assestsUsed/uglyWorld/Tiles/water.png" id="1_bpmon"]
 [ext_resource type="Texture2D" uid="uid://bgkt74xn78u6f" path="res://assests/TileSets/pineTree.png" id="2_2q1b1"]
@@ -30,6 +30,7 @@
 [ext_resource type="Texture2D" uid="uid://dpalrsoox5kvo" path="res://assests/game/assestsUsed/Mango Tree.png" id="21_xg5ik"]
 [ext_resource type="Texture2D" uid="uid://w731yxicyygk" path="res://assests/game/assestsUsed/Peach Tree.png" id="22_j6gul"]
 [ext_resource type="Texture2D" uid="uid://vx4lrs70rdyi" path="res://assests/game/assestsUsed/Baby Chicken Blonde.png" id="23_xnks1"]
+[ext_resource type="Texture2D" uid="uid://c1wa25w7xafgt" path="res://assests/game/assestsUsed/spritesheet_16x16_5frames[1][1].png" id="25_4i8ee"]
 [ext_resource type="Texture2D" uid="uid://c3w6clm26byv1" path="res://assests/game/assestsUsed/Pig Mud Pink.png" id="25_wdwh1"]
 [ext_resource type="Texture2D" uid="uid://bhm2x47uadym3" path="res://assests/game/assestsUsed/Baby Sheep .png" id="26_sfp0v"]
 [ext_resource type="Texture2D" uid="uid://ml74anooyrph" path="res://assests/game/assestsUsed/Ginger.png" id="27_rdl3w"]
@@ -868,6 +869,15 @@ texture = ExtResource("4_v2ypl")
 12:6/0 = 0
 11:6/0 = 0
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_q1m7l"]
+texture = ExtResource("25_4i8ee")
+0:0/animation_frame_0/duration = 1.0
+0:0/animation_frame_1/duration = 1.0
+0:0/animation_frame_2/duration = 1.0
+0:0/animation_frame_3/duration = 1.0
+0:0/animation_frame_4/duration = 1.0
+0:0/0 = 0
+
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_sh71f"]
 texture = ExtResource("25_wdwh1")
 0:11/animation_separation = Vector2i(1, 0)
@@ -1204,3 +1214,4 @@ sources/33 = SubResource("TileSetAtlasSource_uo844")
 sources/35 = SubResource("TileSetAtlasSource_si7e8")
 sources/36 = SubResource("TileSetAtlasSource_gbku7")
 sources/37 = SubResource("TileSetAtlasSource_advbc")
+sources/30 = SubResource("TileSetAtlasSource_q1m7l")
