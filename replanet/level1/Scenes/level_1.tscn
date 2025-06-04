@@ -12,7 +12,7 @@
 [ext_resource type="Script" uid="uid://c0oty0qu7dyeu" path="res://level1/Scripts/won_panel.gd" id="8_t07d8"]
 [ext_resource type="FontFile" uid="uid://b5b1l3hfn2lof" path="res://assests/Fonts/ShareTech-Regular.ttf" id="9_t07d8"]
 [ext_resource type="Texture2D" uid="uid://du4qjausgwvea" path="res://level3/Assets/textures/ReintentarNormal.tres" id="11_k4wus"]
-[ext_resource type="Texture2D" path="res://level3/Assets/textures/ReintentarPressed.tres" id="12_xmj4f"]
+[ext_resource type="Texture2D" uid="uid://cdrb77lehsrc8" path="res://level3/Assets/textures/ReintentarPressed.tres" id="12_xmj4f"]
 [ext_resource type="Script" uid="uid://b6g3w7es8nk3k" path="res://level1/Scripts/won_area.gd" id="12_xwnq4"]
 [ext_resource type="Texture2D" uid="uid://dphppnhi3rvd5" path="res://mainMenu/Assets/Buttoms/atras_normal.tres" id="13_k1s8w"]
 [ext_resource type="Texture2D" uid="uid://br7x0b60nw3vy" path="res://mainMenu/Assets/Buttoms/atras_press.tres" id="14_3i3lo"]

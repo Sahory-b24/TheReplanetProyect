@@ -15,6 +15,8 @@ func mostrar_panel_final(puntaje: int):
 	if puntaje >= 1300:
 		mensaje_label.text = "Excelente, hiciste un buen trabajo limpiando el río. 
 Te ganaste una estrella."
+		GameData.sumar_puntaje(puntaje)
+		GameData.marcar_nivel_completado()
 	else:
 		mensaje_label.text = "No alcanzaste el puntaje necesario."
 

@@ -40,10 +40,18 @@ func mostrar_resultado_finalPanel():
 
 	if GameState.puntaje_total >= 1000:
 		mensaje_label.text = "¡Has conseguido la estrella!\n¡Atmósfera purificada!"
+		if not GameState.nivel3_registrado:
+			GameData.sumar_puntaje(GameState.puntaje_total)
+			GameData.marcar_nivel_completado()
+			GameState.nivel3_registrado = true
+		reintentar_button.visible = false
+		volver_button.visible = true
 	else:
 		mensaje_label.text = "¡Restauraste el sistema, pero sin suficiente eficiencia para recuperar la estrella!"
+		reintentar_button.visible = true
+		volver_button.visible = true
 
-	reintentar_button.visible = true
+	reintentar_button.visible = false
 	volver_button.visible = true
 
 	GuardarPuntaje.guardar_puntaje_nivel3(Global.player_name, GameState.puntaje_total)

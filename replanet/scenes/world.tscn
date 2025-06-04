@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://bgyvt6v3pnb"]
+[gd_scene load_steps=14 format=3 uid="uid://bgyvt6v3pnb"]
 
 [ext_resource type="Script" uid="uid://boxa67ncdxc6l" path="res://scenes/world.gd" id="1_4wyf3"]
 [ext_resource type="PackedScene" uid="uid://blu2fgshcdiag" path="res://scenes/player.tscn" id="1_rwgxs"]
@@ -12,6 +12,7 @@
 [ext_resource type="Resource" uid="uid://bg5o22eexqfs3" path="res://Dialogos/dialogue_level3.dialogue" id="9_e3hyu"]
 [ext_resource type="Texture2D" uid="uid://vpsapa0ixarv" path="res://mainMenu/Assets/Buttoms/config.tres" id="11_q5onr"]
 [ext_resource type="Texture2D" uid="uid://cyvcphlavpoyo" path="res://mainMenu/Assets/Buttoms/configpress.tres" id="12_jhx03"]
+[ext_resource type="Texture2D" uid="uid://bkj2v7lrn0jm4" path="res://mainMenu/Assets/Buttoms/StarEmpty.tres" id="13_jhx03"]
 
 [node name="Replanet" type="Node2D"]
 script = ExtResource("1_4wyf3")
@@ -77,6 +78,33 @@ scale = Vector2(2, 2)
 texture_normal = ExtResource("11_q5onr")
 texture_pressed = ExtResource("12_jhx03")
 texture_hover = ExtResource("12_jhx03")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer"]
+offset_left = 5.0
+offset_top = 3.0
+offset_right = 128.0
+offset_bottom = 37.0
+
+[node name="Star1" type="TextureRect" parent="CanvasLayer/HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("13_jhx03")
+expand_mode = 2
+
+[node name="Star2" type="TextureRect" parent="CanvasLayer/HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("13_jhx03")
+expand_mode = 2
+
+[node name="Star3" type="TextureRect" parent="CanvasLayer/HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("13_jhx03")
+expand_mode = 2
+
+[node name="LabelPuntaje" type="Label" parent="CanvasLayer"]
+offset_left = 5.0
+offset_top = 37.0
+offset_right = 45.0
+offset_bottom = 60.0
 
 [connection signal="pressed" from="Nivel1" to="." method="_on_nivel_1_pressed"]
 [connection signal="pressed" from="Nivel2" to="." method="_on_nivel_2_pressed"]
