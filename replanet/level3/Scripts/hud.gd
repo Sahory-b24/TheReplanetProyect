@@ -6,6 +6,7 @@ extends CanvasLayer
 @onready var mensaje_label = $Panel2/PanelFinal/Panel/MensajeLabel
 @onready var puntaje_final_label = $Panel2/PanelFinal/Panel/PuntajeFinal
 @onready var reintentar_button = $Panel2/PanelFinal/Panel/ReintentarButtom
+@onready var reintentar_button2 = $atrasMundo
 @onready var volver_button = $Panel2/PanelFinal/Panel/VolverAlMundo
 
 @onready var stars = [
@@ -35,13 +36,14 @@ func mostrar_resultado_finalPanel():
 	puntaje_label.visible = false
 	puntaje_rect.visible = true
 	panel_final.visible = true
-
+	reintentar_button2=false
 	puntaje_final_label.text = "Puntos Totales: %d / 1000" % GameState.puntaje_total
 
 	if GameState.puntaje_total >= 1000:
 		mensaje_label.text = "¡Has conseguido la estrella!\n¡Atmósfera purificada!"
 		if not GameState.nivel3_registrado:
 			GameData.sumar_puntaje(GameState.puntaje_total)
+			GlobalWorld.nivel_3_jugado = true
 			GameData.marcar_nivel_completado()
 			GameState.nivel3_registrado = true
 		reintentar_button.visible = false
@@ -73,3 +75,8 @@ func _on_reintentar_buttom_pressed() -> void:
 func _on_mecanica_3_button_pressed() -> void:
 	GameState.player_position = get_tree().current_scene.get_node("Player").global_position
 	SceneTransitions.change_scene_to_file("res://mainMenu/Scenes/instructions_level3.tscn")
+
+
+func _on_atras_mundo_pressed() -> void:
+	SceneTransitions.change_scene_to_file("res://scenes/world.tscn")
+	pass # Replace with function body.

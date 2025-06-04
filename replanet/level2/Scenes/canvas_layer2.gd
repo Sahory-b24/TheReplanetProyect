@@ -16,6 +16,7 @@ func mostrar_panel_final(puntaje: int):
 		mensaje_label.text = "Excelente, hiciste un buen trabajo limpiando el río. 
 Te ganaste una estrella."
 		GameData.sumar_puntaje(puntaje)
+		GlobalWorld.nivel_2_jugado = true
 		GameData.marcar_nivel_completado()
 	else:
 		mensaje_label.text = "No alcanzaste el puntaje necesario."

@@ -27,3 +27,8 @@ res://level1/Scripts/won_area.gd
 res://level1/Scripts/won_panel.gd
 res://level1/Scenes/won_area.tscn
 res://scenes/world.gd
+res://level3/Scripts/level_3.gd
+res://level3/Scripts/hud.gd
+res://level2/Scenes/YouLost.tscn
+res://level2/Scenes/canvas_layer2.gd
+res://scenes/level_1.tscn

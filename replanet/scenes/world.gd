@@ -28,17 +28,14 @@ func _ready():
 
 func _on_nivel_1_pressed():
 	Global.modo_juego = "PLATAFORMA"
-	GlobalWorld.nivel_1_jugado = true
 	get_tree().change_scene_to_file("res://level1/Scenes/level_1.tscn")
 
 func _on_nivel_2_pressed():
 	Global.modo_juego = "RPG"
-	GlobalWorld.nivel_2_jugado = true
 	get_tree().change_scene_to_file("res://level2/Scenes/level_2.tscn")
 
 func _on_nivel_3_pressed():
 	Global.modo_juego = "RPG"
-	GlobalWorld.nivel_3_jugado = true
 	get_tree().change_scene_to_file("res://level3/Scenes/level_3.tscn")
 
 	actualizar_estrellas()

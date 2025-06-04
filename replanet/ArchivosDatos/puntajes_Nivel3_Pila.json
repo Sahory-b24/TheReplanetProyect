@@ -1,7 +1,11 @@
 [
 	{
+		"nombre": "kjik",
+		"puntaje": 2100
+	},
+	{
 		"nombre": ",jkj",
-		"puntaje": 1830
+		"puntaje": 1830.0
 	},
 	{
 		"nombre": "Valerie",

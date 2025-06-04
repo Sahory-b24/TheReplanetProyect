@@ -41,6 +41,7 @@ func mostrar_ganaste():
 	$WonPanel.visible = true
 	$WonPanel/TextureRect/puntajeLabel.text = str(seeds)
 	GameData.sumar_puntaje(seeds)
+	GlobalWorld.nivel_1_jugado = true
 	GameData.marcar_nivel_completado()
 	get_tree().paused = true
 

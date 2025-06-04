@@ -11,11 +11,11 @@
 [ext_resource type="Texture2D" uid="uid://g1yxbkst6x2n" path="res://mainMenu/Assets/Buttoms/lore__normal.tres" id="7_833yd"]
 [ext_resource type="Texture2D" uid="uid://fxk1wegs7hev" path="res://level3/Assets/textures/EnergyEmpty.tres" id="7_fjtup"]
 [ext_resource type="Texture2D" uid="uid://ds1gh6et8rjkn" path="res://level3/Assets/textures/EnergyFull.tres" id="7_qrdbp"]
-[ext_resource type="Texture2D" uid="uid://dtumj8ofwbccj" path="res://level3/Assets/textures/VolverAlMundoNormal.tres" id="8_h0s8i"]
 [ext_resource type="Texture2D" uid="uid://dg1gy0qfc8r2o" path="res://mainMenu/Assets/Buttoms/lore_press.tres" id="8_u8fce"]
-[ext_resource type="Texture2D" uid="uid://cj7bw4ip54pgn" path="res://level3/Assets/textures/VolverAlMundoPressed.tres" id="9_13g3x"]
 [ext_resource type="Texture2D" uid="uid://du4qjausgwvea" path="res://level3/Assets/textures/ReintentarNormal.tres" id="10_fjtup"]
 [ext_resource type="Texture2D" uid="uid://cdrb77lehsrc8" path="res://level3/Assets/textures/ReintentarPressed.tres" id="11_qrdbp"]
+[ext_resource type="Texture2D" uid="uid://dphppnhi3rvd5" path="res://mainMenu/Assets/Buttoms/atras_normal.tres" id="17_t8xpv"]
+[ext_resource type="Texture2D" uid="uid://br7x0b60nw3vy" path="res://mainMenu/Assets/Buttoms/atras_press.tres" id="18_sbqc0"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_u8fce"]
 bg_color = Color(0, 0, 0, 0.733333)
@@ -185,9 +185,9 @@ offset_top = 168.0
 offset_right = 16.0
 offset_bottom = 185.0
 scale = Vector2(2, 2)
-texture_normal = ExtResource("8_h0s8i")
-texture_pressed = ExtResource("9_13g3x")
-texture_hover = ExtResource("9_13g3x")
+texture_normal = ExtResource("17_t8xpv")
+texture_pressed = ExtResource("18_sbqc0")
+texture_hover = ExtResource("18_sbqc0")
 
 [node name="ReintentarButtom" type="TextureButton" parent="HUD/Panel2/PanelFinal/Panel"]
 visible = false
@@ -201,9 +201,20 @@ texture_normal = ExtResource("10_fjtup")
 texture_pressed = ExtResource("11_qrdbp")
 texture_hover = ExtResource("11_qrdbp")
 
+[node name="atrasMundo" type="TextureButton" parent="HUD"]
+offset_left = 6.0
+offset_top = 320.0
+offset_right = 24.0
+offset_bottom = 338.0
+scale = Vector2(2, 2)
+texture_normal = ExtResource("17_t8xpv")
+texture_pressed = ExtResource("18_sbqc0")
+texture_hover = ExtResource("18_sbqc0")
+
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_13g3x")
 
 [connection signal="pressed" from="HUD/mecanica3Button" to="HUD" method="_on_mecanica_3_button_pressed"]
 [connection signal="pressed" from="HUD/Panel2/PanelFinal/Panel/VolverAlMundo" to="HUD" method="_on_volver_al_mundo_pressed"]
 [connection signal="pressed" from="HUD/Panel2/PanelFinal/Panel/ReintentarButtom" to="HUD" method="_on_reintentar_buttom_pressed"]
+[connection signal="pressed" from="HUD/atrasMundo" to="HUD" method="_on_atras_mundo_pressed"]
