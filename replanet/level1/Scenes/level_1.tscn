@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=4 uid="uid://yrerogrgy4wj"]
+[gd_scene load_steps=24 format=4 uid="uid://yrerogrgy4wj"]
 
 [ext_resource type="TileSet" uid="uid://dfmh40v3anori" path="res://assests/TileSets/game_tile_set.tres" id="1_w01pr"]
 [ext_resource type="PackedScene" uid="uid://blu2fgshcdiag" path="res://scenes/player.tscn" id="2_4xgtr"]
@@ -12,8 +12,10 @@
 [ext_resource type="Script" uid="uid://c0oty0qu7dyeu" path="res://level1/Scripts/won_panel.gd" id="8_t07d8"]
 [ext_resource type="FontFile" uid="uid://b5b1l3hfn2lof" path="res://assests/Fonts/ShareTech-Regular.ttf" id="9_t07d8"]
 [ext_resource type="Script" uid="uid://b6g3w7es8nk3k" path="res://level1/Scripts/won_area.gd" id="12_xwnq4"]
+[ext_resource type="Texture2D" uid="uid://g1yxbkst6x2n" path="res://mainMenu/Assets/Buttoms/lore__normal.tres" id="13_3i3lo"]
 [ext_resource type="Texture2D" uid="uid://dphppnhi3rvd5" path="res://mainMenu/Assets/Buttoms/atras_normal.tres" id="13_k1s8w"]
 [ext_resource type="Texture2D" uid="uid://br7x0b60nw3vy" path="res://mainMenu/Assets/Buttoms/atras_press.tres" id="14_3i3lo"]
+[ext_resource type="Texture2D" uid="uid://dg1gy0qfc8r2o" path="res://mainMenu/Assets/Buttoms/lore_press.tres" id="14_rxh16"]
 
 [sub_resource type="Animation" id="Animation_bswci"]
 length = 0.001
@@ -335,6 +337,15 @@ texture_pressed = ExtResource("14_3i3lo")
 texture_hover = ExtResource("14_3i3lo")
 stretch_mode = 0
 
+[node name="mecanica3Button" type="TextureButton" parent="CanvasLayer/backMain"]
+offset_left = 3.33331
+offset_top = -248.333
+offset_right = 19.3333
+offset_bottom = -231.333
+scale = Vector2(1.8, 1.8)
+texture_normal = ExtResource("13_3i3lo")
+texture_pressed = ExtResource("14_rxh16")
+
 [node name="Mushroom" parent="." instance=ExtResource("8_pwgm1")]
 position = Vector2(3643, 197)
 
@@ -375,4 +386,5 @@ one_way_collision_margin = 0.0
 
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
 [connection signal="pressed" from="CanvasLayer/backMain" to="CanvasLayer" method="_on_back_main_pressed"]
+[connection signal="pressed" from="CanvasLayer/backMain/mecanica3Button" to="CanvasLayer" method="_on_mecanica_3_button_pressed"]
 [connection signal="body_entered" from="wonArea2D" to="wonArea2D" method="_on_body_entered"]

@@ -17,3 +17,7 @@ res://level3/Scenes/level_3.tscn
 res://level1/Scenes/level_1.tscn
 res://scenes/world.gd
 res://level3/Scripts/hud.gd
+res://final/scripts/fin.gd
+res://InicioLore/scenes/primero.gd
+res://InicioLore/scenes/inicioLore.tscn
+res://level2/Scenes/canvas_layer2.gd

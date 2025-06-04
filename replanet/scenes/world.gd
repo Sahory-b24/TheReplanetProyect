@@ -28,15 +28,16 @@ func _ready():
 
 func _on_nivel_1_pressed():
 	Global.modo_juego = "PLATAFORMA"
-	get_tree().change_scene_to_file("res://level1/Scenes/level_1.tscn")
+	
+	SceneTransitions.change_scene_to_file("res://level1/Scenes/level_1.tscn")
 
 func _on_nivel_2_pressed():
 	Global.modo_juego = "RPG"
-	get_tree().change_scene_to_file("res://level2/Scenes/level_2.tscn")
+	SceneTransitions.change_scene_to_file("res://level2/Scenes/level_2.tscn")
 
 func _on_nivel_3_pressed():
 	Global.modo_juego = "RPG"
-	get_tree().change_scene_to_file("res://level3/Scenes/level_3.tscn")
+	SceneTransitions.change_scene_to_file("res://level3/Scenes/level_3.tscn")
 
 	actualizar_estrellas()
 	mostrar_puntaje()
@@ -51,7 +52,7 @@ func mostrar_puntaje():
 func _on_config_button_pressed() -> void:
 	AudioManager.SFXPlayer.stream = preload("res://mainMenu/Assets/Audio/tf2-button-click-hover.mp3")
 	AudioManager.SFXPlayer.play()
-	get_tree().change_scene_to_file("res://mainMenu/Scenes/Options1.tscn")
+	SceneTransitions.change_scene_to_file("res://mainMenu/Scenes/Options1.tscn")
 
 
 func _on_atras_mundo_pressed() -> void:

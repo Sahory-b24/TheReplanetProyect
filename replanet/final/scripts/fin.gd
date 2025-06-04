@@ -30,8 +30,8 @@ func mostrar_secuencia() -> void:
 	await hacer_fade(pantalla2, 1.0, 0.0, 1.0)
 	await get_tree().create_timer(2).timeout
 
-	# Cambio inmediato de escena (sin transición)
-	get_tree().change_scene_to_file("res://final/scenes/final.tscn")
+	# Cambio inmediato de escena
+	SceneTransitions.change_scene_to_file("res://final/scenes/final.tscn")
 
 func hacer_fade(node: CanvasItem, from_a: float, to_a: float, duration: float) -> void:
 	var t: float = 0.0

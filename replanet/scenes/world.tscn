@@ -110,6 +110,7 @@ offset_right = 45.0
 offset_bottom = 60.0
 
 [node name="atrasMundo" type="TextureButton" parent="CanvasLayer/LabelPuntaje"]
+layout_mode = 0
 offset_left = 591.0
 offset_top = 284.0
 offset_right = 609.0
