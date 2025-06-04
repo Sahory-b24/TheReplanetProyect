@@ -33,6 +33,18 @@
 	},
 	{
 		"nombre": "derf",
-		"puntaje": 2800
+		"puntaje": 2800.0
+	},
+	{
+		"nombre": "derfgt",
+		"puntaje": 2900.0
+	},
+	{
+		"nombre": "srty",
+		"puntaje": 1850.0
+	},
+	{
+		"nombre": "dfg",
+		"puntaje": 2050
 	}
 ]

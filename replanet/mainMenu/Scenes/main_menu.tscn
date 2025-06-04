@@ -42,6 +42,7 @@ func _on_start_buttom_pressed() -> void:
 	print(\"Start sirve\")
 	GameData.reiniciar_progreso()
 	GlobalWorld.reiniciar_niveles()
+	GameState.reset()
 	AudioManager.SFXPlayer.stream = preload(\"res://mainMenu/Assets/Audio/tf2-button-click-hover.mp3\")
 	AudioManager.SFXPlayer.play()
 	SceneTransitions.change_scene_to_file(\"res://scenes/Custimization.tscn\")

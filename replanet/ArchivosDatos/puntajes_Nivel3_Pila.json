@@ -1,7 +1,27 @@
 [
 	{
-		"nombre": "derf",
+		"nombre": "dfg",
 		"puntaje": 2100
+	},
+	{
+		"nombre": "dfg",
+		"puntaje": 2100.0
+	},
+	{
+		"nombre": "dfg",
+		"puntaje": 2100.0
+	},
+	{
+		"nombre": "srty",
+		"puntaje": 2100.0
+	},
+	{
+		"nombre": "derfgt",
+		"puntaje": 2100.0
+	},
+	{
+		"nombre": "derf",
+		"puntaje": 2100.0
 	},
 	{
 		"nombre": "fgh",

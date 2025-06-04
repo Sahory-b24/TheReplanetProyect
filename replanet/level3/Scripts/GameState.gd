@@ -11,3 +11,5 @@ func reset():
 	palancas_activadas = [false, false, false]
 	puntaje_palancas = [0, 0, 0]
 	puntaje_total = 0
+	player_position = Vector2.ZERO
+	nivel3_registrado = false

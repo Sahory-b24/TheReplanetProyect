@@ -3,7 +3,7 @@
 [ext_resource type="TileSet" uid="uid://dfmh40v3anori" path="res://assests/TileSets/game_tile_set.tres" id="1_2xvde"]
 [ext_resource type="Script" uid="uid://c8dgw66r8jmqe" path="res://world_2.gd" id="1_hg5vs"]
 [ext_resource type="PackedScene" uid="uid://blu2fgshcdiag" path="res://scenes/player.tscn" id="2_bkyvu"]
-[ext_resource type="PackedScene" path="res://scenes/NPC.tscn" id="2_f5bfu"]
+[ext_resource type="PackedScene" uid="uid://b70j5r8ot4srf" path="res://scenes/NPC.tscn" id="2_f5bfu"]
 [ext_resource type="Resource" uid="uid://rekpeubhxb14" path="res://dialogue_Mision1.dialogue" id="3_f5bfu"]
 [ext_resource type="Texture2D" uid="uid://dowokafdx0pqe" path="res://assests/Sprite/Elira_Mision1.png" id="4_mf6h1"]
 [ext_resource type="Resource" uid="uid://brxubv4woskw2" path="res://dialogue_Mision2.dialogue" id="5_xjnkp"]
