@@ -53,3 +53,5 @@ res://world_2.gd
 res://scenes/NPC.tscn
 res://final/scripts/fin.gd
 res://scripts/player.gd
+res://scenes/Custimization.tscn
+res://scripts/custimization.gd

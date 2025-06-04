@@ -10,14 +10,14 @@ func _on_text_edit_text_changed() -> void:
 	mensaje.visible = false  # Oculta el mensaje mientras escribe
 
 func _on_save_buttom_pressed() -> void:
+	AudioManager.SFXPlayer.stream = preload("res://mainMenu/Assets/Audio/tf2-button-click-hover.mp3")
+	AudioManager.SFXPlayer.play()
 	if player_name == "":
 		mensaje.text = "⚠️ INGRESE NOMBRE"
 		mensaje.visible = true
 		return  # No continúa si no hay nombre
 
 	Global.player_name = player_name
-	AudioManager.SFXPlayer.stream = preload("res://mainMenu/Assets/Audio/tf2-button-click-hover.mp3")
-	AudioManager.SFXPlayer.play()
 	get_tree().change_scene_to_file("res://InicioLore/scenes/primero.tscn")
 
 func _on_random_button_pressed() -> void:
