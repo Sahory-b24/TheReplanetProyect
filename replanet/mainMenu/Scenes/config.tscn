@@ -3,8 +3,6 @@
 [ext_resource type="Texture2D" uid="uid://b2ftwa60xj37" path="res://mainMenu/Assets/Images/fondo.png" id="1_ovmd5"]
 [ext_resource type="Script" uid="uid://cd5rgwlaafwar" path="res://mainMenu/Scripts/options.gd" id="2_iuyon"]
 [ext_resource type="Texture2D" uid="uid://dqqnrgy3yai5l" path="res://mainMenu/Assets/Images/marco pequeño.png" id="2_jqmrl"]
-[ext_resource type="Texture2D" uid="uid://byim6hlifbw6m" path="res://mainMenu/Assets/Buttoms/regresar_normal.tres" id="3_0kcmf"]
-[ext_resource type="Texture2D" uid="uid://cbuqbkoc7cmgy" path="res://mainMenu/Assets/Buttoms/regresar_press.tres" id="4_n0bd4"]
 [ext_resource type="Texture2D" uid="uid://5rs8jmdnumd7" path="res://mainMenu/Assets/Buttoms/Mute.tres" id="5_eoehv"]
 [ext_resource type="Texture2D" uid="uid://fcbom5dwpmgc" path="res://mainMenu/Assets/Buttoms/unMute.tres" id="6_qkixd"]
 [ext_resource type="Script" uid="uid://ditfvc7qwilfq" path="res://mainMenu/Scripts/MuteButton.gd" id="7_x4qrv"]
@@ -18,13 +16,15 @@
 [ext_resource type="Texture2D" uid="uid://coc6s7alo3f5s" path="res://mainMenu/Assets/Icons/audio-off-icon.png" id="15_hi5nx"]
 [ext_resource type="Texture2D" uid="uid://c8c2ft46ql8g6" path="res://mainMenu/Assets/Buttoms/grabber.tres" id="16_e2iw7"]
 [ext_resource type="Texture2D" uid="uid://dvl1yl7cfo5lk" path="res://mainMenu/Assets/Buttoms/grabberPressed.tres" id="17_f8ysp"]
+[ext_resource type="Texture2D" uid="uid://dc1agwhf1lnry" path="res://mainMenu/Assets/Buttoms/exit_normal.tres" id="18_snymd"]
 [ext_resource type="Texture2D" uid="uid://dkdwymhfbdxju" path="res://mainMenu/Assets/Icons/Sprite sheet for Basic Pack.png" id="18_yvfpj"]
+[ext_resource type="Texture2D" uid="uid://cdhcg2g85o4qn" path="res://mainMenu/Assets/Buttoms/exit_press.tres" id="19_css8n"]
 [ext_resource type="Texture2D" uid="uid://c7fbi771wadk3" path="res://mainMenu/Assets/Icons/audio-on-icon.png" id="19_wqgh3"]
 [ext_resource type="Texture2D" uid="uid://s423y6mwv0uc" path="res://mainMenu/Assets/Icons/audioOff.png" id="20_joxnd"]
 [ext_resource type="Texture2D" uid="uid://cfdn3hxy3d8rl" path="res://mainMenu/Assets/Icons/audioON.png" id="21_gx21r"]
 [ext_resource type="Texture2D" uid="uid://chb7wwxgulmux" path="res://mainMenu/Assets/Buttoms/botonCusNormal.tres" id="23_hi5nx"]
 
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_jqmrl"]
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_x8fv7"]
 texture = ExtResource("1_ovmd5")
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_eliag"]
@@ -52,7 +52,7 @@ offset_top = -43.92
 offset_right = 118.4
 offset_bottom = 32.4
 mouse_filter = 1
-theme_override_styles/panel = SubResource("StyleBoxTexture_jqmrl")
+theme_override_styles/panel = SubResource("StyleBoxTexture_x8fv7")
 script = ExtResource("2_iuyon")
 
 [node name="Panel" type="Panel" parent="."]
@@ -62,28 +62,6 @@ offset_top = -24.0
 offset_right = 552.0
 offset_bottom = 416.0
 theme_override_styles/panel = SubResource("StyleBoxTexture_eliag")
-
-[node name="MuteButton" type="TextureButton" parent="."]
-layout_mode = 0
-offset_left = 599.0
-offset_top = 10.0
-offset_right = 612.0
-offset_bottom = 19.0
-scale = Vector2(2.5, 2.5)
-texture_normal = ExtResource("5_eoehv")
-texture_pressed = ExtResource("6_qkixd")
-script = ExtResource("7_x4qrv")
-
-[node name="buttom_back" type="TextureButton" parent="."]
-layout_mode = 0
-offset_left = 602.0
-offset_top = 324.0
-offset_right = 623.0
-offset_bottom = 342.0
-scale = Vector2(2, 2)
-texture_normal = ExtResource("3_0kcmf")
-texture_pressed = ExtResource("4_n0bd4")
-texture_hover = ExtResource("4_n0bd4")
 
 [node name="Panel2" type="Panel" parent="."]
 layout_mode = 0
@@ -335,8 +313,40 @@ theme_override_fonts/font = ExtResource("13_dutax")
 theme_override_font_sizes/font_size = 24
 text = "Filtro daltónicos"
 
-[connection signal="pressed" from="buttom_back" to="." method="_on_buttom_back_pressed"]
+[node name="Label5" type="Label" parent="."]
+layout_mode = 0
+offset_left = 232.0
+offset_top = 36.0
+offset_right = 410.0
+offset_bottom = 69.2292
+theme_override_fonts/font = ExtResource("11_anp14")
+theme_override_font_sizes/font_size = 29
+text = "CONFIGURACIÓN"
+
+[node name="exitWorldButton" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 15.0
+offset_top = 12.0
+offset_right = 32.0
+offset_bottom = 31.0
+scale = Vector2(2, 2)
+texture_normal = ExtResource("18_snymd")
+texture_pressed = ExtResource("19_css8n")
+texture_hover = ExtResource("19_css8n")
+
+[node name="Mute_buttom" type="TextureButton" parent="."]
+offset_left = 595.0
+offset_top = 10.0
+offset_right = 611.0
+offset_bottom = 19.0
+scale = Vector2(2.5, 2.5)
+texture_normal = ExtResource("5_eoehv")
+texture_pressed = ExtResource("6_qkixd")
+script = ExtResource("7_x4qrv")
+
 [connection signal="pressed" from="CheckButton" to="." method="_on_check_button_pressed"]
 [connection signal="value_changed" from="Sound_bar/Control/VBoxContainer/VolumeBar/sfxSlider" to="." method="_on_sfx_slider_value_changed"]
 [connection signal="value_changed" from="muisc_bar/Control/VBoxContainer/VolumeBar/musicSlider" to="." method="_on_music_slider_value_changed"]
 [connection signal="item_selected" from="OptionButton" to="." method="_on_option_button_item_selected"]
+[connection signal="pressed" from="exitWorldButton" to="." method="_on_exit_world_button_pressed"]
+[connection signal="pressed" from="Mute_buttom" to="Mute_buttom" method="_on_pressed"]

@@ -1,6 +1,6 @@
-[gd_scene load_steps=17 format=3 uid="uid://c7t8wdqfn8vhl"]
+[gd_scene load_steps=17 format=3 uid="uid://cyegfukyey241"]
 
-[ext_resource type="Script" uid="uid://doi2tv0edc5ut" path="res://mainMenu/Scripts/instructions_level_1.gd" id="1_vqir2"]
+[ext_resource type="Script" path="res://mainMenu/Scripts/instructions_level_1.gd" id="1_vqir2"]
 [ext_resource type="Texture2D" uid="uid://b2ftwa60xj37" path="res://mainMenu/Assets/Images/fondo.png" id="2_xue60"]
 [ext_resource type="Texture2D" uid="uid://5rs8jmdnumd7" path="res://mainMenu/Assets/Buttoms/Mute.tres" id="3_01fpt"]
 [ext_resource type="Texture2D" uid="uid://fcbom5dwpmgc" path="res://mainMenu/Assets/Buttoms/unMute.tres" id="4_x0xe1"]
@@ -14,7 +14,7 @@
 [ext_resource type="Texture2D" uid="uid://yibqrjpilghl" path="res://assests/seeds/seeds de q amarilla.png" id="12_x0xe1"]
 [ext_resource type="Texture2D" uid="uid://b24vk75xvqvcp" path="res://assests/seeds/bolsa.png" id="13_vjnup"]
 
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_6hm32"]
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_vqir2"]
 texture = ExtResource("2_xue60")
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_1qdcx"]
@@ -29,7 +29,7 @@ script = ExtResource("1_vqir2")
 [node name="Panel" type="Panel" parent="."]
 offset_right = 640.0
 offset_bottom = 360.0
-theme_override_styles/panel = SubResource("StyleBoxTexture_6hm32")
+theme_override_styles/panel = SubResource("StyleBoxTexture_vqir2")
 
 [node name="MuteButton" type="TextureButton" parent="Panel"]
 layout_mode = 0

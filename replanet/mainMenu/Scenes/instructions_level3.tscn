@@ -1,6 +1,6 @@
-[gd_scene load_steps=16 format=3 uid="uid://0v3m0o7upcel"]
+[gd_scene load_steps=16 format=3 uid="uid://f661n54nigsi"]
 
-[ext_resource type="Script" uid="uid://b6mqfdd887kfq" path="res://mainMenu/Scripts/instructions_level_3.gd" id="1_q4u72"]
+[ext_resource type="Script" path="res://mainMenu/Scripts/instructions_level_3.gd" id="1_q4u72"]
 [ext_resource type="Texture2D" uid="uid://b2ftwa60xj37" path="res://mainMenu/Assets/Images/fondo.png" id="2_i44hw"]
 [ext_resource type="Texture2D" uid="uid://5rs8jmdnumd7" path="res://mainMenu/Assets/Buttoms/Mute.tres" id="3_7mc4l"]
 [ext_resource type="Texture2D" uid="uid://fcbom5dwpmgc" path="res://mainMenu/Assets/Buttoms/unMute.tres" id="4_cve7d"]
@@ -13,7 +13,7 @@
 [ext_resource type="Texture2D" uid="uid://bw6q7yeusluef" path="res://assests/Sprite/Meliu_Mision3.png" id="11_wemth"]
 [ext_resource type="Texture2D" uid="uid://b7n5ngfd1oyye" path="res://mainMenu/Assets/Images/palanca.png" id="12_q4u72"]
 
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_6hm32"]
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_q4u72"]
 texture = ExtResource("2_i44hw")
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_1qdcx"]
@@ -28,7 +28,7 @@ script = ExtResource("1_q4u72")
 [node name="Panel" type="Panel" parent="."]
 offset_right = 640.0
 offset_bottom = 360.0
-theme_override_styles/panel = SubResource("StyleBoxTexture_6hm32")
+theme_override_styles/panel = SubResource("StyleBoxTexture_q4u72")
 
 [node name="MuteButton" type="TextureButton" parent="Panel"]
 layout_mode = 0

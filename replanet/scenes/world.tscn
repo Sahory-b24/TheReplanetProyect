@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://bgyvt6v3pnb"]
+[gd_scene load_steps=13 format=3 uid="uid://bgyvt6v3pnb"]
 
 [ext_resource type="Script" uid="uid://boxa67ncdxc6l" path="res://scenes/world.gd" id="1_4wyf3"]
 [ext_resource type="PackedScene" uid="uid://blu2fgshcdiag" path="res://scenes/player.tscn" id="1_rwgxs"]
@@ -10,6 +10,8 @@
 [ext_resource type="Resource" uid="uid://b6t0ckv2t7fkq" path="res://Dialogos/dialogue_level2.dialogue" id="7_w7kh3"]
 [ext_resource type="Texture2D" uid="uid://bw6q7yeusluef" path="res://assests/Sprite/Meliu_Mision3.png" id="8_7r4gi"]
 [ext_resource type="Resource" uid="uid://bg5o22eexqfs3" path="res://Dialogos/dialogue_level3.dialogue" id="9_e3hyu"]
+[ext_resource type="Texture2D" uid="uid://vpsapa0ixarv" path="res://mainMenu/Assets/Buttoms/config.tres" id="11_q5onr"]
+[ext_resource type="Texture2D" uid="uid://cyvcphlavpoyo" path="res://mainMenu/Assets/Buttoms/configpress.tres" id="12_jhx03"]
 
 [node name="Replanet" type="Node2D"]
 script = ExtResource("1_4wyf3")
@@ -64,6 +66,19 @@ text = "NIVEL 3"
 
 [node name="Node2D" type="Node2D" parent="."]
 
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="configButton" type="TextureButton" parent="CanvasLayer"]
+offset_left = 600.0
+offset_top = 4.0
+offset_right = 622.0
+offset_bottom = 28.0
+scale = Vector2(2, 2)
+texture_normal = ExtResource("11_q5onr")
+texture_pressed = ExtResource("12_jhx03")
+texture_hover = ExtResource("12_jhx03")
+
 [connection signal="pressed" from="Nivel1" to="." method="_on_nivel_1_pressed"]
 [connection signal="pressed" from="Nivel2" to="." method="_on_nivel_2_pressed"]
 [connection signal="pressed" from="Nivel3" to="." method="_on_nivel_3_pressed"]
+[connection signal="pressed" from="CanvasLayer/configButton" to="." method="_on_config_button_pressed"]

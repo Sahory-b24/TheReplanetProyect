@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=4 uid="uid://bxk6qr5cnn8n1"]
+[gd_scene load_steps=21 format=4 uid="uid://bxk6qr5cnn8n1"]
 
 [ext_resource type="TileSet" uid="uid://dfmh40v3anori" path="res://assests/TileSets/game_tile_set.tres" id="1_pc1s3"]
 [ext_resource type="PackedScene" uid="uid://dvdq6uqdbou6r" path="res://level2/Scenes/boat.tscn" id="2_fdsdd"]
@@ -13,7 +13,9 @@
 [ext_resource type="Texture2D" uid="uid://cjpasu3533c8x" path="res://level2/Assests/trashh.png" id="9_q8wf8"]
 [ext_resource type="FontFile" uid="uid://b5b1l3hfn2lof" path="res://assests/Fonts/ShareTech-Regular.ttf" id="10_ft8iy"]
 [ext_resource type="Script" uid="uid://xbugsfsxswe8" path="res://level2/Scripts/scoreManager.gd" id="10_hkghg"]
+[ext_resource type="Texture2D" uid="uid://g1yxbkst6x2n" path="res://mainMenu/Assets/Buttoms/lore__normal.tres" id="13_41oqn"]
 [ext_resource type="Texture2D" uid="uid://bjw2tkaj58hn1" path="res://mainMenu/Assets/Images/marco grande.png" id="14_41oqn"]
+[ext_resource type="Texture2D" uid="uid://dg1gy0qfc8r2o" path="res://mainMenu/Assets/Buttoms/lore_press.tres" id="14_p4h5y"]
 [ext_resource type="Texture2D" uid="uid://byim6hlifbw6m" path="res://mainMenu/Assets/Buttoms/regresar_normal.tres" id="15_p4h5y"]
 [ext_resource type="Texture2D" uid="uid://cbuqbkoc7cmgy" path="res://mainMenu/Assets/Buttoms/regresar_press.tres" id="16_n4yf6"]
 
@@ -69,10 +71,21 @@ theme_override_fonts/font = ExtResource("10_ft8iy")
 theme_override_font_sizes/font_size = 25
 script = ExtResource("9_4iwia")
 
+[node name="mecanica2Button" type="TextureButton" parent="CanvasLayer"]
+offset_left = 600.0
+offset_top = 320.0
+offset_right = 616.0
+offset_bottom = 336.0
+scale = Vector2(2, 2)
+texture_normal = ExtResource("13_41oqn")
+texture_pressed = ExtResource("14_p4h5y")
+texture_hover = ExtResource("14_p4h5y")
+
 [node name="ScoreManager" type="Node2D" parent="CanvasLayer"]
 script = ExtResource("10_hkghg")
 
 [node name="Panel" type="Panel" parent="CanvasLayer"]
+visible = false
 offset_right = 641.0
 offset_bottom = 361.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_q8wf8")
@@ -139,4 +152,5 @@ texture_normal = ExtResource("15_p4h5y")
 texture_pressed = ExtResource("16_n4yf6")
 texture_hover = ExtResource("16_n4yf6")
 
+[connection signal="pressed" from="CanvasLayer/mecanica2Button" to="CanvasLayer" method="_on_mecanica_2_button_pressed"]
 [connection signal="pressed" from="CanvasLayer/Panel/atrasMundo" to="CanvasLayer" method="_on_atras_mundo_pressed"]

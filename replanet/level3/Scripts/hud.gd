@@ -63,3 +63,7 @@ func actualizar_palancas_visual():
 			stars[i].texture = texture_full   # Encendida si la palanca está activa (True)
 		else:
 			stars[i].texture = texture_empty # Apagada si la palanca está inactiva (False)
+
+
+func _on_mecanica_3_button_pressed() -> void:
+	SceneTransitions.change_scene_to_file("res://mainMenu/Scenes/instructions_level3.tscn")

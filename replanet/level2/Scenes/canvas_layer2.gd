@@ -24,3 +24,7 @@ Te ganaste una estrella."
 
 func _on_atras_mundo_pressed() -> void:
 	SceneTransitions.change_scene_to_file("res://scenes/world.tscn")
+
+
+func _on_mecanica_2_button_pressed() -> void:
+	SceneTransitions.change_scene_to_file("res://mainMenu/Scenes/instructions_level2.tscn")

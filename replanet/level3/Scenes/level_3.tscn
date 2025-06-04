@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=4 uid="uid://dcecxr07mygo4"]
+[gd_scene load_steps=20 format=4 uid="uid://dcecxr07mygo4"]
 
 [ext_resource type="TileSet" uid="uid://dfmh40v3anori" path="res://assests/TileSets/game_tile_set.tres" id="1_70nk6"]
 [ext_resource type="Script" uid="uid://dlocske8b5yvc" path="res://level3/Scripts/level_3.gd" id="1_17213"]
@@ -8,9 +8,11 @@
 [ext_resource type="Script" uid="uid://m2qjsfae63yy" path="res://level3/Scripts/hud.gd" id="5_ebxra"]
 [ext_resource type="Texture2D" uid="uid://bjw2tkaj58hn1" path="res://mainMenu/Assets/Images/marco grande.png" id="6_sfejh"]
 [ext_resource type="FontFile" uid="uid://b5b1l3hfn2lof" path="res://assests/Fonts/ShareTech-Regular.ttf" id="7_3xk8u"]
+[ext_resource type="Texture2D" uid="uid://g1yxbkst6x2n" path="res://mainMenu/Assets/Buttoms/lore__normal.tres" id="7_833yd"]
 [ext_resource type="Texture2D" uid="uid://fxk1wegs7hev" path="res://level3/Assets/textures/EnergyEmpty.tres" id="7_fjtup"]
 [ext_resource type="Texture2D" uid="uid://ds1gh6et8rjkn" path="res://level3/Assets/textures/EnergyFull.tres" id="7_qrdbp"]
 [ext_resource type="Texture2D" uid="uid://dtumj8ofwbccj" path="res://level3/Assets/textures/VolverAlMundoNormal.tres" id="8_h0s8i"]
+[ext_resource type="Texture2D" uid="uid://dg1gy0qfc8r2o" path="res://mainMenu/Assets/Buttoms/lore_press.tres" id="8_u8fce"]
 [ext_resource type="Texture2D" uid="uid://cj7bw4ip54pgn" path="res://level3/Assets/textures/VolverAlMundoPressed.tres" id="9_13g3x"]
 [ext_resource type="Texture2D" uid="uid://viffnije2f2t" path="res://level3/Assets/textures/ReintentarNormal.tres" id="10_fjtup"]
 [ext_resource type="Texture2D" uid="uid://cdrb77lehsrc8" path="res://level3/Assets/textures/ReintentarPressed.tres" id="11_qrdbp"]
@@ -75,6 +77,15 @@ lever_id = 2
 
 [node name="HUD" type="CanvasLayer" parent="."]
 script = ExtResource("5_ebxra")
+
+[node name="mecanica3Button" type="TextureButton" parent="HUD"]
+offset_left = 595.0
+offset_top = 317.0
+offset_right = 611.0
+offset_bottom = 334.0
+scale = Vector2(2, 2)
+texture_normal = ExtResource("7_833yd")
+texture_pressed = ExtResource("8_u8fce")
 
 [node name="PuntajeRect" type="TextureRect" parent="HUD"]
 offset_left = 8.0
@@ -193,5 +204,6 @@ texture_hover = ExtResource("11_qrdbp")
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_13g3x")
 
+[connection signal="pressed" from="HUD/mecanica3Button" to="HUD" method="_on_mecanica_3_button_pressed"]
 [connection signal="pressed" from="HUD/Panel2/PanelFinal/Panel/VolverAlMundo" to="HUD" method="_on_volver_al_mundo_pressed"]
 [connection signal="pressed" from="HUD/Panel2/PanelFinal/Panel/ReintentarButtom" to="HUD" method="_on_reintentar_buttom_pressed"]

@@ -43,3 +43,7 @@ func _on_check_button_pressed() -> void:
 
 func _on_option_button_item_selected(index: int) -> void:
 	Overlay.set_mode(index)
+	
+
+func _on_exit_world_button_pressed() -> void:
+	SceneTransitions.change_scene_to_file("res://scenes/world.tscn")

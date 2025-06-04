@@ -335,6 +335,16 @@ theme_override_fonts/font = ExtResource("13_dutax")
 theme_override_font_sizes/font_size = 24
 text = "Filtro daltónicos"
 
+[node name="Label5" type="Label" parent="."]
+layout_mode = 0
+offset_left = 234.0
+offset_top = 36.0
+offset_right = 412.0
+offset_bottom = 69.2292
+theme_override_fonts/font = ExtResource("11_anp14")
+theme_override_font_sizes/font_size = 29
+text = "CONFIGURACIÓN"
+
 [connection signal="pressed" from="buttom_back" to="." method="_on_buttom_back_pressed"]
 [connection signal="pressed" from="CheckButton" to="." method="_on_check_button_pressed"]
 [connection signal="value_changed" from="Sound_bar/Control/VBoxContainer/VolumeBar/sfxSlider" to="." method="_on_sfx_slider_value_changed"]

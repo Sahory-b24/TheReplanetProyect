@@ -14,3 +14,7 @@ func _on_nivel_2_pressed() -> void:
 func _on_nivel_3_pressed() -> void:
 	Global.modo_juego = "RPG"
 	get_tree().change_scene_to_file("res://level3/Scenes/level_3.tscn")
+
+
+func _on_config_button_pressed() -> void:
+	SceneTransitions.change_scene_to_file("res://mainMenu/Scenes/config.tscn")
