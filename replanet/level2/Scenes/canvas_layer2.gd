@@ -22,7 +22,7 @@ Te ganaste una estrella."
 		mensaje_label.text = "No alcanzaste el puntaje necesario."
 
 	# Guardar puntaje
-	GuardarPuntaje.guardar_puntaje_nivel1(Global.player_name, puntaje)
+	GuardarPuntaje.guardar_puntaje_nivel2(Global.player_name, puntaje)
 
 
 func _on_atras_mundo_pressed() -> void:

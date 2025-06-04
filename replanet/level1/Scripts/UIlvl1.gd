@@ -43,7 +43,7 @@ func mostrar_ganaste():
 	GameData.sumar_puntaje(seeds)
 	GlobalWorld.nivel_1_jugado = true
 	GameData.marcar_nivel_completado()
-	GuardarPuntaje.guardar_puntaje_nivel2(Global.player_name, seeds)
+	GuardarPuntaje.guardar_puntaje_nivel1(Global.player_name, seeds)
 	get_tree().paused = true
 
 
