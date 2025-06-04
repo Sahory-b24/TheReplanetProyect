@@ -1,6 +1,22 @@
 [
 	{
 		"nombre": "kmcd",
+		"puntaje": 1300.0
+	},
+	{
+		"nombre": "Lauri",
+		"puntaje": 1300.0
+	},
+	{
+		"nombre": "hjh",
+		"puntaje": 1300.0
+	},
+	{
+		"nombre": "y",
+		"puntaje": 1300.0
+	},
+	{
+		"nombre": "yy",
 		"puntaje": 1300
 	}
 ]

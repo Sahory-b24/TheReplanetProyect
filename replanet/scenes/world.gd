@@ -47,3 +47,8 @@ func actualizar_estrellas():
 
 func mostrar_puntaje():
 	label_puntaje.text = str(GameData.puntaje_total)
+
+func _on_config_button_pressed() -> void:
+	AudioManager.SFXPlayer.stream = preload("res://mainMenu/Assets/Audio/tf2-button-click-hover.mp3")
+	AudioManager.SFXPlayer.play()
+	get_tree().change_scene_to_file("res://mainMenu/Scenes/Options1.tscn")

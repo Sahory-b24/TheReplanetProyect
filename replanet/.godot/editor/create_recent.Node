@@ -1,8 +1,8 @@
+TextureButton
 Label
 TextureRect
 HBoxContainer
 CheckButton
-TextureButton
 CanvasLayer
 CanvasGroup
 Area2D

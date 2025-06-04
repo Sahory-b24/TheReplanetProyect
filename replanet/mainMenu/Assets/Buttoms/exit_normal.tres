@@ -2,7 +2,6 @@
 
 [ext_resource type="Texture2D" uid="uid://d0j82h8a85gnp" path="res://mainMenu/Assets/Icons/button.png" id="1_8nj8y"]
 
-
 [resource]
 atlas = ExtResource("1_8nj8y")
 region = Rect2(400, 64, 16, 16)

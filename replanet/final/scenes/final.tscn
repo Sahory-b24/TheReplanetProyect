@@ -1,0 +1,29 @@
+[gd_scene load_steps=6 format=3 uid="uid://db1mh0i3t04cb"]
+
+[ext_resource type="Script" uid="uid://blo5y04jvy2ki" path="res://final/scripts/final.gd" id="1_ub5v8"]
+[ext_resource type="Texture2D" uid="uid://b2ftwa60xj37" path="res://mainMenu/Assets/Images/fondo.png" id="2_sha0q"]
+[ext_resource type="Texture2D" uid="uid://byim6hlifbw6m" path="res://mainMenu/Assets/Buttoms/regresar_normal.tres" id="3_0qmcs"]
+[ext_resource type="Texture2D" uid="uid://cbuqbkoc7cmgy" path="res://mainMenu/Assets/Buttoms/regresar_press.tres" id="4_gle70"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_0qmcs"]
+texture = ExtResource("2_sha0q")
+
+[node name="Final" type="Node2D"]
+script = ExtResource("1_ub5v8")
+
+[node name="Panel" type="Panel" parent="."]
+offset_right = 638.0
+offset_bottom = 359.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_0qmcs")
+
+[node name="mainButton" type="TextureButton" parent="."]
+offset_left = 581.0
+offset_top = 303.0
+offset_right = 597.0
+offset_bottom = 321.0
+scale = Vector2(2.5, 2.5)
+texture_normal = ExtResource("3_0qmcs")
+texture_pressed = ExtResource("4_gle70")
+texture_hover = ExtResource("4_gle70")
+
+[connection signal="pressed" from="mainButton" to="." method="_on_main_button_pressed"]

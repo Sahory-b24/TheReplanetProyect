@@ -44,6 +44,8 @@ func mostrar_ganaste():
 	GlobalWorld.nivel_1_jugado = true
 	GameData.marcar_nivel_completado()
 	get_tree().paused = true
+	GuardarPuntaje.guardar_puntaje_nivel1(Global.player_name, seeds)
+	
 
 
 func _on_back_pressed() -> void:
