@@ -1,0 +1,18 @@
+[
+	{
+		"nombre": "val\nvañ",
+		"puntaje": 2900.0
+	},
+	{
+		"nombre": "erty",
+		"puntaje": 3200.0
+	},
+	{
+		"nombre": "erf",
+		"puntaje": 3200.0
+	},
+	{
+		"nombre": "erty",
+		"puntaje": 1300
+	}
+]

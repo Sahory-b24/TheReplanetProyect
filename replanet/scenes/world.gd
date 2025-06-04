@@ -61,6 +61,10 @@ func _on_nivel_3_pressed():
 func actualizar_estrellas():
 	for i in range(GameData.total_niveles):
 		estrellas[i].texture = estrella_llena if i < GameData.niveles_completados else estrella_vacia
+		
+	if GameData.niveles_completados >= GameData.total_niveles:
+		Global.modo_juego = "RPG"
+		SceneTransitions.change_scene_to_file("res://world2.tscn")
 
 func mostrar_puntaje():
 	label_puntaje.text = str(GameData.puntaje_total)

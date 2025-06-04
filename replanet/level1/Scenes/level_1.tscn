@@ -326,7 +326,17 @@ offset_bottom = 158.0
 theme_override_font_sizes/font_size = 21
 text = "0"
 
+[node name="mecanica3Button" type="TextureButton" parent="CanvasLayer"]
+offset_left = 591.0
+offset_top = 9.0004
+offset_right = 607.0
+offset_bottom = 26.0004
+scale = Vector2(1.8, 1.8)
+texture_normal = ExtResource("13_3i3lo")
+texture_pressed = ExtResource("14_rxh16")
+
 [node name="backMain" type="TextureButton" parent="CanvasLayer"]
+process_mode = 3
 offset_left = 587.0
 offset_top = 307.0
 offset_right = 619.0
@@ -336,16 +346,6 @@ texture_normal = ExtResource("13_k1s8w")
 texture_pressed = ExtResource("14_3i3lo")
 texture_hover = ExtResource("14_3i3lo")
 stretch_mode = 0
-
-[node name="mecanica3Button" type="TextureButton" parent="CanvasLayer/backMain"]
-layout_mode = 0
-offset_left = 3.33331
-offset_top = -248.333
-offset_right = 19.3333
-offset_bottom = -231.333
-scale = Vector2(1.8, 1.8)
-texture_normal = ExtResource("13_3i3lo")
-texture_pressed = ExtResource("14_rxh16")
 
 [node name="Mushroom" parent="." instance=ExtResource("8_pwgm1")]
 position = Vector2(3643, 197)
@@ -386,6 +386,6 @@ shape = SubResource("RectangleShape2D_xwnq4")
 one_way_collision_margin = 0.0
 
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
+[connection signal="pressed" from="CanvasLayer/mecanica3Button" to="CanvasLayer" method="_on_mecanica_3_button_pressed"]
 [connection signal="pressed" from="CanvasLayer/backMain" to="CanvasLayer" method="_on_back_main_pressed"]
-[connection signal="pressed" from="CanvasLayer/backMain/mecanica3Button" to="CanvasLayer" method="_on_mecanica_3_button_pressed"]
 [connection signal="body_entered" from="wonArea2D" to="wonArea2D" method="_on_body_entered"]

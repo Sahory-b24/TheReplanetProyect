@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://boxa67ncdxc6l" path="res://scenes/world.gd" id="1_4wyf3"]
 [ext_resource type="PackedScene" uid="uid://blu2fgshcdiag" path="res://scenes/player.tscn" id="1_rwgxs"]
 [ext_resource type="PackedScene" uid="uid://bdcpew3xkg8fd" path="res://scenes/test_scene_tile_map.tscn" id="3_b3arm"]
-[ext_resource type="PackedScene" uid="uid://b70j5r8ot4srf" path="res://scenes/NPC.tscn" id="4_71j4m"]
+[ext_resource type="PackedScene" path="res://scenes/NPC.tscn" id="4_71j4m"]
 [ext_resource type="Texture2D" uid="uid://dowokafdx0pqe" path="res://assests/Sprite/Elira_Mision1.png" id="5_qfnet"]
 [ext_resource type="Resource" uid="uid://cystkk0b6hths" path="res://Dialogos/dialogue_level1.dialogue" id="5_w7kh3"]
 [ext_resource type="Texture2D" uid="uid://7yac1bvmbfm3" path="res://assests/Sprite/Silas_Mision2.png" id="7_4mrxx"]
@@ -12,7 +12,7 @@
 [ext_resource type="Resource" uid="uid://bg5o22eexqfs3" path="res://Dialogos/dialogue_level3.dialogue" id="9_e3hyu"]
 [ext_resource type="Texture2D" uid="uid://vpsapa0ixarv" path="res://mainMenu/Assets/Buttoms/config.tres" id="11_q5onr"]
 [ext_resource type="Texture2D" uid="uid://cyvcphlavpoyo" path="res://mainMenu/Assets/Buttoms/configpress.tres" id="12_jhx03"]
-[ext_resource type="Texture2D" uid="uid://bkj2v7lrn0jm4" path="res://mainMenu/Assets/Buttoms/StarEmpty.tres" id="13_jhx03"]
+[ext_resource type="Texture2D" path="res://mainMenu/Assets/Buttoms/StarEmpty.tres" id="13_jhx03"]
 [ext_resource type="Texture2D" uid="uid://dphppnhi3rvd5" path="res://mainMenu/Assets/Buttoms/atras_normal.tres" id="14_xo05s"]
 [ext_resource type="Texture2D" uid="uid://br7x0b60nw3vy" path="res://mainMenu/Assets/Buttoms/atras_press.tres" id="15_dss4m"]
 
