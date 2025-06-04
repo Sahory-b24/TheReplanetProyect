@@ -1,6 +1,7 @@
-[gd_scene load_steps=8 format=3 uid="uid://dbu21dctpna3l"]
+[gd_scene load_steps=10 format=3 uid="uid://dbu21dctpna3l"]
 
-[ext_resource type="Texture2D" uid="uid://c8ywncaoi1x4e" path="res://mainMenu/Assets/Images/sisii.png" id="1_4r0ov"]
+[ext_resource type="Texture2D" uid="uid://b2ftwa60xj37" path="res://mainMenu/Assets/Images/fondo.png" id="1_owh5r"]
+[ext_resource type="FontFile" uid="uid://b5b1l3hfn2lof" path="res://assests/Fonts/ShareTech-Regular.ttf" id="2_57vfi"]
 [ext_resource type="Texture2D" uid="uid://byim6hlifbw6m" path="res://mainMenu/Assets/Buttoms/regresar_normal.tres" id="2_fkurp"]
 [ext_resource type="Texture2D" uid="uid://cbuqbkoc7cmgy" path="res://mainMenu/Assets/Buttoms/regresar_press.tres" id="3_n5uwg"]
 [ext_resource type="Texture2D" uid="uid://5rs8jmdnumd7" path="res://mainMenu/Assets/Buttoms/Mute.tres" id="4_4r0ov"]
@@ -32,6 +33,9 @@ func _on_tregresar_button_pressed() -> void:
 	pass # Replace with function body.
 "
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jdpyq"]
+bg_color = Color(0.0540848, 0.140838, 0.29434, 0.423529)
+
 [node name="Credits" type="Control"]
 layout_mode = 3
 anchors_preset = 15
@@ -42,41 +46,43 @@ grow_vertical = 2
 script = SubResource("GDScript_g7pxl")
 
 [node name="Credits" type="Sprite2D" parent="."]
-position = Vector2(318.5, 180)
-scale = Vector2(0.333854, 0.344444)
-texture = ExtResource("1_4r0ov")
+position = Vector2(318.5, 179)
+scale = Vector2(1.00156, 0.994444)
+texture = ExtResource("1_owh5r")
 
 [node name="CreditsText" type="RichTextLabel" parent="."]
 layout_mode = 0
-offset_left = 149.0
-offset_top = 61.0
-offset_right = 504.0
-offset_bottom = 257.0
+offset_left = 121.0
+offset_top = 66.0
+offset_right = 516.0
+offset_bottom = 301.0
+theme_override_fonts/normal_font = ExtResource("2_57vfi")
+theme_override_styles/normal = SubResource("StyleBoxFlat_jdpyq")
 bbcode_enabled = true
 text = "[center]Desarrollado por el equipo InGenius[/center]  
 
-[b] Equipo de Desarrollo:[/b]  
+ Equipo de Desarrollo:
 Isis Pacheco — Gerente de Proyecto  
  Valerie Angulo — Directora de Pruebas  
 Sahory Blanco — Directora de Diseño  
 Danna Galavís — Directora de Documentación  
 Laura Villalobos — Directora de UI  
 
-[b]📄 Recursos y Licencias:[/b]  
+Recursos y Licencias:
 - [Farm RPG Asset Pack](https://emanuelledev.itch.io/farm-rpg) de EmanuelleDev — Licencia comercial adquirida  
 - [Cozy People - Pixel Art Character Pack](https://shubibubi.itch.io/cozy-people) de shubibubi — Licencia comercial adquirida  
 
-[center]💚 ¡Gracias por jugar y ser parte del cambio! 💚[/center]
+💚 ¡Gracias por jugar y ser parte del cambio! 💚
 
 "
 tab_size = 6
 
 [node name="TextureButton" type="TextureButton" parent="."]
 layout_mode = 0
-offset_left = 18.0
-offset_top = 301.0
-offset_right = 34.0
-offset_bottom = 317.0
+offset_left = 573.0
+offset_top = 307.0
+offset_right = 589.0
+offset_bottom = 323.0
 scale = Vector2(3, 3)
 texture_normal = ExtResource("2_fkurp")
 texture_pressed = ExtResource("3_n5uwg")

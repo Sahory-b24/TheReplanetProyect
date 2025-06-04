@@ -1,12 +1,16 @@
-[gd_scene load_steps=6 format=3 uid="uid://db1mh0i3t04cb"]
+[gd_scene load_steps=8 format=3 uid="uid://db1mh0i3t04cb"]
 
 [ext_resource type="Script" uid="uid://blo5y04jvy2ki" path="res://final/scripts/final.gd" id="1_ub5v8"]
 [ext_resource type="Texture2D" uid="uid://cafklxbth5yma" path="res://final/images/fondoBueno.png" id="2_0qmcs"]
 [ext_resource type="Texture2D" uid="uid://dphppnhi3rvd5" path="res://mainMenu/Assets/Buttoms/atras_normal.tres" id="3_gle70"]
+[ext_resource type="FontFile" uid="uid://b5b1l3hfn2lof" path="res://assests/Fonts/ShareTech-Regular.ttf" id="4_3qbgb"]
 [ext_resource type="Texture2D" uid="uid://br7x0b60nw3vy" path="res://mainMenu/Assets/Buttoms/atras_press.tres" id="4_g4qim"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_0qmcs"]
 texture = ExtResource("2_0qmcs")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gle70"]
+bg_color = Color(0.108706, 0.136151, 0.291919, 0.678431)
 
 [node name="Final" type="Node2D"]
 script = ExtResource("1_ub5v8")
@@ -17,13 +21,42 @@ offset_bottom = 359.0
 theme_override_styles/panel = SubResource("StyleBoxTexture_0qmcs")
 
 [node name="mainButton" type="TextureButton" parent="."]
-offset_left = 581.0
-offset_top = 303.0
-offset_right = 597.0
-offset_bottom = 321.0
+offset_left = 590.0
+offset_top = 313.0
+offset_right = 607.0
+offset_bottom = 331.0
 scale = Vector2(2.5, 2.5)
 texture_normal = ExtResource("3_gle70")
 texture_pressed = ExtResource("4_g4qim")
 texture_hover = ExtResource("4_g4qim")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+offset_left = 105.0
+offset_top = 87.0
+offset_right = 545.0
+offset_bottom = 315.0
+theme_override_colors/default_color = Color(1, 1, 1, 1)
+theme_override_fonts/normal_font = ExtResource("4_3qbgb")
+theme_override_styles/normal = SubResource("StyleBoxFlat_gle70")
+bbcode_enabled = true
+text = "El cambio climático no es una amenaza del futuro, sino una realidad del presente.
+
+En este juego, viajaste al pasado para restaurar lo que habíamos perdido, pero fuera de la pantalla no existen portales ni segundas oportunidades.
+
+Por eso, cada árbol que sembramos, cada plástico que evitamos y cada decisión responsable que tomamos, cuenta.
+
+La Tierra no necesita que la salvemos con actos heroicos, sino que dejemos de destruirla con indiferencia.
+
+Si RePlanet te mostró un nuevo comienzo, entonces que tu vida real sea la secuela que el planeta necesita."
+autowrap_mode = 2
+
+[node name="Label" type="Label" parent="."]
+offset_left = 179.0
+offset_top = 36.0
+offset_right = 435.0
+offset_bottom = 76.1042
+theme_override_fonts/font = ExtResource("4_3qbgb")
+theme_override_font_sizes/font_size = 35
+text = "Más Allá del Juego"
 
 [connection signal="pressed" from="mainButton" to="." method="_on_main_button_pressed"]

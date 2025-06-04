@@ -5,7 +5,7 @@ extends Node2D
 @onready var pantalla3: TextureRect = $pantalla3
 
 func _ready() -> void:
-	AudioManager.play_music("res://InicioLore/audio/lluvia-fuerte-182660.mp3")
+	AudioManager.play_music("res://mainMenu/Assets/Audio/On the Farm.wav")
 	pantalla1.modulate.a = 1.0
 	pantalla2.modulate.a = 0.0
 	pantalla3.modulate.a = 0.0
@@ -31,7 +31,7 @@ func mostrar_secuencia() -> void:
 	await get_tree().create_timer(2).timeout
 
 	# Cambio inmediato de escena
-	SceneTransitions.change_scene_to_file("res://final/scenes/final.tscn")
+	SceneTransitions.change_scene_to_file("res://scenes/Custimization.tscn")
 
 func hacer_fade(node: CanvasItem, from_a: float, to_a: float, duration: float) -> void:
 	var t: float = 0.0
