@@ -1,7 +1,11 @@
 [
 	{
-		"nombre": "Lauri",
+		"nombre": "luis",
 		"puntaje": 2100
+	},
+	{
+		"nombre": "Lauri",
+		"puntaje": 2100.0
 	},
 	{
 		"nombre": "kjik",

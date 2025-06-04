@@ -177,17 +177,6 @@ horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 2
 
-[node name="VolverAlMundo" type="TextureButton" parent="HUD/Panel2/PanelFinal/Panel"]
-visible = false
-layout_mode = 0
-offset_top = 168.0
-offset_right = 16.0
-offset_bottom = 185.0
-scale = Vector2(2, 2)
-texture_normal = ExtResource("17_t8xpv")
-texture_pressed = ExtResource("18_sbqc0")
-texture_hover = ExtResource("18_sbqc0")
-
 [node name="ReintentarButtom" type="TextureButton" parent="HUD/Panel2/PanelFinal/Panel"]
 visible = false
 layout_mode = 0
@@ -214,6 +203,5 @@ texture_hover = ExtResource("18_sbqc0")
 environment = SubResource("Environment_13g3x")
 
 [connection signal="pressed" from="HUD/mecanica3Button" to="HUD" method="_on_mecanica_3_button_pressed"]
-[connection signal="pressed" from="HUD/Panel2/PanelFinal/Panel/VolverAlMundo" to="HUD" method="_on_volver_al_mundo_pressed"]
 [connection signal="pressed" from="HUD/Panel2/PanelFinal/Panel/ReintentarButtom" to="HUD" method="_on_reintentar_buttom_pressed"]
 [connection signal="pressed" from="HUD/atrasMundo" to="HUD" method="_on_atras_mundo_pressed"]
