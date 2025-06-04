@@ -1,9 +1,6 @@
 CheckButton
 TextureButton
-<<<<<<< Updated upstream
-=======
 Label
->>>>>>> Stashed changes
 CanvasLayer
 CanvasGroup
 TextureRect

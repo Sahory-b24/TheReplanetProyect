@@ -63,4 +63,5 @@ func _on_reintentar_buttom_pressed() -> void:
 	get_tree().reload_current_scene()
 
 func _on_mecanica_3_button_pressed() -> void:
+	GameState.player_position = get_tree().current_scene.get_node("Player").global_position
 	SceneTransitions.change_scene_to_file("res://mainMenu/Scenes/instructions_level3.tscn")

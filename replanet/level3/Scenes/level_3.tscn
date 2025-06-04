@@ -1,7 +1,7 @@
 [gd_scene load_steps=20 format=4 uid="uid://dcecxr07mygo4"]
 
 [ext_resource type="TileSet" uid="uid://dfmh40v3anori" path="res://assests/TileSets/game_tile_set.tres" id="1_70nk6"]
-[ext_resource type="Script" path="res://level3/Scripts/level_3.gd" id="1_17213"]
+[ext_resource type="Script" uid="uid://dlocske8b5yvc" path="res://level3/Scripts/level_3.gd" id="1_17213"]
 [ext_resource type="PackedScene" uid="uid://blu2fgshcdiag" path="res://scenes/player.tscn" id="2_h23n6"]
 [ext_resource type="PackedScene" uid="uid://j6pokcbceix1" path="res://level3/Scenes/Lever.tscn" id="3_kn1bk"]
 [ext_resource type="Texture2D" uid="uid://c8mxtt8sbfhd5" path="res://level3/Assets/Images/20250603_0100_Glowing White Orb_simple_compose_01jwt602rme1g8cyajrzk17vt9.png" id="4_13g3x"]
@@ -11,11 +11,11 @@
 [ext_resource type="Texture2D" uid="uid://g1yxbkst6x2n" path="res://mainMenu/Assets/Buttoms/lore__normal.tres" id="7_833yd"]
 [ext_resource type="Texture2D" uid="uid://fxk1wegs7hev" path="res://level3/Assets/textures/EnergyEmpty.tres" id="7_fjtup"]
 [ext_resource type="Texture2D" uid="uid://ds1gh6et8rjkn" path="res://level3/Assets/textures/EnergyFull.tres" id="7_qrdbp"]
-[ext_resource type="Texture2D" path="res://level3/Assets/textures/VolverAlMundoNormal.tres" id="8_h0s8i"]
+[ext_resource type="Texture2D" uid="uid://dtumj8ofwbccj" path="res://level3/Assets/textures/VolverAlMundoNormal.tres" id="8_h0s8i"]
 [ext_resource type="Texture2D" uid="uid://dg1gy0qfc8r2o" path="res://mainMenu/Assets/Buttoms/lore_press.tres" id="8_u8fce"]
-[ext_resource type="Texture2D" path="res://level3/Assets/textures/VolverAlMundoPressed.tres" id="9_13g3x"]
+[ext_resource type="Texture2D" uid="uid://cj7bw4ip54pgn" path="res://level3/Assets/textures/VolverAlMundoPressed.tres" id="9_13g3x"]
 [ext_resource type="Texture2D" uid="uid://du4qjausgwvea" path="res://level3/Assets/textures/ReintentarNormal.tres" id="10_fjtup"]
-[ext_resource type="Texture2D" path="res://level3/Assets/textures/ReintentarPressed.tres" id="11_qrdbp"]
+[ext_resource type="Texture2D" uid="uid://cdrb77lehsrc8" path="res://level3/Assets/textures/ReintentarPressed.tres" id="11_qrdbp"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_u8fce"]
 bg_color = Color(0, 0, 0, 0.733333)

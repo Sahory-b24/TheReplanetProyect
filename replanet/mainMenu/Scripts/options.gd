@@ -1,13 +1,13 @@
 extends Control
 
-
+@onready var fullscreen_checkbox = $PantallaCompleta # Cambia
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	$muisc_bar/Control/VBoxContainer/VolumeBar/musicSlider.value = db_to_linear(AudioServer.get_bus_volume_db(AudioServer.get_bus_index("music")))
 	$Sound_bar/Control/VBoxContainer/VolumeBar/sfxSlider.value = db_to_linear(AudioServer.get_bus_volume_db(AudioServer.get_bus_index("sfx")))
 	# Al iniciar, ajusta el estado del checkbox según el modo actual de ventana
-
+	fullscreen_checkbox.button_pressed = DisplayServer.window_get_mode() == DisplayServer.WINDOW_MODE_FULLSCREEN
 	pass # Replace with function body.
 
 
@@ -53,3 +53,10 @@ func _on_exit_world_button_pressed() -> void:
 	AudioManager.SFXPlayer.play()
 	
 	SceneTransitions.change_scene_to_file("res://scenes/world.tscn")
+
+
+func _on_pantalla_completa_toggled(toggled_on: bool) -> void:
+	if toggled_on:
+		DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_EXCLUSIVE_FULLSCREEN)
+	else:
+		DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_WINDOWED)
