@@ -25,6 +25,14 @@
 	},
 	{
 		"nombre": "erty",
-		"puntaje": 2950
+		"puntaje": 2950.0
+	},
+	{
+		"nombre": "fgh",
+		"puntaje": 3050.0
+	},
+	{
+		"nombre": "derf",
+		"puntaje": 2800
 	}
 ]

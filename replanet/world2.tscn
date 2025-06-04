@@ -1,16 +1,15 @@
-[gd_scene load_steps=14 format=4 uid="uid://c6tgeklv8ugtr"]
+[gd_scene load_steps=13 format=4 uid="uid://c6tgeklv8ugtr"]
 
 [ext_resource type="TileSet" uid="uid://dfmh40v3anori" path="res://assests/TileSets/game_tile_set.tres" id="1_2xvde"]
 [ext_resource type="Script" uid="uid://c8dgw66r8jmqe" path="res://world_2.gd" id="1_hg5vs"]
-[ext_resource type="PackedScene" uid="uid://b70j5r8ot4srf" path="res://scenes/NPC.tscn" id="2_f5bfu"]
+[ext_resource type="PackedScene" uid="uid://blu2fgshcdiag" path="res://scenes/player.tscn" id="2_bkyvu"]
+[ext_resource type="PackedScene" path="res://scenes/NPC.tscn" id="2_f5bfu"]
 [ext_resource type="Resource" uid="uid://rekpeubhxb14" path="res://dialogue_Mision1.dialogue" id="3_f5bfu"]
 [ext_resource type="Texture2D" uid="uid://dowokafdx0pqe" path="res://assests/Sprite/Elira_Mision1.png" id="4_mf6h1"]
 [ext_resource type="Resource" uid="uid://brxubv4woskw2" path="res://dialogue_Mision2.dialogue" id="5_xjnkp"]
 [ext_resource type="Texture2D" uid="uid://7yac1bvmbfm3" path="res://assests/Sprite/Silas_Mision2.png" id="6_d62yq"]
 [ext_resource type="Resource" uid="uid://bwd57i34n6sic" path="res://dialogue_Mision3.dialogue" id="7_f5bfu"]
 [ext_resource type="Texture2D" uid="uid://bw6q7yeusluef" path="res://assests/Sprite/Meliu_Mision3.png" id="8_7r24r"]
-[ext_resource type="Texture2D" uid="uid://vpsapa0ixarv" path="res://mainMenu/Assets/Buttoms/config.tres" id="10_7r24r"]
-[ext_resource type="Texture2D" uid="uid://cyvcphlavpoyo" path="res://mainMenu/Assets/Buttoms/configpress.tres" id="11_fcnjm"]
 [ext_resource type="Texture2D" uid="uid://dphppnhi3rvd5" path="res://mainMenu/Assets/Buttoms/atras_normal.tres" id="12_7gfau"]
 [ext_resource type="Texture2D" uid="uid://br7x0b60nw3vy" path="res://mainMenu/Assets/Buttoms/atras_press.tres" id="13_jaerl"]
 
@@ -103,16 +102,6 @@ sprite = ExtResource("8_7r24r")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
-[node name="configButton" type="TextureButton" parent="CanvasLayer"]
-offset_left = 575.0
-offset_top = 5.0
-offset_right = 597.0
-offset_bottom = 29.0
-scale = Vector2(2, 2)
-texture_normal = ExtResource("10_7r24r")
-texture_pressed = ExtResource("11_fcnjm")
-texture_hover = ExtResource("11_fcnjm")
-
 [node name="Panel" type="Panel" parent="CanvasLayer"]
 offset_left = 193.0
 offset_top = 64.0
@@ -137,5 +126,8 @@ texture_normal = ExtResource("12_7gfau")
 texture_pressed = ExtResource("13_jaerl")
 texture_hover = ExtResource("13_jaerl")
 
-[connection signal="pressed" from="CanvasLayer/configButton" to="." method="_on_config_button_pressed"]
+[node name="Player" parent="." instance=ExtResource("2_bkyvu")]
+position = Vector2(316, 104)
+collision_layer = 1048577
+
 [connection signal="pressed" from="CanvasLayer/atrasMundo" to="." method="_on_atras_mundo_pressed"]
