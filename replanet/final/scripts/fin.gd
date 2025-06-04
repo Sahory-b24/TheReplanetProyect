@@ -12,26 +12,22 @@ func _ready() -> void:
 	mostrar_secuencia()
 
 func mostrar_secuencia() -> void:
-	# Mostrar la primera pantalla por 2 segundos
-	await get_tree().create_timer(2).timeout
+	
+	await get_tree().create_timer(1.5).timeout
 
-	# Fade in de la segunda pantalla
-	await hacer_fade(pantalla2, 0.0, 1.0, 1.0)
-	await get_tree().create_timer(2).timeout
+	await hacer_fade(pantalla2, 0.0, 1.0, 0.7)
+	await get_tree().create_timer(1).timeout
 
-	# Fade out de la primera pantalla
-	await hacer_fade(pantalla1, 1.0, 0.0, 1.0)
+	await hacer_fade(pantalla1, 1.0, 0.0, 0.7)
 
-	# Fade in de la tercera pantalla
-	await hacer_fade(pantalla3, 0.0, 1.0, 1.0)
-	await get_tree().create_timer(2).timeout
-
-	# Fade out de la segunda pantalla
-	await hacer_fade(pantalla2, 1.0, 0.0, 1.0)
-	await get_tree().create_timer(2).timeout
+	await hacer_fade(pantalla3, 0.0, 1.0, 0.7)
+	await get_tree().create_timer(1).timeout
+	
+	await hacer_fade(pantalla2, 1.0, 0.0, 0.7)
+	await get_tree().create_timer(1).timeout
 
 	# Cambio inmediato de escena
-	SceneTransitions.change_scene_to_file("res://scenes/Custimization.tscn")
+	SceneTransitions.change_scene_to_file("res://final/scenes/final.tscn")
 
 func hacer_fade(node: CanvasItem, from_a: float, to_a: float, duration: float) -> void:
 	var t: float = 0.0

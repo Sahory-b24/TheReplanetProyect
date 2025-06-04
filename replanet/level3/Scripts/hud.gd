@@ -50,6 +50,7 @@ func mostrar_resultado_finalPanel():
 
 	GuardarPuntaje.guardar_puntaje_nivel3(Global.player_name, GameState.puntaje_total)
 	reintentar_button2.visible=true
+	
 func actualizar_palancas_visual():
 	for i in range(stars.size()):
 		if i < GameState.palancas_activadas.size() and GameState.palancas_activadas[i]:

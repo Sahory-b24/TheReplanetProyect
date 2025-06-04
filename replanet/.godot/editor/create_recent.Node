@@ -1,8 +1,9 @@
-Panel
-Timer
-Label
-RichTextLabel
 CanvasLayer
+Label
+Panel
+NPC
+Timer
+RichTextLabel
 CanvasGroup
 TextureButton
 TextureRect
@@ -11,4 +12,3 @@ CheckButton
 Area2D
 CollisionShape2D
 Sprite2D
-Button
