@@ -3,6 +3,10 @@ extends CanvasLayer
 var seeds = 0
 
 func _ready():
+	
+	var wonArea = get_tree().current_scene.get_node("wonArea2D")
+	if wonArea and wonArea.has_signal("level_won"):
+		wonArea.connect("level_won", Callable(self, "mostrar_ganaste"))
 	#print("UI lista")
 	var seeds_nodes = get_tree().current_scene.find_children("", "", true, false)
 	#print("Escena actual:", get_tree().current_scene.name)
@@ -32,3 +36,20 @@ func handleSeedCollected(seed_name):
 	elif seed_name.begins_with("Mushroom"):
 		seeds-=150
 	$seedsCollected.text = str(seeds)
+	
+func mostrar_ganaste():
+	$WonPanel.visible = true
+	$WonPanel/TextureRect/puntajeLabel.text = str(seeds)
+	get_tree().paused = true
+
+
+func _on_back_pressed() -> void:
+	get_tree().paused = false
+	Global.modo_juego = "RPG"
+	SceneTransitions.change_scene_to_file("res://scenes/world.tscn")
+
+
+func _on_back_main_pressed() -> void:
+	get_tree().paused = false
+	Global.modo_juego = "RPG"
+	SceneTransitions.change_scene_to_file("res://scenes/world.tscn")

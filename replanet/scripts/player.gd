@@ -155,3 +155,23 @@ func initialize_player():
 	#name_label.text = Global.player_name
 	print(Global.player_name)
 	# Player name
+var hit_label_timer : Timer = null
+var _hit_label_timeout_lambda : Callable
+
+func show_auch():
+	$hitLabel.text = "Auch!"
+	$hitLabel.visible = true
+	if hit_label_timer:
+		hit_label_timer.stop()
+	else:
+		hit_label_timer = Timer.new()
+		hit_label_timer.one_shot = true
+		hit_label_timer.wait_time = 1.0
+		add_child(hit_label_timer)
+		# ASIGNA la lambda a una variable antes de conectar
+		_hit_label_timeout_lambda = func(): _on_hit_label_timeout()
+		hit_label_timer.timeout.connect(_hit_label_timeout_lambda)
+	hit_label_timer.start()
+
+func _on_hit_label_timeout():
+	$hitLabel.visible = false

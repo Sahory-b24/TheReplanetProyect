@@ -1,7 +1,8 @@
-[gd_resource type="AtlasTexture" load_steps=2 format=3 uid="uid://viffnije2f2t"]
+[gd_resource type="AtlasTexture" load_steps=2 format=3 uid="uid://du4qjausgwvea"]
 
 [ext_resource type="Texture2D" uid="uid://d0j82h8a85gnp" path="res://mainMenu/Assets/Icons/button.png" id="1_g3eqc"]
 
 [resource]
 atlas = ExtResource("1_g3eqc")
 region = Rect2(368.27, 16.1179, 16.2157, 16.5071)
+filter_clip = true

@@ -1,4 +1,5 @@
 TextureButton
+<<<<<<< Updated upstream
 CanvasLayer
 CanvasGroup
 TextureRect
@@ -7,6 +8,16 @@ Area2D
 CollisionShape2D
 Sprite2D
 Panel
+=======
+Button
+CollisionShape2D
+Area2D
+Label
+TextureRect
+Panel
+Sprite2D
+CanvasLayer
+>>>>>>> Stashed changes
 HBoxContainer
 WorldEnvironment
 PointLight2D
