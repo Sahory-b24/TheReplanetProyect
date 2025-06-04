@@ -1,10 +1,13 @@
 extends Control
 
 
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	$muisc_bar/Control/VBoxContainer/VolumeBar/musicSlider.value = db_to_linear(AudioServer.get_bus_volume_db(AudioServer.get_bus_index("music")))
 	$Sound_bar/Control/VBoxContainer/VolumeBar/sfxSlider.value = db_to_linear(AudioServer.get_bus_volume_db(AudioServer.get_bus_index("sfx")))
+	# Al iniciar, ajusta el estado del checkbox según el modo actual de ventana
+
 	pass # Replace with function body.
 
 
