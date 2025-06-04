@@ -338,6 +338,7 @@ texture_hover = ExtResource("14_3i3lo")
 stretch_mode = 0
 
 [node name="mecanica3Button" type="TextureButton" parent="CanvasLayer/backMain"]
+layout_mode = 0
 offset_left = 3.33331
 offset_top = -248.333
 offset_right = 19.3333

@@ -27,6 +27,7 @@ GameState="*res://level3/Scripts/GameState.gd"
 DialogueManager="*res://addons/dialogue_manager/dialogue_manager.gd"
 GameData="*res://scripts/GameData.gd"
 GlobalWorld="*res://scripts/GlobalWorld.gd"
+Settings="*res://mainMenu/Scripts/Settings.gd"
 
 [dialogue_manager]
 
