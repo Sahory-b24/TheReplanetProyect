@@ -9,7 +9,9 @@ var estrella_llena = preload("res://mainMenu/Assets/Buttoms/StarFull.tres")
 var estrella_vacia = preload("res://mainMenu/Assets/Buttoms/StarEmpty.tres")
 
 @onready var label_puntaje = $CanvasLayer/LabelPuntaje
-
+@onready var panel_mensaje = $CanvasLayer/PanelMensaje
+@onready var mensaje_inicio = $CanvasLayer/PanelMensaje/MensajeInicio
+@onready var timer_mensaje_inicio = $CanvasLayer/PanelMensaje/MensajeInicioTimer
 
 @onready var nivel_1_btn = $Nivel1
 @onready var nivel_2_btn = $Nivel2
@@ -25,6 +27,15 @@ func _ready():
 		nivel_2_btn.disabled = true
 	if GlobalWorld.nivel_3_jugado:
 		nivel_3_btn.disabled = true
+		
+	mostrar_mensaje_temporal(3.0)
+
+func mostrar_mensaje_temporal(duracion: float):
+	panel_mensaje.visible = true
+	mensaje_inicio.visible = true
+	timer_mensaje_inicio.wait_time = duracion
+	timer_mensaje_inicio.start()
+
 
 func _on_nivel_1_pressed():
 	Global.modo_juego = "PLATAFORMA"
@@ -47,3 +58,8 @@ func actualizar_estrellas():
 
 func mostrar_puntaje():
 	label_puntaje.text = str(GameData.puntaje_total)
+
+
+func _on_mensaje_inicio_timer_timeout() -> void:
+	panel_mensaje.visible = false
+	mensaje_inicio.visible = false

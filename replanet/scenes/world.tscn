@@ -120,8 +120,26 @@ texture_normal = ExtResource("14_xo05s")
 texture_pressed = ExtResource("15_dss4m")
 texture_hover = ExtResource("15_dss4m")
 
+[node name="PanelMensaje" type="Panel" parent="CanvasLayer"]
+offset_left = 219.0
+offset_top = 85.0
+offset_right = 463.0
+offset_bottom = 169.0
+
+[node name="MensajeInicio" type="Label" parent="CanvasLayer/PanelMensaje"]
+offset_left = -3.0
+offset_top = 14.0
+offset_right = 242.0
+offset_bottom = 63.0
+text = "Habla con los habitantes de la 
+isla para comenzar tu misión..."
+horizontal_alignment = 1
+
+[node name="MensajeInicioTimer" type="Timer" parent="CanvasLayer/PanelMensaje"]
+
 [connection signal="pressed" from="Nivel1" to="." method="_on_nivel_1_pressed"]
 [connection signal="pressed" from="Nivel2" to="." method="_on_nivel_2_pressed"]
 [connection signal="pressed" from="Nivel3" to="." method="_on_nivel_3_pressed"]
 [connection signal="pressed" from="CanvasLayer/configButton" to="." method="_on_config_button_pressed"]
 [connection signal="pressed" from="CanvasLayer/LabelPuntaje/atrasMundo" to="." method="_on_atras_mundo_pressed"]
+[connection signal="timeout" from="CanvasLayer/PanelMensaje/MensajeInicioTimer" to="." method="_on_mensaje_inicio_timer_timeout"]

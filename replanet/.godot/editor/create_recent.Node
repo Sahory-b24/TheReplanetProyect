@@ -1,6 +1,7 @@
+Panel
+Timer
 Label
 RichTextLabel
-Panel
 CanvasLayer
 CanvasGroup
 TextureButton
@@ -11,4 +12,3 @@ Area2D
 CollisionShape2D
 Sprite2D
 Button
-CollisionShape2D
