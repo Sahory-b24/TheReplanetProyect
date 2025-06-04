@@ -43,16 +43,27 @@ func mostrar_ganaste():
 	GameData.sumar_puntaje(seeds)
 	GlobalWorld.nivel_1_jugado = true
 	GameData.marcar_nivel_completado()
+	GuardarPuntaje.guardar_puntaje_nivel2(Global.player_name, seeds)
 	get_tree().paused = true
 
 
 func _on_back_pressed() -> void:
 	get_tree().paused = false
 	Global.modo_juego = "RPG"
+	AudioManager.SFXPlayer.stream = preload("res://mainMenu/Assets/Audio/tf2-button-click-hover.mp3")
+	AudioManager.SFXPlayer.play()
 	SceneTransitions.change_scene_to_file("res://scenes/world.tscn")
 
 
 func _on_back_main_pressed() -> void:
 	get_tree().paused = false
 	Global.modo_juego = "RPG"
+	AudioManager.SFXPlayer.stream = preload("res://mainMenu/Assets/Audio/tf2-button-click-hover.mp3")
+	AudioManager.SFXPlayer.play()
 	SceneTransitions.change_scene_to_file("res://scenes/world.tscn")
+
+
+func _on_mecanica_3_button_pressed() -> void:
+	AudioManager.SFXPlayer.stream = preload("res://mainMenu/Assets/Audio/tf2-button-click-hover.mp3")
+	AudioManager.SFXPlayer.play()
+	SceneTransitions.change_scene_to_file("res://mainMenu/Scenes/instructions_level1.tscn")

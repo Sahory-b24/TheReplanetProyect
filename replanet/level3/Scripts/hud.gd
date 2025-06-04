@@ -36,7 +36,7 @@ func mostrar_resultado_finalPanel():
 	puntaje_label.visible = false
 	puntaje_rect.visible = true
 	panel_final.visible = true
-	reintentar_button2=false
+	reintentar_button2.visible=false
 	puntaje_final_label.text = "Puntos Totales: %d / 1000" % GameState.puntaje_total
 
 	if GameState.puntaje_total >= 1000:
@@ -73,10 +73,14 @@ func _on_reintentar_buttom_pressed() -> void:
 	get_tree().reload_current_scene()
 
 func _on_mecanica_3_button_pressed() -> void:
+	AudioManager.SFXPlayer.stream = preload("res://mainMenu/Assets/Audio/tf2-button-click-hover.mp3")
+	AudioManager.SFXPlayer.play()
 	GameState.player_position = get_tree().current_scene.get_node("Player").global_position
 	SceneTransitions.change_scene_to_file("res://mainMenu/Scenes/instructions_level3.tscn")
 
 
 func _on_atras_mundo_pressed() -> void:
+	AudioManager.SFXPlayer.stream = preload("res://mainMenu/Assets/Audio/tf2-button-click-hover.mp3")
+	AudioManager.SFXPlayer.play()	
 	SceneTransitions.change_scene_to_file("res://scenes/world.tscn")
-	pass # Replace with function body.
+	

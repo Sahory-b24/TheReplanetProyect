@@ -42,7 +42,7 @@ func _on_start_buttom_pressed() -> void:
 	print(\"Start sirve\")
 	AudioManager.SFXPlayer.stream = preload(\"res://mainMenu/Assets/Audio/tf2-button-click-hover.mp3\")
 	AudioManager.SFXPlayer.play()
-	SceneTransitions.change_scene_to_file(\"res://final/scenes/fin.tscn\")
+	SceneTransitions.change_scene_to_file(\"res://scenes/Custimization.tscn\")
 	
 
 

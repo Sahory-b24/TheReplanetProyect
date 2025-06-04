@@ -52,6 +52,7 @@ offset_bottom = 345.0
 theme_override_styles/panel = SubResource("StyleBoxTexture_p348u")
 
 [node name="Timer" type="Timer" parent="MinijuegoCables"]
+one_shot = true
 
 [node name="TiempoLabel" type="Label" parent="MinijuegoCables"]
 layout_mode = 0
@@ -138,5 +139,5 @@ texture_normal = ExtResource("4_dwbhn")
 texture_pressed = ExtResource("5_dx70w")
 texture_hover = ExtResource("5_dx70w")
 
-[connection signal="timeout" from="MinijuegoCables/Timer" to="MinijuegoCables" method="_on_Timer_timeout"]
+[connection signal="timeout" from="MinijuegoCables/Timer" to="." method="_on_timer_timeout"]
 [connection signal="pressed" from="MinijuegoCables/PanelFin/BotonSalir" to="." method="_on_boton_salir_pressed"]

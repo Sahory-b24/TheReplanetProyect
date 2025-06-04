@@ -26,8 +26,12 @@ Te ganaste una estrella."
 
 
 func _on_atras_mundo_pressed() -> void:
+	AudioManager.SFXPlayer.stream = preload("res://mainMenu/Assets/Audio/tf2-button-click-hover.mp3")
+	AudioManager.SFXPlayer.play()
 	SceneTransitions.change_scene_to_file("res://scenes/world.tscn")
 
 
 func _on_mecanica_2_button_pressed() -> void:
+	AudioManager.SFXPlayer.stream = preload("res://mainMenu/Assets/Audio/tf2-button-click-hover.mp3")
+	AudioManager.SFXPlayer.play()
 	SceneTransitions.change_scene_to_file("res://mainMenu/Scenes/instructions_level2.tscn")
