@@ -25,7 +25,8 @@ func _ready() -> void:
 		5: [$Label9, $Label10],
 		6: [$Label11, $Label12],
 	}
-	AudioManager.play_music("res://InicioLore/audio/Ambient7.mp3")
+	
+	AudioManager.play_music("res://InicioLore/audio/lluvia-fuerte-182660.mp3")
 	# Asegúrate de que el SlideImage tenga modulate = Color(1, 1, 1, 1)
 	show_slide(true)
 
@@ -65,9 +66,12 @@ func _on_siguiente_button_pressed() -> void:
 		await show_slide()
 	else:
 		# Ya está en la última diapositiva, ir a escena del mundo
+		AudioManager.MusicPlayer.stop()
 		SceneTransitions.change_scene_to_file("res://scenes/world.tscn")
 
 func _on_button_pressed() -> void:
 	AudioManager.SFXPlayer.stream = preload("res://mainMenu/Assets/Audio/tf2-button-click-hover.mp3")
 	AudioManager.SFXPlayer.play()
+	
+	AudioManager.MusicPlayer.stop()
 	SceneTransitions.change_scene_to_file("res://scenes/world.tscn")

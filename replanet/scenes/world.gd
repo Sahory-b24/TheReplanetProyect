@@ -1,7 +1,5 @@
 extends Node2D
 
-#func _ready():
-	#AudioManager.play_music("res://mainMenu/Assets/Audio/Dark Ambient 1.wav")
 
 func _on_nivel_1_pressed() -> void:
 	Global.modo_juego = "PLATAFORMA"
@@ -17,4 +15,6 @@ func _on_nivel_3_pressed() -> void:
 
 
 func _on_config_button_pressed() -> void:
+	AudioManager.SFXPlayer.stream = preload("res://mainMenu/Assets/Audio/tf2-button-click-hover.mp3")
+	AudioManager.SFXPlayer.play()
 	SceneTransitions.change_scene_to_file("res://mainMenu/Scenes/config.tscn")

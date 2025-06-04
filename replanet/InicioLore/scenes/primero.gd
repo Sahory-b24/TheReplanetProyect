@@ -18,9 +18,6 @@ func mostrar_nombre_y_cambiar() -> void:
 	await get_tree().create_timer(1.2).timeout
 	await hacer_fade(isla, 1.0, 0.0, 1.0)
 
-	# Al cambiar de escena, detener la música global
-	AudioManager.MusicPlayer.stop()
-
 	get_tree().change_scene_to_file("res://InicioLore/scenes/inicioLore.tscn")
 
 func hacer_fade(node: CanvasItem, from_a: float, to_a: float, duration: float) -> void:

@@ -34,3 +34,10 @@ res://mainMenu/Scenes/instructions_level1.tscn
 res://mainMenu/Scenes/instructions_level2.tscn
 res://mainMenu/Assets/Buttoms/config.tres
 res://level3/Scripts/hud.gd
+res://InicioLore/scenes/primero.tscn
+res://scripts/custimization.gd
+res://InicioLore/scenes/primero.gd
+res://InicioLore/scenes/inicioLore.tscn
+res://scenes/Custimization-Isis.tscn
+res://scenes/Custimization.tscn
+res://level2/Scripts/boat.gd

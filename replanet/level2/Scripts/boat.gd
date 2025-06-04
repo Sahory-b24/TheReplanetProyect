@@ -12,7 +12,7 @@ func _ready():
 
 func _physics_process(delta):
 	# Movimiento automático en X (sin colisiones)
-	position.x += speed * delta
+	var movement_x = speed * delta
 
 	# Movimiento en Y con colisiones
 	var mouse_y = get_viewport().get_mouse_position().y
@@ -20,17 +20,16 @@ func _physics_process(delta):
 
 	var direction_y = target_y - position.y
 	var velocity_y = direction_y * follow_speed
-	var movement = Vector2(0, velocity_y * delta)
+	var movement = Vector2(movement_x, velocity_y * delta)
 
 	var collision = move_and_collide(movement)
 	if collision and switch:
 		# Restar puntos si ScoreManager está presente
 		var score_manager = get_tree().current_scene.get_node("CanvasLayer/ScoreManager")
-		if score_manager:
-			score_manager.add_points(-30)  # ❌ Resta 30 puntos
-			
+		score_manager.add_points(-30)  # ❌ Resta 30 puntos
 		switch = false
 		cooldown_timer.start()
+
 
 
 func _on_damage_cooldown_timeout() -> void:
