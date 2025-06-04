@@ -15,3 +15,5 @@ res://final/scenes/final.tscn
 res://level1/Scripts/UIlvl1.gd
 res://level3/Scenes/level_3.tscn
 res://level1/Scenes/level_1.tscn
+res://scenes/world.gd
+res://level3/Scripts/hud.gd

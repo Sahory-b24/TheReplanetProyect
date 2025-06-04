@@ -52,3 +52,11 @@ func _on_config_button_pressed() -> void:
 	AudioManager.SFXPlayer.stream = preload("res://mainMenu/Assets/Audio/tf2-button-click-hover.mp3")
 	AudioManager.SFXPlayer.play()
 	get_tree().change_scene_to_file("res://mainMenu/Scenes/Options1.tscn")
+
+
+func _on_atras_mundo_pressed() -> void:
+	AudioManager.SFXPlayer.stream = preload("res://mainMenu/Assets/Audio/tf2-button-click-hover.mp3")
+	AudioManager.SFXPlayer.play()
+	GameData.reiniciar_progreso()
+	SceneTransitions.change_scene_to_file("res://mainMenu/Scenes/main_menu.tscn")
+	

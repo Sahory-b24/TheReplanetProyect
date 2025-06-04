@@ -78,5 +78,7 @@ func _on_mecanica_3_button_pressed() -> void:
 
 
 func _on_atras_mundo_pressed() -> void:
+	AudioManager.SFXPlayer.stream = preload("res://mainMenu/Assets/Audio/tf2-button-click-hover.mp3")
+	AudioManager.SFXPlayer.play()	
 	SceneTransitions.change_scene_to_file("res://scenes/world.tscn")
-	pass # Replace with function body.
+	

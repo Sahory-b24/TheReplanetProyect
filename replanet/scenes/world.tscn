@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://bgyvt6v3pnb"]
+[gd_scene load_steps=16 format=3 uid="uid://bgyvt6v3pnb"]
 
 [ext_resource type="Script" uid="uid://boxa67ncdxc6l" path="res://scenes/world.gd" id="1_4wyf3"]
 [ext_resource type="PackedScene" uid="uid://blu2fgshcdiag" path="res://scenes/player.tscn" id="1_rwgxs"]
@@ -13,6 +13,8 @@
 [ext_resource type="Texture2D" uid="uid://vpsapa0ixarv" path="res://mainMenu/Assets/Buttoms/config.tres" id="11_q5onr"]
 [ext_resource type="Texture2D" uid="uid://cyvcphlavpoyo" path="res://mainMenu/Assets/Buttoms/configpress.tres" id="12_jhx03"]
 [ext_resource type="Texture2D" uid="uid://bkj2v7lrn0jm4" path="res://mainMenu/Assets/Buttoms/StarEmpty.tres" id="13_jhx03"]
+[ext_resource type="Texture2D" uid="uid://dphppnhi3rvd5" path="res://mainMenu/Assets/Buttoms/atras_normal.tres" id="14_xo05s"]
+[ext_resource type="Texture2D" uid="uid://br7x0b60nw3vy" path="res://mainMenu/Assets/Buttoms/atras_press.tres" id="15_dss4m"]
 
 [node name="Replanet" type="Node2D"]
 script = ExtResource("1_4wyf3")
@@ -107,7 +109,18 @@ offset_top = 37.0
 offset_right = 45.0
 offset_bottom = 60.0
 
+[node name="atrasMundo" type="TextureButton" parent="CanvasLayer/LabelPuntaje"]
+offset_left = 591.0
+offset_top = 284.0
+offset_right = 609.0
+offset_bottom = 302.0
+scale = Vector2(2, 2)
+texture_normal = ExtResource("14_xo05s")
+texture_pressed = ExtResource("15_dss4m")
+texture_hover = ExtResource("15_dss4m")
+
 [connection signal="pressed" from="Nivel1" to="." method="_on_nivel_1_pressed"]
 [connection signal="pressed" from="Nivel2" to="." method="_on_nivel_2_pressed"]
 [connection signal="pressed" from="Nivel3" to="." method="_on_nivel_3_pressed"]
 [connection signal="pressed" from="CanvasLayer/configButton" to="." method="_on_config_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/LabelPuntaje/atrasMundo" to="." method="_on_atras_mundo_pressed"]
