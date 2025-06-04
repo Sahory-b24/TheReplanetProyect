@@ -1,7 +1,19 @@
 [
 	{
-		"nombre": "luis",
+		"nombre": "jjds",
 		"puntaje": 2100
+	},
+	{
+		"nombre": "hdh",
+		"puntaje": 2100.0
+	},
+	{
+		"nombre": "hggh",
+		"puntaje": 1830.0
+	},
+	{
+		"nombre": "luis",
+		"puntaje": 2100.0
 	},
 	{
 		"nombre": "Lauri",

@@ -5,9 +5,7 @@ extends CanvasLayer
 @onready var panel_final = $Panel2
 @onready var mensaje_label = $Panel2/PanelFinal/Panel/MensajeLabel
 @onready var puntaje_final_label = $Panel2/PanelFinal/Panel/PuntajeFinal
-@onready var reintentar_button = $Panel2/PanelFinal/Panel/ReintentarButtom
 @onready var reintentar_button2 = $atrasMundo
-@onready var volver_button = $Panel2/PanelFinal/Panel/VolverAlMundo
 
 @onready var stars = [
 	$PalancasContainer/Energy1,
@@ -46,18 +44,12 @@ func mostrar_resultado_finalPanel():
 			GlobalWorld.nivel_3_jugado = true
 			GameData.marcar_nivel_completado()
 			GameState.nivel3_registrado = true
-		reintentar_button.visible = false
-		volver_button.visible = true
+		
 	else:
 		mensaje_label.text = "¡Restauraste el sistema, pero sin suficiente eficiencia para recuperar la estrella!"
-		reintentar_button.visible = true
-		volver_button.visible = true
-
-	reintentar_button.visible = false
-	volver_button.visible = true
 
 	GuardarPuntaje.guardar_puntaje_nivel3(Global.player_name, GameState.puntaje_total)
-
+	reintentar_button2.visible=true
 func actualizar_palancas_visual():
 	for i in range(stars.size()):
 		if i < GameState.palancas_activadas.size() and GameState.palancas_activadas[i]:

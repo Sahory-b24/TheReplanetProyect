@@ -47,3 +47,5 @@ res://level3/Scripts/level_3.gd
 res://level3/Scripts/lever.gd
 res://level3/Scripts/mini_juego.gd
 res://level3/Scenes/level_3.tscn
+res://mainMenu/Scripts/instructions.gd
+res://mainMenu/Scenes/instructions.tscn

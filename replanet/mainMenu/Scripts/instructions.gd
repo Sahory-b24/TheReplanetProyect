@@ -3,13 +3,16 @@ extends Node2D
 # Lista de imágenes (precarga los recursos)
 var slides = [
 	preload("res://mainMenu/Assets/Images/slide1.png"),
-	preload("res://mainMenu/Assets/Images/slide2.png"),
+	preload("res://mainMenu/Assets/Images/slide3.png"),
 ]
 
 # Lista de textos por diapositiva
 var slide_texts = [
-	["Saltar", "Moverse"],
-	["Inventario", "Recolectar"],
+	["Saltar e
+	interactuar", "Moverse"],
+	["Click para
+	cambiar diálogo", "Activar
+	 mecánicas"],
 ]
 
 var current_slide = 0
