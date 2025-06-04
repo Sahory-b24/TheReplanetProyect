@@ -1,5 +1,8 @@
 extends Node2D
 
+func _ready() -> void:
+	AudioManager.play_music("res://mainMenu/Assets/Audio/On the Farm.wav")
+	
 
 func _on_nivel_1_pressed() -> void:
 	Global.modo_juego = "PLATAFORMA"

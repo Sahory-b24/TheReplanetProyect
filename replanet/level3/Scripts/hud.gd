@@ -8,7 +8,6 @@ extends CanvasLayer
 @onready var reintentar_button = $Panel2/PanelFinal/Panel/ReintentarButtom
 @onready var volver_button = $Panel2/PanelFinal/Panel/VolverAlMundo
 
-# Iconos de palancas
 @onready var stars = [
 	$PalancasContainer/Energy1,
 	$PalancasContainer/Energy2,
@@ -26,28 +25,35 @@ func _ready():
 
 func _process(_delta):
 	puntaje_label.text = "X %d" % GameState.puntaje_total
-
-	# Actualiza HUD de iconos
 	actualizar_palancas_visual()
 
-	# Panel final
 	if GameState.palancas_activadas.count(true) == 3 and not panel_mostrado:
 		mostrar_resultado_finalPanel()
 		panel_mostrado = true
 
 func mostrar_resultado_finalPanel():
 	puntaje_label.visible = false
-	puntaje_rect.visible=true
+	puntaje_rect.visible = true
 	panel_final.visible = true
+
 	puntaje_final_label.text = "Puntos Totales: %d / 1000" % GameState.puntaje_total
+
 	if GameState.puntaje_total >= 1000:
 		mensaje_label.text = "¡Has conseguido la estrella!\n¡Atmósfera purificada!"
-		reintentar_button.visible = true
-		volver_button.visible = true
 	else:
 		mensaje_label.text = "¡Restauraste el sistema, pero sin suficiente eficiencia para recuperar la estrella!"
-		reintentar_button.visible = true
-		volver_button.visible = true
+
+	reintentar_button.visible = true
+	volver_button.visible = true
+
+	GuardarPuntaje.guardar_puntaje_nivel3(Global.player_name, GameState.puntaje_total)
+
+func actualizar_palancas_visual():
+	for i in range(stars.size()):
+		if i < GameState.palancas_activadas.size() and GameState.palancas_activadas[i]:
+			stars[i].texture = texture_full
+		else:
+			stars[i].texture = texture_empty
 
 func _on_volver_al_mundo_pressed() -> void:
 	SceneTransitions.change_scene_to_file("res://scenes/world.tscn")
@@ -55,15 +61,6 @@ func _on_volver_al_mundo_pressed() -> void:
 func _on_reintentar_buttom_pressed() -> void:
 	GameState.reset()
 	get_tree().reload_current_scene()
-
-# ESTA ES LA LOGICA CLAVE:
-func actualizar_palancas_visual():
-	for i in range(stars.size()):
-		if i < GameState.palancas_activadas.size() and GameState.palancas_activadas[i]:
-			stars[i].texture = texture_full   # Encendida si la palanca está activa (True)
-		else:
-			stars[i].texture = texture_empty # Apagada si la palanca está inactiva (False)
-
 
 func _on_mecanica_3_button_pressed() -> void:
 	SceneTransitions.change_scene_to_file("res://mainMenu/Scenes/instructions_level3.tscn")
