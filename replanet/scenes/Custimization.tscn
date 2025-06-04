@@ -654,6 +654,13 @@ offset_right = 331.0
 offset_bottom = 45.0
 theme_override_font_sizes/font_size = 20
 
+[node name="MENSAJE" type="Label" parent="Customization_screen/Panel/Name"]
+layout_mode = 0
+offset_left = 102.556
+offset_top = 13.4444
+offset_right = 325.556
+offset_bottom = 36.4444
+
 [node name="RandomButton" type="Button" parent="Customization_screen"]
 anchors_preset = 7
 anchor_left = 0.5

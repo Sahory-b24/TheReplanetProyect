@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 res://mainMenu/Scripts/options.gd
 res://mainMenu/Scenes/Options.tscn
 res://mainMenu/Scenes/scene_transitions.gd
@@ -9,3 +10,10 @@ res://mainMenu/Assets/Buttoms/grabber.tres
 res://mainMenu/Assets/Buttoms/grabberPressed.tres
 res://mainMenu/Scenes/main_menu.tscn
 res://mainMenu/Scenes/instructions.tscn
+=======
+res://mainMenu/Scenes/main_menu.tscn
+res://mainMenu/Scenes/scene_transitions.gd
+res://mainMenu/Scripts/MuteButton.gd
+res://scripts/custimization.gd
+res://scenes/Custimization.tscn
+>>>>>>> Stashed changes
