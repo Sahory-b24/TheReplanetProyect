@@ -48,12 +48,6 @@ func mostrar_ganaste():
 	
 
 
-func _on_back_pressed() -> void:
-	get_tree().paused = false
-	Global.modo_juego = "RPG"
-	SceneTransitions.change_scene_to_file("res://scenes/world.tscn")
-
-
 func _on_back_main_pressed() -> void:
 	get_tree().paused = false
 	Global.modo_juego = "RPG"
