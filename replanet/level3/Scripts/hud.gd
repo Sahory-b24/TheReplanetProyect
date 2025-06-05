@@ -6,7 +6,7 @@ extends CanvasLayer
 @onready var mensaje_label = $Panel2/PanelFinal/Panel/MensajeLabel
 @onready var puntaje_final_label = $Panel2/PanelFinal/Panel/PuntajeFinal
 @onready var atrasMundo = $atrasMundo
-@onready var reintentar_button = $atrasMundo
+@onready var reintentar_button = $Panel2/ReintentarButton
 @onready var stars = [
 	$PalancasContainer/Energy1,
 	$PalancasContainer/Energy2,
