@@ -47,7 +47,7 @@ func _on_nivel_2_pressed():
 	AudioManager.SFXPlayer.stream = preload("res://mainMenu/Assets/Audio/tf2-button-click-hover.mp3")
 	AudioManager.SFXPlayer.play()
 	Global.modo_juego = "RPG"
-	SceneTransitions.change_scene_to_file("res://level2/Scenes/level_2.tscn")
+	SceneTransitions.change_scene_to_file("res://level2/Scenes/Level_2.tscn")
 
 func _on_nivel_3_pressed():
 	AudioManager.SFXPlayer.stream = preload("res://mainMenu/Assets/Audio/tf2-button-click-hover.mp3")

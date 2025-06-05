@@ -1,7 +1,11 @@
 [
 	{
-		"nombre": "kkkj",
+		"nombre": "wrg",
 		"puntaje": 2100
+	},
+	{
+		"nombre": "kkkj",
+		"puntaje": 2100.0
 	},
 	{
 		"nombre": "e",
