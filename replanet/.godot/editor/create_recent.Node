@@ -1,3 +1,4 @@
+TextureButton
 CanvasLayer
 Label
 Panel
@@ -5,7 +6,6 @@ NPC
 Timer
 RichTextLabel
 CanvasGroup
-TextureButton
 TextureRect
 HBoxContainer
 CheckButton

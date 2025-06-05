@@ -5,8 +5,8 @@ extends CanvasLayer
 @onready var panel_final = $Panel2
 @onready var mensaje_label = $Panel2/PanelFinal/Panel/MensajeLabel
 @onready var puntaje_final_label = $Panel2/PanelFinal/Panel/PuntajeFinal
-@onready var reintentar_button2 = $atrasMundo
-
+@onready var atrasMundo = $atrasMundo
+@onready var reintentar_button = $atrasMundo
 @onready var stars = [
 	$PalancasContainer/Energy1,
 	$PalancasContainer/Energy2,
@@ -34,7 +34,7 @@ func mostrar_resultado_finalPanel():
 	puntaje_label.visible = false
 	puntaje_rect.visible = true
 	panel_final.visible = true
-	reintentar_button2.visible=false
+	atrasMundo.visible=false
 	puntaje_final_label.text = "Puntos Totales: %d / 1000" % GameState.puntaje_total
 
 	if GameState.puntaje_total >= 1000:
@@ -47,9 +47,9 @@ func mostrar_resultado_finalPanel():
 		
 	else:
 		mensaje_label.text = "¡Restauraste el sistema, pero sin suficiente eficiencia para recuperar la estrella!"
-
+		reintentar_button.visible = true
 	GuardarPuntaje.guardar_puntaje_nivel3(Global.player_name, GameState.puntaje_total)
-	reintentar_button2.visible=true
+	atrasMundo.visible=true
 	
 func actualizar_palancas_visual():
 	for i in range(stars.size()):
@@ -61,9 +61,7 @@ func actualizar_palancas_visual():
 func _on_volver_al_mundo_pressed() -> void:
 	SceneTransitions.change_scene_to_file("res://scenes/world.tscn")
 
-func _on_reintentar_buttom_pressed() -> void:
-	GameState.reset()
-	get_tree().reload_current_scene()
+
 
 func _on_mecanica_3_button_pressed() -> void:
 	AudioManager.SFXPlayer.stream = preload("res://mainMenu/Assets/Audio/tf2-button-click-hover.mp3")
@@ -77,3 +75,11 @@ func _on_atras_mundo_pressed() -> void:
 	AudioManager.SFXPlayer.play()	
 	SceneTransitions.change_scene_to_file("res://scenes/world.tscn")
 	
+
+
+func _on_reintentar_button_pressed() -> void:
+	puntaje_rect.visible = false
+	panel_final.visible = false
+	GameState.reset()
+	get_tree().reload_current_scene()
+	pass # Replace with function body.

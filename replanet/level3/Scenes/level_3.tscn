@@ -1,7 +1,7 @@
-[gd_scene load_steps=18 format=4 uid="uid://dcecxr07mygo4"]
+[gd_scene load_steps=20 format=4 uid="uid://dcecxr07mygo4"]
 
 [ext_resource type="TileSet" uid="uid://dfmh40v3anori" path="res://assests/TileSets/game_tile_set.tres" id="1_70nk6"]
-[ext_resource type="Script" path="res://level3/Scripts/level_3.gd" id="1_17213"]
+[ext_resource type="Script" uid="uid://dlocske8b5yvc" path="res://level3/Scripts/level_3.gd" id="1_17213"]
 [ext_resource type="PackedScene" uid="uid://blu2fgshcdiag" path="res://scenes/player.tscn" id="2_h23n6"]
 [ext_resource type="PackedScene" uid="uid://j6pokcbceix1" path="res://level3/Scenes/Lever.tscn" id="3_kn1bk"]
 [ext_resource type="Texture2D" uid="uid://c8mxtt8sbfhd5" path="res://level3/Assets/Images/20250603_0100_Glowing White Orb_simple_compose_01jwt602rme1g8cyajrzk17vt9.png" id="4_13g3x"]
@@ -12,6 +12,8 @@
 [ext_resource type="Texture2D" uid="uid://fxk1wegs7hev" path="res://level3/Assets/textures/EnergyEmpty.tres" id="7_fjtup"]
 [ext_resource type="Texture2D" uid="uid://ds1gh6et8rjkn" path="res://level3/Assets/textures/EnergyFull.tres" id="7_qrdbp"]
 [ext_resource type="Texture2D" uid="uid://dg1gy0qfc8r2o" path="res://mainMenu/Assets/Buttoms/lore_press.tres" id="8_u8fce"]
+[ext_resource type="Texture2D" uid="uid://byim6hlifbw6m" path="res://mainMenu/Assets/Buttoms/regresar_normal.tres" id="13_833yd"]
+[ext_resource type="Texture2D" uid="uid://cbuqbkoc7cmgy" path="res://mainMenu/Assets/Buttoms/regresar_press.tres" id="14_u8fce"]
 [ext_resource type="Texture2D" uid="uid://dphppnhi3rvd5" path="res://mainMenu/Assets/Buttoms/atras_normal.tres" id="17_t8xpv"]
 [ext_resource type="Texture2D" uid="uid://br7x0b60nw3vy" path="res://mainMenu/Assets/Buttoms/atras_press.tres" id="18_sbqc0"]
 
@@ -176,6 +178,17 @@ horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 2
 
+[node name="ReintentarButton" type="TextureButton" parent="HUD/Panel2"]
+layout_mode = 0
+offset_left = 145.0
+offset_top = 280.0
+offset_right = 165.0
+offset_bottom = 296.0
+scale = Vector2(2, 2)
+texture_normal = ExtResource("13_833yd")
+texture_pressed = ExtResource("14_u8fce")
+texture_hover = ExtResource("14_u8fce")
+
 [node name="atrasMundo" type="TextureButton" parent="HUD"]
 offset_left = 596.0
 offset_top = 320.0
@@ -190,4 +203,5 @@ texture_hover = ExtResource("18_sbqc0")
 environment = SubResource("Environment_13g3x")
 
 [connection signal="pressed" from="HUD/mecanica3Button" to="HUD" method="_on_mecanica_3_button_pressed"]
+[connection signal="pressed" from="HUD/Panel2/ReintentarButton" to="HUD" method="_on_reintentar_button_pressed"]
 [connection signal="pressed" from="HUD/atrasMundo" to="HUD" method="_on_atras_mundo_pressed"]
