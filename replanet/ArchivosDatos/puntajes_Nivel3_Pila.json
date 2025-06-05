@@ -1,7 +1,19 @@
 [
 	{
+		"nombre": "fe",
+		"puntaje": 2100
+	},
+	{
+		"nombre": "jkhui",
+		"puntaje": 2100.0
+	},
+	{
+		"nombre": "jkhui",
+		"puntaje": 1820.0
+	},
+	{
 		"nombre": "jk",
-		"puntaje": 420
+		"puntaje": 420.0
 	},
 	{
 		"nombre": "LKJKLFS",
